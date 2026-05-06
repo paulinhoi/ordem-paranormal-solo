@@ -1,0 +1,369 @@
+/* CSS - Tema Escuro Horror para Ordem Paranormal */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-medium: #1a1a1a;
+    --bg-light: #2a2a2a;
+    --text-primary: #e0e0e0;
+    --text-secondary: #888;
+    --accent-red: #8b0000;
+    --accent-blood: #660000;
+    --accent-gold: #c9a227;
+    --border-color: #333;
+    --success: #2e7d32;
+    --error: #c62828;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    background: var(--bg-medium);
+    padding: 15px;
+    border-bottom: 2px solid var(--accent-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header h1 {
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+/* Buttons */
+.btn {
+    background: var(--bg-light);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: var(--accent-blood);
+    border-color: var(--accent-red);
+}
+
+.btn-danger {
+    background: var(--error);
+}
+
+.btn-danger:hover {
+    background: #f44336;
+}
+
+.btn-send {
+    background: var(--accent-red);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-send:hover {
+    background: var(--accent-blood);
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    background: var(--bg-medium);
+    border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.tab {
+    flex: 1;
+    min-width: 80px;
+    padding: 12px;
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+    background: var(--bg-light);
+    color: var(--text-primary);
+}
+
+.tab.active {
+    color: var(--accent-gold);
+    border-bottom-color: var(--accent-gold);
+}
+
+.tab-content {
+    display: none;
+    background: var(--bg-medium);
+    padding: 15px;
+    min-height: 400px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    margin-bottom: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+.message.user {
+    background: var(--bg-light);
+    border-left: 3px solid var(--accent-gold);
+}
+
+.message.system {
+    background: var(--accent-blood);
+    color: white;
+}
+
+.message.dice {
+    background: #1a237e;
+    border-left: 3px solid #3f51b5;
+    font-family: monospace;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 5px;
+}
+
+#userMessage {
+    flex: 1;
+    padding: 10px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: inherit;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: inherit;
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 3px;
+}
+
+/* Attributes */
+.attributes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.attr {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--bg-dark);
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+}
+
+.attr input {
+    width: 50px;
+    background: var(--bg-medium);
+    border: none;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+/* Dice Section */
+.dice-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.dice-btn {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-dark);
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.dice-btn:hover {
+    background: var(--accent-gold);
+    color: var(--bg-dark);
+}
+
+.test-section,
+.combat-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+}
+
+/* Missions */
+#missionsList {
+    margin-top: 15px;
+}
+
+.mission-item {
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.mission-item h4 {
+    color: var(--accent-gold);
+    margin-bottom: 5px;
+}
+
+.mission-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Config */
+.info-section {
+    margin-top: 30px;
+    padding: 15px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+}
+
+.info-section h3 {
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+}
+
+/* Character Sheet */
+.character-sheet {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.character-sheet h2,
+.character-sheet h3 {
+    color: var(--accent-gold);
+    margin: 20px 0 10px 0;
+}
+
+.character-info {
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .tab {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    
+    .dice-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .attributes {
+        justify-content: center;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
+}
