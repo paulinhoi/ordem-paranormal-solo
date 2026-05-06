@@ -1,0 +1,276 @@
+══════════════════════════════════════════════════════════════
+        ARSENAL DOS AGENTES - NOVAS REGRAS
+══════════════════════════════════════════════════════════════
+
+Este arquivo contém as novas regras do Arsenal dos Agentes.
+
+══════════════════════════════════════════════════════════════
+        CORPOS ANIMADOS
+══════════════════════════════════════════════════════════════
+
+Corpos Animados são carcaças criadas a partir de material biológico
+e tecnologia alimentados pelo Outro Lado, permitindo que se movam
+e "vivam" sem consciência própria.
+
+--- CRIAÇÃO ---
+Tempo padrão: 1 mês
+Teste: Ciências (DT 15 + 5 x capacidade)
+Materiais:restam perdidos se falhar por 5+ pontos
+
+--- ATRIBUTOS PADRÃO ---
+Agi 1, For 1, Vig 1, Int 0, Pre 0
+Defesa: 15 + Agilidade
+Deslocamento: 6m
+PE: 2 + Presença por grau
+PV: 5 + Vigor por grau
+Perícias: 3 + Intelecto
+
+--- MOLDES ---
+
+ALADO: Semelhante a ave/morcego
+- Deslocamento de voo 9m
+- Duas armas naturais Garra (1d6 corte, crítico 19/x2)
+- +2 Agilidade, Visão na Penumbra
+
+AQUÁTICO: Semelhante a peixe/monstro marinho
+- Deslocamento de natação 12m
+- Dente de Mordida (1d8 perfuração, crítico x2)
+- +2 Vigor
+
+BESTIAL: Semelhante a predador terrestre
+- Deslocamento 9m
+- Garras (1d6 perfuração) + Mordida (1d8 perfuração)
+- +2 Força
+
+HUMANOIDE: Semelhante a humano/creatura bípede
+- Deslocamento 6m
+- Duas armas naturais: Soco (1d4 impacto)
+- Habilidades manuais
+
+INSETOIDE: Semelhante a inseto/arthropod
+- Deslocamento 6m ou 9m (voo)
+- Ferrão (1d6 perfuração, crítico x2)
+- Exoesqueleto: +2 Defesa
+
+--- CAPACIDADES ---
+
+GRAU 1 (NEX 10%): 3 habilidades, 10 PV, 4 PE
+GRAU 2 (NEX 20%): 5 habilidades, 15 PV, 6 PE
+GRAU 3 (NEX 30%): 7 habilidades, 20 PV, 8 PE
+GRAU 4 (NEX 40%): 9 habilidades, 25 PV, 10 PE
+
+══════════════════════════════════════════════════════════════
+        DESCONJURAÇÃO
+══════════════════════════════════════════════════════════════
+
+A Desconjuração é a arte de desfazer efeitos paranormais.
+Pode ser usada contra rituais, itens amaldiçoados e criaturas.
+
+--- USO ---
+Ação: Padrão
+Alvo: Um efeito paranormal ou criatura
+Teste: Ocultismo contra DT do efeito
+
+--- RESULTADOS ---
+Sucesso: Remove o efeito ou causa 1d6 de dano de Conhecimento
+Sucesso grande: Remove completamente ou causa 2d6
+Falha: Nada acontece, mas revela informações sobre o efeito
+Falha crítica: Você sofre o efeito inverse
+
+══════════════════════════════════════════════════════════════
+        RITUAIS DE 5° CÍRCULO
+══════════════════════════════════════════════════════════════
+
+Os rituais de 5° círculo são extremamente poderosos e perigosos.
+Requerem NEX 75% ou superior para aprender.
+
+--- RESTRIÇÕES ---
+- Requerem componentes raros
+- Custo de Sanidade maior
+- Apenas um ritual de 5° círculo pode ser aprendido
+
+--- EXEMPLOS ---
+Ritual de Resurreição: Pode trazer mortos de volta à vida
+Ritual de Transcendência: Transforma o usuário em algo maior
+Ritual de Aniquilação: Pode destruir qualquer coisa
+Ritual de Multiverso: Permite manipulação da realidade
+
+══════════════════════════════════════════════════════════════
+        A CALAMIDADE
+══════════════════════════════════════════════════════════════
+
+A Calamidade é um evento catastrófico que afeta o mundo quando
+a Membrana está Rompida. É uma mecânica de jogo que representa
+os horrores finais do Outro Lado.
+
+--- QUANDO OCORRE ---
+- Membrana Rompida
+- NEX coletivo do grupo alto
+- Decisão do Mestre
+
+--- EFEITOS ---
+- Criaturas paracaustomes aparecem
+- Efeitos paranormais se intensificam
+- teste de Sanidade constante
+- Recursos se tornam escassos
+
+══════════════════════════════════════════════════════════════
+        LIMIAR DA HUMANIDADE
+══════════════════════════════════════════════════════════════
+
+Sistema que representa o limite do que um humano pode suportar
+antes de se tornar algo diferente.
+
+--- NÍVEIS ---
+NORMAL: 0-50% NEX
+LIMITE: 51-75% NEX
+EXCEDIDO: 76-90% NEX
+TRANSCENDIDO: 91%+ NEX
+
+--- EFEITOS POR NÍVEL ---
+LIMITE: +1 em um atributo, efeitos colaterais começam
+EXCEDIDO: +2 em atributos, mutações começam
+TRANSCENDIDO: +3 em atributos, aparência alterada, humanoide já não serve
+
+══════════════════════════════════════════════════════════════
+        MELODIAS SOMBRIAS
+══════════════════════════════════════════════════════════════
+
+15 melodias com efeitos únicos, tocadas com Instruments Musicais.
+
+1. CANÇÃO DO CAOS: Criatures recebem -2 em testes
+2. LAMENTO DO VACUO: Alvos perdem 1d4 PE
+3. VALSA DA PERDIÇÃO: Alvos ficam Confusos
+4. HINO DA DESTRUIÇÃO: Causa 2d6 de dano a todos
+5. BAILE DOS MORTOS: Mortos se levantam como aliados
+6. ARIAS DO MEDO: Alvos ficam Apavorados
+7. REQUIEM: Alvos ficam Paralizados
+8. CANTICO DA LUZ: Cura 2d6 PV
+9. SALMO DA GUARDA: +2 em Defesa por cena
+10. TOQUE DO ABISMO: Alvos perdem 1d6 SAN
+11. MELODIA DO VOO: Deslocamento dobrado por cena
+12. SONATA DO SONO: Alvos dormem
+13. TROVAO SANGRENTO: Causa 3d6 de dano de Sangue
+14. HARMONIA SELVAGEM: +2 em todos os testes por cena
+15. FINALE APOCALÍPTICO: Causa 5d6 de dano em área
+
+══════════════════════════════════════════════════════════════
+        QUEBRANDO TUDO
+══════════════════════════════════════════════════════════════
+
+Sistema de lesões e partes do corpo.
+
+--- PARTES DO CORPO ---
+CABEÇA: Crítico = perda de olho, -2 em Percepção
+BRAÇOS: Crítico = mão inutilizada, -2 em testes com aquela mão
+PERNAS: Crítico = perna quebrada, deslocamento reduzido
+TORSO: Crítico = órgãosDanificados, -2 em Fortitude
+OLHOS: Cego = -10 em testes visuais
+OUVIDOS: Surdo = -5 em iniciativa
+
+--- CONDIÇÕES DE LESÃO ---
+Contusão: -1d20 em testes físicos
+Fratura: -2d20 em testes, -3m deslocamento
+Amputação: Perda permanente de membro
+Dilaceração: PV reduzidos a 0, morrendo
+
+══════════════════════════════════════════════════════════════
+        VEÍCULOS
+══════════════════════════════════════════════════════════════
+
+--- TIPOS DE VEÍCULOS ---
+
+TERRESTRES:
+- Motocicleta: Velocidade 150km/h, Espaço 1, Categoria I
+- Carro Sedan: Velocidade 120km/h, Espaço 2, Categoria I
+- Carrooff-Road: Velocidade 100km/h, Espaço 2, Categoria II
+- Caminhão: Velocidade 80km/h, Espaço 4, Categoria II
+- Tanque: Velocidade 60km/h, Espaço 8, Categoria IV
+
+AÉREOS:
+- Helicóptero: Velocidade 200km/h, Espaço 4, Categoria III
+- Avião de Caça: Velocidade 800km/h, Espaço 2, Categoria IV
+- Avião de Carga: Velocidade 500km/h, Espaço 6, Categoria III
+
+AQUÁTICOS:
+- Barco Pesado: Velocidade 40 nós, Espaço 4, Categoria II
+- Lancha: Velocidade 60 nós, Espaço 2, Categoria II
+- Submersível: Velocidade 20 nós, Espaço 4, Categoria III
+
+--- AÇÕES EM COMBATE ---
+Manobra de avoidance: Teste de Pilotagem para evitar dano
+Ram: Causa dano de Impacto baseado na velocidade
+Proteger: Veículo pode tomar dano no lugar de passageiros
+
+--- PILOTAGEM ---
+Teste de Pilotagem (DT 15 + modificadores)
+Sucesso: Manobra executada
+Falha: Veículo pode serDanificado ou perdido
+Crítico: Controle perdido, acidente iminente
+
+══════════════════════════════════════════════════════════════
+        CRIANDO BASES
+══════════════════════════════════════════════════════════════
+
+--- TIPOS DE BASE ---
+ACAMPAMENTO: 0 custo, 1dia para construir
+REFÚGIO: Custo 500€, 1 semana para construir
+FORTE: Custo 2000€, 1 mês para construir
+BASE SECRETA: Custo 10000€, 3 meses para construir
+
+--- INSTALAÇÕES ---
+Laboratório: +2 em testes de Ciências
+Armazém: Armazenar equipamentos
+Sala de interrogatório: +2 em intimidação
+Sala de comunicação: Comunicação segura
+Enfermaria: +2 em Medicina
+Dormitório: Recuperação melhor
+
+--- FUNCIONAMENTO ---
+Manutenção: Custo mensal de 10% do valor da base
+Equipe: Requer funcionários para manter
+Segurança: Defesas contra invasões
+
+══════════════════════════════════════════════════════════════
+        QUESTÃO MONETÁRIA
+══════════════════════════════════════════════════════════════
+
+--- SISTEMA DE ORÇAMENTO ---
+PATENTE        ORÇAMENTO MENSAL
+Recruta       200€
+Agente        500€
+Especialista  1000€
+Mestre        2500€
+Líder         5000€
+
+--- GASTOS ---
+Equipamento básico: 50-200€
+Equipamento especial: 200-1000€
+Veículo: 5000-50000€
+Base: 1000-50000€
+
+══════════════════════════════════════════════════════════════
+        O OUTRO LADO E A FÉ
+══════════════════════════════════════════════════════════════
+
+A Fé pode ser usada para fortalecer rituais e ataques contra o Paranormal.
+
+--- PODERES DE FÉ ---
+Preces: +2d20 em testes de Vontade contra efeitos mentais
+Sagrado: Armas causam +1d6 de dano a criaturas paracaustomes
+Proteção: +2 em resistência a efeitos paranormais
+Exorcismo: +5 em testes para remover possessão
+
+══════════════════════════════════════════════════════════════
+        TRABALHANDO COM TEMPO
+══════════════════════════════════════════════════════════════
+
+--- COMPRESSÃO TEMPORAL ---
+É possível acelerar o tempo em missões:
+1 dia real = 1 semana de jogo (custo: 2d6 SAN)
+1 dia real = 1 mês de jogo (custo: 1d6 PV + 2d6 SAN)
+
+--- ENVELHECIMENTO ---
+Tempo acelerado causa envelhecimento:
+1 mês no jogo = 1 ano de vida real
+Efeitos: -1d20 em testes físicos por ano

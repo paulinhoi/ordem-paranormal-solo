@@ -1,0 +1,420 @@
+══════════════════════════════════════════════════════════════
+     BIBLIOTECA RITUALÍSTICA - RITUAIS 1° CÍRCULO
+══════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════
+     RITUAIS DE SANGUE - 1° CÍRCULO
+══════════════════════════════════════════════════════════════
+
+ASCENSÃO DE ESPINHOS
+SANGUE 1 | Exec: Padrão | Alcance: Toque | Área: Linha 9m
+Duração: Instantânea | Resistência: Reflexos anula
+Efeito: Projeta onda de vinhas espinhosas de sangue. Todos na área
+sofrem 2d6 perfurante e ficam enredados até fim da cena.
+Discente (+2 PE): Aumenta para 4d6 + imobilizado.
+Verdadeiro (+9 PE): Dano se repete a cada rodada, imunidade a dano não mundano.
+
+BOMBA DE SANGUE
+SANGUE 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 ser
+Duração: Instantânea | Resistência: Reflexos reduz metade
+Efeito: Cria sanguessuga que sugar 1 PV/rodada. Ao chegar a 0 PV,
+explode causando 1d6 impacto + 1d6 por PV sucksado.
+Discente (+2 PE): Suga 2 PV/rodada.
+Verdadeiro (+5 PE): Cria 2d6 sanguessugas.
+
+CAPILARIDADE EXTREMA
+SANGUE 1 | Exec: Movimento | Alcance: Curto | Alvo: pessoa/animal com pelos/penas
+Duração: Instantânea | Resistência: Fortitude anula
+Efeito: Modifica crescimento de pelos/penas. Pode acelerar (crescimento rápido)
+ou desacelerar (queda de pelos).
+
+CHOQUE MENTAL
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Cria fractais nos nervos do alvo, deixando-o Pasmo.
+
+CORRENTE MEDULAR
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Se ferir para criar criatura de Sangue a partir do ferimento.
+
+CRISTALIZAÇÃO SANGUÍNEA
+SANGUE 1 | Exec: Movimento | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Cria camada de sangue sobre pele, potencializa ataques desarmados (+1d6).
+
+ENTORPECER
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Fortitude anula
+Efeito: Secreta veneno paralizante dos dedos. Alvo fica Paralisado.
+
+ESCONDERIJO INTERNO
+SANGUE 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 ser voluntário
+Duração: Cena | Resistência: —
+Efeito: Abre fenda no corpo do alvo, permitindo outro ser se esconder dentro.
+
+ESCUDO DE CARNE
+SANGUE 1 | Exec: Reação | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: —
+Efeito: Cria barreira de carne para proteger de ataque.
+
+EXPANSÃO MUSCULAR
+SANGUE 1 | Exec: Movimento | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: —
+Efeito: Aumenta músculos em parte do corpo para +2d20 em teste.
+
+FÍSICO DO PREDADOR
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Cena | Resistência: Vontade anula
+Efeito: Altera físico do alvo para se assemelhar a grande predador.
+
+FLECHA DE SANGUE
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: —
+Efeito: Dispara grande flecha de sangue da mão.
+
+MÃO AMIGA
+SANGUE 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 ser voluntário
+Duração: Cena | Resistência: —
+Efeito: Arranca sua própria mão e dá vida a ela.
+
+MÃO COLETORA
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: —
+Efeito: Mão spectral recolhe objetos do alvo.
+
+METAMORFOSE SANGUÍNEA
+SANGUE 1 | Exec: Padrão | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Transforma corpo em poça de sangue.
+
+MONOCULAR
+SANGUE 1 | Exec: Padrão | Alcance: Pessoal | Alvo: Você
+Duração: Sustentada | Resistência: —
+Efeito: Une olhos em um grande olho perceptivo. +2 Investigação e Percepção.
+
+O MELHOR!
+SANGUE 1 | Exec: Completa | Alcance: Toque | Alvo: 1 ser voluntário
+Duração: Cena | Resistência: —
+Efeito: Dá objetivo às células do alvo. +2d20 em uma perícia, -1d20 nas outras.
+
+POLUIÇÃO MENTAL
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Cena | Resistência: Vontade anula
+Efeito: Estimula microplásticos na mente. -1d20 em testes de Intelecto e Presença.
+
+POSSESSIVIDADE TÓXICA
+SANGUE 1 | Exec: Padrão | Alcance: Toque | Alvo: Outro ser ou objeto
+Duração: 1 dia | Resistência: —
+Efeito: Marca ser/objeto como sua propriedade, criando vínculo.
+
+RAÍZES DEVORADORAS
+SANGUE 1 | Exec: Padrão | Alcance: Curto | Área: Esfera 3m
+Duração: Instantânea | Resistência: Reflexos evita
+Efeito: Desenvolve bocarra de planta que morde seres na área (3d4 perfuração + 1d4 sangue).
+
+REFORÇO NUTRITIVO
+SANGUE 1 | Exec: Completa | Alcance: Toque | Alvo: 1 alimento
+Duração: Instantânea | Resistência: —
+Efeito: Injeta sangue em alimento. Você perde 1d6 PV, mas alimento ganha +1 bônus.
+
+══════════════════════════════════════════════════════════════
+     RITUAIS DE CONHECIMENTO - 1° CÍRCULO
+══════════════════════════════════════════════════════════════
+
+ACÚSTICA COGNITIVA
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Insere som na mente do alvo, tocando repetidamente, atrapalhando pensamento.
+
+BELEZA IRREAL
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Muda aparência com película dourada, +5 em Presença.
+
+CACOS DE VIDRO
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 objeto de vidro
+Duração: Instantânea | Resistência: Reflexos reduz
+Efeito: Explode objeto de vidro, ferindo seres próximos com cacos.
+
+CALMARIA
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade anula
+Efeito: Arranca emoções da mente de forma dolorosa.
+
+CAMINHOS SEGUROS
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Localiza saída de/local.
+
+DETECTAR MENTIRAS
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Percebe se alvo está mentindo.
+
+LEITURA PROFUNDA
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 objeto
+Duração: Instantânea | Resistência: —
+Efeito: Lê conteúdo de objeto como livro.
+
+LUZ MENTAL
+CONHECIMENTO 1 | Exec: Movimento | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Cria fonte de luz na mente.
+
+OLHO MÁGICO
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 objeto
+Duração: Cena | Resistência: —
+Efeito: Olho flutuante observa área.
+
+PAM
+CONHECIMENTO 1 | Exec: Padrão | Alcance: Longo | Alvo: 1 objeto
+Duração: Cena | Resistência: —
+Efeito: Objeto reproduz última fala que ouviu.
+
+PESQUISA EXPANDIDA
+CONHECIMENTO 1 | Exec: Completa | Alcance: Pessoal | Alvo: Você
+Duração: Instantânea | Resistência: —
+Efeito: Pesquisa informações sobre assunto.
+
+PRESERVAR MOMENTO
+CONHECIMENTO 1 | Exec: Completa | Alcance: Curto | Área: Esfera 4,5m
+Duração: Cena | Resistência: —
+Efeito: Preserva momento atual, podendo revê-lo depois.
+
+SENSOR DEVIDADE
+CONHECIMENTO 1 | Exec: Movimento | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Sente se objeto tem valor.
+
+TRANSMISSÃO DE MEMÓRIA
+CONHECIMENTO 1 | Exec: Completa | Alcance: Toque | Alvo: 2 seres
+Duração: Instantânea | Resistência: Vontade anula
+Efeito: Transfere memória de um ser para outro.
+
+══════════════════════════════════════════════════════════════
+     RITUAIS DE ENERGIA - 1° CÍRCULO
+══════════════════════════════════════════════════════════════
+
+AMPLIFICADOR CAÓTICO
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Alvo fica Frustrado, dificultando concentração.
+
+ATRAÇÃO ELETRICA
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 objeto
+Duração: Instantânea | Resistência: —
+Efeito: Objeto attracts metal objects.
+
+BOLHA ELASTICA
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Fortitude anula
+Efeito: Cria bolha elástica ao redor do alvo.
+
+CAMPO DE FORÇA
+ENERGIA 1 | Exec: Reação | Alcance: Curto | Alvo: Você
+Duração: 1 uso | Resistência: —
+Efeito: Escudo protetor contra ataque.
+
+CHICOTE ELÉTRICO
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Reflexos reduz
+Efeito: Dispara chicote elétrico causando 1d6 elétrico.
+
+CORRENTE CAÓTICA
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Reflexos reduz
+Efeito: Descarga caótica de energia.
+
+DANÇA DAS CHAMAS
+ENERGIA 1 | Exec: Completa | Alcance: Curto | Área: Cone 4,5m
+Duração: Instantânea | Resistência: Reflexos reduz
+Efeito: Chamas dançam, causando 1d6 fogo.
+
+DESCARGA ESTÁTICA
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Fortitude reduz
+Efeito: Descarga estática no alvo.
+
+DISSIPADOR ELEMENTAL
+ENERGIA 1 | Exec: Movimento | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito: Remove elemental de você.
+
+ENVOLTÓRIO GELADO
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Fortitude anula
+Efeito: Reveste alvo em gelo, causando 1d4 frio/rodada.
+
+ESCUDO DE FOGO
+ENERGIA 1 | Exec: Padrão | Alcance: Pessoal | Alvo: Você
+Duração: Cena | Resistência: —
+Efeito:周围环绕火焰,攻击者受伤.
+
+LUZ ESTROBOSCÓPICA
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Área: Esfera 4,5m
+Duração: Instantânea | Resistência: Fortitude anula
+Efeito: Luz pulsante, alvo fica Ofuscado.
+
+MÃO DE RELÂMPAGO
+ENERGIA 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 ser
+Duração: Instantânea | Resistência: —
+Efeito: Toque causando 1d8 elétrico.
+
+ONDA DE CALOR
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Área: Cone 4,5m
+Duração: Instantânea | Resistência: Fortitude reduz
+Efeito: Onda de calor causando 1d6 fogo.
+
+PULO TELEGRÁFICO
+ENERGIA 1 | Exec: Movimento | Alcance: Longo | Alvo: Você
+Duração: Instantânea | Resistência: —
+Efeito: Pula eletronicamente para local.
+
+RAIO
+ENERGIA 1 | Exec: Padrão | Alcance: Longo | Alvo: 1 ser
+Duração: Instantânea | Resistência: Reflexos reduz
+Efeito: Dispara raio causando 2d6 elétrico.
+
+SOPRO GELADO
+ENERGIA 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Fortitude reduz
+Efeito: Sopro congelante causando 1d6 frio.
+
+══════════════════════════════════════════════════════════════
+     RITUAIS DE MORTE - 1° CÍRCULO
+══════════════════════════════════════════════════════════════
+
+AMACIAR CARNE
+MORTE 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 ser
+Duração: Sustentada | Resistência: Fortitude anula
+Efeito: Amolece carne do alvo, dificultando movimentos.
+
+BRISA MORTAL
+MORTE 1 | Exec: Padrão | Alcance: Longo | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade reduz
+Efeito: Brisa que drena energia vital.
+
+CORRENTE DE ENTROPIA
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade reduz
+Efeito: Corrente que acelera entropia corporal.
+
+DEDOS DA MORTE
+MORTE 1 | Exec: Padrão | Alcance: Toque | Alvo: 1 ser
+Duração: Instantânea | Resistência: Fortitude anula
+Efeito: Dedos espetam alvo, causando 1d6 perfuração + 1d4 morte.
+
+DESTRUIR OBJETO
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 objeto
+Duração: Instantânea | Resistência: —
+Efeito: Destrói objeto instantaneamente.
+
+ENVELHECIMENTO
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade anula
+Efeito: Envelhece alvo drasticamente.
+
+ESPECTRO DO DECADIMENTO
+MORTE 1 | Exec: Completa | Alcance: Curto | Alvo: 1 ser
+Duração: Cena | Resistência: Vontade anula
+Efeito: Cria espectro que drena vitalidade.
+
+FOLHA DE GUILHOTINA
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Reflexos anula
+Efeito: Corta alvo com folha spectral.
+
+HÁBITO DA CORRUPCAO
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 objeto
+Duração: Cena | Resistência: —
+Efeito: Objeto decompõe rapidamente.
+
+MARCA DA MORTE
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Cena | Resistência: —
+Efeito: Marca alvo com símbolo da morte.
+
+MORDIDA DO VÁCUO
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade reduz
+Efeito: Mordida que drena vida.
+
+OLHO DA MORTE
+MORTE 1 | Exec: Padrão | Alcance: Longo | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade anula
+Efeito: Olhar que causa 1d6 morte e Apavorado.
+
+POÇO DA ANIQUILAÇÃO
+MORTE 1 | Exec: Padrão | Alcance: Médio | Área: Círculo 3m
+Duração: Instantânea | Resistência: Reflexos reduz
+Efeito: Cria poço que aniquila tudo.
+
+RAJADA PUTREFAÇÃO
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Fortitude reduz
+Efeito: Rajada de gases podres.
+
+SUSSURROS DA TUMBA
+MORTE 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Sussurros perturbam alvo.
+
+══════════════════════════════════════════════════════════════
+     RITUAIS DE MEDO - 1° CÍRCULO
+══════════════════════════════════════════════════════════════
+
+ALUCINAÇÃO TERRORÍFICA
+MEDO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Alucinações terríveis atormentam o alvo.
+
+ATAQUE DE PÂNICO
+MEDO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade reduz
+Efeito: Causa pânico no alvo.
+
+COROA DE ESPINHOS DO MEDO
+MEDO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Espinhos de medo perfuram mente.
+
+ECHO DO ABISMO
+MEDO 1 | Exec: Padrão | Alcance: Longo | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade reduz
+Efeito: Som terrível que causa 1d4 SAN + Apavorado.
+
+ILUSÃO ATERRORIZANTE
+MEDO 1 | Exec: Completa | Alcance: Longo | Área: Esfera 6m
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Cria ilusão aterrorizante.
+
+MASCARAS HORRORIFICAS
+MEDO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Máscaras horríveis aparecem no rosto do alvo.
+
+MEDO PARALISANTE
+MEDO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Sustentada | Resistência: Vontade anula
+Efeito: Medo extremo paralisa o alvo.
+
+OLHO DO HORROR
+MEDO 1 | Exec: Padrão | Alcance: Longo | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade reduz
+Efeito: Olho demoníaco causa 1d4 SAN + Paralisado.
+
+PESADELO VIVENTE
+MEDO 1 | Exec: Completa | Alcance: Longo | Alvo: 1 ser
+Duração: Cena | Resistência: Vontade anula
+Efeito: Conecta mente ao pesadelo.
+
+SANGUE DO HORROR
+MEDO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade reduz
+Efeito: Sangue revela visões horroríficas.
+
+TERROR INSTANTÂNEO
+MEDO 1 | Exec: Padrão | Alcance: Curto | Alvo: 1 ser
+Duração: Instantânea | Resistência: Vontade anula
+Efeito: Causa terror imediato no alvo.

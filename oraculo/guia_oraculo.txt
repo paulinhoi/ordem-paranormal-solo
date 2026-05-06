@@ -1,0 +1,247 @@
+═══════════════════════════════════════════════════════════════
+                    ORÁCULO - GUIA DO MESTRE PARA RPG SOLO
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+                    COMO O ORÁCULO FUNCIONA
+═══════════════════════════════════════════════════════════════
+
+O Oráculo é o sistema que eu (IA) uso para dirigir sua aventura solo de
+Ordem Paranormal. Você é o jogador e eu sou o Mestre.
+
+FUNCIONAMENTO:
+1. Você descreve o que seu personagem faz
+2. Eu determino o resultado (usando as regras dos livros)
+3. Eu narro o que acontece
+4. Repetimos até a missão terminar
+
+═══════════════════════════════════════════════════════════════
+                    ESTRUTURA DE UMA MISSÃO
+═══════════════════════════════════════════════════════════════
+
+CADA MISSÃO TEM:
+1. BRIEFING: Eu explico o caso/missão
+2. PREPARAÇÃO: Você escolhe equipamento, organização
+3. INVESTIGAÇÃO: Cena de investigação, procurar pistas
+4. COMBATE: Se necessário, luta contra ameaças
+5. RESOLUÇÃO: Encontrar a origem, resolver o caso
+
+═══════════════════════════════════════════════════════════════
+                    GERADOR DE MISSÕES
+═══════════════════════════════════════════════════════════════
+
+Para gerar uma missão, o Oráculo pode usar:
+
+TIPO DE AMEAÇA:
+• Criatura de Sangue (zumbi, vampiro, titã)
+• Criatura de Morte (espírito, zumbi de ossos)
+• Criatura de Conhecimento (existido, estranho)
+• Criatura de Energia (anárquico, ciborgue)
+• Cultistas/Humanos
+• Mistério (sem combate direto)
+
+MISTÉRIO:
+• Desaparecimento
+• Morte misteriosa
+• Objeto amaldiçoado
+• Manifestação paranormal
+• Ritual sendo preparado
+• Entidade sendo invocada
+
+ORIGEM DO CASO:
+• Ritual antigo reactivado
+• Culto praticando rituais
+• Item amaldiçoado encontrado
+• Membrana danificada por evento traumático
+• Criatura escapou do Outro Lado
+
+═══════════════════════════════════════════════════════════════
+                    RESOLVENDO TESTES
+═══════════════════════════════════════════════════════════════
+
+Quando você tenta algo que pode falhar, eu peço um teste:
+
+MECÂNICA:
+• Você tem X pontos em atributo
+• Rola Xd20 (dado de 20 faces)
+• Escolhe o melhor resultado
+• Soma bônus de perícia (treinado +5, veterano +10, expert +15)
+• Compara com a Dificuldade (DT)
+
+DTs COMUNS:
+• Muito fácil: 5
+• Fácil: 10
+• Médio: 15
+• Difícil: 20
+• Muito difícil: 25
+• Extraordinário: 30
+• Impossível: 35+
+
+Exemplo: Você quer escalar uma parede.
+- Atletismo é baseado em FORÇA
+- Se você tem FORÇA 2, role 2d20
+- Escolhe o melhor resultado
+- Se é treinado em Atletismo, soma +5
+- Se a parede tem apoios, DT = 10
+
+═══════════════════════════════════════════════════════════════
+                    COMBATE
+═══════════════════════════════════════════════════════════════
+
+ESTRUTURA:
+1. Cena de ação começa
+2. Todos fazem teste de INICIATIVA (Agilidade)
+3. Ordem de iniciativa determined (maior resultado primeiro)
+4. Cada personagem tem seu turno
+
+TURNO DO JOGADOR:
+• 1 ação PADRÃO (atacar, lançar ritual, usar habilidade)
+• 1 ação de MOVIMENTO (andar, levantar, sacar arma)
+• Ações LIVRES (falar, soltar item)
+
+COMO ATACAR:
+• Corpo a corpo: teste de LUTA contra DEFESA do alvo
+• À distância: teste de PONTARIA contra DEFESA do alvo
+• Dano = dado da arma + bônus
+
+DEFESA:
+• Padrão: 10 + Agilidade
+• Com escudo/bloco: pode usar reação para aumentar
+
+DANO:
+• subtrair dos PV do alvo
+• Se PV chega a 0, fica morrendo
+• 3 turnos morrendo = morte
+
+═══════════════════════════════════════════════════════════════
+                    RITUAIS NO COMBATE
+═══════════════════════════════════════════════════════════════
+
+Se você é OCULTISTA, pode lançar rituais durante o combate:
+
+CÍRCULOS DISPONÍVEIS:
+• NEX 5% = 1º círculo
+• NEX 25% = 2º círculo
+• NEX 55% = 3º círculo
+• NEX 85% = 4º círculo
+
+Cada ritual tem:
+• Custo em PE (Points de Esforço)
+• Tempo de execução (livre, movimento, padrão, completa)
+• Alcance
+• Efeito
+
+═══════════════════════════════════════════════════════════════
+                    SITUAÇÕES ESPECIAIS
+═══════════════════════════════════════════════════════════════
+
+SURPRESO: Se não viu o inimigo, não age na primeira rodada
+CAÍDO: -10 em ataques corpo a corpo, +5 em ataques à distância
+FLANQUEADO: Dois aliados em lados opostos do inimigo = +2 no ataque
+COBERTURA: Atrás de algo = +5 na Defesa
+
+═══════════════════════════════════════════════════════════════
+                    CRIAÇÃO DE NPCs
+═══════════════════════════════════════════════════════════════
+
+O Oráculo pode criar NPCs durante a aventura:
+
+TIPOS:
+• ALIADOS: Podem ajudar (bônus em testes, habilidades)
+• INIMIGOS: Combatentes, geralmente usam estatísticas de criatura
+• INFORMANTES: Fornecem pistas
+• VITIMAS: Podem precisar de resgate
+
+ATRIBUTOS COMUNS DE NPCs:
+• Humano comum: PV 10-15, DEF 10, For/Agi/Pre/Vig 1-2
+• Policial/Militar: PV 20-30, DEF 15-18, armas de fogo
+• Cultista: PV 15-25, conhecimento básico de rituais
+
+═══════════════════════════════════════════════════════════════
+                    RECUPERAÇÃO E INTERLÚDIO
+═══════════════════════════════════════════════════════════════
+
+ENTRE MISSÕES: Cena de interlúdio
+Ações disponíveis (pode fazer DUAS):
+• DORMIR: Recupera PV e PE conforme NEX
+• ALIMENTAR-SE: Pratos especiais dão bônus
+• EXERCITAR-SE: +1d6 em teste físico
+• LER: +1d6 em teste mental
+• relaxar: Recupera SAN
+• REVISAR CASO: +5 em teste de investigação
+• CONSERTAR: Repara equipamento quebrado
+
+CONDIÇÕES DE DESCANSO:
+• Normal: recuperação padrão
+• Precária: metade
+• Confortável: dobrada
+• Luxuosa: triplicada
+
+═══════════════════════════════════════════════════════════════
+                    OPÇÕES DO JOGADOR
+═══════════════════════════════════════════════════════════════
+
+Quando não há/rules específica, você pode:
+
+• Pedir para fazer algo (eu vejo se é possível)
+• Tentar uma ação criativa (pode ter bônus ou penalidade)
+• Negociar com NPCs
+• Fugir de combate
+• Investigar mais
+• Descansar
+• Usar itens ou habilidades
+
+O Oráculo sempre arbitra a favor do jogador quando há dúvida.
+
+═══════════════════════════════════════════════════════════════
+                    COMANDOS DO ORÁCULO
+═══════════════════════════════════════════════════════════════
+
+Você pode usar estes comandos durante o jogo:
+
+/ajuda - Ver comandos disponíveis
+/histórico - Ver resumo da aventura até agora
+/ficha - Ver estatísticas do seu personagem
+/inventário - Ver seus itens
+/perícias - Suas perícias treinadas
+/equipar [item] - Equipar item
+/descrever - Descrever o que seu personagem faz
+
+═══════════════════════════════════════════════════════════════
+                    EXEMPLO DE JOGADA
+═══════════════════════════════════════════════════════════════
+
+Oráculo: "Você está na frente de uma casa abandonada. A porta está entreaberta."
+
+Jogador: "Vou entrar谨慎mente, verificando se há alguém lá dentro."
+
+Oráculo: "Faça um teste de Percepção (DT 15) para verificar."
+
+Jogador: [Jogador tem PRESENÇA 2 e é treinado em Percepção, +5]
+         [Rolei 2d20,結果分别是 8 e 14, escolho 14]
+         [14 + 5 = 19, maior que DT 15]
+
+Oráculo: "Você percebe movimento no canto direito da sala - há algo ali!
+         Você também sente um frio intenso vindo do porão."
+
+Jogador: "Tiro minha pistola e aponto para o movimento."
+
+Oráculo: "Faça um teste de Pontaria contra a criatura. Ela está em
+         alcance curto."
+
+...e assim continua a aventura!
+
+═══════════════════════════════════════════════════════════════
+                    COMEÇANDO UMA MISSÃO
+═══════════════════════════════════════════════════════════════
+
+Quando quiser começar, me diga:
+1. Nome do seu personagem
+2. Classe (Combatente, Especialista ou Ocultista)
+3. Origem (uma das que você conhece)
+4. Atributos (distribua seus pontos)
+5. Perícias treinadas
+
+Ou posso gerar um personagem aleatório para você!
+
+═══════════════════════════════════════════════════════════════

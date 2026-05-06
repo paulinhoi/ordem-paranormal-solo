@@ -1,0 +1,291 @@
+══════════════════════════════════════════════════════════════
+     ARSENAL DOS AGENTES - PODERES PARANORMAIS
+══════════════════════════════════════════════════════════════
+
+Poderes paranormais são habilidades que modificam o corpo do usuário,
+concedidas pela ligação com o Outro Lado. São divididas em 5 elementos.
+
+══════════════════════════════════════════════════════════════
+     PODERES DE SANGUE
+══════════════════════════════════════════════════════════════
+
+--- ARMADURA CORPORAL ---
+O corpo endurece como sangue coagulado.
+Você recebe +2 em Defesa.
+AFINIDADE: +2 adicional (total +4)
+
+--- ESTÍMULO CRESCENTE ---
+A emoção intensifica sua velocidade.
++2 em testes de Agilidade quando sob efeito de condição de fadiga.
+AFINIDADE: +5 em vez de +2
+
+--- EXPLOSÃO PRIMÁRIA ---
+Libera energia emocional em explosão.
+Como ação padrão, causa 2d6 de dano de Sangue em área de 3m.
+AFINIDADE: +2d6 de dano
+
+--- ÓDIO INDESEJADO ---
+Seu ódio afecta emocionalmente outros.
+Ao causar dano, alvo fica Frustrado por 1 rodada (Vontade DT 15 anula).
+AFINIDADE: DT aumenta para 20
+
+--- CARNIFICINA ---
+Feridas se cristalizam, não gotejam.
+Ao causar dano, recebe bônus cumulativo em próximo teste.
+AFINidade: Bônus aumenta
+
+--- DENTES SANGUINÁRIOS ---
+Caninos crescem com glândulas de sucção.
+Arma natural Mordida 1d4 perfuração.
+Por cada 2 dano, recupera 1 PV.
+AFINIDADE: Dado aumenta para 1d10
+
+--- DRENO EMPÁTICO ---
+Unhas e caninos têm tubículos.
+Absorve sangue de ser Machucado ou Sangrando.
+Causa 2d8 de perda de PV.
+AFINIDADE: +2d8 de dano
+
+--- CÓRNEO ---
+Pele se torna dura como queratina.
++2 em testes de Fortitude.
+AFINIDADE: +2 adicional
+
+--- CÉLULA REGENERATIVA ---
+Células se dividem rapidamente.
+Ao dormir, recupera 2x limite de PE em PV.
+AFINIDADE: +5 em recuperação
+
+--- VITALIDADE EMPÁTICA ---
+Pode compartilhar células.
+Ao compartilhar com aliado, divide bônus.
+AFINIDADE: Compartilha doenças também
+
+--- BIOQUÍMICA ---
+Ajustado à adrenalina.
++2 em testes, dano corpo a corpo e Defesa quando em condição de fadiga.
+AFINIDADE: Bônus aumenta para +5
+
+══════════════════════════════════════════════════════════════
+     PODERES DE CONHECIMENTO
+══════════════════════════════════════════════════════════════
+
+--- GNÓSTICA DEVOÇÃO ---
+Conhecimento divino flui em você.
++2 em testes de Vontade.
+AFINIDADE: +2 adicional
+
+--- INCOMPETÊNCIA ARTIFICIAL ---
+Sistemas falham ao seu redor.
+Pode fazer objetos tecnológicos falharem por 1 rodada.
+AFINIDADE: Duração aumenta para cena
+
+--- PODER DO SABER ---
+Conhecimento temporário absoluto.
+Por 1 rodada, você sabe tudo sobre um assunto.
+AFINIDADE: Duração aumenta
+
+--- REGULADOR EMOCIONAL ---
+Controla emoções alheias.
+Pode remover condições de medo ou frenzy de aliados.
+AFINIDADE: Pode também causar condições
+
+--- VISÃO FASCINANTE ---
+Olhar hipnótico.
+Olhar causa 1d4 de Sanidade e alvo fica Pasmo por 1 rodada.
+AFINIDADE: Pode também paralisar
+
+--- TELEPATIA EMPÁTICA ---
+Pode sentir emoções de outros.
+Pode comunicar-se telepaticamente com aliados em alcance curto.
+AFINIDADE: Alcance aumenta para médio
+
+--- MENTE EXPANDIDA ---
+Capacidade mental aumentada.
++2 em testes de Intelecto.
+AFINIDADE: +2 adicional
+
+--- SÍNTESE COGNITIVA ---
+Processa informações rapidamente.
+Pode fazer testes duplicated para melhor resultado.
+AFINIDADE: Pode usar 3 dados
+
+--- MEMÓRIA FOTOGRÁFICA ---
+Lembra de tudo.
+Não pode ser enganado por testes de Enganação.
+AFINIDADE: Pode também recordar Futuro
+
+--- PRESENÇA AUTORITÁRIA ---
+Carisma sobrenatural.
++5 em testes de Diplomacia e Intimidação.
+AFINIDADE: +5 adicional (total +10)
+
+══════════════════════════════════════════════════════════════
+     PODERES DE ENERGIA
+══════════════════════════════════════════════════════════════
+
+--- ACELERAÇÃO NERVOSA ---
+Reflexos sobre-humanos.
++2 em testes de Reflexos.
+AFINIDADE: +2 adicional
+
+--- APRIMORAMENTO CIBERNÉTICO ---
+Corpo parcialmente mechanical.
+Pode adicionar +2 em um atributo à escolha.
+AFINIDADE: Pode escolher dois atributos
+
+--- BAGUNÇAR DESTINO ---
+Aleatoriedade controlada.
+Uma vez por rodada, pode rerolar teste com -2 no resultado.
+AFINIDADE: Sem penalidade de -2
+
+--- CORPO FANTASMA ---
+Tornar parte do corpo etéreo.
+Pode atravessar objetos sólidos por 1 rodada.
+AFINIDADE: Pode manter por cena
+
+--- IMPREGNAR ELEMENTO ---
+Arma imbuída com elemento.
+Suas armas naturais causam +1d6 de elemento (Fogo, Gelo, Elétrico).
+AFINIDADE: +1d6 adicional
+
+--- LINHAGEM CAÓTICA ---
+Caos estruturado.
+Imune a efeitos de Energy.
+AFINIDADE: Também imune a outros elementos
+
+--- PERCEPÇÃO ELETROMAGNÉTICA ---
+Sente eletrônicos.
+Pode detectar dispositivos electrónicos em alcance longo.
+AFINIDADE: Pode também controlá-los
+
+--- REFLEXO FRATURADO ---
+Múltiplas reações.
+Pode fazer 2 reações por rodada.
+AFINIDADE: 3 reações por rodada
+
+--- VAMOS APOSTAR ---
+Campos de probabilidade.
+Ao atacar, 50% de chance de crítico.
+AFINIDADE: 75% de chance
+
+--- SURTO DE ENERGIA ---
+Explosão de poder.
+Uma vez por cena, pode dobrar dano de ataque.
+AFINIDADE: Pode usar 2 vezes por cena
+
+══════════════════════════════════════════════════════════════
+     PODERES DE MORTE
+══════════════════════════════════════════════════════════════
+
+--- CAMPO DE ASFÓDELOS ---
+Campo de flores mortas.
+Área de 3m onde alvos perdem 1d4 de Sanidade/rodada.
+AFINIDADE: +3m de área
+
+--- CEIFEIRO CRESCENTE ---
+Cresce como ceifador.
+Ao matar criatura, recupera PV igual ao VD dela/10.
+AFINIDADE: Recupera Sanidade também
+
+--- ESPIRAL DA VONTADE ---
+Afeta mentalmente.
+Ao causar dano, alvo fica Confuso por 1 rodada.
+AFINIDADE: Também fica Frustrado
+
+--- MORTE SANGRENTA ---
+Drena vida com feridas.
+Feridas que você causa não cicatrizam naturalmente.
+AFINIDADE: Também causam dano adicional
+
+--- PERÍMETRO DO CEIFADOR ---
+Área de morte.
+Criaturas na área devem testar Vontade ou ficar Paralizadas.
+AFINIDADE: DT aumenta
+
+--- TROCA TEMPORAL ---
+Troca tempo de vida.
+Pode trocar PV por PE ou vice-versa (1 para 1).
+AFINIDADE: Taxa melhorada (2 PV = 3 PE)
+
+--- TOQUE GELADO ---
+Mão fria como túmulo.
+Arma natural de Toque causa 1d6 de Frio.
+AFINIDADE: Também causa 1d6 de Morte
+
+--- AURA MORTIS ---
+Exala morte.
+Alvos adjacentes perdem 1d4 de Sanidade/rodada.
+AFINIDADE: Alvos também perdem PV
+
+--- INVOCAÇÃO FUNERÁRIA ---
+Chama mortos para servir.
+Pode invocar 1 morto por dia para servir.
+AFINIDADE: Pode invocar mais
+
+--- RESISTÊNCIA À ENTROPIA ---
+Imune a efeitos de morte.
++5 em testes contra efeitos de Morte.
+AFINIDADE: Imune a condições de Morte
+
+══════════════════════════════════════════════════════════════
+     PODERES DE MEDO
+══════════════════════════════════════════════════════════════
+
+--- PRESENÇA ATERRIZANTE ---
+Aura de medo.
+Alvos em alcance curto devem testar Vontade ou ficar Apavorados.
+AFINIDADE: DT aumenta
+
+--- VISÃO DO ABISMO ---
+Ver os maiores medos.
+Pode fazer alvo ver seu maior medo, causando 1d6 de Sanidade.
+AFINIDADE: +2d6 de Sanidade
+
+--- TOQUE PAVOROSO ---
+Toque causa pavor.
+Toque causa 1d4 de Sanidade e alvo fica Apavorado por 1 rodada.
+AFINIDADE: Também Paralisa
+
+--- GRITO DE HORROR ---
+Grito aterrorizante.
+Como ação padrão, alvos em área devem testar Vontade ou ficar Apavorados.
+AFINIDADE: +2d6 de dano de Som
+
+--- MEDO INCORPORADO ---
+Medo se torna tangible.
+Pode criar illusion de medo que causa dano mental.
+AFINIDADE: Ilusão também causa dano físico
+
+--- AURA DE DESESPERO ---
+Aliados recebem bônus.
+Ali ados em alcance curto recebem +2 em testes de Vontade.
+AFINIDADE: +2 adicional
+
+--- PRESENÇA DOMINADORA ---
+Dominates others.
+Pode fazer um alvo prestar atenção em você (não pode atacar outros).
+AFINIDADE: Pode ter múltiplos alvos
+
+--- INSTINTO DE SOBREVIVÊNCIA ---
+Reage ao danger.
+Pode usar reação para +5 em teste contra ataque.
+AFINIDADE: Também dá +5 em Defesa
+
+--- OLHAR PENETRANTE ---
+Olhar que vé através.
+Pode ver através de ilusões e disfarces.
+AFINIDADE: Também pode ver invisible
+
+--- TRANSMUTAÇÃO DO MEDO ---
+Transforma medo em poder.
+Ao ficar Apavorado, recebe +2 em dano até o fim da cena.
+AFINIDADE: +4 em vez de +2
+
+══════════════════════════════════════════════════════════════
+     PODERES VARIÁVEIS
+══════════════════════════════════════════════════════════════
+
+--- CAMINHO DO PUNHO ELEMENTAL ---
+Poder especial de combate elemental.
+Permite usar poderes elementais em ataques desarmados.

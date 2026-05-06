@@ -1,0 +1,777 @@
+══════════════════════════════════════════════════════════════
+          ARSENAL DOS AGENTES - TODAS AS ORIGENS
+══════════════════════════════════════════════════════════════
+
+Esta arquivo contém TODAS as origens do sistema:
+- 57 origens oficiais (cada uma com poder original + novo poder do Arsenal)
+- 100+ origens novas do Arsenal
+
+══════════════════════════════════════════════════════════════
+        PARTE 1: ORIGENS OFICIAIS + NOVOS PODERES
+══════════════════════════════════════════════════════════════
+
+--- ACADÊMICO ---
+Perícias: Ciências, Investigação
+Poder Original: SABER É PODER - Quando faz teste usando Intelecto, pode gastar 2 PE para +5 nesse teste
+Novo Poder (Arsenal): ESTUDOS APROFUNDADOS - Escolha uma perícia baseada em Inteleto relacionada aos seus estudos, em testes desta perícia, rolar 19 no dado irá contar como um 20 natural
+
+--- AGENTE DE SAÚDE ---
+Perícias: Intuição, Medicina
+Poder Original: TÉCNICA MEDICINAL - Sempre que cura personagem, soma Intelecto no total de PV curados
+Novo Poder (Arsenal): TRATAMENTO PREVENTIVO - Pode gastar uma Ação de Interlúdio para realizar um tratamento preventivo em um número de aliados igual ao seu Intelecto. Na próxima vez que entrarem em morrendo, deverão rolar 1d4. Caso tirem 4, ficarão com 1 PV
+
+--- AMIGO DOS ANIMAIS ---
+Perícias: Adestramento, Sobrevivência
+Poder Original: AMIGO DOS BICHOS - Pode usar Adestramento para comunicar-se com animais
+Novo Poder (Arsenal): VÍNCULO NATURAL - Recebe +1d20 em testes de Adestramento. Caso esteja em terreno natural, pode convocar animais para lhe auxiliar
+
+--- AMNÉSICO ---
+Perícias: Duas à escolha do mestre
+Poder Original: VISLUMBRES DO PASSADO - 1 vez por sessão, pode fazer teste de Intelecto (DT 10)
+Novo Poder (Arsenal): DOCES LEMBRANÇAS - Ao sofrer um Dano Massivo, recebe 1 PE +1 para cada 30% de NEX
+
+--- ARTISTA ---
+Perícias: Artes, Enganação
+Poder Original: MAGNUM OPUS - 1 vez por missão, pode fazer personagem reconhecê-lo
+Novo Poder (Arsenal): FANDOM ENGAJADO - Tem muitos fãs. Pode usá-los para criar tumulto, obter informações ou dificultar a vida de pessoas
+
+--- ASTRONAUTA ---
+Perícias: Pilotagem, Tecnologia
+Poder Original: TREINO ESPACIAL - Não precisa de ar por muito tempo, +2 em Fortitude
+Novo Poder (Arsenal): TREINAMENTO ESPACIAL - Recebe +2 em testes de Fortitude e pode segurar o fôlego pelo dobro do tempo
+
+--- ATLETA ---
+Perícias: Acrobacia, Atletismo
+Poder Original: 110% - Pode gastar 2 PE para +5 em testes de Força ou Agilidade
+Novo Poder (Arsenal): INDO ALÉM DO LIMITE - Ao falhar em teste baseado em atributo físico, pode gastar 1 PE para refazê-lo
+
+--- BLASTER ---
+Perícias: Pontaria, Tecnologia
+Poder Original: EXPLOSIVOS - Pode criar cargas explosivas
+Novo Poder (Arsenal): PLANTANDO EXPLOSIVOS - Pode programar explosivos para detonar em momento específico
+
+--- BODY BUILDER ---
+Perícias: Atletismo, Luta
+Poder Original: CORPO DEFINIDO - +1d20 em testes baseados em Força usando Atletismo
+Novo Poder (Arsenal): CORPO ESCULTURAL - Pode usar Força em vez de Presença em testes de Adestramento, Diplomacia, Enganação ou Intimidação
+
+--- CHEF ---
+Perícias: Fortitude, Profissão (cozinheiro)
+Poder Original: INGREDIENTE SECRETO - Pode criar pratos que concedem bônus
+Novo Poder (Arsenal): COZINHA EFICIENTE - Pode criar pratos para todo o grupo em uma única ação de interlúdio
+
+--- CHEF DO OUTRO LADO ---
+Perícias: Ocultismo, Profissão
+Poder Original: INGREDIENTES ESPECIAIS - Pode usar ingredientes paranormais
+Novo Poder (Arsenal): NEUTRALIZAÇÃO PARANORMAL - Pode remover doenças ou venenos de alimentos menggunakan ingrediente paranormal
+
+--- CIENTISTA FORENSE ---
+Perícias: Investigação, Medicina
+Poder Original: RECONSTRUÇÃO - Pode fazer testes de Investigação para analisar cenas
+Novo Poder (Arsenal): RECONSTRUÇÃO DE CENA - Pode reconstruir pistas incompletas com teste de Investigação (DT 20)
+
+--- CRIMINOSO ---
+Perícias: Crime, Furtividade
+Poder Original: O CRIME COMPENSA - Pode escolher um item no final da missão
+Novo Poder (Arsenal): CONTATOS NO SUBMUNDO - Tem contatos úteis. Pode gastar uma ação de Interlúdio para pedir ajuda
+
+--- COLEGIAL ---
+Perícias: Atualidades, Investigação
+Poder Original: BOLSA DE ESTUDOS - Pode usar Investigação para lembrar informações
+Novo Poder (Arsenal): SONHOS VIVOS - Escolha uma habilidade que possui, o gasto em PE é diminuído em 1
+
+--- COSPLAYER ---
+Perícias: Artes, Enganação
+Poder Original: INTERPRETAÇÃO - Pode usar Artes para interpretar personagens
+Novo Poder (Arsenal): APRESENTAÇÃO ESTRESSANTE - Soma Presença ao limite de carga e +2 para resistir Calor e Frio Extremo
+
+--- CULTISTA ARREPENDIDO ---
+Perícias: Ocultismo, Religião
+Poder Original: FÉ ABRANDADA - Pode usar Ocultismo com +1d20
+Novo Poder (Arsenal): CONHECIMENTO SELADO - Escolha um ritual de 1° círculo, sabe utilizá-lo sem sofrer efeitos do Custo do Paranormal
+
+--- DESGARRADO ---
+Perícias: Sobrevivência, Furtividade
+Poder Original: VIVENDO DA TERRA - Pode recolher alimentos e水源
+Novo Poder (Arsenal): ADAPTADO AO AMBIENTE - Pode receber +2 em testes de perícias nas quais não é treinado
+
+--- DIPLOMATA ---
+Perícias: Diplomacia, Intuição
+Poder Original: CARISMA - Pode usar Diplomacia para influencer pessoas
+Novo Poder (Arsenal): SANGUE BOM - Todos os NPCs têm nível melhor de atitude. Ao falhar em teste de Diplomacia por 5, a atitude não piora
+
+--- DUBLÊ ---
+Perícias: Acrobacia, Atletismo
+Poder Original: CORAGEM - Não sente dor durante a cena
+Novo Poder (Arsenal): EXPLOSÕES E QUEDAS - Ao sofrer dano de arma, explosão ou queda, pode gastar 1 PE para +5 de RD
+
+--- ENGENHEIRO ---
+Perícias: Tecnologia, Profissão (engenheiro)
+Poder Original: CONHECIMENTO TÉCNICO - Pode reparar e criar itens
+Novo Poder (Arsenal): PROJETOS PATENTEADOS - +1d20 em testes para fabricar itens e não sofre penalidade sem kit
+
+--- ESCRITOR ---
+Perícias: Artes, Investigação
+Poder Original: CONTOS - Pode criar histórias que afetam a realidade
+Novo Poder (Arsenal): CENAS MARCANTES - Efeitos de perícia baseada em Presença têm duração dobrada
+
+--- EXECUTIVO ---
+Perícias: Diplomacia, Intuição
+Poder Original: CONTATOS - Pode usar Diplomacia para obter informações
+Novo Poder (Arsenal): ROTINA CANSATIVA - A cada vez que é atingido por um efeito, recebe +1 em testes para resistir (cumulativo)
+
+--- EXPLORADOR ---
+Perícias: Sobrevivência, Percepção
+Poder Original: NAVEGAÇÃO - Pode usar Sobrevivência para se orientar
+Novo Poder (Arsenal): VIVÊNCIA SELVAGEM - Sua recuperação sempre conta como categoria superior
+
+--- EXPERIMENTO ---
+Perícias: Duas à escolha (não podem ser as mesmas da classe)
+Poder Original: EXPERIMENTO - Pode ter uma origem adicional
+Novo Poder (Arsenal): ADAPTAÇÃO INATA - Escolha um poder geral, aprende-o sem precisar cumplir pré-requisitos
+
+--- FANÁTICO ---
+Perícias: Ocultismo, Vontade
+Poder Original: CONVICÇÃO - Pode usar Vontade para resistir a efeitos mentais
+Novo Poder (Arsenal): IDENTIFICANDO PADRÕES - Ao ver uma criatura paranormal pela primeira vez, recebe +1d20 em resistência contra ela
+
+--- FOTÓGRAFO ---
+Perícias: Artes, Investigação
+Poder Original: CAPTURANDO MOMENTOS - Pode usar fotografia para investigar
+Novo Poder (Arsenal): CAPTURANDO A BELEZA - Ao usar ação relaxar, pode gastar 2 PE para tirar foto. Todos que participarem recuperam 1d4 de Sanidade
+
+--- GAUDÉRIO ABUTRE ---
+Perícias: Crime, Vontade
+Poder Original: ASSALTO - Pode usar Crime para roubar
+Novo Poder (Arsenal): GANGUE ARMADA - Proficiência em armas de Fogo Simples e Táticas. +5 em Intimidação com armas de fogo
+
+--- GINASTA ---
+Perícias: Acrobacia, Reflexos
+Poder Original: CORPO LEVE - Pode usar Acrobacia para pular mais alto
+Novo Poder (Arsenal): ACROBATA IMPRESSIONANTE - Ao se movimentar, pode gastar 1 PE para fazer teste de Acrobacia (DT 20) e receber +1d20 no próximo teste
+
+--- INVENTOR ---
+Perícias: Tecnologia, Profissão
+Poder Original: ENGENHOQUE - Pode criar gadgets
+Novo Poder (Arsenal): GAMBIARRA INVENTIVA - Pode gastar ação de movimento e 2 PE para consertar item enguiçado
+
+--- INVESTIGADOR ---
+Perícias: Investigação, Percepção
+Poder Original: INVESTIGAÇÃO - Pode fazer testes para encontrar pistas
+Novo Poder (Arsenal): DETETIVE INSISTENTE - Ao falhar em teste de investigação, recebe 1 PE temporário
+
+--- JOVEM MÍSTICO ---
+Perícias: Ocultismo, Intuição
+Poder Original: SINAL - Pode perceber o paranormal mais facilmente
+Novo Poder (Arsenal): COINCIDÊNCIA? ACHO QUE NÃO! - Escolha um padrão. Sempre que aparecer, recebe +2 em Iniciativa, Reflexos, Percepção e 1d4 PE
+
+--- JORNALISTA ---
+Perícias: Atualidades, Investigação
+Poder Original: CONTATOS - Pode usar Atualidades para obter informações
+Novo Poder (Arsenal): HISTÓRIAS INCONTÁVEIS - Recebe RD 2 a dano mental e soma Presença ao total de Sanidade
+
+--- LEGISTA DO TURNO DA NOITE ---
+Perícias: Investigação, Percepção
+Poder Original: ANÁLISE POST-MORTEM - Pode fazer testes de Investigação em corpos
+Novo Poder (Arsenal): REGISTRO DE 1000 MORTES - Pode gastar ação de movimento e 2 PE para analisar alvo. O próximo ataque nele será automaticamente um crítico
+
+--- LUTADOR ---
+Perícias: Luta, Atletismo
+Poder Original: LUTADOR - Pode fazer ataques desarmados com +1d20
+Novo Poder (Arsenal): DOMÍNIO DO OCTÓGONO - Uma vez por rodada, ao realizar ação de agredir, pode gastar 1 PE para fazer um ataque desarmado adicional
+
+--- MAGNATA ---
+Perícias: Diplomacia, Intuição
+Poder Original: PATROCÍNIO - Pode gastar dinheiro para obter vantagens
+Novo Poder (Arsenal): CARTEIRADA - Uma vez por cena, pode usar poder econômico para +5 em teste de Presença
+
+--- MATEIRO ---
+Perícias: Sobrevivência, Atletismo
+Poder Original: HERBALISMO - Pode criar itens com plantas
+Novo Poder (Arsenal): ERVAS MEDICINAIS - +2 em Fortitude contra Doenças e Venenos. Pode criar antidotos em terreno natural
+
+--- MERCENÁRIO ---
+Perícias: Pontaria, Crime
+Poder Original: TÁTICA MILITAR - Pode usar Pontaria ou Crime com +1d20
+Novo Poder (Arsenal): ALVO MARCADO - No início da missão, defina um alvo. Recebe +2 em testes relacionados a encontrar, neutralizar ou recuperar o alvo
+
+--- MERGULHADOR ---
+Perícias: Atletismo, Percepção
+Poder Original: FÔLEGO - Pode prender a respiração por mais tempo
+Novo Poder (Arsenal): MERGULHOS PROFUNDOS - Deslocamento de natação igual ao normal. Pode se fingir de morto
+
+--- MILITAR ---
+Perícias: Pontaria, Vontade
+Poder Original: TREINO RÍGIDO - Pode usar Pontaria ou Vontade com +1d20
+Novo Poder (Arsenal): TREINAMENTO GRUPAL - Caso outro personagem tenha este poder, ambos recebem ação de movimento extra
+
+--- MOTORISTA ---
+Perícias: Pilotagem, Reflexos
+Poder Original: CORRIDA - Pode usar Pilotagem para corrida
+Novo Poder (Arsenal): NASCIDO PARA CORRER - Caso se mova 18m ou mais em uma rodada, recebe +1 em todos os testes
+
+--- NERD ENTUSIASTA ---
+Perícias: Tecnologia, Investigação
+Poder Original: GAMER - Pode usar Tecnologia para jogos
+Novo Poder (Arsenal): CONHECIMENTO SUPER APROFUNDADO - Escolha uma perícia de Intelecto que já é treinado, torna-se Veterano nela
+
+--- OPERÁRIO ---
+Perícias: Atletismo, Fortitude
+Poder Original: FORÇA DE TRABALHO - Pode usar Atletismo para trabalho físico
+Novo Poder (Arsenal): FORÇA DIRECIONADA - Recebe +1d20 em testes de Fortitude. Pode gastar ação de movimento para Somar dobro de Força ao dano
+
+--- PERSONAL TRAINER ---
+Perícias: Atletismo, Medicina
+Poder Original: TREINO - Pode usar Atletismo para treinar outros
+Novo Poder (Arsenal): ATÉ A FALHA - Uma vez por cena, quando aliado falhar teste de atributo físico, pode gastar 1 PE para ele role novamente
+
+--- POLICIAL ---
+Perícias: Crime, Percepção
+Poder Original: AUTORIDADE - Pode usar Crime para intimidar
+Novo Poder (Arsenal): VIGÍLIA NOTURNA - +2 em testes de Vontade e Visão na Penumbra
+
+--- PROFESSOR ---
+Perícias: Conhecimento, Diplomacia
+Poder Original: ENSINO - Pode usar Conhecimento para ensinar
+Novo Poder (Arsenal): AULA DE REFORÇO - Pode tornar até 3 personagens treinados em uma perícia até o fim da missão
+
+--- PROFETIZADO ---
+Perícias: Ocultismo, Intuição
+Poder Original: PROFECIA - Pode ter visões do futuro
+Novo Poder (Arsenal): NÃO MORREREI AQUI - Caso entre em morrendo por efeito não relacionado ao que causará morte, pode fazer teste de Vigor (DT 15) no início de cada turno para desfazer a condição
+
+--- PSICÓLOGO ---
+Perícias: Intuição, Medicina
+Poder Original: PSY - Pode usar Intuição para ajudar outros
+Novo Poder (Arsenal): SESSÃO DE TERAPIA - Ao usar Acalmar, DT sempre 20. Cada falha dá -1 permanente em Vontade
+
+--- RELIGIOSO ---
+Perícias: Religião, Vontade
+Poder Original: FÉ - Pode usar Religião para resistir a efeitos
+Novo Poder (Arsenal): FORÇA, FOCO E FÉ - Uma vez por rodada, pode gastar 2 PE para substituir teste de resistência por teste de Religião
+
+--- REPÓRTER ---
+Perícias: Atualidades, Investigação
+Poder Original: ENTREVISTA - Pode usar Atualidades para obter informações
+Novo Poder (Arsenal): NOTÍCIAS EM PRIMEIRA MÃO - +5 em Iniciativa. Caso seja primeiro na Initiativa em cena de investigação, recebe ação extra no primeiro turno
+
+--- REVOLTADO ---
+Perícias: Intimidação, Vontade
+Poder Original: REVOLTA - Pode usar Intimidação para motivar
+Novo Poder (Arsenal): INSATISFEITO COM OS PADRÕES - A cada falha em sequência, recebe +1 para realizar o teste (cumulativo até 5)
+
+--- SERVIDOR PÚBLICO ---
+Perícias: Diplomacia, Atualidades
+Poder Original: BUROCRACIA - Pode usar Diplomacia para navgear a burocracia
+Novo Poder (Arsenal): RESGATE DE BENEFÍCIOS - Pode fazer teste de Diplomacia para conseguir favores de políticos
+
+--- TEÓRICO DA CONSPIRAÇÃO ---
+Perícias: Investigação, Ocultismo
+Poder Original: TEORIA - Pode criar teorias sobre o paranormal
+Novo Poder (Arsenal): EXPLICAÇÕES INFUNDADAS - Ao se deparar com algo inexplicável, pode criar teoria. Enquanto não for refutada, recebe +5 em Vontade contra aquele efeito
+
+--- T.I. ---
+Perícias: Tecnologia, Investigação
+Poder Original: HACKER - Pode usar Tecnologia para hacking
+Novo Poder (Arsenal): PESQUISA DIRECIONADA - Pode gastar ação de interlúdio para se tornar treinado em uma perícia até o fim da missão
+
+--- TRABALHADOR RURAL ---
+Perícias: Sobrevivência, Atletismo
+Poder Original: TRABALHO - Pode usar Atletismo para trabalho rural
+Novo Poder (Arsenal): CONHECIMENTO GERACIONAL - Pode utilizar testes de perícias somente treinadas mesmo sem treinamento
+
+--- TRAMBIQUEIRO ---
+Perícias: Crime, Enganação
+Poder Original: GOLPES - Pode usar Enganação para golpes
+Novo Poder (Arsenal): JOGANDO SUJO - Ao testar contra um ser, pode gastar 2 PE para fingir que falhou, diminuindo o resultado em 5
+
+--- UNIVERSITÁRIO ---
+Perícias: Duas à escolha
+Poder Original: CONHECIMENTO - Pode usar as duas perícias com +1d20
+Novo Poder (Arsenal): SEM TEMPO IRMÃO - Em cenas de interlúdio, pode Relaxar e Descansar ao mesmo tempo gastando apenas uma ação de interlúdio
+
+--- VÍTIMA ---
+Perícias: Duas à escolha (uma deve ser Vontade)
+Poder Original: MARCO - Pode ter um momento de lucidez
+Novo Poder (Arsenal): PASSADO ASSOMBRADO - Escolha uma fonte de medo. Quando encontrar sua fonte, fica Apavorado. A DT e benefícios são definidos pelo nível de medo
+
+══════════════════════════════════════════════════════════════
+        PARTE 2: NOVAS ORIGENS DO ARSENAL (100+)
+══════════════════════════════════════════════════════════════
+
+--- AÇOUGUEIRO ---
+Perícias: Luta, Medicina
+Poder 1: CORTE DE CARNE - Pode usar Luta para cortas criaturas
+Poder 2: PASSOU UM POUQUINHO - Pode identificar doenças em alimentos
+
+--- ADESTRADOR ---
+Perícias: Adestramento, Sobrevivência
+Poder 1: CONEXÃO NEURAL - Pode comunicar comandos mentais com animais
+Poder 2: SENTA, DEITA E ROLA - +2 em Adestramento para comandos complexos
+
+--- AERONAUTA ---
+Perícias: Intuição, Pilotagem
+Poder 1: ESQUEÇA O LIVRO! CONFIE NOS SEUS INSTINTOS - Pode substituir testes de Pilotagem por Intuição
+Poder 2: SINTO A NECESSIDADE DA VELOCIDADE - +2 em Reflexos. Ação para usar Pilotagem diminuída em 1 passo
+
+--- AJUDANTE ---
+Perícias: Diplomacia, Percepção
+Poder 1: AQUIPARA AJUDAR - Pode usar Diplomacia para ajudar aliados com +5
+Poder 2: OBSERVANDO E CRESCENDO - No início da missão, recebe um poder de origem do personagem que mais interagiu na última missão
+
+--- ANIMADOR ---
+Perícias: Artes, Pontaria
+Poder 1: 24 QUADROS - Pode pensar em passos detalhados, +3m de deslocamento ao gastar 2 PE
+Poder 2: PRAZO APERTADO - Pode trabalhar sob pressão, +2 em testes quando há prazo
+
+--- APOSENTADO ---
+Perícias: Fortitude, Sociedade
+Poder 1: UMA VIDA DE TRABALHO - Escolha uma origem, recebe suas perícias e +1d20 em uma delas
+Poder 2: TEMPO PARA PENSAR - Pode levar o dobro do tempo para +5 em teste de Intelecto
+
+--- APOSTADOR ---
+Perícias: Enganação, Intuição
+Poder 1: ALL IN - Uma vez por cena, pode somar Presença em uma rolagem
+Poder 2: TUDO OU NADA - Pode propor apostas contra seres
+
+--- ARQUEÓLOGO ---
+Perícias: Ocultismo, Sociedade
+Poder 1: APRENDENDO COM O PASSADO - Pode usar Ocultismo para entender artefatos antigos
+Poder 2: REGISTROS PARANORMAIS - Pode encontrar registros sobrenaturais
+
+--- ARQUITETO ---
+Perícias: Artes, Ciências
+Poder 1: BELAS DECORAÇÕES - Pode usar Artes para criar espaços belos
+Poder 2: PLANEJAMENTO ESTRUTURAL - Pode planejar estruturas antes de construir
+
+--- ARQUIVISTA ---
+Perícias: Iniciativa, Percepção
+Poder 1: LENDO AS ENTRELINHAS - Pode perceber informações ocultas em textos
+Poder 2: REPOSIÇÃO RÁPIDA - Pode reorganizar物品 rapido
+
+--- ASTRÔNOMO ---
+Perícias: Ciências, Investigação
+Poder 1: ALINHAMENTO DOS PLANETAS - Pode prever eventos astrais
+Poder 2: MAPA ASTRAL - Pode criar mapas de posições estelares
+
+--- ATENDENTE ---
+Perícias: Atualidades, Diplomacia
+Poder 1: MAIS UM NA MULTIDÃO - Pode se misturar na multidão
+Poder 2: PACIÊNCIA INCANSÁVEL - +2 em testes de Diplomacia repetitivos
+
+--- ATIVISTA ---
+Perícias: Atualidades, Fortitude
+Poder 1: QUEBRANDO AS REGRAS - Pode quebrar regras sociais para causas
+Poder 2: TUDO PELA CAUSA - Pode sacrificar-se pela causa
+
+--- AUXILIAR DE LIMPEZA ---
+Perícias: Atletismo, Fortitude
+Poder 1: LIMPEZA IMPECÁVEL - Pode limpar qualquer sujeira
+Poder 2: O LIXO DE UM É O TESOURO DE OUTRO - Pode encontrar itens úteis no lixo
+
+--- BARBEIRO ---
+Perícias: Atualidades, Reflexos
+Poder 1: BARBA, CABELO E BIGODE - Pode usar lâminas com precisão
+Poder 2: MÁGIEIS E FOFOCAS - Pode ouvir fofocas enquanto trabalha
+
+--- BARISTA ---
+Perícias: Acrobacia, Diplomacia
+Poder 1: ARTE DA FALA - Pode preparar café enquanto fala
+Poder 2: CENTENAS DE HISTÓRIAS DE AMOR - Pode ouvir histórias das pessoas
+
+--- BOMBEIRO ---
+Perícias: Fortitude, Iniciativa
+Poder 1: ALTAS TEMPERATURAS - Imune a danos de calor
+Poder 2: DE FRENTE COM O MEDO - Pode enfrentar perigos extremos
+
+--- CAÇA PROBLEMAS ---
+Perícias: Iniciativa, Vontade
+Poder 1: PROBLEMA MEU - Pode assumir problemas como seus
+Poder 2: SEM MEDO DE ARRISCAR - +2 em Vontade para riscos
+
+--- CIRCENSE ---
+Perícias: Acrobacia, Artes
+Poder 1: APRESENTAÇÃO DE DESTAQUE - Pode se destacar em apresentações
+Poder 2: QUEM FAZ O PALHAÇO RIR - Pode entreter outros
+
+--- COACH ---
+Perícias: Diplomacia ou Enganação, e Vontade
+Poder 1: FALSAS VERDADES - Pode criar mentiras críveis
+Poder 2: PALAVRAS VAZIAS - Pode dar conselhos vazios que parecem profundos
+
+--- COLECIONADOR ---
+Perícias: Artes, Investigação
+Poder 1: CUIDADOS EXCESSIVOS - Cuida obsessivamente de itens
+Poder 2: TESOUROS ESCONDIDOS - Pode encontrar itens valiosos
+
+--- COMERCIANTE ---
+Perícias: Diplomacia, Iniciativa
+Poder 1: AH, DEIXA QUE EU FAZ - Pode fazer negócios rapidamente
+Poder 2: PLANEJAMENTO ECONÔMICO - Pode gerenciar finanças
+
+--- CONTROLADOR DE PRAGAS ---
+Perícias: Ciências, Sobrevivência
+Poder 1: PREVENÇÃO NUNCA É DEMAIS - Pode prevenir pragas
+Poder 2: VERMES MALDITOS - Pode controlar vermes
+
+--- COSTUREIRO ---
+Perícias: Artes, Atualidades
+Poder 1: CLOSET LOTADO - Tem muitas roupas
+Poder 2: TOQUES PESSOAIS - Pode adicionar detalhes pessoais em roupas
+
+--- COVEIRO ---
+Perícias: Atletismo, Percepção
+Poder 1: ENTERRANDO O PASSADO - Pode enterrar objetos/cadáveres
+Poder 2: LADRÃO DE TUMBAS - Pode roubar de túmulos
+
+--- CRIA DA ORDEM ---
+Perícias: Investigação, Ocultismo
+Poder 1: HERANÇA FAMILIAR - Tem conhecimento da Ordem
+Poder 2: NASCIDO DO OUTRO LADO - Tem conexão com o paranormal
+
+--- CRÍTICO ---
+Perícias: Artes, Sociedade
+Poder 1: AVALIAÇÃO CRITERIOSA - Pode analisar arte com precisão
+Poder 2: OLHAR ANALÍTICO - Pode perceber flaws em obras
+
+--- CUIDADOR ---
+Perícias: Adestramento ou Diplomacia, e Medicina
+Poder 1: ACALENTAR A FÚRIA - Pode calmar emoções fortes
+Poder 2: ROTINA PROGRAMADA - Pode criar rotinas para outros
+
+--- DANÇARINO ---
+Perícias: Acrobacia, Artes
+Poder 1: MÚSICA DE BATALHA - Pode lutar com graça
+Poder 2: RITMO ESGUIO - Pode se mover no ritmo da música
+
+--- DELINQUENTE ---
+Perícias: Crime, Vontade
+Poder 1: CAMINHOS POUCOS ORTODOXOS - Pode usar métodos ilegais
+Poder 2: REBELDIA INSTITUCIONAL - Resistência a autoridade
+
+--- DESAFIADOR ---
+Perícias: Atletismo, Vontade
+Poder 1: BUSCANDO POR ADRENALINA - Busca emoções fortes
+Poder 2: SEM MEDO DO PERIGO - Imune a efeitos de medo em situações arriscadas
+
+--- DESIGNER DE PRODUTOS ---
+Perícias: Artes, Tecnologia
+Poder 1: PROJETO ERGONÔMICO - Cria designs confortáveis
+Poder 2: PROTÓTIPO - Pode criar protótipos rapidamente
+
+--- DESLOCADO NO TEMPO ---
+Perícias: Atualidades ou Sobrevivência, e Percepção
+Poder 1: O PASSADO ESTÁ PRESENTE - Lembra do futuro que não aconteceu
+Poder 2: UM DESLUMBRANTE FUTURO - Pode ter visões do que está por vir
+
+--- DIARISTA ---
+Perícias: Atletismo, Percepção
+Poder 1: AO SEU DISPOR - Pode realizar tarefas domésticas
+Poder 2: CUIDADO IMPECÁVEL - Pode limpar e organizar
+
+--- ENIGMÁTICO ---
+Perícias: Investigação, Vontade
+Poder 1: CIFRA DE CESAR - Pode criar códigos
+Poder 2: ENIGMA DO MILÊNIO - Pode resolver enigmas complexos
+
+--- ENTREGADOR ---
+Perícias: Atletismo, Diplomacia
+Poder 1: CLIENTES FIEIS - Tem clientes fieis que ajudam
+Poder 2: ROTINA INGRATA - Resistência a trabalho árduo
+
+--- ESPADACHIM ---
+Perícias: Luta, Reflexos
+Poder 1: CAMINHO DA ESPADA - Domina o combate com espadas
+Poder 2: TEMPO DE TREINO - Pode treinar muito
+
+--- ESPION ---
+Perícias: Enganação, Furtividade
+Poder 1: RATIRADA TÁTICA - Pode espionar discretamente
+Poder 2: VIVENDO NAS SOMBRAS - Pode se esconder facilmente
+
+--- ESPIRITUALIZADO ---
+Perícias: Ocultismo, Religião
+Poder 1: FÉ ANCESTRAL - Tem fé de ancestrais
+Poder 2: SABERES FUTUROS - Pode ter visões espirituais
+
+--- FAMOSO DA INTERNET ---
+Perícias: Atualidades, Tecnologia
+Poder 1: COORDENAÇÃO PERFEITA - Pode criar conteúdo online
+Poder 2: PÚBLICO NICHADO - Tem seguidores fieis
+
+--- FANÁTICO ---
+Perícias: Uma perícia de Intelecto, e Vontade
+Poder 1: DISCUSSÕES REVIGORANTES - Pode discutir por horas
+Poder 2: HIPERFIXAÇÃO - Foco intenso em interesses
+
+--- FERREIRO ---
+Perícias: Fortitude, Profissão (Armeiro)
+Poder 1: ARMAS BEM-FEITAS - Pode criar armas de qualidade
+Poder 2: CONHECENDO SUA PRÓPRIA OBRA - Conhece suas criações
+
+--- FESTEIRO ---
+Perícias: Artes, Iniciativa
+Poder 1: ATÉ CAIR - Pode party toda noite
+Poder 2: VIRANDO O COPO - Pode beber muito
+
+--- FILÓSOFO ---
+Perícias: Ciências, Religião
+Poder 1: AUTOCONSCIÊNCIA - Conhece-se profundamente
+Poder 2: REFLEXÃO PROFUNDA - Pode meditar para insights
+
+--- FÍSICO NUCLEAR ---
+Perícias: Ciências, Fortitude
+Poder 1: EU VIREI A MORTE - Conhece energia nuclear
+Poder 2: MATERIAIS RADIOATIVOS - Pode lidar com materiais radioativos
+
+--- FISIOTERAPEUTA ---
+Perícias: Atletismo, Medicina
+Poder 1: EXERCÍCIOS PREVENTIVOS - Pode prevenir lesões
+Poder 2: RELAXAMENTO CORPORAL - Pode relaxar músculos
+
+--- FORASTEIRO ---
+Perícias: Profissão, Sociedade
+Poder 1: APRENDENDO NOVAS CULTURAS - Pode aprender culturas
+Poder 2: EQUIPAMENTO IMPORTADO - Tem equipamentos raros
+
+--- GERENTE ---
+Perícias: Diplomacia, Intimidação
+Poder 1: ESTAGIÁRIO - Pode delegar trabalho
+Poder 2: FAÇAM DIREITO! - Pode dar ordens
+
+--- GUERRILHEIRO ---
+Perícias: Luta ou Pontaria, e Sobrevivência
+Poder 1: GUERRA NA MATA - Pode lutar na selva
+Poder 2: LUTANDO POR UM IDEAL - Lucha por uma causa
+
+--- GUIA TURÍSTICO ---
+Perícias: Atualidades, Sociedade
+Poder 1: APRESENTANDO A CIDADE - Conhece a cidade
+Poder 2: JOIAS OCULTAS - Pode mostrar lugares secretos
+
+--- HISTORIADOR ---
+Perícias: Investigação, Sociedade
+Poder 1: RELÍQUIAS DO PASSADO - Conhece artefatos antigos
+Poder 2: SOLO CONHECIDO - Conhece a história de lugares
+
+--- HOTELIERO ---
+Perícias: Atualidades, Percepção
+Poder 1: CERTO, SENHOR! - Pode servir hóspedes
+Poder 2: SUÍTE PRESIDENCIAL - Conhece as melhores acomodações
+
+--- HUMORISTA ---
+Perícias: Diplomacia, Enganação
+Poder 1: COTIDIANO FASCINANTE - Vê o lado engraçado da vida
+Poder 2: QUAL A GRAÇA? - Pode fazer piadas
+
+--- ILUSIONISTA ---
+Perícias: Artes, Enganação
+Poder 1: MÁOS ASTUTAS - Pode fazer truques com as mãos
+Poder 2: TRUQUES SORRATEIROS - Pode esconder coisas
+
+--- ILUSTRADOR ---
+Perícias: Artes, Pontaria
+Poder 1: GRAVURA DETALHADA - Pode criar ilustrações detalhadas
+Poder 2: INSPIRAÇÃO DESLUMBRANTE - Pode criar arte inspiradora
+
+--- INCITADOR DO PARANORMAL ---
+Perícias: Artes, Enganação
+Poder 1: PROTEÇÃO IMPROVÁVEL - Pode criar proteção improvável
+Poder 2: VEM PRO PAI - Pode invoar o paranormal
+
+--- JUIZ ---
+Perícias: Investigação, Sociedade
+Poder 1: ARBITRAGEM JUSTA - Pode julgafairly
+Poder 2: JURISPRUDÊNCIA - Conhece leis
+
+--- LINGUISTA ---
+Perícias: Intuição, Sociedade
+Poder 1: ESCRITAS ANCESTRAIS - Pode ler escritas antigas
+Poder 2: PADRÕES DE FALA - Pode reconhecer dialectos
+
+--- MARIDO TROFÉU ---
+Perícias: Atletismo, Atualidades
+Poder 1: BELEZA DESINTERESSADA - Tem aparência atraente
+Poder 2: ESCULPIDO NO ÓCIO - Corpo desenvolvido pelo luxo
+
+--- MASCOTE ---
+Perícias: Artes, Acrobacia
+Poder 1: ENTRANDO NO PERSONAGEM - Pode interpretar personagens
+Poder 2: LEVANTANDO O CLIMA - Pode melhorar o humor
+
+--- MECÂNICO ---
+Perícias: Profissão (Engenheiro), Tecnologia
+Poder 1: SÓ UNS AJUSTES - Pode consertar veículos
+Poder 2: TURBINANDO - Pode melhorar veículos
+
+--- MERETRIZ ---
+Perícias: Diplomacia, Fortitude
+Poder 1: RESISTINDO ÀS ADVERSIDADES - Resistência a dificuldades
+Poder 2: SÓ NO AMOR - Conhecimento de relacionamentos
+
+--- MILICIANO ---
+Perícias: Crime, Diplomacia
+Poder 1: RECEBENDO COM JUROS - Cobra dividas
+Poder 2: SORTE NO JOGO - Tem sorte em jogos
+
+--- MODELO ---
+Perícias: Artes, Intimidação
+Poder 1: BELEZA OFUSCANTE - Aparência impressionante
+Poder 2: OLHAR MATADOR - Pode intimidar com olhar
+
+--- MUQUIRANA ---
+Perícias: Diplomacia, Sobrevivência
+Poder 1: PÃO DURO - Guardador compulsivo
+Poder 2: VAI ME NEGAR UM PRATO DE COMIDA? - Pode pedir comida
+
+--- MUSICISTA ---
+Perícias: Artes, Percepção
+Poder 1: OUVIDO TREINADO - Percepção musical
+Poder 2: VOZEIRÃO - Pode cantar alto
+
+--- NUTRICIONISTA ---
+Perícias: Ciências, Medicina
+Poder 1: ALIMENTAÇÃO EQUILIBRADA - Conhecimento de nutrição
+Poder 2: NUTRIÇÃO PREPARATÓRIA - Pode preparar refeições saudáveis
+
+--- OLHO ---
+Perícias: Intuição, Percepção
+Poder 1: EM BUSCA DE NOVOS TALENTOS - Pode encontrar talentos
+Poder 2: LAPIDAR O DIAMANTE - Pode desenvolver habilidades
+
+--- PACIFISTA ---
+Perícias: Diplomacia, Sociedade
+Poder 1: A ÚNICA OPÇÃO - Pode propor alternativas pacíficas
+Poder 2: FÚRIA DE UM PACIFISTA - pode ficar furioso quando violence é usada
+
+--- PADEIRO ---
+Perícias: Diplomacia, Profissão (Cozinheiro)
+Poder 1: DEIXA FERMENTAR - Pode esperar pacientemente
+Poder 2: ESPERAR CALMAMENTE - Tem paciência na cozinha
+
+--- PAI/MÃE SOLO ---
+Perícias: Fortitude, Vontade
+Poder 1: NÃO POSSO DESISTIR - Perseverança extrema
+Poder 2: JORNADA TRIPLA - Pode fazer múltiplos trabalhos
+
+--- PESCADOR ---
+Perícias: Enganação, Fortitude
+Poder 1: ESPERANDO A MARÉ - Pode esperar longamente
+Poder 2: HISTÓRIAS DE PESCADOR - Conta histórias marines
+
+--- PESQUISADOR PARANORMAL ---
+Perícias: Ciências, Ocultismo
+Poder 1: EXPERIMENTOS ELEMENTAIS - Pode fazer experimentos paranormais
+Poder 2: PROTO-OCULTISTA - Tem conhecimento inicial do paranormal
+
+--- POLÍTICO ---
+Perícias: Crime, Enganação
+Poder 1: FAVORES POLÍTICOS - Pode pedir favores políticos
+Poder 2: MANIPULADOR DE INFORMAÇÕES - Controla informações
+
+--- PORTEIRO ---
+Perícias: Diplomacia, Percepção
+Poder 1: BOCA DE TÚMULO - Mantém segredos
+Poder 2: OUVIDOS NAS PAREDES - Pode ouvir conversas
+
+--- POWERLIFTER ---
+Perícias: Atletismo, Vontade
+Poder 1: FORÇA DE VONTADE - Força mental
+Poder 2: MÚSCULOS REFORÇADOS - Desenvolvimento físico
+
+--- PRAIEIRO ---
+Perícias: Atletismo, Fortitude
+Poder 1: FRITANDO NO SOL - Resistência ao calor
+Poder 2: TÁ DANDO ONDA - Conhecimento do mar
+
+--- PRODÍGIO ---
+Perícias: Intuição, Percepção
+Poder 1: MENTE PODEROSA - Capacidade mental intensa
+Poder 2: PADRÕES LÓGICOS - Pode ver padrões
+
+--- PROFISSIONAL DE R.H. ---
+Perícias: Intuição, Investigação
+Poder 1: AMENIZAÇÃO - Pode amenizar conflitos
+Poder 2: MELHOR PARA A FUNÇÃO - Pode avaliar candidatos
+
+--- PROFISSIONAL INCOMUM ---
+Perícias: Atualidades, Sobrevivência
+Poder 1: COMBINAÇÃO ÚNICA - Habilidades incomuns
+Poder 2: SUPER ESPECIALIZAÇÃO - Especialização única
+
+--- PUBLICITÁRIO ---
+Perícias: Ciências, Diplomacia
+Poder 1: ANÁLISE DE MERCADO - Pode analisar mercados
+Poder 2: FORTALECENDO A IMAGEM - Pode melhorar imagens
+
+--- QUÍMICO ---
+Perícias: Ciências, Profissão (Químico)
+Poder 1: DESEQUILÍBRIO QUÍMICO - Conhece reações químicas
+Poder 2: QUÍMICA DO BEM - Pode criar coisas boas com química
+
+--- RADIALISTA ---
+Perícias: Artes, Diplomacia
+Poder 1: DESENROLANDO O ASSUNTO - Pode falar longamente
+Poder 2: PALAVRAS PROFUNDAS - Pode falar profundamente
+
+--- REABILITADO ---
+Perícias: Sobrevivência, Vontade
+Poder 1: JÁ ESTIVE PIOR - Já passou por pior
+Poder 2: VIVENDO DE MIGALHAS - Pode sobreviver com pouco
+
+--- REJEITADO ---
+Perícias: Furtividade, Vontade
+Poder 1: PRESENÇA IGNORÁVEL - Pode ser ignorado
+Poder 2: SEM ESPERANÇAS - Desesperança extrema
+
+--- REVISOR ---
+Perícias: Artes, Sociedade
+Poder 1: AÇÕES REVISTAS - Pode revisar trabalhos
+Poder 2: REVISÃO COMPLETA - Revisão detalhada
+
+--- ROTEIRISTA ---
+Perícias: Atualidades, e uma entre Ciências, Religião ou Ocultismo
+Poder 1: ESCREVENDO MINHA PRÓPRIA HISTÓRIA - Cria sua própria história
+Poder 2: SEGUINDO O ROTEIRO - Segue um plano
+
+--- SELVAGEM ---
+Perícias: Fortitude, Furtividade
+Poder 1: BOTE DO PREDATOR - Pode atacar como predador
+Poder 2: METABOLISMO REFORÇADO - Resistência a fome
+
+--- SINGULARIDADE ---
+Perícias: Fortitude, Ocultismo
+Poder 1: ANOMALIA ENERGÉTICA - Energiaanômala
+Poder 2: CONHECIMENTO RARO - Conhecimento raro
+Poder 3: EXCEDENDO A MORTE - Pode exceder a morte
+Poder 4: SANGUE ÚNICO - Sangueanómalo
+
+--- SOBREVIVENTE OPRIMIDO ---
+Perícias: Atletismo, Fortitude
+Poder 1: DOCE LIBERDADE - Valoriza a liberdade
+Poder 2: EXTRAÇÃO MINERAL - Pode minerar
+
+--- SUB EMPREGADO ---
+Perícias: Diplomacia, Profissão
+Poder 1: PERSISTÊNCIA NECESSÁRIA - Persistência no trabalho
+Poder 2: POR CONTA PRÓPRIA - Trabalho independente
+
+--- TATUADOR ---
+Perícias: Artes, Fortitude
+Poder 1: ILUSTRAÇÃO IRREGULAR - Cria tatuagens incomuns
+Poder 2: PULSO FIRME - Mão firme
+
+--- TRIPULANTE ---
+Perícias: Acrobacia, Vontade
+Poder 1: LUTANDO PELO POVO - Luta por outros
+Poder 2: VIVENDO EM ALTO MAR - Conhecimento naval
+
+--- VENTRÍLOQUO ---
+Perícias: Artes, Enganação
+Poder 1: CONTROLAR VOZ - Pode controlar a voz
+Poder 2: MANIPULAÇÃO SONORA - Pode manipular sons
+
+--- VIGIA ---
+Perícias: Iniciativa, Percepção
+Poder 1: DESAFIAR O PERIGO - Pode enfrentar perigos
+Poder 2: ESSA É PELA EQUIPE - Pode proteger a equipe

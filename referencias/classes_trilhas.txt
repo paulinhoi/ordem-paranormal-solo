@@ -1,0 +1,275 @@
+═══════════════════════════════════════════════════════════════
+                    ORDEM PARANORMAL - CLASSES E TRILHAS
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+                         COMBATENTE
+═══════════════════════════════════════════════════════════════
+
+DESCRIÇÃO: Treinado para lutar com todo tipo de armas, com força e coragem
+para encar os perigos de frente. Preferem abordagens diretas.
+
+HABILIDADES PRÓPRIAS:
+• ATAQUE ESPECIAL: Ao fazer um ataque, gastar 2 PE para +5 no teste
+  de ataque OU na rolagem de dano. Pode gastar +1 PE por +5 adicional.
+  NEX 25% = 3 PE (+10), NEX 55% = 4 PE (+15), NEX 85% = 5 PE (+20)
+
+• TRILHA: Escolhe em NEX 10% (Aniquilador, Comandante de Campo,
+  Guerreiro, Operações Especiais, Tropa de Choque)
+
+• PODERES: Recebe em NEX 15%, 30%, 45%, 60%, 75%, 90%
+
+• AUMENTO DE ATRIBUTO: NEX 20%, 50%, 80%, 95%
+
+• GRAU DE TREINAMENTO: NEX 35% e 70% - aumenta 2 + Intelecto perícias
+
+• VERSATilidade: NEX 50% - escolha entre poder de combatente ou trilha
+
+PODERES DE COMBATENTE (escolher):
+• ARMAMENTO PESADO: proficiência com armas pesadas (req: For 2)
+• ARTISTA MARCIAL: ataques desarmados 1d6, letais, contam como ágeis.
+  NEX 35% = 1d8, NEX 70% = 1d10
+• ATAQUE DE OPORTUNIDADE: reação +1 PE para atacar ser que saia de espaço adjacente
+• COMBATER COM DUAS ARMAS: dois ataques (um com cada arma), -5 em todos testes
+  (req: Agi 3, treinado em Luta ou Pontaria)
+• COMBATE DEFENSIVO: -5 em ataques, +5 na Defesa (req: Int 2)
+• GOLPE DEMOLIDOR: +1dano extra ao quebrar ou atacar objeto (req: For 2, Luta)
+• GOLPE PESADO: +1 dado de dano em armas corpo a corpo
+• INCANSÁVEL: 1 vez por cena, 2 PE para ação de investigação adicional (Força ou Agilidade)
+• PRESTEZA ATLÉTICA: 1 PE para usar Força ou Agilidade em vez de atributo-base de faciliter
+• PROTEÇÃO PESADA: proficiência com proteções pesadas (req: NEX 30%)
+• REFLEXOS DEFENSIVOS: +2 em Defesa e testes de resistência (req: Agi 2)
+• SAQUE RÁPIDO: Sacar/guardar como ação livre, 1 vez por rodada recarregar como livre
+  (req: treinado em Iniciativa)
+• SEGURAR O GATILHO: após acertar com arma de fogo, 2 PE por ataque extra contra mesmo alvo
+  (req: NEX 60%)
+• SENTIDO TÁTICO: ação movimento +2 PE para analisar ambiente, +Int em Defesa e resistência até fim da cena
+  (req: Int 2, treinado em Percepção e Tática)
+• TANQUE DE GUERRA: se usando proteção pesada, +2 na Defesa e resistência a dano (req: Proteção Pesada)
+• TIRO CERTEIRO: soma Agilidade no dano de armas de disparo, ignora penalidade de combate corpo a corpo
+  (req: treinado em Pontaria)
+• TIRO DE COBERTURA: ação padrão +1 PE para forçar alvo a se proteger (teste Pontaria contra Vontade)
+• TRANSCENDER: escolher um poder paranormal, não ganha SAN neste NEX
+• TREINAMENTO EM PERÍCIA: escolher duas perícias para treinar. NEX 35% pode escolher veteranow,
+  NEX 70% pode escolher expert
+
+═══════════════════════════════════════════════════════════════
+                   TRILHAS DE COMBATENTE
+═══════════════════════════════════════════════════════════════
+
+--- ANIQUILADOR (Especialista em armas) ---
+NEX 10% - A FAVORITA: Escolher uma arma (katana, fuzil...). Categoria reduzida em I.
+NEX 40% - TÉCNICA SECRETA: Categoria reduzida em II. Ao atacar, +2 PE para efeitos:
+   • AMPLO: atinge alvo adicional adjacente
+   • DESTRUIDOR: +1 no multiplicador de crítico
+NEX 65% - TÉCNICA SUBLIME: Adiciona efeitos:
+   • LETAL: +2 na margem de ameaça (pode escolher 2x para +5)
+   • PERFURANTE: ignora até 5 de resistência a dano
+NEX 99% - MÁQUINA DE MATAR: Categoria reduzida em III, +2 na margem de ameaça,
+   +1 dado de dano do mesmo tipo
+
+--- COMANDANTE DE CAMPO (Líder) ---
+NEX 10% - INSPIRAR CONFIANÇA: Reação +2 PE para aliado em alcance curto rerolar teste
+NEX 40% - ESTRATEGISTA: Ação padrão +1 PE por aliado (limitado por Int) para dar ação de movimento adicional
+NEX 65% - BRECHA NA GUARDA: 1 vez por rodada, quando aliado causa dano, reação +2 PE para ataque adicional
+NEX 99% - OFICIAL COMANDANTE: Ação padrão +5 PE para dar ação padrão adicional a todos aliados em alcance médio
+
+--- GUERREIRO (Corpo a corpo) ---
+NEX 10% - TÉCNICA LETAL: +2 na margem de ameaça com ataques corpo a corpo
+NEX 40% - REVIDAR: Ao bloquear, reação +2 PE para contra-atacar
+NEX 65% - FORÇA OPRESSORA: Ao acertar, 1 PE para manobra derrubar ou empurrar. Se empurrar, +5 por 10 de dano
+NEX 99% - POTÊNCIA MÁXIMA: Ataque Especial com armas corpo a corpo dobra bônus (5 PE = +10 ataque, +30 dano)
+
+--- OPERAÇÕES ESPECIAIS (Combate tático) ---
+NEX 10% - INICIATIVA APRIMORADA: +5 em Iniciativa e ação de movimento adicional na 1ª rodada
+NEX 40% - ATAQUE EXTRA: 1 vez por rodada, 2 PE para ataque adicional
+NEX 65% - SURTO DE ADRENALINA: 1 vez por rodada, 5 PE para ação padrão ou movimento adicional
+NEX 99% - SEMPRE ALERTA: Ação padrão adicional no início de cada cena de combate
+
+--- TROPA DE CHOQUE (Tanque) ---
+NEX 10% - CASCA GROSSA: +1 PV para cada 5% de NEX. Ao bloquear, soma Vigor na resistência
+NEX 40% - CAI DENTRO: Reação +1 PE quando oponente ataca aliado em alcance curto. Oponente faz Vontade (DT Vig)
+   se falhar, deve atacar você. Não funciona se não puder ser atingido.
+NEX 65% - DURO DE MATAR: Pode gastar reação +2 PE para reduzir dano não paranormal pela metade.
+   NEX 85% pode usar para dano paranormal
+NEX 99% - INQUEBRÁVEL: Machucado = +5 na Defesa e resistência 5. Morrendo = não fica indefeso, pode agir.
+   Segue regras de morte normalmente.
+
+═══════════════════════════════════════════════════════════════
+                         ESPECIALISTA
+═══════════════════════════════════════════════════════════════
+
+DESCRIÇÃO: Confia mais em esperteza do que força bruta. Resolve problemas
+com conhecimento técnico, raciocínio rápido ou lábia.
+
+HABILIDADES PRÓPRIAS:
+• ECLÉTICO: Ao fazer teste de perícia, gastar 2 PE para receber benefícios de treinado
+• PERITO: Escolher duas perícias treinadas. Ao testar, 2 PE para +1d6 no resultado.
+  NEX 25% = 3 PE (+1d8), NEX 55% = 4 PE (+1d10), NEX 85% = 5 PE (+1d12)
+• TRILHA: Escolhe em NEX 10% (Atirador de Elite, Infiltrador, Médico de Campo,
+  Negociador, Técnico)
+• PODERES: Recebe em NEX 15%, 30%, 45%, 60%, 75%, 90%
+• AUMENTO DE ATRIBUTO: NEX 20%, 50%, 80%, 95%
+• GRAU DE TREINAMENTO: NEX 35% e 70% - aumenta 5 + Intelecto perícias
+• ENGENHOSIDADE: NEX 40% = +2 PE para ser veterano, NEX 75% = +4 PE para ser expert
+• VERSATilidade: NEX 50%
+
+PODERES DE ESPECIALISTA:
+• ARTISTA MARCIAL: mesmo que Combatente
+• BALÍSTICA AVANÇADA: proficiência com armas táticas de fogo, +2 em dano
+• CONHECIMENTO APLICADO: 2 PE para mudar atributo-base para Int (req: Int 2)
+• HACKER: +5 em Tecnologia para invadir, tempo reduzido para ação completa (req: Tecnologia)
+• MÃOS RÁPIDAS: 1 PE para Crime como ação livre (req: Agi 3, Crime)
+• MOCHILA DE UTILIDADES: item (exceto arma) conta uma categoria abaixo e ocupa 1 espaço menos
+• MOVIMENTO TÁTICO: 1 PE para ignorar penalidade de terreno difícil e escalar até fim do turno (req: Atletismo)
+• NA TRILHA CERTA: sucesso em procurar pistas, 1 PE para +5 no próximo teste. Cumulativo.
+• NERD: 1 vez por cena, 2 PE para teste de Atualidades (DT 20). Se passar, informação útil para a cena.
+• NINJA URBANO: proficiência com armas táticas corpo a corpo e de arremesso (exceto fogo), +2 em dano
+• PENSAMENTO ÁGIL: 1 vez por rodada em cena de investigação, 2 PE para ação de procurar pistas adicional
+• PERITO EM EXPLOSIVOS: soma Intelecto na DT para resistir a seus explosivos, excluir alvos = Inteletos
+• PRIMEIRA IMPRESSÃO: +10 no primeiro teste de Diplomacia, Enganação, Intimidação ou Intuição de cada cena
+• TRANSCENDER
+• TREINAMENTO EM PERÍCIA
+
+═══════════════════════════════════════════════════════════════
+                   TRILHAS DE ESPECIALISTA
+═══════════════════════════════════════════════════════════════
+
+--- ATIRADOR DE ELITE (Combate à distância) ---
+NEX 10% - MIRA DE ELEITE: Proficiência com armas de fogo que usam balas longas,
+   soma Intelecto no dano
+NEX 40% - DISPARO LETAL: Ao usar ação mirar, 1 PE para +2 na margem de ameaça do próximo ataque
+NEX 65% - DISPARO IMPACTANTE: Se usar arma de fogo com calibre grosso, 2 PE para manobras
+   derrubar, desarmar, empurrar e quebrar usando ataque à distância
+NEX 99% - ATIRAR PARA MATAR: Acerto crítico com arma de fogo causa dano máximo sem rolar dados
+
+--- INFILTRADOR (Furtivo) ---
+NEX 10% - ATAQUE FURTIVO: 1 vez por rodada, atinge alvo despreposto ou flanqueando,
+   1 PE para +1d6 do mesmo tipo de dano. NEX 40% = +2d6, NEX 65% = +3d6, NEX 99% = +4d6
+NEX 40% - GATUNO: +5 em Atletismo e Crime, pode usar deslocamento normal ao se esconder
+NEX 65% - ASSASSINAR: ação movimento +3 PE para analisar alvo em alcance curto.
+   Primeiro Ataque Furtivo que causar dano tem dados dobrados. Se sofrer dano, alvo fica
+   inconsciente ou morrendo (Fortitude DT Agi evita)
+NEX 99% - SOMBRA FUGAZ: Ao testar Furtividade após atacar ou ação chamativa, 3 PE para não sofrer -15
+
+--- MÉDICO DE CAMPO (Cura) ---
+NOTA: Precisa ser treinado em Medicina. Precisa de kit de medicina.
+NEX 10% - PARAMÉDICO: Ação padrão +2 PE para curar 2d10 PV de aliado adjacente.
+   +1d10 em NEX 40%, 65%, 99% (+1 PE por dado)
+NEX 40% - EQUIPE DE TRAUMA: Ação padrão +2 PE para remover uma condição negativa (exceto morrendo)
+   de aliado adjacente
+NEX 65% - RESGATE: 1 vez por rodada, se em alcance curto de aliado machucado/morrendo,
+   aproximar como ação livre. Ao curar/remover condições, você e aliado recebem +5 na Defesa
+   até seu próximo turno. Carregar personagem ocupa metade dos espaços
+NEX 99% - REANIMAÇÃO: 1 vez por cena, ação completa +10 PE para trazer de volta personagem
+   que morreu na mesma cena (exceto morte por dano massivo)
+
+--- NEGOCIADOR (Social) ---
+NEX 10% - ELOQUÊNCIA: Ação completa +1 PE por alvo em alcance curto para afetar com fala.
+   Teste Diplomacia/Enganação/Intimidação oposto a Vontade. Se vencer, alvo fica fascinado
+   enquanto se concentrar (ação padrão por rodada). Alvo hostil/combatendo recebe +5 e novo teste por rodada.
+   Personagem que passa fica imune por um dia.
+NEX 40% - DISCURSO MOTIVADOR: Ação padrão +4 PE para inspirar aliados em alcance curto.
+   Você e aliados recebem +5 em testes de perícia até fim da cena. NEX 65% = 8 PE para +10
+NEX 65% - EU CONHEÇO UM CARA: 1 vez por missão, ativar rede de contatos para favor
+   (trocar equipamento, local de descanso, ser resgatado). Mestre tem palavra final
+NEX 99% - TRUQUE DE MESTRE: 5 PE para simular efeito de qualquer habilidade que viu
+   aliado usar durante a cena. Ignora pré-requisitos, mas paga custos (ações, PE, materiais)
+
+--- TÉCNICO (Itens) ---
+NEX 10% - INVENTÁRIO OTIMIZADO: Soma Intelecto à Força para capacidade de carga
+NEX 40% - REMENDÃO: Ação completa +1 PE para remover condição quebrado de equipamento
+   adjacente até final da cena. Equipamento geral tem categoria reduzida em I
+NEX 65% - IMPROVISAR: Improvisa equipamento com materiais ao redor. Escolher equipamento geral,
+   ação completa +2 PE +2 PE por categoria do item. Cria versão funcional até final da cena
+NEX 99% - PREPARADO PARA TUDO: Sempre que precisar de item (exceto arma), ação movimento +
+   3 PE por categoria para "lembrar" que colocou no fundo da bolsa
+
+═══════════════════════════════════════════════════════════════
+                         OCULTISTA
+═══════════════════════════════════════════════════════════════
+
+DESCRIÇÃO: Estudosos do paranormal que buscam entender os mistérios dos
+elementos e usá-los. Dominam rituais e poderes do Outro Lado.
+
+HABILIDADES PRÓPRIAS:
+• ESCOLHIDO PELO OUTRO LADO: Pode lançar rituais de 1º círculo. 2º círculo em NEX 25%,
+   3º em NEX 55%, 4º em NEX 85%. Começa com 3 rituais de 1º círculo.
+• TRILHA: Escolhe em NEX 10% (Conduíte, Flagelador, Graduado, Intuitivo, Lâmina Paranormal)
+• PODERES: Recebe em NEX 15%, 30%, 45%, 60%, 75%, 90%
+• AUMENTO DE ATRIBUTO: NEX 20%, 50%, 80%, 95%
+• GRAU DE TREINAMENTO: NEX 35% e 70% - aumenta 3 + Intelecto perícias
+• VERSATilidade: NEX 50%
+
+PODERES DE OCULTISTA:
+• CAMUFLAR OCULTISMO: Ação livre para esconder símbolos/sigilos. +2 PE para lançar ritual
+   sem componentes e sem gesticular (mãos presas). Outros percebem se falhar Ocultismo DT 25
+• CRIAR SELO: Sabe fabricar selos de rituais que conhece. Criar gasta ação de interlúdio e
+   PE iguais ao custo do ritual. Máximo de selos = Presença
+• ENVOLTO EM MISTÉRIO: +5 em Enganação e Intimidação contra pessoas não treinadas em Ocultismo
+• ESPECIALISTA EM ELEMENTO: Escolher elemento. DT para resistir rituais desse elemento +2
+• FERRAMENTAS PARANORMAIS: Reduz categoria de item paranormal em I, pode ativar sem pagar PE
+• FLUXO DE PODER: Mantém dois efeitos sustentados de rituais ativos simultaneamente com
+   apenas uma ação livre, pagando custo separadamente (req: NEX 60%)
+• GUIADO PELO PARANORMAL: 1 vez por cena, 2 PE para ação de investigação adicional
+• IDENTIFICAÇÃO PARANORMAL: +10 em Ocultismo para identificar criaturas, objetos ou rituais
+• IMPROVIRAR COMPONENTES: 1 vez por cena, ação completa para teste de Investigação (DT 15).
+   Se passar, encontra componentes ritualísticos de um elemento. Mestre define se possível
+• INTUIÇÃO PARANORMAL: Ao facilitar investigação, soma Intelecto OU Presença no teste
+• MESTRE EM ELEMENTO: Escolher elemento. Custo para lançar rituais desse elemento -1 PE
+   (req: Especialista em Elemento, NEX 45%)
+• RITUAL POTENTE: Soma Intelecto nas rolagens de dano ou efeitos de cura de rituais (req: Int 2)
+• RITUAL PREDILETO: Escolher ritual. Reduz -1 PE no custo. Se acumula com outras reduções
+• TATUAGEM RITUALÍSTICA: Símbolos na pele reduzem -1 PE em rituais de alcance pessoal com alvo você
+• TRANSCENDER
+• TREINAMENTO EM PERÍCIA
+
+═══════════════════════════════════════════════════════════════
+                   TRILHAS DE OCULTISTA
+═══════════════════════════════════════════════════════════════
+
+--- CONDUÍTE (Conjuração) ---
+NEX 10% - AMPLIAR RITUAL: Ao lançar ritual, +2 PE para aumentar alcance em um passo
+   (curto→médio→longo→extremo) ou dobrar área de efeito
+NEX 40% - ACELERAR RITUAL: 1 vez por rodada, aumentar custo em 4 PE para conjurar como ação livre
+NEX 65% - ANULAR RITUAL: Quando alvo de ritual, pode gastar PE igual ao custo e fazer teste
+   oposto de Ocultismo contra conjurador. Se vencer, anula o ritual
+NEX 99% - CANALIZAR O MEDO: Aprende ritual Canalizar o Medo
+
+--- FLAGELADOR (Dano) ---
+NEX 10% - PODER DO FLAGELO: Ao conjurar ritual, pode gastar PV para pagar PE (2 PV por 1 PE).
+   PV gastos assim só podem ser recuperados com descanso
+NEX 40% - ABRACAR A DOR: Quando sofre dano não paranormal, reação +2 PE para reduzir à metade
+NEX 65% - ABSORVER AGONIA: Quando reduz um ou mais inimigos a 0 PV com ritual, recebe
+   PE temporários iguais ao círculo do ritual
+NEX 99% - MEDO TANGÍVEL: Aprende ritual Medo Tangível
+
+--- GRADUADO (Conhecimento) ---
+NEX 10% - SABER AMPLIADO: Aprende um ritual de 1º círculo. Cada vez que ganha acesso a
+   novo círculo, aprende um ritual adicional. Não conta no limite
+NEX 40% - GRIMÓRIO RITUALÍSTICO: Cria grimório especial que armazena rituais. Aprende
+   quantidade de rituais de 1º ou 2º círculo igual a Intelecto. Ao ganhar novo círculo,
+   pode incluir um ritual. Para conjurar, precisa empunhar grimório e gastar ação completa
+   folheando. Grimório ocupa 1 espaço. Se perder, replicar com duas ações de interlúdio
+NEX 65% - RITUAIS EFICIENTES: DT para resistir a todos os rituais +5
+NEX 99% - CONHECENDO O MEDO: Aprende ritual Conhecendo o Medo
+
+--- INTUITIVO (Resistência) ---
+NEX 10% - MENTE SÃ: Resistência paranormal +5 (+5 em testes de resistência contra efeitos paranormais)
+NEX 40% - PRESENÇA PODEROSA: Resiliência mental permite extrair mais. Adiciona Presença ao
+   limite de PE por turno, mas só para conjurar rituais
+NEX 65% - INABALÁVEL: Resistência a dano mental e paranormal 10. Quando alvo de efeito
+   paranormal que permite teste de Vontade para reduzir à metade, não sofre dano algum se passar
+NEX 99% - PRESENÇA DO MEDO: Aprende ritual Presença do Medo
+
+--- LÂMINA PARANORMAL (Combate + Ritual) ---
+NEX 10% - LÂMINA MALDITA: Aprende ritual Amaldiçoar Arma. Se já conhece, custo -1 PE.
+   Além disso, ao conjurar, pode usar Ocultismo em vez de Luta ou Pontaria para testes de ataque
+   com a arma amaldiçoada
+NEX 40% - GLADIADOR PARANORMAL: Sempre que acerta ataque corpo a corpo em inimigo,
+   recebe 2 PE temporários. Máximo por cena = limite de PE. Desaparecem no final da cena
+NEX 65% - CONJURAÇÃO MARCIAL: 1 vez por rodada, ao lançar ritual com execução ação padrão,
+   pode gastar 2 PE para fazer ataque corpo a corpo como ação livre
+NEX 99% - LÂMINA DO MEDO: Aprende ritual Lâmina do Medo
+
+═══════════════════════════════════════════════════════════════

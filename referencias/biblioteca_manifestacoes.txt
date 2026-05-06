@@ -1,0 +1,117 @@
+══════════════════════════════════════════════════════════════
+     BIBLIOTECA RITUALÍSTICA - MANIFESTAÇÕES PRIMÁRIAS
+══════════════════════════════════════════════════════════════
+
+As Manifestações Primárias são efeitos pequenos que funcionam
+como rituais, mas sem O Custo do Paranormal. Custam 1 de
+Sanidade (ou 2 se for de Medo).
+
+SÍMBOLOS PRIMÁRIOS (ação padrão, 1 SAN):
+- ABSORÇÃO: Absorve vitalidade de ser adjacente (1d6 PV)
+- CRIAÇÃO: Cria objeto de até 5cm sem efeitos mecânicos
+- DESTRUIÇÃO: Destrói objeto em mãos (máx 15 PV)
+- CONHECIMENTO: Transforma objeto em componente
+- ENERGIA: Transforma objeto em componente de Energia
+- MANIPULAÇÃO: Faz objeto flutuar até 1,5m/rodada
+- MORTE: Transforma objeto em componente de Morte
+- SANGUE: Transforma objeto em componente de Sangue
+- MEDO: Fornece 1% de NEX a ser voluntário
+- CONVOCAÇÃO: Convoca objeto aleatório em mãos
+
+══════════════════════════════════════════════════════════════
+     MANIFESTAÇÕES DE CONHECIMENTO
+══════════════════════════════════════════════════════════════
+
+AFIAÇÃO - Afia lâmina de uma arma, tornando-a mais letal
+ALEGORIA DAS SOMBRAS - Gera um ser a partir da sombra das mãos
+BRILHO FORTE - Cria esfera de luz dourada
+CAMINHOS DA REALIDADE - Transporta alvo para local com membrana afetada
+DETECTAR VENENOS - Descobre presença de veneno em objeto/cadáver/ser
+ESCRITA ENCRIPTADA - Escreve mensagem oculta em objeto
+FOLHEAR - Cria folhas pelo corpo do alvo, permitindo lê-lo como livro
+HOLOGRAMA MENTAL - Projeta tela em sua testa
+LEITURA OCULTA - Decifra mensagem oculta em objeto
+LEVITAÇÃO UNITÁRIA - Marca objeto para movê-lo
+MENSAGEM - Envia mensagem curta para um ser
+MUDANÇA DE TOM - Muda cor de um objeto
+MÁSCARA QUEBRADA - Cria máscara de sombras, aproximando mente do Conhecimento
+NEGLIGENCIAR O CAOS - Oferece proteção contra Energia
+PALAVRA PROGRAMADA - Programa palavra para surgir na mente do alvo diariamente
+PURIFICAR ALIMENTOS - Remove toxinas de alimentos
+REORGANIZAÇÃO RÁPIDA - Organiza pequena área
+SABER MARCIAL - Remodela arma, mudando seu tipo de dano
+TRAVAS - Tranca objeto
+
+══════════════════════════════════════════════════════════════
+     MANIFESTAÇÕES DE SANGUE
+══════════════════════════════════════════════════════════════
+
+ADAPTAR CORPO - Estimula corpo do alvo para bônus em próximo teste
+AFINAR VEIAS - Deixa alvo propício a sangramentos
+ARMAMENTO SANGUINÁRIO - Gera arma a partir do sangue do braço
+DESTRUIR A NATUREZA - Elimina parte do interior do alvo
+DETECTAR SERES - Prende ouvido em superfície para ouvir através
+DISPARO DE SANGUE - Lança sangue como projétil
+INTUIR DIREÇÃO - Aflora sentidos para se guiar por local
+LARVAGEM ESTOMACAL - Vomita larva que cresce e se desenvolve
+LINGUAGEM ANIMAL - Ensina animal a falar linguagem humana
+LUFADA - Enche pulmões e assopra, empurrando seres próximos
+MOLDE CAPILAR - Cria molde de objeto a partir de veias capilares
+PELE GROSSA - Engrossa pele, fornecendo maior resistência
+PETRICOR - Aprimora olfato para pressentir mudanças climáticas
+PULSOS IMPULSIVOS - Aprimora reflexos para pequenos pulos
+RESTRIÇÃO SENSORIAL - Restringe um sentido do alvo
+ROCHA ENSANGUENTADA - Envolve rocha com sangue
+SANGUE SUCULENTO - Transforma objeto em comida/bebida
+VIBRAÇÃO TERREMÓTICA - Vibra parte do corpo
+
+══════════════════════════════════════════════════════════════
+     MANIFESTAÇÕES DE MORTE
+══════════════════════════════════════════════════════════════
+
+BAFO PODRE - Exala odor cadavérico da boca
+BOMBA DE FUMAÇA - Decompõe solo, criando fumaça
+CANSAÇO FÍSICO - Exaure corpo, oferecendo penalidade em atributos físicos
+CANSAÇO MENTAL - Exaure mente, oferecendo penalidade em atributos mentais
+COMPRIMIR O CAOS - Comprime caos em área, potencializa explosão
+DESLIGAMENTO TOTAL - Cria alavanca acinzentada para desligar objetos
+DESTRUIR A HUMANIDADE - Destrói interior de humano
+FINAL PÓ-ÉTICO - Torna-se pó, morrendo instantaneamente
+INCHAÇO GOSMENTO - Cria bolhas de lodo abaixo da pele
+LINK FOTOGRÁFICO - Vê área de fotografia em 3D
+POEIROMÂNCIA - Controla poeira em área pequena
+PRESERVAÇÃO - Diminui velocidade de decomposição pela metade
+PULSO GRAVITACIONAL - Impede objeto de ser afetado pela gravidade
+RAJADA VENENOSA - Dispara veneno em ser
+REDE GRUDENTA - Cria rede com lodo para prender alvo
+SUOR PEGAJOSO - Secreta lodo dos poros, criando película
+TOQUE DOS MORTOS - Cria mão espectral que agarra ser
+
+══════════════════════════════════════════════════════════════
+     MANIFESTAÇÕES DE ENERGIA
+══════════════════════════════════════════════════════════════
+
+CARACTERÍSTICAS INCONVENIENTES - Adiciona característica incômoda a pessoa
+CHAMINHA - Cria pequena chama manipulável
+CLARÃO - Gera flash de luz que ofusca seres próximos
+CLICK - Cria botão vermelho capaz de ativar qualquer mecanismo
+CORDAS MÁGICAS - Retira corda quase infinita de recipiente
+DISFUNÇÃO GRAMÁTICA - Impede ser de escrever/falar corretamente
+EMULSÃO BÉLICA - Encobre projétil com elemento à escolha
+ESTILHAÇO GÉLIDO - Envolve punho com gelo para potencializar ataque
+ESTRUTURA DE DISTRIBUIÇÃO - Forma triângulo que divide dano entre três
+GOZAÇÃO DESONROSA - Ofende profundamente alvo e sua linhagem
+IMPRESSÃO NATURAL - Imprime objeto a partir do dedo
+MÃOS CIRÚRGICAS - Cria duas mãos espectrais
+MÃOS QUE OS RECOLHEM - Puxa objetos com pequenas mãos fantasmagóricas
+NÃO, NÃO! - Cria mão espectral que impede ser de falar
+PRESTIDIGITAÇÃO - Cria efeito mirabolante (escolha da lista)
+REFLUXO ROCHOSO - Vomita pedaço de magma
+RESISTÊNCIA CAÓTICA - Reveste ser em caos, protegendo-o
+TAMPINHA - Cria tampa para objeto
+
+══════════════════════════════════════════════════════════════
+     MANIFESTAÇÕES DE MEDO
+══════════════════════════════════════════════════════════════
+
+(personalizadas, usar como base as outras manifestações)

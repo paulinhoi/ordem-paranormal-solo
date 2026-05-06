@@ -1,0 +1,170 @@
+══════════════════════════════════════════════════════════════
+     O PORTADOR DO MEDO - OPÇÕES DE MESTRAGEM
+══════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════
+     AFINANDO A MEMBRANA
+══════════════════════════════════════════════════════════════
+
+TABELA: NÍVEIS DE MEMBRANA
+
+%          ESTADO              EFEITOS
+0           Intacta            Nenhum efeito paranormal possível
+1-10        Estável            Rituais 1° podem ser usados, criaturas até VD 20
+11-20       Estável            Rituais 2° podem ser usados, criaturas até VD 60, +2 Defesa
+21-30       Estável            Rituais 2° livres, criaturas até VD 100, +1dano/dado
+31-40       Danificada         Rituais 3° podem ser usados, criaturas até VD 140
+41-50       Danificada         Rituais 3° livres, criaturas até VD 180, +1d20
+51-60       Danificada         Rituais 4° podem ser usados, criaturas até VD 220, +1d20
+61-70       Danificada         Rituais 4° livres, criaturas até VD 260, RD 5
+71-80       Arruinada          Todos rituais, criaturas até VD 300, +2dano/dado, +2 DT habilidades
+81-90       Arruinada          Todos rituais, criaturas até VD 380, +5 na DT habilidades, +2d20
+91-99       Arruinada          Como acima + Cura Acelerada 20, +5 Limite PE
+100          Rompida            Fenda para Outro Lado, 2 Eventos por rodada, criaturas muito perigosas
+
+---
+
+EVENTOS DA MEMBRANA
+
+Ao entrar em área afetada, role 1d100:
+- Se resultado < % da membrana: Evento Menor
+- Se resultado <= % - 25: Evento Médio
+- Se resultado <= % - 50: Evento Maior
+
+Resistência: Teste de Vontade DT 20 + 1 por cada 5% da membrana
+
+TABELA DE EVENTOS:
+
+RESULTADO 1-5: Nada ocorre
+RESULTADO 6: Item aleatório é amaldiçoado (role 1d4 para elemento)
+RESULTADO 7: Eventos de Sangue
+RESULTADO 8-9: Eventos de Conhecimento
+RESULTADO 10: Eventos de Energia
+RESULTADO 11-12: Eventos de Morte
+RESULTADO 13-14: Eventos de Medo
+RESULTADO 15-16: Manifestação menor (criatura fraca aparece)
+RESULTADO 17-18: Intensificação (efeitos paranormais +fortes)
+RESULTADO 19: Ruptura (membrana piora 1 nível)
+RESULTADO 20: Fenda (criatura poderosa aparece)
+
+---
+
+EVENTOS DE SANGUE:
+- Hemorragia: Todos os seres na área perdem 1d6 PV
+- Frenesi: seres ficam Frenéticos
+- Explosão: 2d6 dano de Sangue em área
+- Vampirismo: criatura drena vida
+
+EVENTOS DE CONHECIMENTO:
+- Revelação: Todos veem algo perturbador (1d6 SAN)
+- Ilusão: Ilusão aparece na área
+- Memória: Memórias do passado surgem
+- Loucura: efeito mental aleatório
+
+EVENTOS DE ENERGIA:
+- Tempestade: 2d6 dano de Energia
+- Caos: efeitos aleatórios
+- Estática: equipamentos falham
+- Descarga: 1d8 elétrico em todos
+
+EVENTOS DE MORTE:
+- Sussurros: 1d6 SAN, Apavorado
+- Mão: mão da morte aparece
+- Decaimento: objetos se deterioram
+- Ressurreição: morto revive como zumbi
+
+EVENTOS DE MEDO:
+- Pesadelo: todos precisam testar Vontade
+- Visão: cada um vê seu medo
+- Pânico: pânico coletivo
+- Horror: criatura horrenda aparece
+
+══════════════════════════════════════════════════════════════
+     COMBATE APRIMORADO
+══════════════════════════════════════════════════════════════
+
+REGRAS DE COMBATE ADICIONAIS:
+
+ATAQUES OPORTUNÍSTOS:
+- Pode fazer ataque oportunista contra alvo que se afasta
+- Não causa oportunidade de ataque
+
+DEFESA ATIVA:
+- Pode usar ação de movimento para +2 Defesa até o início do próximo turno
+
+ATAQUES COMBINADOS:
+- Dois aliados podem combinar ataques contra mesmo alvo
+- Bonus de +1d20 por aliado
+
+MOMENTO CRÍTICO:
+- Quando rolagem de iniciativa é 20 natural, ganha 1 ação extra
+
+ATAQUES À DISTÂNCIA EM COMBATE CORPO A CORPO:
+- -2 em ataques se houver inimigo adjacente
+
+PROTEÇÃO DE ESCUDO:
+- Escudo pode ser usado para cobrir aliado adjacente
+
+══════════════════════════════════════════════════════════════
+     REGRA 0413
+══════════════════════════════════════════════════════════════
+
+Sistema especial para criar cenários de horror indexado.
+
+A Regra 0413 estabelece parâmetros para:
+- Nível de perigo de uma área
+- Tipos de eventos que podem ocorrer
+- Recursos disponíveis para os personagens
+
+Cadalocal tem um código 0413-X onde X indica o nível (1-10)
+
+NÍVEL 1 (Seguro): Quase sem paranormal
+NÍVEL 2 (Leve): Sinais sutis
+NÍVEL 3 (Moderado): Presença confirmada
+NÍVEL 4 (Alto): Muito perigoso
+NÍVEL 5 (Extremo): Muito mortal
+NÍVEL 6 (Crítico): Quase impossível sobreviver
+NÍVEL 7 (Catastrófico): Apenas morte certa
+NÍVEL 8-9 (Apocalíptico): Nem pensamento humano aguenta
+NÍVEL 10 ( além): Nem existe nome
+
+══════════════════════════════════════════════════════════════
+     VEGETAÇÕES PARANORMAIS
+══════════════════════════════════════════════════════════════
+
+TIPOS DE VEGETAÇÃO PARANORMAL:
+
+ÁRVORES MALDITAS:
+- Árvores que se movem
+- Causam dano se Tocadas
+- Podem tentar agarrar personagens
+
+PLANTAS CARNÍVORAS:
+- Atacam criaturas próximas
+- Causam dano de Perfuração
+- Podem paralisar alvos
+
+FUNGOS TOXICOS:
+- Esporos causam efeitos
+- Inalação causa veneno
+- Podem causar alucinações
+
+FLORES DE LUTO:
+- Causam dano de Morte
+- Aromas perturbadores
+- Podem drainar SAN
+
+ESPINHOS PARANORMAIS:
+- Crescem rapidamente
+- Causam dano de Perfuração
+- Podem criar barreiras
+
+RAÍZES VIVAS:
+- movem-se sob o solo
+- Podem emergente para agarrar
+- Causam dano de Perfuração
+
+CIPÓS ESTRANGULADORES:
+- Agarram e estrangulam
+- Causam dano contínuo
+- Podem imobilizar alvos

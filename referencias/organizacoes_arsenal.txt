@@ -1,0 +1,242 @@
+══════════════════════════════════════════════════════════════
+        ARSENAL DOS AGENTES - NOVAS ORGANIZAÇÕES
+══════════════════════════════════════════════════════════════
+
+Este arquivo contém as novas organizações do Arsenal dos Agentes.
+
+══════════════════════════════════════════════════════════════
+        CISNE BRANCO
+══════════════════════════════════════════════════════════════
+
+A maior organização de mercadores paranormais do mundo.
+
+--- DESCRIÇÃO ---
+O Cisne Branco é uma organização de mercadores paranormais
+fundada por Agus Astuti, um bilionário indonésio com poderes
+de visão do futuro. A organização serve como "seguradora"
+de contratos no mercado paranormal, garantindo que acordos
+sejam respeitados.
+
+--- SEDE ---
+A sede principal é o iate "Cisne Dourado", onde o líder vive.
+Todos os membros no iate recebem a habilidade:
+
+LAR DOCE LAR: CISNE DOURADO
+- Como ação de movimento, pode solicitar qualquer item de até Categoria II
+- Item entregue em 1d4 rodadas
+- Para cada 150 PP que possuir, a categoria aumenta em +1
+
+--- ITENS DA ORGANIZAÇÃO ---
+MÁSCARAS ANIMALESCAS (SANGUE)
+- Categoria I, 0.5 espaços
+- Ao colar no rosto: aparência, odor e voz mudam para um animal
+- Apenas seres com ligação ao Paranormal podem ver as alterações
+- Para pessoas mundanas, parecerá um humano aleatório
+- Cada hora de uso: 1d4 PV de dano (membros: 1 PV/dia)
+
+--- COSTUMES ---
+- Membros usam máscaras especiais em missões
+- Cabeça de animal diferente para cada um
+- Oculta cor da pele, tatuagens, voz e traços reconhecíveis
+- Máscaras descartadas após cada missão
+
+--- OBJETIVO ---
+Evitar que o mau uso do Paranormal e brigas entre organizações
+afetem negativamente a vida daqueles não ligados a este mundo.
+
+--- RELAÇÕES ---
+- Neutralidade com todas as outras organizações
+- Evita conflitos ao máximo
+- Realiza conflitos quando julga necessário limitar ações de grupos
+
+--- DINÂMICA INTERNA ---
+A organização é separada em três grupos, cada um residindo em
+um dos três iates da organização.
+
+--- MEMBRO NOTÁVEL: AGUS ASTUTI ---
+- Nasceu em Wowoni, Indonésia, em abril de 1982
+- Aos 8 anos, presenciou pais mortos por grandes abelhas azuis
+- Desenvolveu poderes de visão do futuro
+- Fundou o Cisne Branco
+
+══════════════════════════════════════════════════════════════
+        TRILHA: TOCADOS
+══════════════════════════════════════════════════════════════
+
+Uma trilha especial vinculada ao Cisne Branco.
+
+--- DESCRIÇÃO ---
+Agus Astuti, o líder do Cisne Branco, desenvolveu a técnica de
+"Tocar" elementos, permitindo que transferisse sua percepção
+temporal para outros, tornando-os "tocados" por ele.
+
+--- HABILIDADES ---
+
+NEX 10%: PRIMEIRO TOQUE
+Você é Tocado por Agus. Uma vez por cena, pode substituir um
+de seus testes por um teste de Intuição de Agus (3d20+10).
+
+NEX 40%: TOQUE RECÍPROCO
+Você pode Tocar outros. Ao gastar uma ação de movimento e
+2 PE, escolha um alvo em alcance curto. O próximo teste que
+ele fizer, você pode adicionar seu resultado de Intuição.
+
+NEX 65%: PRESERVANDO O FLUXO
+Você pode retardar o tempo ao seu redor. Uma vez por cena,
+pode fazer com que uma cena dure o dobro do tempo para você
+(duas rodadas suas para cada rodada real).
+
+NEX 99%: VISÃO DO CISNE
+Você pode ver o futuro brevemente. Uma vez por missão, pode
+ver o resultado de uma única rolagem antes de fazê-la. Pode
+escolher se usar este resultado ou fazer sua própria rolagem.
+
+══════════════════════════════════════════════════════════════
+        OUTRAS NOVAS ORGANIZAÇÕES
+══════════════════════════════════════════════════════════════
+
+--- SOCIEDADE DO SELO NEGRO ---
+Organização de assassinos paranormais
+- Usam máscaras de caveira
+- Especializados em eliminar alvos de outras dimensões
+
+--- GUERREIROS DA AURORA ---
+Ordem de guerreiros sagrados
+- Combatem criaturas de Energia
+- Templos pelo mundo
+
+--- IRMÃOS DO VÁCUO ---
+Seita que busca o vazio total
+- Praticam meditação extrema
+- Podem criar portals para o nada
+
+--- ORDEM DA LÂMPADA ---
+Arquivistas do conhecimento paranormal
+- Mantêm biblioteca de segredos
+- Vendem informações
+
+--- OS COLETORES ---
+Mercadores de artefatos paranormais
+- Buscam itens pelo mundo
+- Vendem ao maior licitador
+
+══════════════════════════════════════════════════════════════
+        8 SELOS (LIMITE HUMANO)
+══════════════════════════════════════════════════════════════
+
+Sistema que representa o limite da humanidade para atributos.
+
+--- OS 8 SELOS ---
+1. SELO DA CARNE (VIG 5): Resistência física máxima
+2. SELO DO OSSO (FOR 5): Força física máxima
+3. SELO DO VENTO (AGI 5): Velocidade e reflexos máximos
+4. SELO DA MENTE (INT 5): Capacidade mental máxima
+5. SELO DA ALMA (PRE 5): Força de vontade máxima
+6. SELO DO SANGUE (SAN 50): Sanidade máxima
+7. SELO DA VIDA (PV 100): Vitalidade máxima
+8. SELO DO ESPÍRITO (PE 20): Energia máxima
+
+--- QUEBRANDO SELOS ---
+Ao exceder um Selo:
+- Ganha um benefício especial
+- Pode sofrer efeitos colaterais
+- Torna-se "Além da Humanidade"
+
+══════════════════════════════════════════════════════════════
+        PODERES PARANORMAIS DO ARSENAL
+══════════════════════════════════════════════════════════════
+
+--- PODERES DE SANGUE ---
+- Armadura Corporal: Pele endurece como sangue coagulado
+- Estímulo Crescente: Aumenta velocidade com emoções
+- Explosão Primária: Libera energia emocional
+- Ódio Indesejado: Controle emocional de outros
+
+--- PODERES DE CONHECIMENTO ---
+- Gnóstica Devoção: Conhecimento divino
+- Incompetência Artificial: Creates falhas em sistemas
+- Poder do Saber: Conhecimento absoluto temporário
+- Regulador Emocional: Controla emoções alheias
+- Visão Fascinante: Olhar hipnótico
+
+--- PODERES DE ENERGIA ---
+- Aceleração Nervosa: Reflexos sobre-humanos
+- Aprimoramento Cibernético:	body aprimorado
+- Bagunçar Destino: Aleatoriedade controlada
+- Corpo Fantasma: Tornar etéreo
+- Impregnar Elemento: Arma com elemento
+- Linhagem Caótica: Caos estruturado
+- Percepção Eletromagnética: Sentir eletrônicos
+- Reflexo Fraturado: Múltiplas reações
+- Vamos Apostar: Criar campos de probabilidade
+
+--- PODERES DE MORTE ---
+- Campo de Asfódelos: Campo de flores mortas
+- Ceifeiro Crescente: Crescer como ceifador
+- Espiral da Vontade: girarlmente afeta mente
+- Morte Sangrenta: Drenar vida com feridas
+- Perímetro do Ceifador: Área de morte
+- Troca Temporal: Trocar tempo de vida
+
+--- PODERES DE MEDO ---
+- Presença Aterrorizante: Aura de medo
+- Visão do Abismo: Ver maiores medos
+- Toque Pavoroso: Causar pavor no toque
+
+══════════════════════════════════════════════════════════════
+        MALDIÇÕES DO ARSENAL
+══════════════════════════════════════════════════════════════
+
+--- MALDIÇÕES DE SANGUE ---
+- Sangue Ardente: Fogo causa dano dobrado
+- Coração Errante: Coração pode sair do corpo
+- Mãos Sangrentas: Sangue não para de fluir
+
+--- MALDIÇÕES DE CONHECIMENTO ---
+- Memória Fragmentada: Perdas de memória
+- Olhar Pesado: Conhecimento indesejado
+- Sussurros Constantes: Vozes na cabeça
+
+--- MALDIÇÕES DE ENERGIA ---
+- Descarga Constante: Eletricidade incontrolável
+- Instabilidade Corporal: Corpo instável
+- Campo Caótico: Desordem ao redor
+
+--- MALDIÇÕES DE MORTE ---
+- Toque da Morte: Morreu quem toca
+- Aura Pútrida: cheiro de decomposição
+- Velocidade da Morte: Envelhecimento rápido
+
+--- MALDIÇÕES DE MEDO ---
+- Pesadelo Contínuo: Não consegue dormir bem
+- Visualização do Horror: Vê horrors constantemente
+- Medo Visível: others veem seu medo
+
+══════════════════════════════════════════════════════════════
+        ITENS AMALDIÇOADOS DO ARSENAL
+══════════════════════════════════════════════════════════════
+
+--- ITENS DE SANGUE ---
+- Anel de Sangue: Drena sangue do usuário
+- Luva de Carnes: Usa carne como arma
+- Amuleto do Monstro: Transforma em monstro
+
+--- ITENS DE CONHECIMENTO ---
+- Olho de Sábio: Conhecimento proibido
+- Pergaminho de Memórias: Lembranças alheias
+- Livro de Segredos: Conhecimento infinito
+
+--- ITENS DE ENERGIA ---
+- Bateria Paranormal: Energia armazenada
+- Capacete de Pensamento: усиление mental
+- Armadura Energética: campos de proteção
+
+--- ITENS DE MORTE ---
+- Anel da Morte: Toque mata
+- Machado do Ceifador: Corta almas
+- Véu do Enterro: Invisibilidade para mortos
+
+--- ITENS DE MEDO ---
+- Máscara do Pesadelo: Causa medo
+- Amuleto de Terror: Aumenta medo alheio
+- Espelho do Abismo: Mostra medos

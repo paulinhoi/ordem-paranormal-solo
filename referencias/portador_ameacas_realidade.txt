@@ -1,0 +1,180 @@
+══════════════════════════════════════════════════════════════
+     O PORTADOR DO MEDO - AMEAÇAS DA REALIDADE
+══════════════════════════════════════════════════════════════
+
+Dinossauros e outras ameaças pré-históricas que foram afetadas
+pelo Paranormal e aparecem em cenários de Ordem Paranormal.
+
+══════════════════════════════════════════════════════════════
+     CARNOSAURIA (Grandes Predadores)
+══════════════════════════════════════════════════════════════
+
+--- TYRANNOSAURUS REX ---
+Tipo:/normal | VD: 150 | PV: 500 | Defesa: 30
+Tamanho: Enorme | FOR 5 | AGI 2 | VIG 5 | INT 1 | PRE 2
+
+HABILIDADES:
+- MORDIDA DE ÁPICE: 3d12+10 perfuração, crítico x3
+- GOLPE DE CAUDA: 2d8+5 impacto
+- PRESENÇA PREDADORA: +2 em ataques após assustar presa
+- FOME INSACIÁVEL: Pode comer qualquer coisa
+
+---
+
+--- ALLOSSARUS ---
+Tipo: Normal | VD: 100 | PV: 280 | Defesa: 24
+Tamanho: Grande | FOR 4 | AGI 3 | VIG 4 | INT 1 | PRE 2
+
+HABILIDADES:
+- MORDIDA: 2d10+8 perfuração
+- GARRAS: 1d8+5 perfuração
+- CAÇA EM BANDO: +2 em ataques se acompanhado de outros
+
+══════════════════════════════════════════════════════════════
+     CERATOSAURIA (Dinosaur com Chifres)
+══════════════════════════════════════════════════════════════
+
+--- TRICERATOPS ---
+Tipo: Normal | VD: 130 | PV: 400 | Defesa: 28
+Tamanho: Grande | FOR 5 | AGI 1 | VIG 5 | INT 0 | PRE 2
+
+HABILIDADES:
+- CHIFRES: 3d8+10 perfuração
+- CARGA: pode carregar e causar 2d10+8
+- DEFESA: +5 em Defesa contra ataques frontais
+
+--- TOROSSAURUS ---
+Similar ao Triceratops, mas com chifres diferentes
+
+══════════════════════════════════════════════════════════════
+     MANIRAPTORA (Dinosaur Pequenos)
+══════════════════════════════════════════════════════════════
+
+--- VELOCIRAPTOR ---
+Tipo: Normal | VD: 60 | PV: 120 | Defesa: 18
+Tamanho: Médio | FOR 2 | AGI 5 | VIG 2 | INT 1 | PRE 2
+
+HABILIDADES:
+- ATAQUE RÁPIDO: 2 ataques por rodada
+- MORDIDA: 1d8+3 perfuração
+- GARRAS: 1d6+3 perfuração
+- TÁTICA: +2 em ataques contra alvos desprevenidos
+
+--- DEINONYCHUS ---
+Similar ao Velociraptor, maior, 2d6+4 dano
+
+══════════════════════════════════════════════════════════════
+     HADROSAURIA (Dinossauros com Bico)
+══════════════════════════════════════════════════════════════
+
+--- EDMONTOSSARUS ---
+Tipo: Normal | VD: 80 | PV: 200 | Defesa: 20
+Tamanho: Grande | FOR 4 | AGI 2 | VIG 3 | INT 1 | PRE 2
+
+HABILIDADES:
+- CHUTE: 2d6+6 impacto
+- REBANHO: Em grupo, +1 em Defesa
+- CORRIDA: 12m de deslocamento
+
+══════════════════════════════════════════════════════════════
+     SAURÓPODES (Grandes Herbívoros)
+══════════════════════════════════════════════════════════════
+
+--- BRACHIOSSAURUS ---
+Tipo: Normal | VD: 180 | PV: 700 | Defesa: 20
+Tamanho: Colossal | FOR 5 | AGI 1 | VIG 5 | INT 0 | PRE 1
+
+HABILIDADES:
+- TAMANHO: VD muito alto, dificuldade de atingir
+- PÉS: 3d8+8 impacto (ataque de área)
+- BARULHO: Pode assustar criaturas com barulho
+
+--- DIPLODOCUS ---
+Similar, mas com cauda como weapon
+
+══════════════════════════════════════════════════════════════
+     THYREOPHORA (Dinosaur Blindados)
+══════════════════════════════════════════════════════════════
+
+--- ESTEGOSSAURUS ---
+Tipo: Normal | VD: 90 | PV: 250 | Defesa: 26
+Tamanho: Grande | FOR 4 | AGI 1 | VIG 4 | INT 0 | PRE 1
+
+HABILIDADES:
+- PLACAS: +4 em Defesa (placas dorsais)
+- ESPINHOS: Cauda com espinhos causa 2d6+4
+- RESISTÊNCIA: Imune a dano de perfuração
+
+--- ANQUILOSSAURO ---
+Tipo: Normal | VD: 100 | PV: 300 | Defesa: 30
+Tamanho: Grande | FOR 5 | AGI 1 | VIG 4 | INT 0 | PRE 1
+
+HABILIDADES:
+- ARMADURA: +8 em Defesa (couraça completa)
+- CAUDA: Espinha causa 2d8+6
+- CORRIDA: Pode cargar como ação de movimento
+
+══════════════════════════════════════════════════════════════
+     PTEROSSAROS (Dinossauros Voadores)
+══════════════════════════════════════════════════════════════
+
+--- PTERANODON ---
+Tipo: Normal | VD: 50 | PV: 80 | Defesa: 16
+Tamanho: Médio | FOR 2 | AGI 4 | VIG 1 | INT 0 | PRE 1
+
+HABILIDADES:
+- VOO: 15m de deslocamento在空中
+- MORDIDA: 1d6+2 perfuração
+- ATAQUE AÉREO: +2 em ataques enquanto voando
+
+--- QUETZALCOATLUS ---
+Tipo: Normal | VD: 120 | PV: 350 | Defesa: 24
+Tamanho: Grande | FOR 4 | AGI 3 | VIG 3 | INT 1 | PRE 2
+
+HABILIDADES:
+- VOO: 18m在空中
+- MORDIDA: 2d10+6 perfuração
+- PLANADOR: Pode planar por longas distâncias
+
+══════════════════════════════════════════════════════════════
+     CRIATURAS MARINHAS PRÉ-HISTÓRICAS
+══════════════════════════════════════════════════════════════
+
+--- PLESIOSSAURO ---
+Tipo: Normal | VD: 90 | PV: 250 | Defesa: 22
+Tamanho: Grande | FOR 4 | AGI 2 | VIG 3 | INT 0 | PRE 1
+Deslocamento: Natação 9m
+
+HABILIDADES:
+- MORDIDA: 2d8+6 perfuração
+- PESCOÇO: Pode atacar alvos distantes com pescoço
+- NATAÇÃO: Muito rápido na água
+
+--- MOSSAURO ---
+Tipo: Normal | VD: 150 | PV: 500 | Defesa: 28
+Tamanho: Enorme | FOR 5 | AGI 2 | VIG 5 | INT 0 | PRE 2
+Deslocamento: Natação 12m
+
+HABILIDADES:
+- MORDIDA: 3d10+12 perfuração (maior predador marinho)
+- PODER: Pode destroyer barcos
+- PRESENÇA: Cause medo em criaturas marinhas
+
+══════════════════════════════════════════════════════════════
+     OUTRAS AMEAÇAS
+══════════════════════════════════════════════════════════════
+
+--- MAMUTES ---
+Creatures grandes e peludas, perigo por tamanho e força
+
+--- MEGALODON ---
+Tubarão pré-histórico enorme, o maior predador marinho
+
+--- DIPREMA ---
+Inseto gigante, muito perigoso em grupo
+
+--- ARTHROPLEURA ---
+Centopeia gigante, venenosa e rápido
+
+--- MEGATHERIUM ---
+Preguiça gigante, perigo por garras grandes

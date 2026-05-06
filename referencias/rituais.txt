@@ -1,0 +1,332 @@
+═══════════════════════════════════════════════════════════════
+                    ORDEM PARANORMAL - RITUAIS
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+                         ELEMENTOS DO OUTRO LADO
+═══════════════════════════════════════════════════════════════
+
+SANGUE - Entidade dos sentimentos (fome, dor, amor, ódio, paixão, obsessão)
+MORTE - Entidade da espiral do tempo
+CONHECIMENTO - Entidade da consciência
+ENERGIA - Entidade do caos
+MEDO - Elemento base que alimenta os outros
+
+RELAÇÃO DE OPRESSÃO:
+• SANGUE → oprime CONHECIMENTO
+• MORTE → oprime SANGUE
+• CONHECIMENTO → oprime ENERGIA
+• ENERGIA → (não oprime diretamente, ciclo continua)
+• MEDO → alimenta todos
+
+═══════════════════════════════════════════════════════════════
+                         RITUAIS POR CÍRCULO
+═══════════════════════════════════════════════════════════════
+
+1º CÍRCULO (NEX 5%):
+═══════════════════
+• Amaldiçoar Arma (Sangue): Toca arma, ela causa +1d6 dano de Sangue por cena
+• Canalizar o Medo (Medo): Conecta com o Medo, ganha resistência a dano paranormal 5
+• Cinerária (Morte): Cria neblina que causa 1d6 dano de Morte por rodada
+• Clareza (Conhecimento): Remove condição de confusão ou atordoamento
+• Compreensão (Conhecimento): Entende idioma falado por alvo por cena
+• Confusão (Conhecimento): Alvo fica confuso (Vontade DT 15)
+• Dano do Caos (Energia): 2d6 dano de Energia em área
+• Drenar Energia (Energia): Alvo perde 1d6 PE, você ganha
+• Enfraquecer (Sangue): Alvo recebe -1d nas rolagens de dano
+• Escudo de Energia (Energia): 20 PV temporários contra dano de Energia
+• Fogo Fátuo (Energia): Cria chama que ilumina e causa 1d6 dano de Fogo
+• Fragmento de Memória (Conhecimento): Recorda uma cena do passado
+• Identidade (Conhecimento): Descobre nome verdadero de alvo
+• Mão Esquelética (Morte): Mão óssea ataca causando 1d8+2 dano de Morte
+• Mark of the Beast (Medo): Alvo recebe -2 em testes de resistência
+• Medo Instintivo (Medo): Alvo fica abalado (Vontade DT 15)
+• Mimetismo (Energia): Copia som ouvido anteriormente
+• Necrose (Sangue): Causa 2d6 dano de Sangue, alvo fica enjoado
+• Olhar Hipnótico (Conhecimento): Alvo fica fascinado (Vontade DT 15)
+• Paz dos Mortos (Morte): Criaturas de Morte em alcance curto ficam inertes por uma rodada
+• Quebrar Encantamento (Conhecimento): Remove efeito mágico ou condição de amaldiçoado
+• Regeneração (Sangue): Alvo recupera 2d6 PV
+• Toque Gelado (Morte): 1d8+2 dano de Morte, alvo fica fatigado
+• Toque Pestilento (Sangue): Causa doença (Fortitude DT 15)
+
+2º CÍRCULO (NEX 25%):
+═══════════════════
+• Armadura de Ossos (Morte): +5 na Defesa, 20 PV temporários, 1dano de Morte a quem atacar
+• Bolha de Proteção (Energia): Bolha protetora, RD 10
+• Buraco Negro (Energia): Cria vácuo que puxa seres para dentro (DT Fortitude)
+• Dano Espiral (Morte): 6d6 dano de Morte em área, resistentes a ataques
+• Descarnar (Sangue): Remove carne de alvo, causando 2d6 dano de Sangue contínuo
+• Flagelo de Sangue (Sangue): Marca que drena 10d6 dano de Sangue se desobedecer ordem
+• Hemofagia (Sangue): Arranca sangue, causa 6d6 dano de Sangue, recupera metade em PV
+• Invadir Mente (Conhecimento): Rajada mental 6d6 ou ligação telepática
+• Localização (Conhecimento): Encontra pessoa ou objeto em 90m
+• Luz (Energia): Objeto emite luz brilhosa por 9m
+• Miasma Entrópico (Morte): Nuvem tóxica 4d8 dano químico + enjoar
+• Nuvem de Cinzas (Morte): Nublagem que dá camuflagem
+• Ódio Incontrolável (Sangue): Alvo entra em frenesi, +2 ataque/dano, resistência 5
+• Ouvir os Sussurros (Conhecimento): Consulta o Outro Lado com pergunta sim/não
+• Paradoxo (Morte): Implosão de distorção temporal 6d6 dano de Morte
+• Perturbação (Conhecimento): Dá ordem que alvo deve obedecer
+• Polarização Caótica (Energia): Aura magnética atrai ou repele metal
+• Proteção contra Rituais (Medo): +5 resistência paranormal, +5 em resistência a rituais
+• Rejeitar Névoa (Medo): Névoa que aumenta custo e execução de rituais
+• Velocidade Mortal (Morte): Alvo pode fazer ação de movimento adicional
+
+3º CÍRCULO (NEX 55%):
+═══════════════════
+• Absorver Sentidos (Sangue): Absorve sentidos de alvo, causando 6d6 dano e condicionws
+• Convocação Spectral (Conhecimento): Convoca espírito que pode possessing
+• Enxame de Rats (Sangue): Enxame de ratos que causa 5d8 dano de Sangue
+• Forma Monstruosa (Sangue): Transforma em forma de criatura de Sangue, +5 ataque/dano, 30 PV temp
+• Invólucro de Carne (Sangue): Cria clone seu com mesmas estatísticas
+• Mergulho Mental (Conhecimento): Mergulha na mente de alvo para descobrir informações
+• Poeira da Podridão (Morte): Nuvem que apodrece 4d8 dano de Morte sustentado
+• Sopro do Caos (Energia): Vento que empurra, ergue ou cria área de vento forte
+• Transfigurar Água (Energia): Controla água (congelar, derreter, enchente, evaporar, partir)
+• Transfigurar Terra (Energia): Controla terra (amolecer, modelar, solidificar)
+• Vomitar Pestes (Sänge): Vomita enxame de criaturas de Sangue
+
+4º CÍRCULO (NEX 85%):
+═══════════════════
+• Desconjuração (Medo): Ritual supremo para separar alguém do Outro Lado permanentemente
+• Existência (Conhecimento): Apaga completamente ser da existência
+• Impossível (Energia): Cria situação logicamente impossível
+• Inexistir (Conhecimento): 10d12+10 dano de Conhecimento, pode apagar completamente
+• Lâmina do Medo (Medo): Golpe que reduz PV a 0 e causa ferimento permanente
+• Medo Tangível (Medo): Transforma corpo em manifestação do Medo, imune a dano mundano
+• Possessão (Conhecimento): Projeta consciência no corpo de outra pessoa
+• Presença do Medo (Medo): Emanas pavor, 5d8 dano mental + 5d8 dano de Medo
+• Teletransporte (Energia): Teleporta até 5 seres para até 1000km
+• Vínculo de Sangue (Sangue): Compartilha dano com alvo
+• Vidência (Conhecimento): Vê e ouve ser através de superfície reflexiva
+• Zerar Entropia (Morte): Paralisa alvo completamente
+
+═══════════════════════════════════════════════════════════════
+                         DETALHES DOS RITUAIS
+═══════════════════════════════════════════════════════════════
+
+AMALDIÇAR ARMA (Sangue 1)
+Execução: padrão
+Alcance: toque
+Alvo: 1 arma
+Duração: cena
+Resistência: nenhuma
+
+Você toca uma arma e a banha em poder de Sangue. Ela causa +1d6 pontos de dano de
+Sangue por rodada. A arma não pode ser neutralizada enquanto você mantiver o ritual.
+
+CANALIZAR O MEDO (Medo 1)
+Execução: padrão
+Alcance: pessoal
+Alvo: você
+Duração: cena
+
+Você canaliza o Medo puro ao seu redor, ganha resistência paranormal 5 e +2 em testes
+de resistência contra efeitos paranormais.
+
+CINERÁRIA (Morte 1)
+Execução: padrão
+Alcance: curto
+Área: nuvem de 6m de raio
+Duração: cena
+Resistência: Fortitude reduz à metade
+
+Você cria uma nuvem de cinzas que causa 1d6 pontos de dano de Morte a cada ser
+que comece seu turno na área. Fortitude reduz o dano à metade.
+
+CLAREZA (Conhecimento 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 ser
+Duração: instantânea
+
+Você remove a condição confuso ou atordoado de um ser.
+
+COMPREENSÃO (Conhecimento 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 pessoa
+Duração: cena
+
+O alvo passa a entender qualquer idioma falado ou escrito durante a duração do ritual,
+como se fosse sua língua nativa.
+
+CONFUSÃO (Conhecimento 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 ser
+Duração: 1 rodada
+Resistência: Vontade anula
+
+O alvo fica confuso por uma rodada. Um ser confuso não pode realizar ações, ataca
+aleatoriamente, ou fica pasmo (50% cada).
+
+DANO DO CAOS (Energia 1)
+Execução: padrão
+Alcance: médio
+Área: esfera de 6m de raio
+Duração: instantânea
+Resistência: Reflexos reduz à metade
+
+Todos na área sofrem 2d6 pontos de dano de Energia.
+
+DRENAR ENERGIA (Energia 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 ser
+Duração: instantânea
+Resistência: Vontade reduz
+
+O alvo perde 1d6 pontos de esforço. Você recebe a mesma quantidade em PE temporários.
+
+ENFRAQUECER (Sangue 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 ser
+Duração: cena
+Resistência: Fortitude parcial
+
+O alvo recebe -1d em todas as rolagens de dano. Fortitude reduz para -1d4.
+
+ESCUDO DE ENERGIA (Energia 1)
+Execução: padrão
+Alcance: pessoal
+Alvo: você
+Duração: cena
+
+Você recebe 20 pontos de vida temporários que só protegem contra dano de Energia.
+
+FOGO FÁTUO (Energia 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 objeto
+Duração: cena
+
+Um tocha ou chamas fámuas aparecem e flutuam, iluminando uma área de 9m e causando
+1d6 pontos de dano de Fogo a cada ser que começar seu turno adjacente à chama.
+
+FRAGMENTO DE MEMÓRIA (Conhecimento 1)
+Execução: completa
+Alcance: toque
+Alvo: 1 objeto
+Duração: instantânea
+
+Você toca um objeto e vê uma cena do passado relacionada a ele (determinado pelo mestre).
+
+IDENTIDADE (Conhecimento 1)
+Execução: padrão
+Alcance: longo
+Alvo: 1 ser
+Duração: cena
+
+Você descobre o nome verdadero de um ser.
+
+MÃO ESQUELÉTICA (Morte 1)
+Execução: padrão
+Alcance: médio
+Alvo: 1 ser
+Duração: instantânea
+Resistência: Reflexos reduz
+
+Uma mão óssea emerge do solo e ataca o alvo, causando 1d8+2 pontos de dano de Morte.
+
+MARK OF THE BEAST (Medo 1)
+Execução: padrão
+Alcance: longo
+Alvo: 1 ser
+Duração: cena
+
+O símbolo do Medo aparece na testa do alvo, causando -2 em todos os testes de resistência.
+
+MEDO INSTINTIVO (Medo 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 ser
+Duração: 1 rodada
+Resistência: Vontade anula
+
+O alvo fica abalado pelo resto da cena. Se passar no teste, não fica abalado.
+
+MIMETISMO (Energia 1)
+Execução: padrão
+Alcance: pessoal
+Alvo: você
+Duração: sustentada
+
+Você pode copiar qualquer som que tenha ouvido anteriormente.
+
+NECROSE (Sangue 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 ser
+Duração: instantânea
+Resistência: Fortitude reduz
+
+Causa 2d6 pontos de dano de Sangue e o alvo fica enjoado por uma rodada.
+
+OLHAR HIPNÓTICO (Conhecimento 1)
+Execução: padrão
+Alcance: curto
+Alvo: 1 ser
+Duração: sustentada
+Resistência: Vontade anula
+
+Você hipnotiza o alvo com seu olhar. Ele fica fascinado enquanto você se concentrar
+(every round usa ação padrão). Um alvo fascinado não pode agir, mas não é indefeso.
+
+PAZ DOS MORTOS (Morte 1)
+Execução: padrão
+Alcance: curto
+Área: círculo de 9m de raio
+Duração: 1 rodada
+
+Todas as criaturas de Morte no alcance ficam inertes e não podem agir ou mover-se.
+
+QUEBRAR ENCANTAMENTO (Conhecimento 1)
+Execução: padrão
+Alcance: toque
+Alvo: 1 objeto ou ser
+Duração: instantânea
+
+Remove um efeito magical ou a condição amaldiçoado de um objeto ou ser.
+
+REGENERAÇÃO (Sangue 1)
+Execução: padrão
+Alcance: toque
+Alvo: 1 ser
+Duração: instantânea
+
+O alvo recupera 2d6 pontos de vida.
+
+TOQUE GELADO (Morte 1)
+Execução: padrão
+Alcance: toque
+Alvo: 1 ser
+Duração: instantânea
+Resistência: Reflexos reduz
+
+Causa 1d8+2 pontos de dano de Morte e o alvo fica fatigado até o fim da cena.
+
+TOQUE PESTILENTO (Sangue 1)
+Execução: padrão
+Alcance: toque
+Alvo: 1 ser
+Duração: 1 dia
+Resistência: Fortitude anula
+
+O alvo contrai uma doença. Um ser com doença não recupera pontos de vida naturalmente
+e deve fazer um teste de Fortitude por dia para resistir (sofra 1d6 pontos de dano
+de Sangue se falhar).
+
+═══════════════════════════════════════════════════════════════
+                    NOTAS IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+• Rituais são lançados por Ocultistas usando pontos de esforço (PE)
+• Cada ritual tem execução (livre, movimento, padrão, completa)
+• Resistência: Tipo de teste que o alvo faz para evitar/reduzir efeito
+• Versões Discente e Verdadeira podem ser usadas com +PE adicional
+• Rituais podem ser aprendidos através de Origens, Classes ou itens
+
+═══════════════════════════════════════════════════════════════

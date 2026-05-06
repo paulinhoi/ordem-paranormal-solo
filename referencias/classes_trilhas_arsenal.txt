@@ -1,0 +1,220 @@
+══════════════════════════════════════════════════════════════
+     ARSENAL DOS AGENTES - NOVAS CLASSES E TRILHAS
+══════════════════════════════════════════════════════════════
+
+Este arquivo contém as novas classes, trilhas e subclasses do Arsenal.
+
+══════════════════════════════════════════════════════════════
+        NOVAS TRILHAS DE COMBATENTE
+══════════════════════════════════════════════════════════════
+
+--- GUERREIRO DE FANTASMA ---
+Classe: Combatente
+Perícias: Luta, Furtividade
+NEX 10%: MÃO FANTASMA - Você pode tornar suas mãos etéreas, atravessando objetos
+NEX 40%: CORPO FANTASMA - Pode gastar 3 PE para ficar intangible por 1 rodada
+NEX 65%: FANTASMA CORPÓREO - Pode atacar enquanto intangible
+NEX 99%: FANTASMA VINGATIVO - Pode causar dano spectral
+
+--- ATIRADOR DE ELITE ---
+Classe: Combatente
+Perícias: Pontaria, Reflexos
+NEX 10%: MIRA PRECISA - +2 em testes de ataque à distância
+NEX 40%: MIRA VELOZ - Uma vez por rodada, pode mirar como ação livre
+NEX 65%: TIRO CURADO - Pode atirar em alvos atrás de cobertura
+NEX 99%: MESTRE ATIRADOR - Acerto crítico em 18-20
+
+--- GUERREIRO DE FERRO ---
+Classe: Combatente
+Perícias: Fortitude, Luta
+NEX 10%: ARMADURA NATURAL - +2 em Defesa
+NEX 40%: PAREDÃO - RD 2 + Vigor contra dano
+NEX 65%: RESILIÊNCIA INQUEBRÁVEL - PV temporários quando ativado Paredão
+NEX 99%: TE LEVO JUNTO! - Pode atingir múltiplos alvos
+
+---lutador DE CORPO ---
+Classe: Combatente
+Perícias: Atletismo, Luta
+NEX 10%: PUNHOS LETAIS - Ataques desarmados causam dano letal
+NEX 40%: DERRUBAR OS GIGANTES - Pode derrubar criaturas maiores
+NEX 65%: CORPO DE AÇO - Imune a danos não-letais
+NEX 99%: GOLPES IMPARÁVEIS - Ataques ignoram RD
+
+══════════════════════════════════════════════════════════════
+        NOVAS TRILHAS DE ESPECIALISTA
+══════════════════════════════════════════════════════════════
+
+--- INFILTRADOR ---
+Classe: Especialista
+Perícias: Furtividade, Enganação
+NEX 10%: ESCURIDÃO NATURAL - +2 em Furtividade
+NEX 40%: NUNCA ME PEGARÃO - Pode escapar de aprisionamento
+NEX 65%: ABSORÇÃO AMBIENTE - Pode se camuflar no ambiente
+NEX 99%: PRESENÇA NULA - Imune a ser detectado
+
+--- OPERADOR DE VEÍCULOS ---
+Classe: Especialista
+Perícias: Pilotagem, Iniciativa
+NEX 10%: CONDUÇÃO SEGURA - +2 em testes de Pilotagem
+NEX 40%: MOVIMENTAÇÃO INABALÁVEL - Veículo não é afetado por terreno
+NEX 65%: VEÍCULOS TURBINADOS - +3m de deslocamento de veículos
+NEX 99%: REAÇÕES PERIGOSAS - Pode realizar manobras radicais
+
+--- QUÍMICO ---
+Classe: Especialista
+Perícias: Ciências, Profissão (Químico)
+NEX 10%: QUÍMICA DO MAL - Pode criar substâncias perigosas
+NEX 40%: EFEITOS MUTAGÊNICOS - Pode criar efeitos químicos
+NEX 65%: ABASTECER ORGANIZAÇÃO - Pode criar suprimentos
+NEX 99%: MESTRE QUÍMICO - Pode criar qualquer substância
+
+--- TECNICO ---
+Classe: Especialista
+Perícias: Tecnologia, Profissão
+NEX 10%: FABRICAÇÃO PRÓPRIA - Veteran em profissão escolhida
+NEX 40%: LABORATÓRIO DE CAMPO - Pode fabricar itens paranormais
+NEX 65%: INVENÇÕES REFINADAS - Pode criar itens melhores
+NEX 99%: PREPARATIVOS ESPECIAIS - Pode criar itens de Categoria III
+
+══════════════════════════════════════════════════════════════
+        NOVAS TRILHAS DE OCULTISTA
+══════════════════════════════════════════════════════════════
+
+--- INVOCADOR ---
+Classe: Ocultista
+Perícias: Ocultismo, Religion
+NEX 10%: ESPÍRITO DEFENSOR - Pode invocar espírito protetor
+NEX 40%: PROTEGER OS MAIS FRACOS - Espírito protege aliados
+NEX 65%: MENTE SOFRIDA - Espírito causa mais dano
+NEX 99%: INVOCAÇÃO PODEROSA - spirit gains poderes adicionais
+
+--- EXORCISTA ---
+Classe: Ocultista
+Perícias: Ocultismo, Vontade
+NEX 10%: RITUAIS DE COMBATE - Pode usar rituais em combate
+NEX 40%: FERIDAS RITUALÍSTICAS - Rituais causam dano adicional
+NEX 65%: AUTOSSACRIFÍCIO - Pode sacrificar PV para poder
+NEX 99%: EXORCISMO PODEROSO - Pode exorcizar qualquer criatura
+
+--- MÍSTICO ---
+Classe: Ocultista
+Perícias: Ocultismo, Intuição
+NEX 10%: PODER SELADO - Pode usar poderes selados
+NEX 40%: LIBERAR SELO - Pode liberar poderes progressivamente
+NEX 65%: SELO PODEROSO - Pode selar criaturas poderosas
+NEX 99%: MÍSTICO SUPREMO - Pode controlar múltiplos selos
+
+--- TEOFORO ---
+Classe: Ocultista
+Perícias: Religião, Vontade
+NEX 10%: INVÓLUCRO DA FÉ - Proteção divina
+NEX 40%: CANALIZAR FÉ - Pode canalizar poder divino
+NEX 65%: FÉ INabalável - Imune a efeitos mentais
+NEX 99%: AVATAR DIVINO - Pode se tornar avatar do divino
+
+══════════════════════════════════════════════════════════════
+        NOVAS SUB-TRILHAS (SUBCLASSES)
+══════════════════════════════════════════════════════════════
+
+--- COMBATENTE ---
+Subclasses: Bruto, Escudeiro, Esgrimista, Lanceiro, Lutador, Berserker, Atirador
+
+- BRUTO: Foco em dano e resistência
+- ESCUDEIRO: Foco em defesa e proteção
+- ESGRIMISTA: Foco em precisão com espadas
+- LANCEIRO: Foco em combate com armas de haste
+- LUTADOR: Foco em combate desarmado
+- BERSERKER: Foco em fúria e dano
+- ATIRADOR: Foco em armas de fogo
+
+--- ESPECIALISTA ---
+Subclasses: Atirador, Detetive, Executor, Hacker, Infectologista, Investigador, Negociador
+
+- ATIRADOR: Foco em armas de fogo
+- DETETIVE: Foco em investigação
+- EXECUTOR: Foco em eliminações
+- HACKER: Foco em tecnologia
+- INFECTOLOGISTA: Foco em doenças
+- INVESTIGADOR: Foco em pistas
+- NEGOCIADOR: Foco em persuasão
+
+--- OCULTISTA ---
+Subclasses:_CHANNELER,_CHANNELER, Conjurador, Guardião, Ritualista,Medium, Necromante, Possuído, Selado, Teóforo
+
+- CHANNELER: Foco em canalizar energia
+- CONJUROR: Foco em invocar entidades
+- GUARDIÃO: Foco em proteger
+- RITUALISTA: Foco em rituais
+- MEDIUM: Foco em comunicar com espíritos
+- NECROMANTE: Foco em morte
+- POSSESSO: Foco em possessão
+- SELADO: Foco em poderes selados
+- TEÓFORO: Foco em fé divina
+
+══════════════════════════════════════════════════════════════
+        PODERES GERAIS DO ARSENAL
+══════════════════════════════════════════════════════════════
+
+--- ACROBATA VELOZ ---
+Pode usar Esquiva com Acrobacia em vez de Reflexos.
+Pode gastar 1 PE para substituir teste de Reflexos por Acrobacia.
+
+--- ATAQUE NADA ESPECIAL ---
+Ao atacar, pode gastar 1 PE para não rolar dados, assumindo 10 + Intelecto.
+Este ataque só será crítico se ultrapassar defesa por 5+.
+
+--- BATE, É SÓ BATER ---
+Pode gastar ação de movimento e 2 PE para dar +2 em ataque a aliado.
+
+--- CHUVA DE CANIVETES ---
+Com Estilo Duplo ativo, pode fazer 4 ataques na primeira rodada.
+
+--- COMBATE GRUPAL ---
+Escolha um parceiro. Enquanto estiverem adjacentes, ambos recebem +2.
+Se parceiro morrer, sofre dano mental.
+
+--- CRÍTICO PESADO ---
+Suas capacidades de críticos aumentar significativamente.
+Pode causar +1d6 de dano em cada dado de dano.
+
+--- ESCUDO VINGATIVO ---
+Ao usar Escudo, pode causar dano a atacantes.
+
+--- ESTILO DE COMBATE AVANÇADO ---
+Pode usar dois estilos ao mesmo tempo com penalidade.
+
+--- LUTA LIVRE ---
+Pode usar Atletismo para ataques.
+
+--- MIRA VELOZ ---
+Pode mirar como ação livre uma vez por rodada.
+
+--- MULTICLASSE ---
+ Permite combinar classes (com restrições).
+ Gasta NEX para adquirir habilidades de outra classe.
+
+--- EVOLUÇÃO NATURAL ---
+ Permite escolher habilidades de qualquer classe ao subir NEX.
+
+══════════════════════════════════════════════════════════════
+        PODERES DE CLASSE DO ARSENAL
+══════════════════════════════════════════════════════════════
+
+PODERES DE COMBATENTE:
+- Ataque Pesado: +2d6 em dano
+- Charge Destruidora: carga causa +dano
+- Dano Duplo: causa dobro em críticos
+- Escudo Reforçado: RD +2
+- Fúria: +2 em dano, -2 em Defesa
+
+PODERES DE ESPECIALISTA:
+- Atirador de Elite: +2 em ataques à distância
+- Dedução: +5 em Investigação
+- Disparo Rápido: um ataque extra por rodada
+- Especialista em Veículos: +2 em Pilotagem
+
+PODERES DE OCULTISTA:
+- Canalização: pode canalizar energia elementar
+- Mão Energética: ataques causam dano elementar
+- Ritualismo: pode usar rituais mais rápido
+- Invocação: pode invocar entidades

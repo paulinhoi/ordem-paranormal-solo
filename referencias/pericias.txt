@@ -1,0 +1,394 @@
+═══════════════════════════════════════════════════════════════
+                         ORDEM PARANORMAL - PERÍCIAS
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+                       PERÍCIAS POR ATRIBUTO-BASE
+═══════════════════════════════════════════════════════════════
+
+AGILIDADE:
+• Acrobacia (CARGA, Treinada)
+• Crime (CARGA, Treinada)
+• Furtividade (CARGA)
+• Iniciativa
+• Pilotagem (Treinada)
+• Pontaria
+• Reflexos
+
+FORÇA:
+• Atletismo
+• Luta
+
+INTELECTO:
+• Atualidades
+• Ciências (Treinada)
+• Investigação
+• Medicina (Treinada)
+• Ocultismo (Treinada)
+• Profissão (Treinada)
+• Sobrevivência
+• Tática (Treinada)
+• Tecnologia (Treinada)
+
+PRESENÇA:
+• Adestramento (Treinada)
+• Artes (Treinada)
+• Diplomacia
+• Enganação
+• Intimidação
+• Intuição
+• Percepção
+• Religião (Treinada)
+• Vontade
+
+VIGOR:
+• Fortitude
+
+═══════════════════════════════════════════════════════════════
+                         DESCRIÇÃO DAS PERÍCIAS
+═══════════════════════════════════════════════════════════════
+
+--- ACROBACIA (Agilidade) [CARGA, Treinada] ---
+Proezas acrobáticas
+
+Usos:
+• AMORTECER QUEDA (Veterano, DT 15): Ao cair, reação + teste de Acrobacia para reduzir.
+   Se passar, reduz dano da queda em 1d6, mais 1d6 por cada 5 que exceder DT.
+   Se reduzir a zero, cai de pé.
+• EQUILÍBRIO: Em superfícies precárias, testes por ação de movimento. Se passar,
+   avanza metade do deslocamento. Se falhar, não avança. Se falhar por 5+, cai.
+   DT 10=piso escorregadio, 15=superfície estreita, 20=muito estreita. Sofrer -5 para
+   avançar deslocamento total. Enquanto se equilibra, fica despreposto. Se sofrer dano,
+   testa novamente; se falhar, cai.
+• ESCAPAR: De amarras. DT = resultado do teste de Agilidade de quem amarrou +10
+   (cordas) ou 30 (algemas). Ação completa.
+• LEVANTAR-SE RAPIDAMENTE (Treinado, DT 20): Se estiver caído, pode fazer teste para
+   levantar como ação livre. Se falhar, gasta ação de movimento mas permanece caído.
+• PASSAR POR ESPAÇO APERTADO (Treinado, DT 25): Espremer por lugares estreitos.
+   Ação completa, avanza metade do deslocamento.
+• PASSAR POR INIMIGO: Atravessar espaço ocupado por inimigo. Teste oposto de
+   Acrobacia, Iniciativa ou Luta do oponente (o que for melhor). Se passar, atravessa;
+   se falhar, não atravessa e ação de movimento termina. Espaço ocupado por inimigo
+   conta como terreno difícil.
+
+--- ADESTRAMENTO (Presença) [Treinada] ---
+Lidar com animais
+
+Usos:
+• ACALMAR ANIMAL (DT 25): Acalma animal nervoso ou agressivo. Ação completa.
+• CAVALGAR: Andar à cavalo. Montar = ação de movimento, mas pode ser livre com
+   teste Adestramento DT 20 (se falhar por 5+, cai). Andar em terreno plano sem teste.
+   Obstáculos = teste DT 15 (pequeno/ruim) ou 20 (grande/muito ruim). Se falhar,
+   cai e sofre 1d6 pontos de dano. Parte do movimento, não exige ação.
+   Galopar: ação completa + teste, avança deslocamento + resultado do teste.
+• MANEJAR ANIMAL (DT 15): Faz animal realizar tarefa para qual foi treinado.
+   Usar como Pilotagem para veículos de tração animal. Ação de movimento.
+
+--- ARTES (Presença) [Treinada] ---
+Expressão artística (música, dança, escrita, pintura, atuação)
+
+Usos:
+• IMPRESSIONAR: Teste oposto de Vontade de quem quer impressionar. Se passar,
+   +2 em testes de Presença contra essa pessoa na cena. Se falhar, -2 e não pode
+   tentar de novo. Se tentar impressionar mais de uma pessoa, teste único pela plateia.
+   Tempo: minutos (música/dança) até horas (teatro).
+
+--- ATLETISMO (Força) ---
+Façanhas atléticas
+
+Usos:
+• CORRIDA: Ação completa + teste. Avança número de quadrados de 1,5m = deslocamento
+   + resultado do teste. Corre em linha reta, não em terreno difícil. Pode correr número
+   de rodadas = Vigor. Após isso, faz teste de Fortitude por rodada (DT 5 + 5 por teste
+   anterior). Se falhar, fica fatigado.
+• ESCALAR: Ação de movimento + teste. Se passar, avanza metade do deslocamento.
+   Se falhar, não avança. Se falhar por 5+, cai. DT 10=superfície com apoios, 15=portão/árvore,
+   20=muro com reentrâncias, 25=muro liso. Sofrer -5 para avançar deslocamento total.
+   Enquanto escala, fica despreposto. Se sofrer dano, testa novamente; se falhar, cai.
+   Personagem adjacente que esteja escalando e caia pode tentar pegá-lo: teste contra
+   DT da superfície +5.
+• NATAÇÃO: Na água, ação de movimento + teste por rodada para não afundar.
+   DT 10=água calma, 15=agitada, 20+=tempestuosa. Se passar, avanza metade do deslocamento.
+   Se falhar, boia mas não avanza. Se falhar por 5+, afunda. Segunda ação de movimento
+   na mesma rodada para testar novamente. Se submerso, prendê-la respiração.
+   Pode prender por número de rodadas = Vigor. Após isso, teste de Fortitude por rodada
+   (DT 5 + 5 por teste anterior). Se falhar, se afoga (0 PV e morrendo).
+   Sofre penalidade de carga.
+• SALTAR: Saltar sobre buracos/obstáculos ou alcançar algo elevado. Salto longo:
+   DT 5 por quadrado de 1,5m (DT 10 para 3m, 15 para 4,5m, 20 para 6m...).
+   Salto em altura: DT 15 por quadrado de 1,5m (30 para 3m). Precisa de pelo menos 6m
+   para correr e pegar impulso (sem espaço, DT +5). Parte do movimento, não exige ação.
+
+--- ATUALIDADES (Intelecto) ---
+Conhecimento de assuntos gerais (política, esporte, entretenimento)
+
+DT 15=informações comuns (nome do autor), 20=específicas (história do fundador),
+25=quase desconhecidas (lenda urbana esquecida).
+
+--- CIÊNCIAS (Intelecto) [Treinada] ---
+Campos científicos (matemática, física, química, biologia)
+
+Questões simples = sem teste. Questões complexas = DT 20. Questões experimentais
+(avaliação de proteção de liga metálica recém-criada) = DT 30.
+Personagens treinados podem se especializar em campo específico (sem diferença mecânica,
+mas ajuda na interpretação).
+
+--- CRIME (Agilidade) [Treinada, CARGA] ---
+Atividades ilícitas
+
+Usos:
+• ARROMBAR: Abre fechadura trancada. DT 20=comum (apartamento), 25=reforçada (loja),
+   30=avançada (cofre de banco). Ação completa.
+• FURTO (DT 20): Pegar objeto de outra pessoa (ou plantar). Ação padrão + teste.
+   Se passar, consegue. Vítima tem direito a teste de Percepção (DT = resultado de Crime).
+   Se passar, percebe tentativa.
+• OCULTAR: Esconde objeto em você. Ação padrão + teste oposto de Percepção de quem
+   pode ver. Se pessoa revistar, recebe +10 no teste de Percepção.
+• SABOTAR (Veterano): Desabilita dispositivo. Simples (desativar alarme) DT 20.
+   Complexo (sabotar pistola para explodir) DT 30. Se falhar por 5+, algo sai errado.
+   Ação completa (1d4+1). Sofrer -5 para fazer como ação completa. Sem kit = -5.
+
+--- DIPLOMACIA (Presença) ---
+Lábia e argumentação
+
+Usos:
+• ACALMAR (Treinado, DT 20): Estabiliza personagem adjacente que esteja enlouquecendo,
+   deixando com SAN 1. DT aumenta +5 cada vez que foi acalmado na cena. Ação padrão.
+• MUDAR ATITUDE: Muda categoria de atitude de NPC. Teste oposto de Vontade do alvo.
+   Se passar, muda uma categoria para cima ou baixo. Se passar por 10+, muda até duas.
+   Se falhar por 5+, muda uma categoria na direção oposta. Uma vez por dia por pessoa.
+   Tempo: minuto. Sofrer -10 para fazer como ação completa.
+• PERSUASÃO (DT 20): Convence pessoa a fazer algo. Se custoso (emprestar carro), -5.
+   Se perigoso (cometer crime), -10 ou falha automática. Pode ser oposto a Vontade.
+   Tempo: minuto ou mais.
+
+--- ENGANAÇÃO (Presença) ---
+Blefar e trapacear
+
+Usos:
+• DISFARCE (Treinado): Muda aparência ou de outra pessoa. Teste oposto de Percepção
+   de quem examinar. Se passar, pessoa acredita. Se disfarce é de pessoa específica,
+   conhecidos recebem +10. Exige pelo menos 10 minutos e kit. Sem kit = -5.
+• FALSIFICAÇÃO (Veterano): Falsifica documento. Teste oposto de Percepção de quem examinar.
+   Se passar, pessoa acredita. Se documento muito complexo, ou inclui assinatura/carimbo,
+   sofre -10.
+• FINTAR (Treinado): Ação padrão + teste oposto de Reflexos de ser em alcance curto.
+   Se passar, alvo fica despreposto contra próximo ataque, até fim do próximo turno.
+• INSINUAÇÃO (DT 20): Fala algo sem que outros entendam. Se passar, receptor entende.
+   Se falhar por 5+, entende diferente. Outros podem testar Intuição oposto para entender.
+• INTRIGA (DT 20): Espalha fofoca. Exige pelo menos um dia. Muito improvável = DT 30.
+   Pessoa pode investigar source com teste de Investigação (DT = resultado da intriga).
+• MENTIR: Pessoa acredita em algo que não é verdade. Teste oposto de Intuição da vítima.
+   Implausíveis sofrem -10 ("por que estou com o crachá do chefe? Ora, porque ele deixou
+   cair e vou devolver!").
+
+--- FORTITUDE (Vigor) ---
+Resistência contra efeitos que exigem vitalidade (doenças, venenos)
+Mantém fôlego correndo ou sem respirar (DT 5 + 5 por teste anterior).
+
+--- FURTIVIDADE (Agilidade) [CARGA] ---
+Ser discreto e sorrateiro
+
+Usos:
+• ESCONDER-SE: Teste oposto de Percepção de quem possa notar. Se passar, tem camuflagem
+   total contra quem falhou. Ação livre, só no final do turno, se terminar em lugar onde seja
+   possível se esconder. Se moveu no turno, sofre -5 (pode usar metade do deslocamento
+   para não sofrer). Se atacou ou fez algo chamativo, -15.
+• SEGUIR: Teste oposto de Percepção da pessoa seguida. Sofre -5 se lugar sem esconderijos
+   ou sem movimento. Vítima recebe +5 se tomando precauções. Se passar, segue até destino.
+   Se falhar, pessoa percebe na metade do caminho.
+
+--- INICIATIVA (Agilidade) ---
+Velocidade de reação. Determina ordem de ação no início de cada cena de ação.
+
+--- INTIMIDAÇÃO (Presença) ---
+Assustar ou coagir pessoas. Todos os usos são efeitos de medo.
+
+Usos:
+• ASSUSTAR (Treinado): Ação padrão + teste oposto de Vontade de pessoa em alcance curto.
+   Se passar, fica abalado pelo resto da cena. Se passar por 10+, fica apavorado por uma
+   rodada e então abalado pelo resto da cena.
+• COAGIR: Teste oposto de Vontade de pessoa adjacente. Se passar, obedece uma ordem sua.
+   Se perigoso ou contra natureza, +5 no teste ou passa automaticamente. Deixa a pessoa
+   hostil. Tempo: minuto ou mais.
+
+--- INTUIÇÃO (Presença) ---
+Empatia e "sexto sentido"
+
+Usos:
+• PERCEBER MENTIRA: Descobre se alguém está mentindo (veja Enganação)
+• PRESSENTIMENTO (Treinado, DT 20): Analisa pessoa para ideia de índole ou caráter,
+   ou situação para perceber fato estranho. Apenas indica se há algo anormal; para
+   descobrir causa, use Investigação.
+
+--- INVESTIGAÇÃO (Intelecto) ---
+Descobrir pistas e informações
+
+Usos:
+• INTERROGAR: Descobre informações perguntando. Gerais ("quem é dono?") = sem teste.
+   Restritas (delegado encarregado) = DT 20. Confidenciais ou que colocam em risco = DT 30.
+   Tempo: hora até dia.
+• PROCURAR: Examina local. DT 15=item discreto/no meio da bagunça, não necessariamente
+   escondido. 20=escondido (cofre atrás de quadro, documento em fundo falso). 30=muito bem
+   escondido (passagem secreta por botão, documento com tinta invisível). Tempo: ação
+   completa (examinar escrivaninha) até dia (pesquisar biblioteca).
+
+--- LUTA (Força) ---
+Ataques corpo a corpo. DT = Defesa do alvo.
+
+--- MEDICINA (Intelecto) ---
+Tratar ferimentos, doenças, venenos
+
+Usos:
+• PRIMEIROS SOCORROS (DT 20): Personagem adjacente morrendo e inconsciente perde
+   essas condições e fica com 1 PV. DT aumenta +5 cada vez que estabilizado na cena.
+   Ação padrão.
+• CUIDADOS PROLONGADOS (Veterano, DT 20): Cena de interlúdio, tratar até número de
+   pessoas igual a Intelecto. Se passar, elas recuperam dobro dos PV pela ação dormir.
+• NECROPSIA (Treinado, DT 20): Examina cadáver para causa e momento aproximado da morte.
+   Causas raras/extraordinárias (veneno exótico, maldição) = +10. Tempo: 10 minutos.
+• TRATAMENTO (Treinado): Ajuda vítima de doença/veneno com efeito contínuo. Ação completa
+   + teste contra DT da doença/veneno. Se passar, paciente recebe +5 no próximo teste de
+   Fortitude contra esse efeito.
+
+Exige kit. Sem ele, -5. Pode usar em si mesmo, mas sofre -5.
+
+--- OCULTISMO (Intelecto) [Treinada] ---
+Estudo do paranormal
+
+Usos:
+• IDENTIFICAR CRIATURA: Analisa criatura paranormal que possa ver. DT = DT para resistir
+   à Presença Perturbadora da criatura. Se passa, descobre uma característica (poder ou
+   vulnerabilidade). Por cada 5 que exceder DT, descobre outra. Se falhar por 5+, tira
+   conclusão errada. Ação completa.
+• IDENTIFICAR ITEM AMALDIÇOADO (DT 20): Ação de interlúdio para estudar e identificar
+   poderes ou ritual. Sofrer -10 para fazer como ação completa.
+• IDENTIFICAR RITUAL (DT 10 +5 por círculo): Quando alguém lança ritual, descobre qual
+   observando gestos, palavras, componentes. Reação.
+• INFORMAÇÃO: Responde dúvidas sobre Outro Lado, itens amaldiçoados, fenômenos, runas,
+   profecias. Simples = sem teste. Complexas = DT 20. Mistérios/enigmas = DT 30.
+
+--- PERCEPÇÃO (Presença) ---
+Notar coisas usando os sentidos
+
+Usos:
+• OBSERVAR: Ver coisas discretas ou escondidas. DT 15=difícil de ver (livro específico em
+   estante), 30=quase invisível (gota de sangue em folha na floresta à noite). Para pessoas
+   ou coisas escondidas, DT = resultado do teste de Furtividade ou Crime. Pode ler lábios (DT 20).
+• OUVIR: Escutar barulhos. Conversa casual próxima = DT 0. Sussurro = DT 15. Através de porta = +5.
+   Pode testar mesmo dormindo, mas -10; sucesso faz acordar. Seres não visíveis = DT 20, ou +10
+   no teste de Furtividade do ser, o que for maior. Mesmo passando, sofre penalidades normais
+   por lutar sem ver.
+
+--- PILOTAGEM (Agilidade) [Treinada] ---
+Operar veículos terrestres e aquáticos (motos, carros, lanchas). Ação de movimento por turno.
+Situação comum = sem teste. Ruim (estrada de chão sem iluminação) = DT 15 por turno.
+Terrível (terreno acidentado, tempestade) = DT 25 por turno. Veteranow pode pilotar veículos
+aéreos (aviões, helicópteros).
+
+--- PONTARIA (Agilidade) ---
+Ataques à distância. DT = Defesa do alvo.
+
+--- PROFISSÃO (Inteleto) [Treinada] ---
+Exercer profissão específica (advogado, engenheiro, jornalista)
+Converse com mestre sobre detalhes e testes possíveis. Quem possui essa perícia possui
+rendimentos próprios ou reserva de capital. Pode começar cada missão com um item adicional:
+treinado = categoria I, veterano = categoria II, expert = categoria III.
+
+--- REFLEXOS (Agilidade) ---
+Resistência contra efeitos que exigem reação rápida (armadilhas, explosões). Evitar fintas.
+
+--- RELIGIÃO (Presença) [Treinada] ---
+Conhecimento teológico e religiões
+
+Usos:
+• ACALMAR (DT 20): Pode usar como Diplomacia para acalmar personagem enlouquecendo.
+• INFORMAÇÃO: Responde dúvidas sobre mitos, profecias, relíquias sagradas.
+  DT 10=simples, 20=complexa, 30=mistério/enigma.
+• RITO (Veterano, DT 20): Realiza cerimônia religiosa (batizado, casamento, funeral...).
+
+--- SOBREVIVÊNCIA (Inteleto) ---
+Guiar em regiões selvagens e evitar perigos da natureza
+
+Usos:
+• ACAMPAMENTO (Treinado): Conseguir abrigo e alimento. DT 15=campo aberto, 20=mata
+   fechada, 25=regiões extremas (deserto, pântano, montanha). Clima ruim = -5 cumulativo.
+   Se passar, grupo pode usar ações de interlúdio alimentar-se e dormir mesmo ao relento.
+• IDENTIFICAR ANIMAL (Treinado, DT 20): Ação completa para identificar animal exótico.
+• ORIENTAR-SE: Em regiões selvagens, teste por dia para avançar. Se passar, deslocamento
+   normal. Se falhar, metade. Se falhar por 5+, se perde e não avança no dia.
+   Grupo escolhe guia antes de ver resultado! Treinados podem ajudar.
+• RASTREAR (Treinado): Identificar e seguir rastros. DT 15=grupo grande/único em solo mole
+   (lama, neve), 20=ser em solo comum (grama, terra), 25=ser em solo duro (estrada, piso).
+   Visibilidade/clima ruim = -5. Precisa testar por dia de perseguição. Deslocamento reduzido
+   à metade. Se falhar, tentar novamente gastando mais um dia. A cada dia desde criação
+   dos rastros, DT +1.
+
+--- TÁTICA (Inteleto) [Treinada] ---
+Educação militar
+
+Usos:
+• ANALISAR TERRENO (DT 20): Ação de movimento para observar campo de batalha.
+   Se passa, descobre vantagem (cobertura, camuflagem, terreno elevado) se houver.
+• PLANO DE AÇÃO (Veterano, DT 20): Ação padrão para orientar aliado em alcance médio.
+   Se passa, +5 na Iniciativa dele. Se fazer aliado que ainda não agiu ter Iniciativa maior
+   que a sua, age imediatamente. Nas próximas rodadas, age conforme nova ordem.
+
+--- TECNOLOGIA (Inteleto) [Treinada] ---
+Conhecimento avançado de eletrônica e informática
+
+Usos cotidianos (computador, celular) = sem treinamento/teste. Avançados = esta perícia.
+
+• FALSIFICAÇÃO (Veterano): Como Enganação, mas para documentos eletrônicos.
+• HACKEAR: Invade computador protegido. DT 15=computador pessoal, 20=rede profissional,
+   25=grande servidor corporativo/governamental/militar. Tempo: 1d4+1 ações completas.
+   Sofrer -5 para fazer como ação completa. Se falhar, não pode tentar novamente até ter
+   nova informação (nome usuário, senha). Se falhar por 5+, pode ser rastreado.
+   Uma vez dentro, pode fazer o que veio fazer.
+• LOCALIZAR ARQUIVO: Procura arquivo específico. Ação completa e DT 15 para PC pessoal,
+   1d4+1 ações completas e DT 20 para rede pequena, 1d6+2 ações completas e DT 25 para
+   corporativa/governamental. Para informações públicas na internet, use Investigação.
+• OPERAR DISPOSITIVO: Opera dispositivo eletrônico complexo (câmeras, fechaduras,
+   alarmes). DT 15=comum, 20=profissional, 25=protegido. 1d4+1 ações completas + kit.
+   Sofrer -5 para fazer como ação completa. Sem kit = -5.
+
+• VONTADE (Presença) ---
+Resistência contra efeitos que exigem determinação (intimidação, rituais que afetam a mente).
+Conjurar rituais em condições adversas. DT determinada pelo efeito.
+
+═══════════════════════════════════════════════════════════════
+                         TABELA RESUMO
+═══════════════════════════════════════════════════════════════
+
+Perícia       | Atributo | Treinada? | Carga | Kit
+--------------|----------|-----------|-------|-----
+Acrobacia     | Agi      | Sim       | Sim   | —
+Adestramento  | Pre      | Sim       | —     | —
+Artes         | Pre      | Sim       | —     | —
+Atletismo     | For      | —         | —     | —
+Atualidades   | Int      | —         | —     | —
+Ciências      | Int      | Sim       | —     | —
+Crime         | Agi      | Sim       | Sim   | Sim
+Diplomacia    | Pre      | —         | —     | —
+Enganação     | Pre      | —         | —     | Sim
+Fortitude     | Vig      | —         | —     | —
+Furtividade   | Agi      | —         | Sim   | —
+Iniciativa    | Agi      | —         | —     | —
+Intimidação   | Pre      | —         | —     | —
+Intuição      | Pre      | —         | —     | —
+Investigação  | Int      | —         | —     | —
+Luta          | For      | —         | —     | —
+Medicina      | Int      | —         | —     | Sim
+Ocultismo     | Int      | Sim       | —     | —
+Percepção     | Pre      | —         | —     | —
+Pilotagem     | Agi      | Sim       | —     | —
+Pontaria      | Agi      | —         | —     | —
+Profissão     | Int      | Sim       | —     | —
+Reflexos      | Agi      | —         | —     | —
+Religião      | Pre      | Sim       | —     | —
+Sobrevivência | Int      | —         | —     | —
+Tática        | Int      | Sim       | —     | —
+Tecnologia    | Int      | Sim       | —     | Sim
+Vontade       | Pre      | —         | —     | —
+
+═══════════════════════════════════════════════════════════════

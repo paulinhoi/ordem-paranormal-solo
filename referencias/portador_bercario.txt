@@ -1,0 +1,164 @@
+══════════════════════════════════════════════════════════════
+     O PORTADOR DO MEDO - BERÇÁRIO PARANORMAL
+══════════════════════════════════════════════════════════════
+
+Criaturas Bebês (Pet Paranormal) do universo de Ordem Paranormal.
+
+══════════════════════════════════════════════════════════════
+     PETS PARANORMAIS
+══════════════════════════════════════════════════════════════
+
+--- DUOGUINHO ---
+Tipo: Energia | VD: 40 | Tamanho: Pequeno
+PV: 80 | Defesa: 16 | FOR 1 | AGI 3 | VIG 1
+
+Descrição: Criatura pequena e fofa, parece uma ratazana com olhos grandes.
+Tem orelhas enormes que funcionam como asas. Emana energia positiva.
+
+HABILIDADES:
+- VOAR: Deslocamento de voo 6m
+- CHARMING: +2 em testes sociais com o dono
+- ENERGY FEED: Pode alimentar-se de energia
+
+---
+
+--- ENPAPINHA-Y ---
+Tipo: Sangue | VD: 50 | Tamanho: Pequeno
+PV: 100 | Defesa: 18 | FOR 1 | AGI 2 | VIG 2
+
+Descrição: Criatura gordinha e rosada, parece um porco miniatura.
+Tem manchas que mudam de cor conforme seu humor.
+
+HABILIDADES:
+- CARINHOSO: +2 em testes de Diplomacia
+- SNUGGLE: Pode aquecer o dono (proteção contra frio)
+- MASTIGAR: Pode comer coisas ruins (neutraliza venenos)
+
+---
+
+--- LOBOHNI ---
+Tipo: Sangue | VD: 60 | Tamanho: Pequeno
+PV: 120 | Defesa: 18 | FOR 2 | AGI 2 | VIG 2
+
+Descrição: Criatura похожа на lobo, mas com pelagem deformada.
+Tem olhos que brilham no escuro e dúv fossetes.
+
+HABILIDADES:
+- QUERIDINHO: Pode farejar criaturas paranormais
+- PROTEÇÃO: Late quando detecta perigo
+- LAMBER: Pode lamber ferimentos (cura menor)
+
+---
+
+--- SUCCNHO ---
+Tipo: Morte | VD: 50 | Tamanho: Pequeno
+PV: 100 | Defesa: 16 | FOR 1 | AGI 3 | VIG 1
+
+Descrição: Criatura ethereal похожа на ratazana spectral.
+Seu corpo é translúcido e frio ao toque.
+
+HABILIDADES:
+- INVISÍVEL: Pode ficar invisível brevemente
+- Sussurro: Pode sussurrar avisos ao dono
+- Vazio: Absorbe energia negativa
+
+---
+
+--- HERDEIRO HIPOTÉTICO ---
+Tipo: Conhecimento | VD: 80 | Tamanho: Médio
+PV: 200 | Defesa: 22 | FOR 3 | AGI 2 | VIG 3
+
+Descrição: Ser feito de múltiplos tentáculos que saem de uma massa amorfa.
+Cada tentáculo tem um olho no final. Muito perigoso.
+
+HABILIDADES:
+- Tentáculos: Pode agarrar alvos com tentáculos
+- Olhos: Pode ver em várias direções
+- Mente: Pode comunicar-se telepaticamente
+
+---
+
+--- ESPREITADINHO ---
+Tipo: Conhecimento | VD: 80 | Tamanho: Médio
+PV: 200 | Defesa: 21 | FOR 1 | AGI 4 | VIG 2
+
+Descrição: Ser desajeitado que tenta se esconder mas sempre falha.
+Tem aparência estranha e perturbadora.
+
+HABILIDADES:
+- Esconder: Pode tentar se esconder
+- Surpreender: Pode surpreender alvos
+- Olhar: Seu olhar causa paralisia
+
+---
+
+--- QUERUBIM ---
+Tipo: Energia | VD: 90 | Tamanho: Médio
+PV: 250 | Defence: 24 | FOR 2 | AGI 3 | VIG 3
+
+Descrição: Serangelical aparentemente benigno, mas com natureza深处 perigosa.
+Tem asas brillantes e rosto hermoso.
+
+HABILIDADES:
+- Asas: Pode voar
+- Luz: Pode brilhar intensamente
+- Bênção: Pode abençoar aliados
+
+---
+
+--- SUKITA ---
+Tipo: Sangue | VD: 70 | Tamanho: Pequeno
+PV: 150 | Defense: 20 | FOR 2 | AGI 4 | VIG 2
+
+Descrição: Criatura pequeno e ágil, похожа em um gremlin.
+Tem garras afiadas e dentes brilhantes.
+
+HABILIDADES:
+- Ataque Rápido: Pode atacar múltiplas vezes
+- Garras: Causa dano de Corte
+- Esconder: Pode se esconder facilmente
+
+---
+
+--- TEL-ALPHA ---
+Tipo: Conhecimento | VD: 100 | Tamanho: Grande
+PV: 300 | Defense: 26 | FOR 4 | AGI 2 | VIG 4
+
+Descrição: Seralienígena de aparência incompreensível.
+Tem Tentáculos que se movem em direçãoIncompreensível.
+
+HABILIDADES:
+- Telepatia: Pode comunicar-se mentalmente
+- Estranho: Causa dano mental a quem olha
+- Transformação: Pode mudar de forma
+
+---
+
+--- ÁDVENAS ---
+Tipo: Morte | VD: 60 | Tamanho: Médio
+PV: 130 | Defense: 18 | FOR 2 | AGI 2 | VIG 2
+
+Descrição: Sernecromântico pequeno, parece uma criança fantasmagórica.
+Tem olhos vazios e emite frío.
+
+HABILIDADES:
+- Toque Frio: Causa dano de Frio
+- Sussurro: Pode chamar mortos
+- Medo: Causa medo em aliados
+
+══════════════════════════════════════════════════════════════
+     COMO USAR PETS PARANORMAIS
+══════════════════════════════════════════════════════════════
+
+- PET é uma criatura que o personagem pode ter como companheiro
+- Pode ser adquiridocomo itens ou obtido através de missões
+- Cada PET tem suas próprias estatísticas e habilidades
+- PET pode ajudar o dono em combate, exploração ou socialmente
+- A relação entre PET e dono pode evoluçãoar ao longo do jogo
+
+RESUMO DOS PETS POR TIPO:
+
+ENERGIA: Duoguinho, Querubim
+SANGUE: Enpapinha-Y, LoboHNI, Sukita
+MORTE: Succnho, Advenas
+CONHECIMENTO: Herdeiro Hipotético, Espraitadinho, Tel-Alpha

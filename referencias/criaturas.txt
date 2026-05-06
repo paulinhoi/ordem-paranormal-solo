@@ -1,0 +1,724 @@
+═══════════════════════════════════════════════════════════════
+                    ORDEM PARANORMAL - CRIATURAS
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+                    CRIATURAS DE SANGUE
+═══════════════════════════════════════════════════════════════
+
+--- ZUMBI DE SANGUE (Sangue) ---
+VD: 20 | PV: 30 | DEF: 12 | FOR: 2 | AGI: 1 | INT: 0 | PRE: 0 | VIG: 2
+Deslocamento: 6m | Percepção: +0 | Iniciativa: +0
+Ataque: Pancada 1d6+2 (impacto)
+Características:
+• Audição Aguçada: Pode ouvir através de testes de Percepção com +5
+• Presença Perturbadora: DT 10, 1d4 dano mental
+• Sangue como ácido: Armas que causem dano de corte recebem +1dano
+
+Descrição: Criatura bestial e agressiva. Pele exposta extremamente sensível, detectam
+presenças através da alteração sutil da corrente de vento. "Enxergam" através da dor.
+
+--- CARENTE (Sangue) ---
+VD: 40 | PV: 60 | DEF: 14 | FOR: 3 | AGI: 1 | INT: 0 | PRE: 1 | VIG: 3
+Deslocamento: 9m | Percepção: +5 | Iniciativa: +0
+Ataque: Garra 1d8+4 (corte)
+Características:
+• Presença Perturbadora: DT 15, 2d6 dano mental
+• Audição Aguçada: same
+• Fome Voraz: Após reduzir alguém a 0 PV, recupera 20 PV
+• Rugby: Tamanho Grande (3m), VD +10
+• Resistência: Balístico, corte, impacto 5
+
+Descrição: Versão mais perigosa do Zumbi. Lebih besar, lebih kuat, lebih agresif.
+
+--- ABOMINAÇÃO DE SANGUE (Sangue) ---
+VD: 80 | PV: 120 | DEF: 18 | FOR: 5 | AGI: 2 | INT: 1 | PRE: 2 | VIG: 5
+Deslocamento: 9m | Percepção: +10 | Iniciativa: +5
+Ataque: Múltiplas garras 2d8+7 (corte) x2
+Características:
+• Presença Perturbadora: DT 20, 3d6 dano mental
+• Carniçal: Pode usar ação livre para atacar-alvo-ao-lado
+• Rugby: Tamanho Enorme (4,5m)
+• Resistência: Balístico, corte, impacto 10
+• Vulnerabilidade: Fogo
+
+Descrição: Monstro colossal de carne e sangue. Multiple braços, garras devastadoras.
+
+--- VAMPIRO (Sangue) ---
+VD: 60 | PV: 80 | DEF: 20 | FOR: 3 | AGI: 4 | INT: 2 | PRE: 4 | VIG: 3
+Deslocamento: 12m (voo) | Percepção: +15 | Iniciativa: +10
+Ataque: Mordida 2d6+5 (perfuração)
+Características:
+• Presença Perturbadora: DT 25, 4d6 dano mental
+• Sangue de Outros: Pode drenar PE (1d6) além de PV
+• Rugby: Tamanho Médio, pode planar
+• Resistência: Balístico 10, Veneno 10
+• Vulnerabilidade: Luz solar, alho, água benta
+
+Descrição: Predador sedento por sangue. Sedução e manipulação além de combate.
+
+--- TITAN DE SANGUE (Sangue) ---
+VD: 300 | PV: 400 | DEF: 30 | FOR: 6 | AGI: 2 | INT: 2 | PRE: 4 | VIG: 6
+Deslocamento: 12m | Percepção: +20 | Iniciativa: +5
+Ataque: Golpe devastador 4d12+10 (corte) x2
+Características:
+• Presença Perturbadora: DT 40, 8d8 dano mental
+• Rugby: Tamanho Colossal (9m)
+• Regeneração: Recupera 30 PV por turno
+• Resistência: Balístico, corte, impacto 20, Fogo 10
+• Vulnerabilidade: Fogo
+• Imunidade: Condições de medo, veneno, doença
+
+Descrição: Criatura colossal de pura agressão. Destrói qualquer coisa em seu caminho.
+
+═══════════════════════════════════════════════════════════════
+                    CRIATURAS DE MORTE
+═══════════════════════════════════════════════════════════════
+
+--- ESPÍRITO DA MORTE (Morte) ---
+VD: 30 | PV: 40 | DEF: 15 | FOR: 0 | AGI: 3 | INT: 1 | PRE: 3 | VIG: 1
+Deslocamento: 12m (voo) | Percepção: +10 | Iniciativa: +10
+Ataque: Toque gelado 1d8+4 (Morte)
+Características:
+• Presença Perturbadora: DT 15, 2d6 dano mental
+• Imaterial: Pode atravessar objetos sólidos
+• Rugby: Imune a dano físico normal
+• Resistência: Morte 10, Fogo 10
+• Vulnerabilidade: Luz forte
+
+Descrição: Ectoplasma friorento. Causa hipotermia e pavor. Percepção temporal distorcida.
+
+--- ZUMBI DE OSSOS (Morte) ---
+VD: 35 | PV: 50 | DEF: 14 | FOR: 2 | AGI: 2 | INT: 0 | PRE: 1 | VIG: 2
+Deslocamento: 9m | Percepção: +5 | Iniciativa: +5
+Ataque: Soco ósseo 1d8+3 (impacto)
+Características:
+• Presença Perturbadora: DT 12, 1d6 dano mental
+• Estrutura Óssea: +2 na Defesa, resistência 5 a corte/perfuração
+• Rugby: Tamanho Grande (3m)
+• Vulnerabilidade: Descritor impacto
+
+Descrição: Esqueleton alive. Movimentos rígidos mas letais. Pode regenerar membros.
+
+--- LIMO DA MORTE (Morte) ---
+VD: 45 | PV: 70 | DEF: 12 | FOR: 4 | AGI: 0 | INT: 0 | PRE: 1 | VIG: 4
+Deslocamento: 6m | Percepção: +0 | Iniciativa: -5
+Ataque: Contato 2d6+6 (Morte)
+Características:
+• Presença Perturbadora: DT 18, 2d8 dano mental
+• Absorção: Atravessa e consome matéria orgânica
+• Rugby: Tamanho Grande (3m), flui através de aberturas
+• Resistência: Físico 10, Fogo 5
+• Vulnerabilidade: Fogo
+
+Descrição: Lama negra e gelatinosa. Parasita matéria orgânica, causando apodrecimento.
+
+--- DEVORADOR DE MEMÓRIAS (Morte) ---
+VD: 70 | PV: 90 | DEF: 18 | FOR: 2 | AGI: 4 | INT: 3 | PRE: 4 | VIG: 2
+Deslocamento: 12m (voo) | Percepção: +15 | Iniciativa: +15
+Ataque: Toque drainante 2d8+6 (Morte)
+Características:
+• Presença Perturbadora: DT 25, 4d6 dano mental
+• Drenar Memórias: Além do dano, alvo perde memórias (escolha do mestre)
+• Imaterial: Pode atravessar barreiras
+• Rugby: Tamanho Médio, flutua
+• Resistência: Físico 10, Fogo 10
+
+Descrição: Entidade que se alimenta de memórias e tempo. Causa amnésia e degeneração.
+
+--- CÍCLOPE DA MORTE (Morte) ---
+VD: 150 | PV: 200 | DEF: 25 | FOR: 5 | AGI: 2 | INT: 1 | PRE: 3 | VIG: 5
+Deslocamento: 12m | Percepção: +20 | Iniciativa: +5
+Ataque: Golpe devastador 3d12+10 (impacto) + Olhar da Entropia (Morte)
+Características:
+• Presença Perturbadora: DT 35, 6d8 dano mental
+• Olhar da Entropia: Causa envelhecimento acelerado (2d12 dano de Morte)
+• Rugby: Tamanho Enorme (4,5m)
+• Regeneração: Recupera 25 PV por turno
+• Resistência: Físico 15, Fogo 10
+
+Descrição: Gigante feito de lodo negro. Seu olhar causa envelhecimento instantâneo.
+
+═══════════════════════════════════════════════════════════════
+                    CRIATURAS DE CONHECIMENTO
+═══════════════════════════════════════════════════════════════
+
+--- EXISTIDO (Conhecimento) ---
+VD: 80 | PV: 120 | DEF: 20 | FOR: 2 | AGI: 2 | INT: 4 | PRE: 3 | VIG: 2
+Deslocamento: 9m | Percepção: +15 | Iniciativa: +5
+Ataque: Toque do Conhecimento 2d10+5 (Conhecimento)
+Características:
+• Presença Perturbadora: DT 30, 5d6 dano mental
+• Existente: Teste oposto de Ocultismo para resistir seus efeitos
+• Texto Vivente: Corpo coberto de palavras que brilham quando的攻击
+• Rugby: Tamanho Médio
+• Imunidade: Dano de Conhecimento
+• Vulnerabilidade: Sangue
+
+Descrição: Alguém que entendeu demais do Outro Lado. Memórias e identidade consumidas.
+Repete seu próprio nome tentando ser lembrado. Textos ao redor trazem frases de Medo.
+
+--- LEMBRADO (Conhecimento) ---
+VD: 100 | PV: 180 | DEF: 22 | FOR: 2 | AGI: 2 | INT: 4 | PRE: 2 | VIG: 2
+Deslocamento: 9m | Percepção: +20 | Iniciativa: +10
+Ataque: Pancada 2d4+7 (impacto)
+Características:
+• Presença Perturbadora: DT 20, 4d6 dano mental
+• Aura Manifestada: Faces flutuantes gritam. Seres em alcance curto sofrem -10 em todos os testes
+• Rugby: Tamanho Médio
+• Resistência: Balístico, corte, impacto 10, Conhecimento 20
+• Vulnerabilidade: Sangue
+
+Descrição: Ser consumido pelo Conhecimento mas ainda com fragmentos de consciência.
+Circulado por aura dourada de faces que gritam. Sussurros de memórias proibidas.
+
+--- ESTRANGEIRO (Conhecimento/Energia) ---
+VD: 340 | PV: 750 | DEF: 50 | FOR: 5 | AGI: 3 | INT: 5 | PRE: 5 | VIG: 3
+Deslocamento: 15m (voo) | Percepção: +25 | Iniciativa: +20
+Ataque: Toque Sutil 4d8+10 (Conhecimento), Rajada Psíquica 4d10+20 (Conhecimento)
+Características:
+• Presença Perturbadora: DT 40, 10d6 dano mental
+• Enigma de Medo: Suas intenções são complexas. Investigar sinais, aprender linguagem, decifrar mensagens
+• Incubar: Coloca larva na mente de alvos (ação completa). Larva consome SAN até 0, então nasce novo Estrangeiro
+• Apagar Memória: Alvos que ficam insanos podem ter mente controlada ou memória apagada
+• Oblívio: Alvo esquece existência do Estrangeiro (Vontade DT 30)
+• Rugby: Tamanho Grande (3m)
+• Imunidade: Dano (exceto Sangue)
+• Vulnerabilidade: Sangue
+
+Descrição: Manifestação paranormal extremamente inteligente. Múltiplas formas, comunicação críptica.
+Abduções no mesmo horário. Dispositivos digitais reagem a sua presença. Larvas cresce na mente.
+
+--- OCIOSO (Conhecimento) ---
+VD: 260 | PV: 390 | DEF: 37 | FOR: 5 | AGI: 1 | INT: 1 | PRE: 5 | VIG: 3
+Deslocamento: 0m (voo) | Percepção: +15 | Iniciativa: +0
+Ataque: Aterrorizar 4d10+10 (dano mental)
+Características:
+• Presença Perturbadora: DT 35, 8d6 dano mental
+• Sempre Presente: No início da cena, escolhe um personagem para ser único que consegue vê-lo
+• Retaliação: Quando attackado ou alvo de habilidade, teletransporta para adjacente e attacka
+• Permanecer Próximo: Teleporta para qualquer ponto dentro do campo de visão do alvo
+• Rugby: Tamanho Grande (3m)
+• Resistência: Balístico, corte, impacto, Conhecimento 20
+• Vulnerabilidade: Sangue
+
+Descrição: Apenas observa, parado. Vítimas desenvolvem comportamento claustrofóbico.
+Não attacka ativamente, mas se attacked reage. Encontrados sozinhos, pernas/coluna quebradas.
+
+--- VULTO (Conhecimento) ---
+VD: 40 | PV: 60 | DEF: 19 | FOR: 2 | AGI: 4 | INT: 2 | PRE: 2 | VIG: 1
+Deslocamento: 12m | Percepção: +5 | Iniciativa: +5
+Ataque: Toque Macabro 2d6 (Conhecimento)
+Características:
+• Presença Perturbadora: DT 15, 3d6 dano mental
+• Aura Tangível: Ataques contra criaturas com condição de medo causam +2d6 dano de Conhecimento
+• Plantar Paranoia: ação completa para causar abalado/apavorado em personagens em alcance médio
+• Rugby: Tamanho Médio
+• Resistência: Balístico, corte, perfuração 5, Conhecimento 10
+• Vulnerabilidade: Sangue
+
+Descrição: Criatura formada pelo Medo de quem a observa. Névoa sólida humanóide.
+Manifesta através do susto de possibilidade. Causa paranoia e medo.
+
+═══════════════════════════════════════════════════════════════
+                    CRIATURAS DE ENERGIA
+═══════════════════════════════════════════════════════════════
+
+--- ANÁRQUICO (Energia) ---
+VD: 20 | PV: 30 | DEF: 21 | FOR: 2 | AGI: 3 | INT: 0 | PRE: 0 | VIG: 1
+Deslocamento: 9m | Percepção: -5 | Iniciativa: +5
+Ataque: Pancada Errática 2d12 (impacto)
+Características:
+• Presença Perturbadora: DT 14, 2d6 dano mental
+• Comportamento Errático: No início do turno, rola 1d6 para ação aleatória
+• Rugby: Tamanho Médio
+• Resistência: Energia 5
+• Vulnerabilidade: Conhecimento
+
+Descrição: Cuerpo transformado por Energía. Piel semi-transparente com veias e órgãos brilhantes.
+Comportamento errático e imprevisível. Grittos e grunhidos distorcidos.
+
+--- ANÁRQUICO DESCONTROLADO (Energia) ---
+VD: 120 | PV: 120 | DEF: 28 | FOR: 3 | AGI: 4 | INT: 2 | PRE: 2 | VIG: 3
+Deslocamento: 12m | Percepção: +10 | Iniciativa: +10
+Ataque: Pancada Energética 4d12 (impacto) x2
+Características:
+• Presença Perturbadora: DT 21, 4d6 dano mental
+• Aceleração: Personagem que sofre dano pode sofrer dano colateral no próximo turno
+• Autodestruição: ação movimento para causar 8d12 dano de Energia em todos em alcance curto
+• Rugby: Tamanho Médio
+• Resistência: Balístico, corte, perfuração 10, Energia 20
+• Vulnerabilidade: Conhecimento
+
+Descrição: Versão mais intensa do anárquico. Cuerpo translúcido e alucinado.
+Pode autodestruir causando dano massivo.
+
+--- ANOMIÁTICO (Energia) ---
+VD: 240 | PV: 600 | DEF: 41 | FOR: 3 | AGI: 5 | INT: 1 | PRE: 4 | VIG: 3
+Deslocamento: 18m | Percepção: +15 | Iniciativa: +15
+Ataque: Garra Desintegradora 4d12+20 (Energia) x2
+Características:
+• Presença Perturbadora: DT 30, 6d8 dano mental
+• Comportamento Errático: Três comportamentos aleatórios por turno
+• Rugby: Tamanho Médio
+• Resistência: Balístico, corte, perfuração 10, Energia 20
+• Vulnerabilidade: Conhecimento
+
+Descripción: Cuerpo humano transformado pela Energia multiplicada ao infinito.
+Vulto de luz que se teleporta desenfreadamente. Rindo caoticamente. Busca atacar aleatoriamente.
+
+--- CIBORGUE (Energia/Sangue) ---
+VD: 80 | PV: 160 | DEF: 25 | FOR: 3 | AGI: 3 | INT: 2 | PRE: 2 | VIG: 3
+Deslocamento: 9m | Percepção: +10 | Iniciativa: +5
+Ataque: Braço Laminado 1d12+10 (corte), Punho Energizado 2d8+10 (impacto), Canhão 4d12+5 (Energia)
+Características:
+• Presença Perturbadora: DT 15, 2d6 dano mental
+• Estado de Combate: Quatro estados (Alpha, Beta, Gama, Delta) com diferentes ações
+• Regeneração Energética: Recupera 20 PV por turno
+• Rugby: Tamanho Grande (3m)
+• Imunidade: Condições de paralisia
+• Resistência: Balístico, corte, perfuração 10, Energia 20
+• Vulnerabilidade: Conhecimento
+• Enigma de Medo: Cada estado tem uma fraqueza específica
+
+Descrição: Científico transformado em agglomerado mecânico-orgânico.
+Mutações causam comportamentoe changing during combat. Eletricidade dangerous.
+
+--- INFECTICÍDIO (Energia/Sangue) ---
+VD: 280 | PV: 600 | DEF: 25 | FOR: 5 | AGI: 3 | INT: 1 | PRE: 1 | VIG: 5
+Deslocamento: 9m | Percepção: +15 | Iniciativa: +10
+Ataque: Pancadas Infectadas 4d12+20 (Energia) x3
+Características:
+• Presença Perturbadora: DT 35, 8d6 dano mental
+• Horda: Sofre metade do dano de ataques únicos, dobro de efeitos de área.
+• Infecção: Alvos que sofrem dano ficam doente (Fortitude DT 30)
+• Consumação Insidiosa: Ao reduzir alguém a 0 PV, recupera 50 PV
+• Atropelar: Pode mover-se pelo espaço de outros, attackando cada um
+• Rugby: Tamanho Enorme (4,5m)
+• Resistência: Balístico, corte, perfuração, Energia 20
+• Vulnerabilidade: Conhecimento
+
+Descrição: Vírus paranormal que infecta através de contacto direto E digitalmente.
+Corpos deformados com olhos pulsantes e dentes brilhantes. Transforma vítimas em horda.
+
+═══════════════════════════════════════════════════════════════
+                    RELÍQUIAS
+═══════════════════════════════════════════════════════════════
+
+--- MÁSCARA DO DESESPERO (Conhecimento) ---
+VD: 400 | PV: 1200 | DEF: 55 | FOR: 4 | AGI: 4 | INT: 6 | PRE: 6 | VIG: 5
+Deslocamento: 12m (voo) | Percepção: +35 | Iniciativa: +25
+Ataque: Reescrever Realidade 10d6+10 (Conhecimento) + 10d6 mental + condição
+Características:
+• Presença Perturbadora: DT 45, 10d8 dano mental
+• Onipresença: Pode se deslocar para qualquer local com sombra, sabe tudo que acontece na Realidade
+• Conjuração Verdadeira: Pode lançar ritual de qualquer círculo com 20 PE máx e DT 45
+• Potência do Conhecimento: +35 em testes de Int/Pre/Vig, +25 em outros
+• Destronar o Anfitrião: Única que pode resolver Enigma de Medo do Anfitrião
+• Rugby: Tamanho Minúsculo (relíquia)
+• Imunidade: Condições, Dano
+• Vulnerabilidade: Sangue
+
+Descrição: máscara indestructible contendo toda verdade do Outro Lado.
+Portador se torna "Magistrada" com poder de alterar realidade. Objetivos misteriosos.
+
+═══════════════════════════════════════════════════════════════
+                    OUTRAS CRIATURAS
+═══════════════════════════════════════════════════════════════
+
+--- PERTURBADO DE ENERGIA (Energia) ---
+VD: 40 | PV: 60 | DEF: 19 | FOR: 1 | AGI: 4 | INT: 0 | PRE: 0 | VIG: 0
+Deslocamento: 9m | Percepção: +10 | Iniciativa: +10
+Ataque: Toque Plasmático 2d12 (Energia) x2
+Características:
+• Presença Perturbadora: DT 15, 2d8 dano mental
+• Implantar Confusão: Agarrar alvo e fazer reviver experiências traumáticas (2d8 dano mental)
+• Rugby: Tamanho Médio
+• Resistência: Balístico, corte, perfuração 5, Energia 10
+• Vulnerabilidade: Conhecimento
+
+Descrição: Alma enlouquecida bruscamente. Forma plasmática inconsistente e desesperada.
+Agarra-se à consciência próxima para compartilhar confusão.
+
+--- SUKKALGIR (Energia/Conhecimento) ---
+VD: 150 | PV: 220 | DEF: 34 | FOR: 2 | AGI: 3 | INT: 3 | PRE: 3 | VIG: 2
+Deslocamento: 18m (voo) | Percepção: +10 | Iniciativa: +10
+Ataque: Mordida do Outro Lado 3d10+8 (Energia)
+Características:
+• Presença Perturbadora: DT 25, 4d8 dano mental
+• Aura Desesperada: Seres em alcance curto sofrem 2d12 dano mental por turno
+• Espírito Plasmático: Pode atravessar obstáculos sólidos
+• Rugby: Tamanho Médio
+• Imunidade: Dano balístico, corte, perfuração
+• Resistência: Impacto, Energia 10
+• Vulnerabilidade: Conhecimento
+
+Descrição: Alma torturada pelo fogo. Cuerpo de Energía com palavras烧黜 na pele.
+Grilo constante que desestabiliza mente. Sorriso desesperado permanente.
+
+═══════════════════════════════════════════════════════════════
+                    ANIMAIS E HUMANOS
+═══════════════════════════════════════════════════════════════
+
+--- HUMANO COMUM ---
+PV: 10-20 | DEF: 10 | Stats: varies
+Armas sederhana, sem treinamento especial
+
+--- POLICIAL/MILITAR ---
+PV: 20-30 | DEF: 15-18 | Armas de fogo táticas
+Treinamento em combate, tática
+
+--- CULTISTA ---
+PV: 15-25 | DEF: 12-14 | Armas simples ou táticas
+Conhecimento básico de rituais, números
+
+═══════════════════════════════════════════════════════════════
+                    ESTATÍSTICAS DE CRIATURAS
+═══════════════════════════════════════════════════════════════
+
+TABELA DE TAMANHO:
+Minúsculo: pombo, rato - espaço 1,5m - Modificador Furt +5, Manobras -5
+Pequeno: cão, criança - espaço 1,5m - Modificador Furt +2, Manobras -2
+Médio: humano adulto - espaço 1,5m - Modificador 0
+Grande: cavalo, aberração - espaço 3m - Modificador Furt -2, Manobras +2
+Enorme: elefante - espaço 4,5m - Modificador Furt -5, Manobras +5
+Colossal: baleia - espaço 9m - Modificador Furt -10, Manobras +10
+
+FÓRMULA DE DEFESA:
+Defesa = 10 + Agilidade + bônus de armadura + modificadores
+
+TESTES DE RESISTÊNCIA:
+• Fortitude: DV, venenos, doenças
+• Reflexos: áreas de efeito, armadilhas
+• Vontade: intimidação, rituais mentais
+
+PRESENÇA PERTURBADORA:
+Cada criatura tem uma DT e dano mental. Personagens com NEX igual ou superior
+ao indicado são imunes.
+
+═══════════════════════════════════════════════════════════════
+              NOVAS CRIATURAS DO LIVRO 1.1
+═══════════════════════════════════════════════════════════════
+
+--- TELOPSIA (Energia) ---
+VD: 340 | PV: 560 (280 machucado) | DEF: 48 | DT: 40 | NEX 99% é imune
+ATRIBUTOS: AGI 4, FOR 2, INT 3, PRE 5, VIG 2
+PERÍCIAS: Furtividade +20
+Deslocamento: 12m (8)
+INICIATIVA: +25 | PERCEPÇÃO: +20
+RESISTÊNCIAS: Balístico, corte, perfuração e Energia 20
+IMUNIDADES: Condições de paralisia
+VULNERABILIDADES: Conhecimento
+Habilidades:
+• Toque Desintegrador: 3 ataques, +35, 6d12+30 Energia
+• Viajar pela Tela: Teleporta entre telas em alcance longo
+• Tela Zumbificadora: 6d6 dano mental, fica confuso (DT 30 Vontade)
+• Prender na Tela: Paralisia dentro da tela, 2d12 dano mental/turno
+• Enigma do Medo: Destruir a fita amaldiçoada para derrotá-lo
+
+Descrição: Criatura com cabeça de televisão antiga, transmite imagens
+enlouquecedoras. Acompanha uma fita VHS amaldiçoada.
+
+--- TEMPESTUOSO (Energia) ---
+VD: 360 | PV: 950 (475 machucado) | DEF: 56 | DT: 40
+ATRIBUTOS: AGI 5, FOR 4, INT 2, PRE 5, VIG 4
+Deslocamento: 24m (12)
+INICIATIVA: +25 | PERCEPÇÃO: +20
+RESISTÊNCIAS: Balístico, corte, perfuração e Energia 20
+IMUNIDADES: Condições de paralisia
+VULNERABILIDADES: Conhecimento
+Habilidades:
+• Garras Radioativas: 2 ataques, +40, 4d20+20 Energia (alcance curto)
+• Raio de Energia Radioativa: Projeta raio após dois acertos
+• Expandir em Radiação: 10d20+20 Energia em alcance longo (perde 100 PV)
+• Aura Radioativa: 2d20+20 dano de Energia em alcance curto/turno
+
+Descrição: Tempestade do caos, forma humanóide de pura energia radioativa.
+Manifesta-se em Membrana extremamente danificada, como usinas radioativas.
+
+--- VIAJANTE DAS POLAROIDS (Conhecimento) ---
+VD: 200 | PV: 360 (180 machucado) | DEF: 34 | DT: 20 | NEX 60%
+ATRIBUTOS: AGI 4, FOR 2, INT 3, PRE 4, VIG 2
+Deslocamento: 9m (6) | Escalada: 9m (6)
+INICIATIVA: +15 | PERCEPÇÃO: +15
+RESISTÊNCIAS: Balístico, corte e perfuração 10, Energia 20
+VULNERABILIDADES: Conhecimento
+Habilidades:
+• Invisibilidade Permanente: Camuflagem total, +15 Furtividade
+• Pancada: 2 ataques, +15, 2d12+10 impacto
+• Agarrão: Pode agarrar seres Médios ou menores
+• Devorar Memória: 4d12 dano mental, esquece uma pessoa
+• Enigma do Medo: Fotografá-lo para torná-lo visível temporariamente
+
+Descrição: Corpo esbranquiçado, membros alongados, cabeça com incontáveis
+rostos terríveis. Invasivo através de fotografias.
+
+--- ANFITRIÃO (Conhecimento) ---
+VD: 400 | PV: 1413 (706 machucado) | DEF: 59
+ATRIBUTOS: AGI 7, FOR 5, INT 6, PRE 6, VIG 5
+Deslocamento: 12m (8)
+INICIATIVA: +35 | PERCEPÇÃO: +25
+IMUNIDADES: Condições de paralisia, dano e efeitos de Energia
+VULNERABILIDADES: Conhecimento
+POTÊNCIA DE ENERGIA: +35 em testes de AGI e INT, +25 em outros
+Transformação em Dois Atos:
+• Ato 1: Divide-se em 5 facetas (250 PV cada)
+• Ato 2: Retorna como forma única com todos os PV, 3 ações/rodada
+Habilidades:
+• Trilha Sonora: 2d10 dano mental/turno em alcance longo (Ato 2)
+• Rolemalização Aleatória: Efeitos variados (Ato 2)
+• Teatro (Amphitruo): Texto incompreensível, 10d6 dano mental
+• Queimar (Aeneas): Cone de chamas, 10d6+20 Energia
+• Corte Caótico (Liber): +4d12 Energia contra desprevenidos/flanqueados
+• Lança e Adaga (Plautus): 2 ataques, 2d12+20 Energia
+• Corte de Água (Silenus): Asfixia com dano
+• Teletransporte: Teleporta em alcance médio
+
+Descrição: Personificação do caos, capaz de transformar tudo que toca.
+Enigma do Medo: Proteção soberana do Equilíbrio (Máscara do Desespero).
+
+--- DEGOLIFICADA (Energia/Conhecimento/Sangue/Morte) ---
+VD: 320 | PV: 850 (425 machucado) | DEF: 45 | DT: 40 | NEX 95%+ é imune
+ATRIBUTOS: AGI 3, FOR 5, INT 3, PRE 4, VIG 4
+Deslocamento: 6m (4)
+INICIATIVA: +0 | PERCEPÇÃO: +15 (percepção às cegas)
+RESISTÊNCIAS: Imune a dano até resolver mistério da origem
+Habilidades:
+• Pancada: 2 ataques, +35, 8d8+20 impacto
+• Agarrar e Estrangular: Agarra e asalta simultaneamente
+• Grito Rasgado: 4d10+10 dano mental + efeito aleatório (surdez)
+• Desfiguração Capilar: 10d6+20 perfuração + 6d10 mental em agarrados
+• Criatura do Medo: Imune a dano até resolver enigma da origem
+
+Metamorfoses (conforme estímulo):
+• Conturbada (Energia): Transforma se alvo enlouquecer
+• Gnóstica (Conhecimento): Resposta errada ao enigma
+• Devoradora (Sangue): Absorve alvo morto
+• Decrépita (Morte): Após 3 erros em ataques
+
+Descrição: Figura humanóide flutuante, cabelos pretos cobrindo o rosto.
+Neblina com rostos atormentados ao redor. Conexão com crianças mortas.
+
+═══════════════════════════════════════════════════════════════
+              AMEAÇAS HUMANAS - CRIMINOSOS
+═══════════════════════════════════════════════════════════════
+
+--- BANDIDO ---
+VD: 10 | PV: 8 | DEF: 14
+ATRIBUTOS: AGI 2, FOR 2, INT 1, PRE 1, VIG 1
+PERÍCIAS: Crime +5, Furtividade +5
+Deslocamento: 9m (6)
+Ataque: Faca 1d4+2 (perfuração)
+Habilidade: Ataque Furtivo +1d6 contra desprevenidos/flanqueados
+
+--- CAPANGA ---
+VD: 20 | PV: 17 | DEF: 13
+ATRIBUTOS: AGI 1, FOR 2, INT 1, PRE 1, VIG 2
+PERÍCIAS: Intimidação +5
+Deslocamento: 9m (6)
+Ataques: Bastão 1d8+7 | Revólver 2d6+5 (alcance curto)
+Habilidade: Ataque Furtivo +2d6
+
+--- SOLDADO DE ALUGUEL ---
+VD: 40 | PV: 25 | DEF: 18
+ATRIBUTOS: AGI 2, FOR 2, INT 1, PRE 1, VIG 2
+Deslocamento: 9m (6)
+Ataques: Machete 1d6+9 | Fuzil de Assalto 2d8+9 (alcance médio)
+Habilidade: Ataque em Movimento
+
+--- ASSASSINO ---
+VD: 80 | PV: 90 | DEF: 26
+ATRIBUTOS: AGI 4, FOR 2, INT 3, PRE 3, VIG 2
+PERÍCIAS: Crime +10, Enganação +10, Furtividade +10
+Deslocamento: 9m (6)
+Ataques: Faca x2 1d4+11 | Pistola x2 1d12+14 (alcance curto)
+Habilidades: Evasão, Ataque Furtivo +4d6, Mão na Boca, Assasinar
+
+--- COMANDANTE MERCENÁRIO ---
+VD: 120 | PV: 145 | DEF: 29
+ATRIBUTOS: AGI 3, FOR 3, INT 2, PRE 2, VIG 3
+PERÍCIAS: Intimidação +10, Tática +10
+Deslocamento: 6m (4)
+RESISTÊNCIA: Balístico, corte, impacto, perfuração 5
+Ataques: Machete x2 1d6+15 | Metralhadora x2 3d12+15 (alcance médio)
+Habilidades: Sadismo (+dano após causar dano), Ataque em Movimento, Ordens
+
+═══════════════════════════════════════════════════════════════
+              AMEAÇAS HUMANAS - CULTISTAS
+═══════════════════════════════════════════════════════════════
+
+--- INICIADO ---
+VD: 20 | PV: 15 | DEF: 16
+ATRIBUTOS: AGI 1, FOR 1, INT 2, PRE 2, VIG 1
+PERÍCIAS: Enganação +5, Ocultismo +5
+Deslocamento: 9m (6)
+Ataque: Faca 1d4+1
+CONJURADOR: 2 rituais de 1º círculo, 3 PE por conjuração, DT 15
+
+--- INVESTIDO ---
+VD: 40 | PV: 35 | DEF: 17
+ATRIBUTOS: AGI 2, FOR 1, INT 2, PRE 2, VIG 1
+PERÍCIAS: Enganação +10, Ocultismo +10
+Deslocamento: 9m (6)
+Ataques: Faca 1d4+1 | Revólver 2d6 (alcance curto)
+CONJURADOR: 2 rituais 1º + 2 rituais 2º círculo, 5 PE, DT 17
+
+--- LÍDER DE CULTO ---
+VD: 140 | PV: 150 | DEF: 27
+ATRIBUTOS: AGI 2, FOR 1, INT 3, PRE 3, VIG 2
+PERÍCIAS: Enganação +15, Ocultismo +15
+Deslocamento: 9m (6)
+Ataques: Faca 1d4+1 | Revólver 2d6 (alcance curto)
+CONJURADOR: 2 rituais 1º + 2 rituais 2º + 2 rituais 3º círculo, 10 PE, DT 25
+
+═══════════════════════════════════════════════════════════════
+              AMEAÇAS HUMANAS - POLICIAIS
+═══════════════════════════════════════════════════════════════
+
+--- POLICIAL ---
+VD: 20 | PV: 15 | DEF: 19
+ATRIBUTOS: AGI 2, FOR 2, INT 1, PRE 1, VIG 2
+Deslocamento: 9m (6)
+Ataques: Bastão 1d8+7 | Pistola 1d12+5 (alcance curto)
+
+--- POLICIAL DE ELITE ---
+VD: 60 | PV: 40 | DEF: 27
+ATRIBUTOS: AGI 3, FOR 3, INT 1, PRE 1, VIG 3
+Deslocamento: 6m (4)
+RESISTÊNCIA: Balístico, corte, impacto, perfuração 5
+Ataques: Bastão x2 1d8+13 | Fuzil de Assalto 2d8+13 (alcance médio)
+Habilidades: Fortificação (50%规避 acerto crítico), Lança-granadas (1x/cena),
+Empurrar e Atirar
+
+--- CHEFE DE POLÍCIA ---
+VD: 100 | PV: 105 | DEF: 25
+ATRIBUTOS: AGI 2, FOR 3, INT 2, PRE 3, VIG 3
+Deslocamento: 9m (6)
+Ataques: Bastão x2 1d8+8 | Espingarda x2 4d6+12 (alcance curto)
+Habilidade: Teimoso (1x/cena ignora efeito ou reduz dano à metade)
+
+═══════════════════════════════════════════════════════════════
+              ANIMAIS
+═══════════════════════════════════════════════════════════════
+
+--- CÃO DE GUARDA ---
+VD: 10 | PV: 12 | DEF: 14
+ATRIBUTOS: AGI 2, FOR 2, INT 0, PRE 1, VIG 2
+PERÍCIAS: Sobrevivência +10
+Deslocamento: 12m (8)
+Ataque: Mordida 1d6+2
+Habilidade: Derrubar após mordida bem-sucedida
+
+--- ENXAME DE ABELHAS ---
+VD: 10 | PV: 10 | DEF: 15
+ATRIBUTOS: AGI 1, FOR 0, INT 0, PRE 1, VIG 0
+Deslocamento: 3m (2), voo 9m (6)
+Habilidades: Enxame (ataca no espaço), Zumbido Nauseante (enjoado)
+
+--- ENXAME DE RATOS ---
+VD: 10 | PV: 15 | DEF: 13
+ATRIBUTOS: AGI 1, FOR 0, INT 0, PRE 1, VIG 0
+Deslocamento: 9m (6), escalar/nadar 6m (4)
+Habilidades: Enxame, Doença (Febre Hemorrágica, DT 15)
+
+--- JACARÉ (Grande) ---
+VD: 40 | PV: 40 | DEF: 16
+ATRIBUTOS: AGI 1, FOR 3, INT 0, PRE 1, VIG 2
+PERÍCIAS: Furtividade +8
+Deslocamento: 6m (4), nadar 9m (6)
+Ataques: Mordida 1d8+8 | Cauda 1d12
+Habilidade: Giro da Morte (+2d8 se estiver agarrando dentro d'água)
+
+--- JAVAPORCO ---
+VD: 20 | PV: 35 | DEF: 14
+ATRIBUTOS: AGI 1, FOR 2, INT 0, PRE 1, VIG 3
+Deslocamento: 12m (8)
+Ataque: Mordida 1d8+4
+Habilidades: Ferocidade (+dano após sofrer dano), Mordida Final (ao morrer)
+
+--- ONÇA-PINTADA (Grande) ---
+VD: 40 | PV: 55 | DEF: 16
+ATRIBUTOS: AGI 3, FOR 3, INT 0, PRE 1, VIG 2
+PERÍCIAS: Furtividade +13
+Deslocamento: 12m (8), escalar/nadar 6m (4)
+Ataques: Mordida 1d8+5 | Garras x2 1d6+5
+Habilidades: Agarrão, Bote (investida com mordida + garras)
+
+--- SUCURI (Grande) ---
+VD: 40 | PV: 68 | DEF: 16
+ATRIBUTOS: AGI 2, FOR 3, INT 0, PRE 1, VIG 3
+PERÍCIAS: Furtividade +8
+Deslocamento: 6m (4), escalar/nadar 9m (6)
+Ataque: Mordida 1d6+8
+Habilidades: Agarrão, Constrição (2d6+8 dano/turno enquanto agarrar)
+
+═══════════════════════════════════════════════════════════════
+              PERIGOS E AMEAÇAS AMBIENTAIS
+═══════════════════════════════════════════════════════════════
+
+--- ÁCIDO ---
+Exposição: 1d6 dano químico/rodada
+Imersão: 10d6/rodada + 1 rodada adicional
+
+--- ARMADILHAS ---
+• Alarme: Sinaliza intrusão (DT 20 investigar/desarmar)
+• Arame Farpado: Terreno difícil + 1d6+2 dano de corte
+• Armadilha de Caça: 4d6 dano, lenta + imóvel (Fortitude DT 20)
+• Fosso Camuflado: 3m queda = 2d6 dano (DT 20 Atletismo p/ escalar)
+• Descarga Elétrica: 6d6 eletricidade a 3m (Reflexos DT 20)
+
+--- CLIMA ---
+Calor (>50°C): Teste Fortitude/dia, falha = 1d6 dano fogo
+Frio (<-10°C): Teste Fortitude/dia, falha = 1d6 dano frio
+Tempestade: –10 Percepção, 1d10: 1 = raio (8d12 eletricidade)
+Vento Forte: –5 ataques à distância, 50% apagar chamas
+Vendaval: –10 ataques à distância, apaga chamas/dissipa névoas
+
+--- DOENÇAS ---
+• Febre Hemorrágica (mordida ratos): Fraco → Debilitado → Sangrando
+• Mente Embaralhada (implante): INT-1 → Esquece informações → Ataca todos
+• Putrefação Acelerada (inalação): VIG-1 → VIG-2 + desloc./2 → VIG-0 + lesão
+• Sangue Quente (contato): FOR/AGI+1 → Confuso → Confuso + vulnerável
+• Vírus do Infecticídio (contato): PV máx.-2d10 → PV máx.-2d10 → Transmite
+  (só pode ser combatido abaixo de 0°C)
+
+--- ELETRICIDADE ---
+Mínima (1d6): Bateria, soquete
+Baixa (2d8): Caixa de fusíveis
+Média (4d10): Cerca elétrica
+Alta (8d12): Raio
+
+--- FOME E SEDE ---
+1 dia sem problema → Teste Fortitude/dia (DT 15+1/teste)
+Falha 1: Fraco | Falha 2: Debilitado | Falha 3: Inconsciente | Falha 4: Morte
+
+--- LAVA ---
+Exposição: 2d6 fogo/rodada
+Imersão: 20d6/rodada + 1 rodada adicional
+
+--- QUEDA ---
+1d6 por 1,5m até 40d6 (máx. 60m)
+Queda na água: -4d6
+
+--- FOGO ---
+Teste Reflexos DT 15 para evitar ficar em chamas (1d6 dano/turno)
+
+--- SUFOCAMENTO ---
+Rodadas de respiração = Vigor
+Depois: Teste Fortitude/rodada (DT 5+5/teste)
+Falha: Inconsciente + 1d6 PV/rodada até morrer
+
+--- VENENOS ---
+• Arsênico (ingestão): 1d12/rodada por 1d4 rodadas
+• Beladona (ferimento): Fraco
+• Clorofórmio (inalação): Inconsciente (enjoado 1 rodada)
+• Curare (ferimento): Imóvel (lento) por 1d6 rodadas
+• Estricnina (ferimento): 2d12/rodada por 2d4 rodadas
+• Inseticida (inalação): Enjoado
+• Lixo químico (contato): Debilitado (fraco)
+• Peçonha fraca (ferimento): 1d12 (metade)
+• Peçonha mortal (ferimento): –1 PV (10d6)
+• Peçonha potente (ferimento): 1d12/rodada por 1d4 rodadas
+• Sonífero (ingestão): Inconsciente (enjoado 1 rodada)
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,329 @@
+══════════════════════════════════════════════════════════════
+     O PORTADOR DO MEDO - CRIATURAS PARANORMAIS
+══════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════
+     NOVAS CRIATURAS DO PORTADOR DO MEDO
+══════════════════════════════════════════════════════════════
+
+--- ARMADURA VIVA ---
+Tipo: Sangue | VD: 100 | PV: 320 | Defesa: 28
+Percepção: +10 | Iniciativa: +5 | Fortitude: +15 | Reflexos: +10 | Vontade: +5
+Resistências: Balístico 10, Corte 10, Impacto 10, Perfuração 10, Sangue 10
+Vulnerabilidades: Fogo e Frio
+Tamanho: Grande | FOR 3 | INT 2 | PRE 0 | VIG 4 | AGI 4
+
+HABILIDADES:
+- ABRACO TORTUOSO: Agarrados sofrem 2d6 Mental/rodada, Alquebrado + Frustrado
+- PESTES DEVORADORAS: 2d6 Perfuração/rodada, ocupa espaço com outras criaturas
+- DISPERSAR: Reorganiza formato, muda tamanho e DT
+
+--- MAL-ACOSTUMADO ---
+Tipo: Conhecimento | VD: 60 | PV: 150 | Defesa: 20
+Percepção: +10 | Iniciativa: +5 | Fortitude: +5 | Reflexos: +10 | Vontade: +10
+Vulnerabilidades: Fogo
+Tamanho: Médio | FOR 2 | INT 4 | PRE 3 | VIG 2 | AGI 3
+
+HABILIDADES:
+- LIXO MENTAL: Atrai objetos mentais, causa dano mental
+- MONÓTONO: Repetição cause Confusão
+- PADRÃO FIXO: Não cambia ações
+
+--- ESCORQUILO ---
+Tipo: Energia | VD: 80 | PV: 200 | Defesa: 22
+Percepção: +10 | Iniciativa: +5 | Fortitude: +10 | Reflexos: +10 | Vontade: +5
+Vulnerabilidades: Frio
+Tamanho: Médio | FOR 3 | INT 1 | PRE 2 | VIG 3 | AGI 3
+
+HABILIDADES:
+- CAOS INSTIGADO: Aumenta caos ao redor
+- DANO CAÓTICO: Dano aleatório
+- INSTABILIDADE: Pode ficar fora de controle
+
+--- VIGORÉXICA ---
+Tipo: Sangue | VD: 90 | PV: 250 | Defesa: 24
+Percepção: +10 | Iniciativa: +5 | Fortitude: +15 | Reflexos: +10 | Vontade: +5
+Resistências: Veneno
+Vulnerabilidades: Fogo
+Tamanho: Grande | FOR 4 | INT 1 | PRE 2 | VIG 4 | AGI 2
+
+HABILIDADES:
+- FORÇA EXAGERADA: Pode destruir objetos facilmente
+- MEMBRO AMPULADO: Membros extras
+- RESISTÊNCIA FÍSICA: Alta resistência
+
+--- SACERDOTE GALANTE ---
+Tipo: Conhecimento | VD: 70 | PV: 180 | Defesa: 22
+Percepção: +10 | Iniciativa: +5 | Fortitude: +5 | Reflexos: +5 | Vontade: +15
+Tamanho: Médio | FOR 2 | INT 3 | PRE 5 | VIG 2 | AGI 2
+
+HABILIDADES:
+- CARISMA HIPNÓTICO: Atrai pessoas
+- ENSINAMENTOS: Conhece rituais
+- PRESENÇA: Impressiona facilmente
+
+--- PEÕES DO DESTINO ---
+Tipo: Morte | VD: 40 | PV: 80 | Defesa: 16
+Percepção: +5 | Iniciativa: +10 | Fortitude: +5 | Reflexos: +10 | Vontade: +5
+Tamanho: Pequeno | FOR 1 | INT 0 | PRE 2 | VIG 2 | AGI 4
+
+HABILIDADES:
+- MARCHAR: Movem-se em sincronia
+- PROTEÇÃO: Protegem o destinatário
+- SAQUIDADE: Trabalham em grupo
+
+--- DAMA DO DESTINO ---
+Tipo: Conhecimento | VD: 100 | PV: 300 | Defesa: 26
+Percepção: +15 | Iniciativa: +10 | Fortitude: +10 | Reflexos: +10 | Vontade: +15
+Tamanho: Médio | FOR 2 | INT 5 | PRE 5 | VIG 3 | AGI 3
+
+HABILIDADES:
+- DOMÍNIO DO DESTINO: Controla destino
+- LEITURA: Pode ler futuro
+- PRESENÇA ATERRIZANTE: Aura de medo
+
+--- COLIBRI RADIAL ---
+Tipo: Energia | VD: 50 | PV: 100 | Defesa: 18
+Percepção: +10 | Iniciativa: +15 | Fortitude: +5 | Reflexos: +15 | Vontade: +5
+Tamanho: Pequeno | FOR 1 | INT 1 | PRE 2 | VIG 1 | AGI 5
+
+HABILIDADES:
+- VELOCIDADE EXTREMA: Muito rápido
+- BICO PERFURANTE: Ataque perfurante
+- MOVIMENTO ERRÁTICO: Difícil de atingir
+
+--- DANÇARINA MELÓDICA ---
+Tipo: Energia | VD: 70 | PV: 150 | Defesa: 20
+Percepção: +10 | Iniciativa: +10 | Fortitude: +5 | Reflexos: +10 | Vontade: +10
+Tamanho: Médio | FOR 2 | INT 2 | PRE 4 | VIG 2 | AGI 4
+
+HABILIDADES:
+- DANÇA HIPNÓTICA: Atrae com dança
+- SOMBROS: Causa dano com movimento
+- ENCANTAMENTO: Encanta vítimas
+
+--- PAR ORBITAL ---
+Tipo: Energia | VD: 60 | PV: 120 | Defesa: 18
+Percepção: +5 | Iniciativa: +5 | Fortitude: +5 | Reflexos: +10 | Vontade: +5
+Tamanho: Pequeno | FOR 1 | INT 2 | PRE 2 | VIG 2 | AGI 3
+Deslocamento: Voando 9m
+
+HABILIDADES:
+- ORBITA: Gira ao redor de alvos
+- CAMPO ELETRICO: Causa dano elétrico
+- CARGA: Ataca com velocidade
+
+--- SEGUNDO SOL ---
+Tipo: Energia | VD: 150 | PV: 500 | Defesa: 35
+Percepção: +15 | Iniciativa: +5 | Fortitude: +15 | Reflexos: +10 | Vontade: +15
+Tamanho: Enorme | FOR 5 | INT 3 | PRE 4 | VIG 5 | AGI 1
+Deslocamento: Voando 6m
+
+HABILIDADES:
+- BRILHO INTENSO: Causa dano de luz
+- CALOR EXTREMO: Causa dano de fogo
+- AURA: Afeta área ao redor
+
+--- DRAKE ---
+Tipo: Energia | VD: 90 | PV: 280 | Defesa: 26
+Percepção: +10 | Iniciativa: +5 | Fortitude: +15 | Reflexos: +10 | Vontade: +10
+Tamanho: Grande | FOR 5 | INT 2 | PRE 3 | VIG 4 | AGI 2
+Deslocamento: Voando 12m
+
+HABILIDADES:
+- FOGO DRACÔNICO: Causa muito dano de fogo
+- PRESAÇ: Gripe poderoso
+- ASA: Pode voar
+
+--- APANHADOR DE SONHOS ---
+Tipo: Conhecimento | VD: 80 | PV: 200 | Defesa: 22
+Percepção: +15 | Iniciativa: +10 | Fortitude: +5 | Reflexos: +10 | Vontade: +15
+Tamanho: Médio | FOR 2 | INT 4 | PRE 5 | VIG 2 | AGI 3
+
+HABILIDADES:
+- REDE DE SONHOS: Captura sonhos
+- EXTRAÇÃO: Tira essência de sonhos
+- INSÔNIA: Causa insônia
+
+--- CASCA VAZIA ---
+Tipo: Morte | VD: 50 | PV: 100 | Defesa: 16
+Percepção: +5 | Iniciativa: +5 | Fortitude: +10 | Reflexos: +5 | Vontade: +5
+Vulnerabilidades: Fire
+Tamanho: Médio | FOR 3 | INT 0 | PRE 1 | VIG 3 | AGI 2
+
+HABILIDADES:
+- CASCA DURA: Alta defesa
+- RAMPA: Pode servir de rampa
+- VAZIO: Não tem conteúdo
+
+--- TECELÃ DE PESADELOS ---
+Tipo: Conhecimento | VD: 120 | PV: 350 | Defesa: 28
+Percepção: +15 | Iniciativa: +10 | Fortitude: +10 | Reflexos: +10 | Vontade: +20
+Tamanho: Grande | FOR 3 | INT 5 | PRE 5 | VIG 3 | AGI 2
+
+HABILIDADES:
+- TECELAGEM: Cria teias de pesadelo
+- PESADELOS: Causa pesadelos
+- PRENDER: Prende em teia
+
+--- ENTULHOBO ---
+Tipo: Sangue | VD: 60 | PV: 150 | Defesa: 18
+Percepção: +5 | Iniciativa: +5 | Fortitude: +10 | Reflexos: +5 | Vontade: +5
+Tamanho: Grande | FOR 4 | INT 0 | PRE 1 | VIG 3 | AGI 1
+
+HABILIDADES:
+- TRITURAR: Tritura objetos
+- BOCAO: Boca grande
+- DETRITOS: Made de debris
+
+--- MORTE BRANCA ---
+Tipo: Morte | VD: 100 | PV: 300 | Defesa: 26
+Percepção: +10 | Iniciativa: +5 | Fortitude: +15 | Reflexos: +10 | Vontade: +15
+Tamanho: Médio | FOR 3 | INT 3 | PRE 4 | VIG 4 | AGI 2
+
+HABILIDADES:
+- TOQUE GELADO: Causa dano de frio
+- PÁLIDO: Appearancepallida
+- INSTANTE: Mata rapidamente
+
+--- NECROMANTE ---
+Tipo: Morte | VD: 80 | PV: 200 | Defesa: 22
+Percepção: +10 | Iniciativa: +5 | Fortitude: +5 | Reflexos: +5 | Vontade: +15
+Tamanho: Médio | FOR 2 | INT 4 | PRE 4 | VIG 2 | AGI 2
+
+HABILIDADES:
+- CONTROLE: Controla mortos
+- RITUAIS: Conhece rituais
+- SUMMON: Invoca mortos
+
+--- MERCADOR ---
+Tipo: Conhecimento | VD: 70 | PV: 150 | Defesa: 20
+Percepção: +15 | Iniciativa: +10 | Fortitude: +5 | Reflexos: +10 | Vontade: +10
+Tamanho: Médio | FOR 2 | INT 4 | PRE 3 | VIG 2 | AGI 3
+
+HABILIDADES:
+- TROCA: Pode negociar qualquer coisa
+- ITENS: Tem itens variados
+- CONHECIMENTO: Sabe muito
+
+--- QUADRINISTA ---
+Tipo: Conhecimento | VD: 60 | PV: 120 | Defesa: 18
+Percepção: +10 | Iniciativa: +10 | Fortitude: +5 | Reflexos: +10 | Vontade: +10
+Tamanho: Médio | FOR 1 | INT 4 | PRE 3 | VIG 1 | AGI 4
+
+HABILIDADES:
+- MUNDO QUADRINHO: Cria quadrinhos reais
+- PERSONAGENS: Cria personagens
+- DESSINAR: Pode dibujar qualquer coisa
+
+--- CHARLES ---
+Tipo: Desconhecido | VD: ??? | PV: ??? | Defesa: ???
+HABILIDADES: ??? (criatura especial)
+
+══════════════════════════════════════════════════════════════
+     NOVAS CRIATURAS DO BERÇÁRIO PARANORMAL
+══════════════════════════════════════════════════════════════
+
+--- DUOGUINHO ---
+Tipo: Energia | VD: 40 | PV: 80 | Defesa: 16
+Pequeno, rápido, segue ordens
+
+--- ENPAPINHA-Y ---
+Tipo: Sangue | VD: 50 | PV: 100 | Defesa: 18
+Pequeno, fofo, pode serPET
+
+--- LOBOHNI ---
+Tipo: Sangue | VD: 60 | PV: 120 | Defesa: 18
+Lobo deformado, perigoso
+
+--- SUCCNHO ---
+Tipo: Morte | VD: 50 | PV: 100 | Defesa: 16
+Incorpóreo, drena energia
+
+--- HERDEIRO HIPOTÉTICO ---
+Tipo: Conhecimento | VD: 80 | PV: 200 | Defesa: 22
+Muito perigoso, controla tentáculos
+
+--- ESPREITADINHO ---
+Tipo: Conhecimento | VD: 80 | PV: 200 | Defesa: 21
+Assustador, causa paralisia
+
+--- QUERUBIM ---
+Tipo: Energia | VD: 90 | PV: 250 | Defesa: 24
+Angelical, perigoso
+
+--- SUKITA ---
+Tipo: Sangue | VD: 70 | PV: 150 | Defesa: 20
+Assassin, rápido
+
+--- TEL-ALPHA ---
+Tipo: Conhecimento | VD: 100 | PV: 300 | Defesa: 26
+Alienígena, poderoso
+
+--- ÁDVENAS ---
+Tipo: Morte | VD: 60 | PV: 130 | Defesa: 18
+Necromante menor
+
+══════════════════════════════════════════════════════════════
+     AMEAÇAS DA REALIDADE (DINOSSAUROS)
+══════════════════════════════════════════════════════════════
+
+--- CARNOSAURIA (T-Rex e similares) ---
+VD: 120-150 | PV: 350-500 | FOR 5 | AGI 2
+Ataques: Mordida devastadora, Garras
+
+--- CERATOSAURIA (Triceratops, etc) ---
+VD: 100-130 | PV: 300-400 | FOR 4-5 | AGI 1-2
+Chifres, carga
+
+--- MANIRAPTORA (Velociraptor, etc) ---
+VD: 60-80 | PV: 150-200 | FOR 3 | AGI 4
+Rápidos, ataque em grupo
+
+--- MARGINOCEPHALIA (Dinossauros com chifres) ---
+VD: 80-100 | PV: 200-300 | FOR 4 | AGI 2
+Defesa com chifres
+
+--- ORNITHOPODA (Hadrossauros) ---
+VD: 70-90 | PV: 180-250 | FOR 3-4 | AGI 2
+Herbívoros, podem ser perigosos em grupo
+
+--- SAURÓPODE (Braquiossauro, etc) ---
+VD: 150+ | PV: 500+ | FOR 5 | AGI 1
+Enormes, perigosos só pelo tamanho
+
+--- THYREOPHORA (Estegossauro, anquilossauro) ---
+VD: 80-100 | PV: 250-350 | FOR 4 | AGI 1
+Placas, caudas com espinhos
+
+--- TIRANOSSAURÍDEOS ---
+VD: 120-140 | PV: 350-450 | FOR 5 | AGI 2-3
+Os maiores predadores
+
+══════════════════════════════════════════════════════════════
+     PEQUENOS PERIGOS
+══════════════════════════════════════════════════════════════
+
+--- RETALHO DO AMOR ---
+Criatura pequeña de tecido viviente
+Afecta emocionalmente
+
+--- MANIFESTAÇÃO INCONCLUSIVA ---
+Espírito incompleto
+Cause confusão
+
+--- CARCAÇA QUEBRADA ---
+Restos de criatura
+Podem continuar atacando
+
+--- FOFOQUEIRO ---
+Cri curiosa, espiona
+Passa informações
+
+--- CARRAPACTO ---
+Pequeno mas perigoso
+Morde e prende
+
+--- LODINHO ---
+Criatura de lodo
+Causa danos por contato

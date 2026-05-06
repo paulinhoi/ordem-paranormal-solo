@@ -555,45 +555,87 @@ let cloudSaveId = localStorage.getItem('cloudSaveId');
 
 async function saveToCloud() {
     try {
-        const response = await fetch('https://api.jsonbin.io/v3/b', {
+        // Using JSONPlaceholder as simple test - generates a fake ID
+        // For real cloud save, we'll use localStorage with encoded data as "ID"
+        const saveData = {
+            game: gameState,
+            timestamp: Date.now()
+        };
+        
+        // Create a simple encoded save string
+        const saveString = btoa(JSON.stringify(saveData));
+        cloudSaveId = 'op_' + Date.now();
+        localStorage.setItem('cloudSaveId', cloudSaveId);
+        localStorage.setItem('cloudSaveData_' + cloudSaveId, saveString);
+        
+        alert('✅ Salvo localmente!\n\nPara jogar em outro dispositivo, use Export/Import.\nO save fica no navegador deste dispositivo.');
+        
+        // Also try real cloud service as backup
+        trySaveToRealCloud(gameState);
+    } catch (err) {
+        alert('Erro ao salvar: ' + err.message);
+    }
+}
+
+async trySaveToRealCloud(data) {
+    try {
+        // Try jsonbox.io
+        const response = await fetch('https://jsonbox.io/box_ordemsolo', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-Bin-Private': 'false'
-            },
-            body: JSON.stringify(gameState)
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
         });
         
         if (response.ok) {
-            const data = await response.json();
-            cloudSaveId = data.metadata.id;
+            const result = await response.json();
+            cloudSaveId = result._id;
             localStorage.setItem('cloudSaveId', cloudSaveId);
-            alert('✅ Salvo na nuvem! ID: ' + cloudSaveId);
+            alert('💾 Também salvo na nuvem! ID: ' + cloudSaveId.substring(0, 8));
         }
-    } catch (err) {
-        alert('Erro: use Export/Import manual');
+    } catch (e) {
+        console.log('Cloud save offline fallback OK');
     }
 }
 
 async function loadFromCloud() {
     if (!cloudSaveId) {
-        alert('Nenhum save na nuvem. Use Export/Import.');
+        alert('Nenhum save na nuvem.\n\nPara jogar em outro dispositivo: use Export/Import manual.');
         return;
     }
     
-    try {
-        const response = await fetch(`https://api.jsonbin.io/v3/b/${cloudSaveId}/latest`);
-        if (response.ok) {
-            const data = await response.json();
-            gameState = data.record;
+    // Try to load from real cloud first
+    if (cloudSaveId.startsWith('5')) {
+        try {
+            const response = await fetch(`https://jsonbox.io/box_ordemsolo/${cloudSaveId}`);
+            if (response.ok) {
+                const data = await response.json();
+                gameState = data;
+                saveData();
+                renderCharacter();
+                renderMissions();
+                addMessage('system', '📥 Jogo carregado da nuvem!');
+                alert('✅ Jogo carregado!');
+                return;
+            }
+        } catch (e) {}
+    }
+    
+    // Fallback to local
+    const savedData = localStorage.getItem('cloudSaveData_' + cloudSaveId);
+    if (savedData) {
+        try {
+            const decoded = JSON.parse(atob(savedData));
+            gameState = decoded.game;
             saveData();
             renderCharacter();
             renderMissions();
-            addMessage('system', '📥 Jogo carregado da nuvem!');
-            alert('✅ Jogo carregado!');
+            addMessage('system', '📥 Jogo carregado!');
+            alert('✅ Jogo carregado do navegador!');
+        } catch (e) {
+            alert('Erro ao carregar save local');
         }
-    } catch (err) {
-        alert('Erro ao carregar');
+    } else {
+        alert('Save não encontrado. Use Export/Import.');
     }
 }
 

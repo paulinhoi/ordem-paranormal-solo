@@ -1,0 +1,201 @@
+══════════════════════════════════════════════════════════════
+     BIBLIOTECA RITUALÍSTICA - REGRAS COMPLETAS DE CONJURAÇÃO
+══════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════
+     COMPONENTES ESCASSOS (Regra Opcional)
+══════════════════════════════════════════════════════════════
+
+NORMAL: Cada Componente Ritualístico = 1 uso
+REGRA: Cada Componente Ritualístico = 10 usos
+
+GASTO: Número de usos gastos = círculo do ritual
+
+--- CRIAR COMPONENTES ---
+Ação: Completa
+Teste: Ocultismo DT 15
+Sucesso: 1 uso de Componentes
+Cada 2 pontos acima da DT: +1 uso extra
+Espaço: 0.1 por uso
+DT pode aumentar +5 em locais sem componentes
+
+══════════════════════════════════════════════════════════════
+     IMPROVISAR COMPONENTES
+══════════════════════════════════════════════════════════════
+
+CRIAR COMPONENTES: Pode usar como ação de movimento (em vez de completa)
+Gasto: -1 uso de componentes ao conjurar ritual (mínimo 1)
+
+SÍMBOLOS PRIMÁRIOS:
+- Para símbolos de Conhecimento, Energia, Morte, Sangue
+- Ação padrão + 1 de Sanidade
+- Transforma 1 uso de Componentes em 3 usos do mesmo elemento
+
+══════════════════════════════════════════════════════════════
+     CONJURAÇÃO SIMBÓLICA (Regra Opcional)
+══════════════════════════════════════════════════════════════
+
+Para usar esta regra, é necessário ver um símbolo do ritual.
+Se não puder ver: +4 PE para conjurar sem símbolo
+Se falhar no teste d'O Custo do Paranormal:
+- Perde Sanidade
+- Não consegue conjurar o ritual
+Em membranas Arruinadas ou Rompidas: +2 PE extra
+
+══════════════════════════════════════════════════════════════
+     PREPARANDO UM SÍMBOLO
+══════════════════════════════════════════════════════════════
+
+3 ETAPAS:
+
+1. PREPARAR LOCAL
+- Local deve estar preparado para receber o desenho
+- Não pode haver obstáculos que impeçam ver o símbolo
+- Passo opcional se local já estiver propício
+
+2. SEPARAR MATERIAIS
+- Precisa de material para desenhar (lápis, tinta, sangue)
+- Pode misturar múltiplos materiais para modificar efeito
+- O símbolo potencializa o primeiro ritual conjurado
+
+COMPONENTES NO SÍMBOLO:
+- Mistura fragmento de componente do elemento do ritual
+- Consome o item
+- Primeiro ritual não precisa de componentes
+- Efeitos conforme elemento:
+
+SANGUE: +1 dano por dado / DT +2 / alvos ficam Frenesi
+CONHECIMENTO: Dano médio elevado / alvos ficam Frustrados / +1 em bônus
+ENERGIA: Limite PE +2 / +1 dado de dano a cada 2 círculos
+MORTE: Alvos ficam Vulneráveis / RD reduzi
+
+3. DESENHAR O SÍMBOLO
+- Mínimo 10cm de diâmetro
+- Tamanho afeta poder do ritual (Pontos de Bônus)
+- Ação necessária varia com tamanho
+- DT de Custo do Paranormal alterada
+- Só pode desenhar rituais que conheça ou tenha referência
+
+TABELA DE TAMANHO:
+- Minúsculo: Ação livre, DT+0, Bônus 0
+- Pequeno: Ação de movimento, DT+5, Bônus 1
+- Médio: Ação padrão, DT+10, Bônus 2
+- Grande: Ação completa, DT+15, Bônus 3
+- Enorme: Ação completa +1, DT+20, Bônus 4
+
+══════════════════════════════════════════════════════════════
+     PROBLEMAS COM SÍMBOLOS
+══════════════════════════════════════════════════════════════
+
+DANADO ENQUANTO DESENHA:
+- Teste de Fortitude (DT 10 + metade do dano)
+- Se falhar: erro no desenho, perde ações, precisa recomeçar
+
+FALHA NO CUSTO DO PARANORMAL:
+- Símbolo é consumido
+- Não pode ser utilizado novamente
+
+══════════════════════════════════════════════════════════════
+     GRAVANDO SÍMBOLOS
+══════════════════════════════════════════════════════════════
+
+Para transportabilidade:
+- Gravar em objetos
+- Gravar na pele (tatuagem)
+
+TEMPO PARA GRAVAR:
+- Símbolo minúsculo: 1 ação de interlúdio
+- Símbolo pequeno: 2 ações de interlúdio
+
+EM OBJETOS:
+- Símbolo minúsculo para cada 1 espaço do objeto
+- Tamanho limitado pelo objeto
+
+NA PELE:
+- 3 símbolos minúsculos por ponto de Vigor
+- Símbolo pequeno = 3 símbolos minúsculos
+
+EFEITO NA PELE:
+- Símbolos nunca desaparecem
+- Perde 1d4 PV permanentes (ou 1d8 para símbolos Pequenos)
+- Fica Fraco por dias iguais aos PV perdidos
+- Pode sacrificar 1 componente + 1d6 Sanidade permanente para criar símbolo com efeito especial
+
+══════════════════════════════════════════════════════════════
+     SÍMBOLOS PRIMÁRIOS
+══════════════════════════════════════════════════════════════
+
+Base da linguagem das Manifestações Primárias.
+Funcionam como Manifestações Primárias.
+
+Para usar: ação padrão + 1 de Sanidade
+Efeitos pequenos e próprios.
+Todos treinados em Ocultismo sabem usar.
+Não precisam de gestos ou componentes.
+
+10 SÍMBOLOS:
+1. ABSORÇÃO - Absorve vitalidade de ser adjacente (1d6 PV)
+2. CRIAÇÃO - Cria objeto de até 5cm sem efeitos mecânicos
+3. DESTRUIÇÃO - Destrói objeto em mãos (máx 15 PV)
+4. CONHECIMENTO - Transforma objeto em componente
+5. ENERGIA - Transforma objeto em componente de Energia
+6. MANIPULAÇÃO - Faz objeto flutuar 1,5m/rodada
+7. MORTE - Transforma objeto em componente de Morte
+8. SANGUE - Transforma objeto em componente de Sangue
+9. MEDO - Fornece 1% de NEX a ser voluntário
+10. CONVOCAÇÃO - Convoca objeto aleatório em mãos
+
+══════════════════════════════════════════════════════════════
+     PONTOS DE BÔNUS
+══════════════════════════════════════════════════════════════
+
+Rituais conjurados com símbolos podem ganhar Pontos de Bônus.
+
+1 PONTO:
+- Alcance +50%
+- Área +50%
+- Dano +1 por dado
+- Duração +1 rodada
+- Escolhe até 2 seres na área para não sofrer efeito
+- Limite PE +1
+
+2 PONTOS:
+- Alcance dobrado
+- Resistência Vulnerability ao tipo do ritual
+- Ritual acontece duas vezes
+- DT +2
+
+5 PONTOS:
+- Alcance muda para qualquer ponto visível
+- Número de alvos x5
+- Área x5
+- Número de dados x2
+- Dano maximizado
+- Duração muda para Cena
+- Pode escolher quem sofre efeito
+
+Aceleração de Symbols, you can add effects to yourrituals when drawing them.
+- Symbols drawn with these tools get bonuses from added materials
+- Different effects stack but similar effects don't
+
+══════════════════════════════════════════════════════════════
+     RITUAIS MÚLTIPLOS
+══════════════════════════════════════════════════════════════
+
+Rituais especiais que possuem versões de múltiplos elementos.
+Seus círculos estão indicados em seus nomes.
+Seus elementos estão abaixo do nome.
+
+Exemplo: "Portal de Fogo e Morte 2"
+- Círculo: 2
+- Elementos: Fogo e Morte
+
+══════════════════════════════════════════════════════════════
+     PODERES ADICIONAIS
+══════════════════════════════════════════════════════════════
+
+- CATÁLOGO DE SÍMBOLOS: Item com até 10 símbolos minúsculos. Usar/gravar leva ação de movimento. Item amaldiçoado especial de Conhecimento.
+
+- MÁQUINA DE TINTURA PERMANENTE: Máquina de tatuagem com tinta de Lodo e Sangue. Pode gravar até 6 símbolos minúsculos. Fornece efeitos d'O Preço da Maldição de Morte e Sangue.
+
+- DESENHO ACELERADO: Pode fazer teste de Artes (DT 15 + 5 por categoria de tamanho) para diminuir ação necessária para criar símbolo.

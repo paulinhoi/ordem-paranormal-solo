@@ -1,0 +1,254 @@
+══════════════════════════════════════════════════════════════
+     O PORTADOR DO MEDO - DEMAIS REGRAS
+══════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════
+     DESAFIOS ESPORTIVOS
+══════════════════════════════════════════════════════════════
+
+Esportes e jogos paranormais que podem ser jogados ou usados
+em missões.
+
+ESPORTES COLETIVOS:
+- FUTEBOL: 3 testes de Atletismo + 1 teste de Pontaria
+- BASQUETE: 3 testes de Pontaria + 1 teste de Atletismo
+- VÔLEI: 2 testes de Pontaria + 2 testes de Atletismo
+- BEISEBOL: 2 testes de Pontaria + 2 testes de Atletismo
+
+ESPORTES INDIVIDUAIS:
+- NATAÇÃO: 3 testes de Atletismo
+- CORRIDA: 3 testes de Atletismo + 1 teste de Fortitude
+- LEVANTAMENTO DE PESO: 2 testes de Atletismo + 1 teste de Fortitude
+- TIRO AO ALVO: 3 testes de Pontaria
+
+REGRAS ESPECIAIS:
+
+CAPITÃES:
+- DT aumentada em +2 para o capitão (pressão)
+- Aliados adjacentes recebem +1d20
+- Ao time adquirir ponto, capitão recebe 2 PE temporários
+
+BLOQUEIO:
+- Pode bloquear avanço de oponente (teste oposto)
+- Pode bloquear ataques (teste de Reflexos contra Pontaria)
+
+══════════════════════════════════════════════════════════════
+     EXPOSIÇÃO PARASSOCIAL
+══════════════════════════════════════════════════════════════
+
+Sistema para quando personagens se tornam "famosos" no mundo
+paranormal. Quanto mais exposição, mais perigos.
+
+NÍVEIS DE EXPOSIÇÃO:
+
+0-20% (Desconhecido):
+- Nenhuma consequência
+- Pode investigar sem ser reconhecido
+
+21-40% (Conhecido localmente):
+- Reconhecido em locais frequentados
+- Pode receber convites para missões
+- -2 em testes de Furtividade em áreas públicas
+
+41-60% (Conhecido regional):
+- Reconhecido em toda região
+- Agentes podem abordá-lo
+- -5 em testes de Furtividade
+- Alvos de oportunidade aparecem mais
+
+61-80% (Famoso nacional):
+- Reconhecido em todo o país
+- Organizações podem conhecê-lo
+- -2 em qualquer teste de Furtividade
+- Atração de criaturas paranormais
+
+81-100% (Celebridade internacional):
+- Reconhecido internacionalmente
+- Muito visível para qualquer um
+- Impossível se esconder
+- Alvos frequentes de ataque
+
+COMO AUMENTAR EXPOSIÇÃO:
+- Missões bem-sucedidas +5%
+- Aparições públicas +2%
+- Ser reconhecido em missão +3%
+- Mídia falar sobre você +10%
+
+══════════════════════════════════════════════════════════════
+     FERVOR ANIMAL
+══════════════════════════════════════════════════════════════
+
+Sistema para domar e comandar animais em combate.
+
+DOMA:
+- Teste de Adestramento DT 15 + VD do animal/5
+- Sucesso: animal se torna Companheiro
+- Falha: animal fica hosti
+
+COMANDOS BÁSICOS:
+- ATACAR: animal ataca alvo específico
+- DEFENDER: animal protege personagem
+- BUSCAR: animal rastreia algo
+- FUGIR: animal foge de perigo
+
+ANIMAIS SELVAGENS:
+- Podem ser encontrados na natureza
+- Podem ser adicionados como Pets
+- Alguns podem ser domados com rituais
+
+NÍVEIS DE CONEXÃO:
+- BASIC: 1 comando por rodada
+- INTERMEDIÁRIO: 2 comandos por rodada
+- AVANÇADO: 3 comandos + animal pode agir sozinho
+
+══════════════════════════════════════════════════════════════
+     INVESTIGAÇÃO VIVA
+══════════════════════════════════════════════════════════════
+
+Sistema de investigação onde as "pistas" são seres vivos.
+
+CRIATURAS INVESTIGATIVAS:
+- ESPÍRITOS: Podem revelar informações sobre locais
+- CRIATURAS PARANORMAIS: Podem ser interrogadas
+- ANIMAIS: Podem revelar o que viram
+
+PERGUNTAS POSSÍVEIS:
+- O que aconteceu aqui? (teste de Investigação)
+- Quem esteve aqui? (teste de Ocultismo)
+- O que foi feito? (teste de Percepção)
+- Quando aconteceu? (teste de Intuição)
+
+INTERROGAÇÃO:
+- Diplomacia para persuading
+- Intimidação para intimidar
+- Ocultismo para entender natureza
+
+══════════════════════════════════════════════════════════════
+     SOB PRESSÃO
+══════════════════════════════════════════════════════════════
+
+Sistema para situações de estresse extremo.
+
+EFEITOS DE PRESSÃO:
+- -2 em testes de Intelecto
+- +2 em testes de Presença
+- Testes de Sanidade com +2d20
+
+AÇÃO SOB PRESSÃO:
+- Pode fazer ação extra gastando 2 PE
+- Mas causa 1d4 de dano mental
+
+CALMA SOB PRESSÃO:
+- Alguns personagens podem resistir melhor
+- Teste de Vontade para remover alguns efeitos
+-训练 pode reduzir penalidades
+
+══════════════════════════════════════════════════════════════
+     VIVÊNCIA AMALDIÇOADA
+══════════════════════════════════════════════════════════════
+
+Sistema para personagens que vivem com maldições ativas.
+
+MANTER MALDIÇÃO:
+- Custo de Sanidade por dia
+- pode usar poderes da maldição
+- Efeitos colaterais sempre presentes
+
+BENEFÍCIOS:
+- Pode usar poder da maldição livremente
+- Resistência a efeitos relacionados
+- Capacidades únicas
+
+EFEITOS COLATERAIS:
+- Mudanças físicas
+- Comportamento estranho
+- Relacionamentos dificultados
+- Saúde mental afetada
+
+LIBERTAÇÃO:
+- Ritual especial para remover
+- Pode exigir sacrifícios
+- Mude completamente de vida
+
+══════════════════════════════════════════════════════════════
+     PEQUENOS PERIGOS
+══════════════════════════════════════════════════════════════
+
+Criaturas menores que aparecem em cenários.
+
+--- RETALHO DO AMOR ---
+Tipo: Conhecimento | VD: 20 | PV: 30 | Defesa: 14
+Pequeno pedaço de tecido vivo que causa efeitos emocionais
+
+HABILIDADES:
+- TOQUE: Causa 1d4 SAN
+- AMOR: Faz alvo querer abraçar
+
+--- MANIFESTAÇÃO INCONCLUSIVA ---
+Tipo: Morte | VD: 30 | PV: 50 | Defesa: 16
+Espírito incompleto que causa confusão
+
+HABILIDADES:
+- CONFUSÃO: Alvos ficam Confusos
+- INCOMPLETO: Some aleatoriamente
+
+--- CARCAÇA QUEBRADA ---
+Tipo: Sangue | VD: 40 | PV: 80 | Defesa: 18
+Restos de criatura que continuam atacando
+
+HABILIDADES:
+- ATAQUE: 1d6 perfuração
+- PERIGOSO: Pode ser peligroso
+
+--- FOFOQUEIRO ---
+Tipo: Conhecimento | VD: 25 | PV: 40 | Defesa: 14
+Criatura curiosa que espiona e passa informações
+
+HABILIDADES:
+- ESPIAR: +5 em testes de Investigação
+- FOFOCAR: Pode passar informações
+
+--- CARRAPACTO ---
+Tipo: Sangue | VD: 35 | PV: 60 | Defesa: 16
+Pequeno mas perigoso, morde e prende
+
+HABILIDADES:
+- MORDIDA: 1d6 perfuração + prende
+- PRENDER: Imobiliza alvos menores
+
+--- LODINHO ---
+Tipo: Energia | VD: 30 | PV: 50 | Defesa: 14
+Criatura de lodo que causa danos por contato
+
+HABILIDADES:
+- CONTATO: 1d4 dano por turno
+- ADERIR: Faz aderirem superfície
+- ESCORREGAR: -2 em testes de Agilidade
+
+══════════════════════════════════════════════════════════════
+     ORDEM PELO TEMPO
+══════════════════════════════════════════════════════════════
+
+Sistema para jogar em diferentes épocas históricas.
+
+ÉPOCAS DISPONÍVEIS:
+- ANTIGUIDADE (500 a.C. - 500 d.C.)
+- IDADE MÉDIA (500 - 1500)
+- ERA MODERNA (1500 - 1900)
+- GUERRA FRIA (1945 - 1991)
+- CONTEMPORÂNEA (1991 - presente)
+- FUTURO PRÓXIMO (presente - 50 anos)
+- FUTURO DISTANTE (50+ anos)
+
+CARACTERÍSTICAS POR ÉPOCA:
+- Tecnologias disponíveis
+- Organizações existentes
+- Criaturas que existiam
+- Rituais conhecidos
+- Perigos específicos
+
+AJUSTES:
+- Equipamentos: Nem todos existem em todas épocas
+- Habilidades: Algumas podem não existir
+- Conhecimento: Diferente em cada época
+- Organizações: Diferentes nomes e estruturas

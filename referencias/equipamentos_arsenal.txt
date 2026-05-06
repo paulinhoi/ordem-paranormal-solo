@@ -1,0 +1,239 @@
+══════════════════════════════════════════════════════════════
+     ARSENAL DOS AGENTES - NOVOS EQUIPAMENTOS
+══════════════════════════════════════════════════════════════
+
+Este arquivo contém os novos equipamentos do Arsenal:
+Armas de Torre, Novas Armas, Explosivos, Venenos, etc.
+
+══════════════════════════════════════════════════════════════
+        ARMAS DE TORRE
+══════════════════════════════════════════════════════════════
+
+--- ARMAS PESADAS DE CORPO A CORPO ---
+ARMA                  CAT   DANO    CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Aríete                I     2d12    x2        —         I      15
+
+--- ARMAS DE DISPARO ---
+ARMA                  CAT   DANO    CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Balista               I     4d6     18/x3     Extremo   I      35
+Catapulta             I     3d8     x2        Extremo   I      50
+Lançador de Redes     I     —       19        Médio     —      5
+Ninho de Abelhas      II    3d6     18        Médio     Fogo/P 10
+Arpão                 II    4d8     19        Longo     P      10
+Canhão                II    5d12    x3        Longo     I      10
+Lança-Mísseis         V     5d20    x2        900m      Fogo   100
+Morteiro              III   6d12    x3        Extremo    Fogo/I 20
+Torreta               IV    3d12    18/x3     Extremo    B      20
+
+--- MUNIÇÕES ---
+ARMA                  ESPAÇOS
+Rede                  3
+Flechas               1
+Bala de Canhão        2
+Míssil                5
+Balas Longas          1
+Foguete               1
+
+--- DESCRIÇÕES ---
+
+ARÍETE: Uma enorme estaca de metal usada para destruir muralhas.
+BALISTA: Arma de cerco que dispara flechas enormes.
+CATAPULTA: Arma de cerco que lança pedras.
+LANÇADOR DE REDES: Arma para capturar alvos.
+NINHO DE ABELHAS: Arma que dispara múltiplas flechas flamejantes (10 alvos).
+ARPÃO: Arpão disparado por canhões, usado contra animais marinhos.
+CANHÃO: Arma de fogo pesada de grande potência.
+LANÇA-MÍSSIS: Míssil teleguiado de alta destruição (Categoria V!).
+MORTEIRO: Lança explosivos em arco, atinge área.
+TORRETA: Arma inteligente automática com 3d20+20 de ataque.
+
+══════════════════════════════════════════════════════════════
+        NOVAS ARMAS
+══════════════════════════════════════════════════════════════
+
+--- ARMAS SIMPLES - ARREMESSO LEVE ---
+ARMA          CAT   DANO   CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Dardos        I     1d3    19        Curto     P      1
+Javelin       0     1d4    19        Médio     P      0.5
+
+--- ARMAS SIMPLES - CORPO A CORPO LEVE ---
+ARMA          CAT   DANO   CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Furadeira     I     1d4    x4        —         P      2
+
+--- ARMAS SIMPLES - CORPO A CORPO UMA MÃO ---
+ARMA                  CAT   DANO   CRÍTICO   ALCANCE   TIPO     ESPAÇOS
+Bastão de Choque      I     1d6    19        —         Elétrico 1
+Gládio                I     1d6    19        —         C        1
+
+--- ARMAS SIMPLES - CORPO A CORPO DUAS MÃOS ---
+ARMA          CAT   DANO   CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Britadeira   I     1d6    19        —         I      2
+Pique         I     1d10   x2        —         P      2
+Serra Circular I    2d4    18        —         C      2
+Guan Dao     I     1d12   x2        —         C      2
+
+--- ARMAS DE DISPARO - UMA MÃO ---
+ARMA          CAT   DANO   CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Zarabatana   0     1d4    18        Médio     P      1
+
+--- ARMAS DE DISPARO - DUAS MÃOS ---
+ARMA                  CAT   DANO   CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Canhão de Vórtex     I     1d4    x2        Longo     I      1
+
+--- ARMAS DE FOGO - LEVE ---
+ARMA              CAT   DANO   CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Pistola de Dardos  I     1d4    19        Extremo   P      1
+
+--- ARMAS DE FOGO - DUAS MÃOS ---
+ARMA          CAT   DANO   CRÍTICO   ALCANCE   TIPO   ESPAÇOS
+Bacamarte    II    2d6    x2        —         B      3
+Mosquete     I     2d12   x3        Médio     B      2
+Carabina     I     2d8    19/x2     Longo     B      2
+Chakram      I     1d6    19        Curto     C      1 (conjunto de 2)
+
+--- DESCRIÇÕES ---
+
+CHAKRAM: Aro metálico com lâmina, arremessável. Pode fazer manobras Quebrar.
+CARABINA: Versão menor de fuzil, boa para infiltrações. +1d20 com duas mãos.
+BASTÃO DE CHOQUE: Gera corrente elétrica. Em crítico, causa paralisia.
+FURADORA: Ferramenta versátil, serve como arma. Pode fabricar/consertar objetos mais rápido.
+GLÁDIO: Espada pequena para usar com escudo. +1x no multiplicador de crítico em contra-ataques.
+GUAN DAO: Lança pesada grande. Pode atingir todos em cone 3m com -1d20.
+JAVELIN: Lança leve para longas distâncias. Com lançador: alcance longo, dano 1d6.
+SERRA CIRCULAR: Serra elétrica portátil. Causa dano de Corte.
+PISTOLA DE DARDOS: Dispara dardos envenenados.
+BACAMARTE: Espingarda de canons cortos. Grande poder, mas lenta (ação completa para recarregar).
+MOSQUETE: Rifle antiguo de alto daño.
+ZARABATANA: Arma de sopro para dardos envenenados.
+
+══════════════════════════════════════════════════════════════
+        NOVOS EXPLOSIVOS
+══════════════════════════════════════════════════════════════
+
+--- EXPLOSIVOS BÁSICOS ---
+NOME          CATEGORIA   DANO              ESPAÇOS
+Pólvora       I           2d6 Fogo (reflexos)  0.5
+Granada       I           2d6 Fogo (área 3m)   0.5
+Coquetel Molotov I        2d6 Fogo (área 3m)   0.5
+Carga de Daya II          4d12 Impacto          2
+
+--- EXPLOSIVOS ESPECIAIS ---
+NOME              CATEGORIA   DANO                  ESPAÇOS
+Dinamite          II          4d10 Fogo/Impacto     1
+C4                III         6d12 Fogo/Impacto    2
+Semtex            III         6d12 Fogo/Impacto    2
+Granada de Fragmentação II    3d6 Perfuração (área) 1
+Bomba de Fumaça   I           Sem dano (fumaça)    0.5
+Gás Lacrimogêneo  I           Sem dano (efeito)    1
+
+--- PROPRIEDADES ---
+
+PÓLVORA: Se sofrer dano de Fogo, explode (2d6 Fogo adjacentes). 3 usos por pacote.
+Pode sobrecarregar arma de fogo: +2d6 Fogo, mas a arma perde 1d4 PV.
+GRANADA: Ação de movimento para atirar. Área de 3m.
+COQUETEL MOLOTOV:_THROW e causa 2d6 Fogo em área 3m. Inimigos pegam fogo.
+CARGA DE DYNAMITE: Pode ser presa a parede estrutural. 1d4 rodadas após ativada, causa 8d12.
+DINAMITE: Carga potente, pode ser armada com temporizador.
+C4/SEMTEX: Explosivos plásticos de alto poder. Podem ser moldados em qualquer forma.
+GRANADA DE FRAGMENTAÇÃO: Estilhaços causan 3d6 Perfuração em área.
+BOMBA DE FUMAÇA: Cria fumaça densa por 1d4 rodadas.
+GÁS LACRIMOGÊNEO: Causa condições de visão, precisa de máscara.
+
+══════════════════════════════════════════════════════════════
+        VENENOS
+══════════════════════════════════════════════════════════════
+
+--- VENENOS COMUNS ---
+NOME                    TIPO        EFEITO                              CATEGORIA
+Veneno de Cobra         Biológico   1d4 SAN + Paralizado 1rd           I
+Arsenico                Químico     2d4 PV + Enjoado                   I
+Cianeto                 Químico     3d4 PV + Asfixiado                  II
+Tetrodotoxina           Biológico   2d4 PV + Paralisado 1d4 rodadas    II
+Raticina                Químico     1d6 PV (dano continuado)           I
+
+--- VENENOS PARANORMAIS ---
+NOME                    TIPO        EFEITO                              CATEGORIA
+Essência do Medo       Medo        2d6 SAN + Apavorado 1d4 rodadas    II
+Sangue de Carniçal     Morte       1d4 PV + Enjoado (cumulativo)      II
+Lágrimas de Sereia     Sangue      1d4 SAN + Confuso 1d4 rodadas      II
+Pó de Fada             Energia     2d6 SAN + Desorientado              III
+Essência do Vacuo     Morte       3d6 PV + Asfixiado                 III
+
+--- MÉTODOS DE APLICAÇÃO ---
+- Contato:肤接触会导致中毒
+- Ingestão: 通过食物或饮料摄入
+- Inalação: 呼吸有毒气体
+- Ferimento: 通过伤口进入血液
+- Projétil: 应用在武器上
+
+══════════════════════════════════════════════════════════════
+        NOVAS PROTEÇÕES
+══════════════════════════════════════════════════════════════
+
+--- PROTEÇÕES LEVES ---
+NOME                  DEFESA   ESPAÇOS  EFEITOS
+Jaqueta Reforçada     +1       2        +2 contra perfuração
+Colete Tático         +2       3        +1d4 PV temporários 1 vez
+Capacete Militar      +1       1        +2 contra impacto na cabeça
+
+--- PROTEÇÕES MÉDIAS ---
+NOME                  DEFESA   ESPAÇOS  EFEITOS
+Armadura de Placas    +3       5        +2 contra perfuração
+Gibão de Couro        +2       4        +1 contra Corte
+Escudo Antitumulto    +2       3        Pode bloquear gases
+
+--- PROTEÇÕES PESADAS ---
+NOME                  DEFESA   ESPAÇOS  EFEITOS
+Armadura de Combate   +4       8        RD 2 contra fogo
+Exoesqueleto          +3       10       +2 Força, -3m deslocamento
+Traje de Bombas       +4       12       Imune a explosivos, -6m deslocamento
+
+══════════════════════════════════════════════════════════════
+        ITENS OPERACIONAIS
+══════════════════════════════════════════════════════════════
+
+--- ITENS DE COMUNICAÇÃO ---
+NOME              CATEGORIA   ESPAÇOS  EFEITOS
+Rádio de Campo    I           2        Comunicação 1km
+Walkie-Talkie     I           1        Comunicação 500m
+Satélite Phone    II          1        Comunicação global
+Celular Restrito  0           0.5      Comunicação local (paranormal)
+
+--- ITENS DE NAVEGAÇÃO ---
+NOME              CATEGORIA   ESPAÇOS  EFEITOS
+GPS Militar       I           1        Localização precisa
+Bússula Paranormal I          1        Detecta presença paranormal
+Drone de Recon    II          2        Exploração remota
+
+--- ITENS MÉDICOS ---
+NOME                  CATEGORIA   ESPAÇOS  EFEITOS
+Kit Cirúrgico         I           2        +5 em Medicina
+Kit de Primeiros Socorros I       1        Cura 1d4 PV
+Morfina               I           0.5      Remove dor, +2 em testes
+Adrenalina            I           0.5      +2 em Fortitude por 1 cena
+
+--- ITENS DE SUBSISTÊNCIA ---
+NOME                  CATEGORIA   ESPAÇOS  EFEITOS
+Ração Militar          0          1        Sustento por 1 dia
+Filtro de Água         0          0.5      Purifica água
+Barraca Compacta       I          2        Abrigo para 2 pessoas
+Cobertor Térmico       0          0.5      +2 contra frio
+
+══════════════════════════════════════════════════════════════
+        MODIFICAÇÕES DE ARMAS
+══════════════════════════════════════════════════════════════
+
+--- MODIFICAÇÕES COMUNS ---
+NOME                      EFEITO                              ESPAÇOS
+Mira a Laser             +2 em ataque à distância            0.5
+Silenciador               -2 em teste de Ouvido, +1d20        0.5
+Alça de Recuo             +2 em dano de arma de fogo         1
+Lanterna Tática           +2 em testes com a arma no escuro   0.5
+
+--- MODIFICAÇÕES ESPECIAIS ---
+NOME                      EFEITO                              ESPAÇOS
+Modificador de Fogo       Arma causa +1d6 Fogo                2
+Modificador de Gelo       Arma causa +1d6 Frio                2
+Modificador Elétrico      Arma causa +1d6 Elétrico            2
+Modificador de Luz        Arma causa +1d6 Luz                 2
+Modificador de Sombra     Arma causa +1d6 Sombra              2

@@ -1,0 +1,282 @@
+═══════════════════════════════════════════════════════════════
+                    ORDEM PARANORMAL - EQUIPAMENTOS
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+                         ARMAS - CATEGORIAS
+═══════════════════════════════════════════════════════════════
+
+PROFICIÊNCIA:
+• Armas Simples: manejo fácil (facas, bastões, revólveres). Todos sabem usar.
+• Armas Táticas: manejo complexo (espadas, fuzis). Apenas combatentes começam com proficiência.
+• Armas Pesadas: destruição (metralhadoras, lança-chamas). Nenhuma classe começa com.
+
+PENALIDADE POR NÃO PROFICIÊNCIA: -10 em testes de ataque
+
+TIPO:
+• Corpo a Corpo: ataques em alvos adjacentes. Usa Luta. Soma Força no dano.
+• Arremesso: própria arma é atirada. Usa Pontaria. Soma Força no dano.
+• Disparo: dispara projétil (arco). Usa Pontaria. Recarregar exige duas mãos.
+• Fogo: armas de fogo. Usam regras de disparo. Soma nenhum atributo no dano.
+
+EMPUNHADURA:
+• Leve: uma mão. Ataques desarmados e armas naturais são sempre leves.
+• Uma Mão: uma mão, deixando outra livre.
+• Duas Mões: as duas mãos. Apoiar no chão para livrar = ação livre. Reempunhar = ação movimento.
+
+═══════════════════════════════════════════════════════════════
+                         CARACTERÍSTICAS DAS ARMAS
+═══════════════════════════════════════════════════════════════
+
+• CATEGORIA: 0, I, II, III, IV - para efeitos de patentes e limites
+• DANO: dado(s) rolados ao acertar, subtraído dos PV do alvo
+• CRÍTICO: quando rola 20 natural. Multiplica dados de dano por 2 (bônus numéricos NÃO multiplicados)
+   Ex: dano 1d8+3 -> 2d8+3
+   19 = margem de ameaça 19 ou 20
+   18 = margem de ameaça 18, 19 ou 20
+   x2, x3, x4 = multiplicador de crítico
+   19/x3 = margem 19-20, dano triplicado
+• ALCANCE: curto (9m), médio (18m), longo (36m), extremo (90m)
+   Pode atacar até dobro do alcance com -5
+   Armas sem alcance = arremessáveis em curto com -5
+• TIPO: C=corte, I=impacto, P=perfuração, B=balístico
+• ESPAÇO: espaços ocupados no inventário
+
+═══════════════════════════════════════════════════════════════
+                         TABELA DE ARMAS
+═══════════════════════════════════════════════════════════════
+
+ARMAS SIMPLES
+═════════════
+
+Corpo a Corpo - Leves:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Coronhada    | —   | 1d4/1d6| x2   | —        | I    | —
+Faca         | 0   | 1d4    | 19   | Curto    | C    | 1
+Martelo      | 0   | 1d6    | x2   | —        | I    | 1
+Punhal       | 0   | 1d4    | x3   | —        | P    | 1
+
+Corpo a Corpo - Uma Mão:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Bastão       | 0   | 1d6/1d8| x2   | —        | I    | 1
+Machete      | 0   | 1d6    | 19   | —        | C    | 1
+Lança        | 0   | 1d6    | x2   | Curto    | P    | 1
+
+Corpo a Corpo - Duas Mãos:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Cajado       | 0   | 1d6/1d6| x2   | —        | I    | 2
+
+Armas de Disparo - Duas Mões:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Arco         | 0   | 1d6    | x3   | Médio    | P    | 2
+Flechas      | 0   | —      | —    | —        | —    | 1
+Besta        | 0   | 1d8    | 19   | Médio    | P    | 2
+Flechas      | 0   | —      | —    | —        | —    | 1
+
+Armas de Fogo - Leves:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Pistola      | I   | 1d12   | 18   | Curto    | B    | 1
+Balas curtas | 0   | —      | —    | —        | —    | 1
+Revólver     | I   | 2d6    | 19/x3| Curto    | B    | 1
+Balas curtas | 0   | —      | —    | —        | —    | 1
+
+Armas de Fogo - Duas Mões:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Fuzil de caça| I   | 2d8    | 19/x3| Médio    | B    | 2
+Balas longas | I   | —      | —    | —        | —    | 1
+
+═══════════════════════════════════════════════════════════════
+                         ARMAS TÁTICAS
+═══════════════════════════════════════════════════════════════
+
+Corpo a Corpo - Leves:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Machadinha   | 0   | 1d6    | x3   | Curto    | C    | 1
+Nunchaku     | 0   | 1d8    | x2   | —        | I    | 1
+
+Corpo a Corpo - Uma Mão:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Corrente     | 0   | 1d8    | x2   | —        | I    | 1
+Espada       | I   | 1d8/1d10| 19 | —        | C    | 1
+Florete      | I   | 1d6    | 18   | —        | C    | 1
+Machado      | I   | 1d8    | x3   | —        | C    | 1
+Maça         | I   | 2d4    | x2   | —        | I    | 1
+
+Corpo a Corpo - Duas Mões:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Acha         | I   | 1d12   | x3   | —        | C    | 2
+Gadanho      | I   | 2d4    | x4   | —        | C    | 2
+Katana       | I   | 1d10   | 19   | —        | C    | 2
+Marreta      | I   | 3d4    | x2   | —        | I    | 2
+Montante     | I   | 2d6    | 19   | —        | C    | 2
+Motoserra    | I   | 3d6    | x2   | —        | C    | 2
+
+Armas de Disparo - Duas Mões:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Arco composto| I   | 1d10   | x3   | Médio    | P    | 2
+Flechas      | 0   | —      | —    | —        | —    | 1
+Balestra     | I   | 1d12   | 19   | Médio    | P    | 2
+Flechas      | 0   | —      | —    | —        | —    | 1
+
+Armas de Fogo - Uma Mão:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Submetralhadora| I  | 2d6    | 19/x3| Curto    | B    | 1
+Balas curtas | 0   | —      | —    | —        | —    | 1
+
+Armas de Fogo - Duas Mões:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Espingarda   | I   | 4d6    | x3   | Curto    | B    | 2
+Cartuchos    | I   | —      | —    | —        | —    | 1
+Fuzil de assalto| II | 2d10  | 19/x3| Médio   | B    | 2
+Balas longas | I   | —      | —    | —        | —    | 1
+Fuzil de precisão| III| 2d10 | 19/x3| Longo   | B    | 2
+Balas longas | I   | —      | —    | —        | —    | 1
+
+═══════════════════════════════════════════════════════════════
+                         ARMAS PESADAS
+═══════════════════════════════════════════════════════════════
+
+À Distância - Duas Mãos:
+Arma         | Cat | Dano   | Crít | Alcance | Tipo | Esp
+-------------|-----|--------|------|----------|------|----
+Bazuca       | III| 10d8   | x2   | Médio    | I    | 2
+Foguete      | I   | —      | —    | —        | —    | 1
+Lança-chamas | III| 6d6    | x2   | Curto    | Fogo | 2
+Combustível  | I   | —      | —    | —        | —    | 1
+Metralhadora | II  | 2d12   | 19/x3| Médio    | B    | 2
+Balas longas | I   | —      | —    | —        | —    | 1
+
+═══════════════════════════════════════════════════════════════
+                         ARMAS IMPROVISADAS & ATAQUES DESARMADOS
+═══════════════════════════════════════════════════════════════
+
+• Arma Improvisada: Objeto não feito para isso (cadeira,panela). -5 no teste de ataque.
+  Corpo a corpo de uma mão com dano 1d6. Mestre decide outros parâmetros.
+• Ataque Desarmado: Soco, chute, etc. Corpo a corpo leve, dano 1d3 não letal.
+  Não afetado por efeitos que mencionam objetos ou armas.
+
+═══════════════════════════════════════════════════════════════
+                         DESCRIÇÃO DE ARMAS
+═══════════════════════════════════════════════════════════════
+
+• Acha: Machado grande e pesado para cortar árvores.
+• Arco: Arco e flecha comum, propio para tiro ao alvo.
+• Arco Composto: Moderno com materiais de alta tensão e roldanas. Pode usar Força no dano.
+• Balestra: Besta pesada, poderoso disparo. Ação de movimento para recarregar.
+• Bastão: Cilindro de madeira (taco de beisebol, cacetete, tonfa). Pode ser 1 mão (1d6) ou 2 (1d8).
+• Bazuca: Lança-foguetes anti-tanque. Causa dano no alvo e em todos num raio de 3m.
+  Teste de Reflexos (DT Agi) para reduzir à metade. Dispara em ponto qualquer em alcance médio
+  sem precisar rolar ataque. Ação de movimento para recarregar.
+• Besta: Arma da antiguidade. Ação de movimento para recarregar.
+• Cajado: Cabo de madeira ou barra de ferro. Inclui cajá.arma agile. Pode ser usado com
+  Combater com Duas Armas como arma de uma mão e arma leve.
+• Corrente: Corrente grossa como arma. +2 em testes para desarmar e derrubar.
+• Espada: Espada medieval (longa, cimitarra).
+• Espingarda: Dispara cartucho único. Recarregar = ação de movimento.
+• Fuzil de assalto: Rifle automático. Pode fazer rajada (gasta 10 munição, +1dano).
+• Fuzil de caça: Rifle de cano longo.
+• Fuzil de precisão: Rifle de longo alcance. Dispara uma bala por vez.
+• Katana: Espada japonesa curva.
+• Lança-chamas: Lança fogo. Afeta área. teste de Reflexos para reduzir.
+• Machado: Machado de guerra.
+• Maça: Arma de impacto com cabeça de metal.
+• Marreta: Martelo grande de duas mãos.
+• Metralhadora: Arma automática pesada. Rajada = 10 munição, +1dano.
+• Montante: Espada longa de duas mãos.
+• Motoserra: Serra mecânica. Causa dano de corte.
+• Nunchaku: Par de bastões conectados por corrente.
+• Pistola: Arma de fogo leve. Ação de movimento para recarregar (6 disparos).
+• Punhal: Adaga afiada. Bom para ataques furtivos.
+• Revólver: Arma de fogo com cilindro. 6 tiros. Recarregar = ação de movimento.
+• Submetralhadora: Arma automática pequena.
+
+═══════════════════════════════════════════════════════════════
+                         PROTEÇÕES
+═══════════════════════════════════════════════════════════════
+
+• LEVES: ocupam 2 espaços, give RD 5, DEF +1 (soma com base de 10)
+• PESADAS: ocupam 5 espaços, give RD 10, DEF +2 (soma com base de 10)
+
+Proteções disponíveis (a critério do mestre e patentes):
+• Colete Balístico: Proteção leve, RD 8
+• Couraça: Proteção pesada, RD 12
+• Escudo: Proteção leve, RD 5
+
+═══════════════════════════════════════════════════════════════
+                         EQUIPAMENTO GERAL
+═══════════════════════════════════════════════════════════════
+
+CATEGORIAS (para efeitos de escolha por patente):
+• Categoria 0: Básico, disponível para todos
+• Categoria I: Básico avançadow (kits especializados)
+• Categoria II: Intermediário (equipamentos especiais)
+• Categoria III: Avançado (tecnologia de ponta)
+• Categoria IV: Ultra avançadow
+
+ITENS COMUNS:
+• Kit de Medicina: essencial para Médico de Campo usar habilidades
+• Kit de Crime: +5 em testes de Crime e Arrombar/Sabotagem
+• Kit de Tecnológico: +5 em testes de Tecnologia
+• Lanternas: essencial para exploração
+• Cordas: utilidade múltipla
+• Caderno de Investigação: essencial para investigar
+• Kit de Primeiros Socorros: cura básica
+• Equipamento de sobrevivência: para ambientes hostis
+
+═══════════════════════════════════════════════════════════════
+                         ITENS AMALDIÇOADOS
+═══════════════════════════════════════════════════════════════
+
+ARMAS E PROTEÇÕES AMALDIÇOADAS:
+Têm uma ou mais maldições. Maldições fornecem benefício ao custo de aumentar categoria.
+
+Maldições de CONHECIMENTO:
+• Antielemento: Letal contra criatura de um elemento. Gastar 2 PE +4d8 de dano se acertar.
+• Ritualística: Armazena um ritual. Ao acertar ataque, pode descargar como ação livre.
+• Senciente: Arma flutua ao seu lado e ataca sozinha (1dano por turno, 2 PE para ativar).
+
+Maldições de ENERGIA:
+• Empuxo: Pode ser arremessada (aumenta alcance), causa +1dano quando arremessada,
+  retorna na mesma rodada.
+• Energética: Gasta 2 PE para transformar arma em Energia, +5 no ataque, ignora resistência,
+  converte dano para Energia.
+• Vibrante: Recebe habilidade Ataque Extra da trilha Operações Especiais. Se já tem, custo -1 PE.
+
+Maldições de MORTE:
+• Consumidora: Gasta 2 PE ao acertar, alvo fica imóvel por uma rodada.
+• Erosiva: Gasta 2 PE ao acertar, alvo sofre 2d4 dano de Morte nas próximas 2 rodadas.
+• Repulsora: Gasta 2 PE ao bloquear para +5 adicionais na Defesa. +2 na Defesa base.
+
+Maldições de SANGUE:
+• Lancinante: +1d8 de dano de Sangue. Dado multiplicado em críticos.
+
+PREÇO DAS MALDIÇÕES:
+• CONHECIMENTO: Ao falhar teste baseado em Intelecto, perde 2 SAN por maldição.
+• ENERGIA: Ao falhar teste baseado em Agilidade, perde 2 SAN por maldição.
+• MORTE: Ao falhar teste baseado em Presença, perde 2 SAN por maldição.
+• SANGUE: Ao falhar teste baseado em Força ou Vigor, perde 2 SAN por maldição.
+• MEDO: Preço específico determinado pelo mestre.
+
+LIMITE DE ITENS AMALDIÇOADOS:
+• Apenas Agentes Especiais, Oficiais de Operações e Agentes de Elite
+• Primeiro maldição aumenta categoria em II, seguintes em I
+• Não podem ter maldições de elemento opressor e maldições iguais
+
+DESTRUIR ITENS AMALDIÇOADOS:
+• +10 PV e +10 RD por maldição
+• Se não usado, faz seus próprios testes com +10 por maldição
+• Se usado, pode escolher entre seu modificador ou do portador
+
+═══════════════════════════════════════════════════════════════

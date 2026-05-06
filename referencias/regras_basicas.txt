@@ -1,0 +1,287 @@
+═══════════════════════════════════════════════════════════════
+                    ORDEM PARANORMAL RPG - REGRAS BÁSICAS
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+                           ATRIBUTOS (0-5)
+═══════════════════════════════════════════════════════════════
+
+• AGILIDADE: coordenação motora, velocidade, destreza manual
+  - Base de: Acrobacia, Furtividade, Iniciativa, Crime, Pilotagem, Pontaria, Reflexos
+
+• FORÇA: potência muscular, habilidade atlética
+  - Base de: Atletismo, Luta
+  - Aplicada em dano corpo a corpo e armas de arremesso
+
+• INTELECTO: raciocínio, memória, educação
+  - Base de: Atualidades, Ciências, Investigação, Medicina, Ocultismo, Profissão, Sobrevivência, Tática, Tecnologia
+  - Define número de rituais que pode aprender
+  - Define quantidade de perícias treinadas adicionais
+
+• PRESENÇA: sentidos, força de vontade, habilidades sociais
+  - Base de: Diplomacia, Enganação, Intimidação, Intuição, Percepção, Religião, Vontade
+  - Define pontos de esforço (PE) adicionais por NEX
+
+• VIGOR: saúde e resistência física
+  - Base de: Fortitude
+  - Define pontos de vida (PV) adicionais por NEX
+
+VALORES: 1=média humana, 2-3=acima da média, 4-5=extraordinário, 0=abaixo da média
+TESTE: 1d20 por ponto de atributo, escolher melhor resultado
+
+═══════════════════════════════════════════════════════════════
+                    PONTOS DE VIDA, ESFORÇO E SANIDADE
+═══════════════════════════════════════════════════════════════
+
+PONTOS DE VIDA (PV):
+- Representa saúde e vitalidade
+- Quando chega a 0, você cai inconsciente e morrendo
+- Machucado = menos da metade dos PV totais
+
+PONTOS DE ESFORÇO (PE):
+- Representa energia e determinação
+- Usado para habilidades de classe e origem
+- Limite de PE por turno aumenta com NEX (veja tabela de NEX)
+
+SANIDADE (SAN):
+- Representa resiliência mental
+- Quando chega a 0, você fica enlouquecendo
+- Perturbado = menos da metade da SAN total
+
+═══════════════════════════════════════════════════════════════
+                         NÍVEL DE EXPOSIÇÃO PARANORMAL (NEX)
+═══════════════════════════════════════════════════════════════
+
+NEX é medido em %. Começa em 5% para personagens novos.
+
+TABELA DE PROGRESSÃO:
+
+NEX     | Limite PE/turno
+--------|---------------
+ 5%     | 1
+10%     | 2
+15%     | 3
+20%     | 4
+25%     | 5
+30%     | 6
+35%     | 7
+40%     | 8
+45%     | 9
+50%     | 10
+55%     | 11
+60%     | 12
+65%     | 13
+70%     | 14
+75%     | 15
+80%     | 16
+85%     | 17
+90%     | 18
+95%     | 19
+99%     | 20
+
+BENEFÍCIOS AO AUMENTAR NEX:
+• +PV (conforme classe e Vigor)
+• +PE (conforme classe e Presença)
+• +SAN (conforme classe)
+• Habilidades de classe do NEX alcançado
+• Aumento de atributo em NEX 20%, 50%, 80%, 95%
+• Novas habilidades de trilha em NEX 10%, 40%, 65%, 99%
+• Poderes de classe em NEX 15%, 30%, 45%, 60%, 75%, 90%
+
+POR QUE %?
+NEX representa quanto da mente do personagem foi "tomada" pelo Outro Lado.
+50% = metade da mente tomada. 99% = mantido na Realidade por um fragmento.
+100% é impossível naturalmente - requer Desconjuração específica.
+
+═══════════════════════════════════════════════════════════════
+                              TESTES
+═══════════════════════════════════════════════════════════════
+
+MECÂNICA BÁSICA:
+1. Mestre anuncia qual perícia e a DT (Dificuldade do Teste)
+2. Jogador rola 1d20 por ponto no atributo-base da perícia
+3. Escolhe o melhor resultado
+4. Soma bônus de treinamento da perícia:
+   - Destreinado: +0
+   - Treinado: +5
+   - Veterano: +10
+   - Expert: +15
+5. Se igual ou maior que DT = sucesso
+
+ATRIBUTO 0:
+- Rola 2d20 mas escolhe o PIOR resultado
+
+TABELA DE DIFICULDADES (DT):
+• Muito Fácil: 5
+• Fácil: 10
+• Médio: 15
+• Difícil: 20
+• Muito Difícil: 25
+• Extraordinário: 30
+• Impossível: 35+
+
+MODIFICADORES DE SITUAÇÃO:
+• Personagem prestativo: +5 em persuasão
+• Ambiente desfavorável: -2 a -5
+• Ajuda de aliado: +5 ou +10 (veterano/expert)
+• Condição do alvo (caído, surpreso): bônus/penalidade
+
+═══════════════════════════════════════════════════════════════
+                         CONDIÇÕES
+═══════════════════════════════════════════════════════════════
+
+• INCONSCIENTE: não pode agir
+• MORRENDO: se iniciar 3 turnos morrendo na mesma cena, morre
+• ENLOUQUECENDO: se iniciar 3 turnos enlouquecendo na mesma cena, fica insano
+• ATORDOADO: não pode realizar ações
+• PARALISADO: não pode se mover
+• CAÍDO: -5 em ataques corpo a corpo, +5 em ataques à distância
+• IMÓVEL: não pode se mover
+• AFLITO: -5 em testes de ataque
+• ABALADO: -2 em testes de resistência
+• APIAVORADO: -5 em testes de ataque e resistência
+• ENJOADO: não pode usar ação completa
+• FRACO: -1d em rolagens de dano
+• LENTO: deslocamento reduzido pela metade
+• ALQUEBRADO: -5 em testes de resistência
+• VULNERÁVEL: +5 em testes de ataque contra
+• DESPREVINIDO: -5 na Defesa
+• SURPRESO: não age na primeira rodada
+• CEGO: 50% de chance de falha, -5 na Defesa
+• OFUSCADO: -2 em testes de ataque
+
+═══════════════════════════════════════════════════════════════
+                         COMBATE - AÇÕES
+═══════════════════════════════════════════════════════════════
+
+AÇÃO PADRÃO (uma por turno):
+• AGREDIR: fazer um ataque corpo a corpo ou à distância
+• CONJURAR RITUAL: lançar um ritual (para ocultistas)
+• USAR HABILIDADE OU ITEM: ativação de habilidades especiais
+
+AÇÃO DE MOVIMENTO (uma por turno):
+• LEVANTAR-SE: do chão
+• MANIPULAR ITEM: pegar, abrir, fechar
+• MIRAR: eliminar penalidade de combate corpo a corpo
+• MOVIMENTAR-SE: deslocamento normal (9m padrão)
+• SACAR OU GUARDAR ITEM
+
+AÇÃO COMPLETA (substitui padrão + movimento):
+• CORRIDA: movimento dobrado, teste de Atletismo
+• GOLPE DE MISERICÓRDIA: acerto crítico automático em alvo indefeso
+• INVESTIDA: avanço em linha reta + ataque no fim
+• CONJURAR RITUAL de execução completa
+
+AÇÃO LIVRE:
+• FALAR (até 20 palavras)
+• LARGAR ITEM
+• JOGAR-SE NO CHÃO
+• ATRASAR: agir depois na ordem de iniciativa
+
+REAÇÕES (durante turno de outros):
+• BLOQUEIO: usar Fortitude contra ataque corpo a corpo (requer treino)
+• CONTRA-ATAQUE: usar Luta quando inimigo erra ataque
+• ESQUIVA: usar Reflexos contra qualquer ataque (requer treino)
+
+═══════════════════════════════════════════════════════════════
+                         MOVIMENTAÇÃO
+═══════════════════════════════════════════════════════════════
+
+• DESLOCAMENTO PADRÃO: 9m (6 quadrados de 1,5m)
+• TERRENO DIFÍCIL: movimento em dobro (metade do deslocamento)
+• DIAGONAL: conta como 2 quadrados (3m)
+• CARGA: se sobrecarregado, -5 em Defesa e testes de carga, -3m deslocamento
+
+CAPACIDADE DE CARGA:
+• 5 espaços por ponto de Força (Força 0 = 2 espaços)
+• Armas leves = 1 espaço
+• Armas duas mãos/proteções leves = 2 espaços
+• Proteções pesadas = 5 espaços
+• Pessoa (ocarregando) = 10 espaços
+
+═══════════════════════════════════════════════════════════════
+                       SITUAÇÕES ESPECIAIS DE COMBATE
+═══════════════════════════════════════════════════════════════
+
+ATAQUE DO ATACANTE:
+• CEGO: 50% falha
+• CAÍDO: -10
+• EM POSIÇÃO ELEVADA: +2
+• FLANQUEANDO: +2 (só corpo a corpo)
+• INVISÍVEL: +10
+• OFUSCADO: -2
+
+DEFESA DO ALVO:
+• CAÍDO: -5 contra corpo a corpo, +5 contra distância
+• CEGO: -5
+• DESPREVINIDO: -5
+• SOB CAMUFLAGEM: 20% falha
+• SOB CAMUFLAGEM TOTAL: 50% falha
+• SOB COBERTURA: +5
+• SOB COBERTURA TOTAL: impossível de ser alvejado
+
+ESPECIAIS:
+• FLANQUEAR: dois aliados em lados opostos do inimigo = +2 em ataque para ambos
+• COBERTURA: atrás de algo que bloqueia ataque = +5 na Defesa
+• CAMUFLAGEM: escuridão, neblina, folhagens = 20% falha no ataque
+• CAMUFLAGEM TOTAL: escuridão total = 50% falha
+
+═══════════════════════════════════════════════════════════════
+                         ATRIBUTOS DAS CLASSES
+═══════════════════════════════════════════════════════════════
+
+COMBATENTE:
+• PV inicial: 20 + Vigor
+• PE inicial: 2 + Presença
+• SAN inicial: 12
+• PV por NEX: +4 (+Vigor)
+• PE por NEX: +2 (+Presença)
+• SAN por NEX: +3
+• Perícias treinadas: Luta ou Pontaria + Fortitude ou Reflexos + (1 + Intelecto)
+• Proficiências: Armas simples, armas táticas, proteções leves
+
+ESPECIALISTA:
+• PV inicial: 16 + Vigor
+• PE inicial: 3 + Presença
+• SAN inicial: 16
+• PV por NEX: +3 (+Vigor)
+• PE por NEX: +3 (+Presença)
+• SAN por NEX: +4
+• Perícias treinadas: 7 + Intelecto
+• Proficiências: Armas simples, proteções leves
+
+OCULTISTA:
+• PV inicial: 12 + Vigor
+• PE inicial: 4 + Presença
+• SAN inicial: 20
+• PV por NEX: +2 (+Vigor)
+• PE por NEX: +4 (+Presença)
+• SAN por NEX: +5
+• Perícias treinadas: Ocultismo + Vontade + (3 + Intelecto)
+• Proficiências: Armas simples
+
+═══════════════════════════════════════════════════════════════
+                         PATENTES
+═══════════════════════════════════════════════════════════════
+
+Patente    | PP   | Limite Crédito | Itens (I-II-III-IV)
+-----------|------|----------------|---------------------
+Recruta    | 0    | Baixo         | 2 -- -- --
+Operador   | 20   | Médio         | 3 1 -- --
+Ag.Especial| 50   | Médio         | 3 2 1 --
+Of.Operac. | 100  | Alto          | 3 3 2 1
+Ag. Elite  | 200  | Ilimitado     | 3 3 3 2
+
+PONTOS DE PRESTÍGIO POR MISSÃO:
+• Solução do caso: +10
+• Pista adicional: +2
+• Morte de inocente: -2
+• Morte de membro: -5
+
+LIMITES DE CRÉDITO:
+• Baixo: básico (comida, roupa, pensão 3*)
+• Médio: passagens aéreas, hotel boa qualidade
+• Alto: qualquer despesa razoável
+• Ilimitado: tudo disponível
+
+═══════════════════════════════════════════════════════════════

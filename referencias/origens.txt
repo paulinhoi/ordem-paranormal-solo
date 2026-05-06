@@ -1,0 +1,170 @@
+═══════════════════════════════════════════════════════════════
+                         ORDEM PARANORMAL - ORIGENS
+═══════════════════════════════════════════════════════════════
+
+CADA ORIGEM FORNECE:
+• Duas perícias treinadas
+• Um poder da origem
+
+═══════════════════════════════════════════════════════════════
+                    LISTA COMPLETA DE ORIGENS
+═══════════════════════════════════════════════════════════════
+
+--- ACADÊMICO ---
+Perícias: Ciências, Investigação
+Poder: SABER É PODER - Quando faz teste usando Inteleto, pode gastar 2 PE para +5 nesse teste
+
+--- AGENTE DE SAÚDE ---
+Perícias: Intuição, Medicina
+Poder: TÉCNICA MEDICINAL - Sempre que cura personagem, soma Intelecto no total de PV curados
+
+--- AMNÉSICO ---
+Perícias: Duas à escolha do mestre
+Poder: VISLUMBRES DO PASSADO - 1 vez por sessão, pode fazer teste de Intelecto (DT 10)
+para reconhecer pessoas ou lugares familiares. Se passar, recebe 1d4 PE temporários e
+informação útil (a critério do mestre)
+
+--- ARTISTA ---
+Perícias: Artes, Enganação
+Poder: MAGNUM OPUS - É famoso por uma de suas obras. 1 vez por missão, pode determinar
+que um personagem envolvido em cena de interação o reconheça. Recebe +5 em Presença e
+perícias baseadas em Presença contra aquele personagem
+
+--- ATLETA ---
+Perícias: Acrobacia, Atletismo
+Poder: 110% - Quando faz teste de perícia usando Força ou Agilidade (exceto Luta e Pontaria),
+pode gastar 2 PE para +5
+
+--- CHEF ---
+Perícias: Fortitude, Profissão (cozinheiro)
+Poder: INGREDIENTE SECRETO - Em cenas de interlúdio, pode fazer a ação alimentar-se para
+cozinhar prato especial. Você e todos que fizerem a ação recebem benefício de dois pratos
+(mesmo benefício escolhido duas vezes = acumulados)
+
+--- CRIMINOSO ---
+Perícias: Crime, Furtividade
+Poder: O CRIME COMPENSA - No final de uma missão, escolher um item encontrado. Na próxima
+missão, pode incluir esse item em seu inventário sem contar no limite de itens por patente
+
+--- CULTISTA ARREPENDIDO ---
+Perícias: Ocultismo, Religião
+Poder: TRAÇOS DO OUTRO LADO - Possui um poder paranormal à sua escolha. Porém, começa
+o jogo com metade da Sanidade normal para sua classe
+
+--- DESGARRADO ---
+Perícias: Fortitude, Sobrevivência
+Poder: CALEJADO - Recebe +1 PV para cada 5% de NEX
+
+--- ENGENHEIRO ---
+Perícias: Profissão, Tecnologia
+Poder: FERRAMENTAS FAVORITAS - Um item a sua escolha (exceto armas) conta como uma
+categoria abaixo
+
+--- EXECUTIVO ---
+Perícias: Diplomacia, Profissão
+Poder: PROCESSO OTIMIZADO - Sempre que faz teste de perícia durante teste estendido, ou
+ação para revisar documentos, pode pagar 2 PE para +5
+
+--- INVESTIGADOR ---
+Perícias: Investigação, Percepção
+Poder: FARO PARA PISTAS - 1 vez por cena, ao fazer teste para procurar pistas, pode gastar
+1 PE para +5
+
+--- LUTADOR ---
+Perícias: Luta, Reflexos
+Poder: MÃO PESADA - Recebe +2 em rolagens de dano com ataques corpo a corpo
+
+--- MAGNATA ---
+Perícias: Diplomacia, Pilotagem
+Poder: PATROCINADOR DA ORDEM - Seu limite de crédito é sempre considerado um acima do atual
+
+--- MERCENÁRIO ---
+Perícias: Iniciativa, Intimidação
+Poder: POSIÇÃO DE COMBATE - No primeiro turno de cada cena de ação, pode gastar 2 PE para
+receber uma ação de movimento adicional
+
+--- MILITAR ---
+Perícias: Pontaria, Tática
+Poder: PARA BELLUM - Recebe +2 em rolagens de dano com armas de fogo
+
+--- OPERÁRIO ---
+Perícias: Fortitude, Profissão
+Poder: FERRAMENTA DE TRABALHO - Escolher arma simples ou tática que poderia ser usada como
+ferramenta na profissão. Sabe usar a arma e recebe +1 em testes de ataque, rolagens de dano
+e margem de ameaça com ela
+
+--- POLICIAL ---
+Perícias: Percepção, Pontaria
+Poder: PATRULHA - Recebe +2 na Defesa
+
+--- RELIGIOSO ---
+Perícias: Religião, Vontade
+Poder: ACALENTAR - Recebe +5 em testes de Religião para acalmar. Além disso, ao acalmar
+uma pessoa, ela recebe 1d6 + Presença pontos de Sanidade
+
+--- SERVIDOR PÚBLICO ---
+Perícias: Intuição, Vontade
+Poder: ESPÍRITO CÍVICO - Sempre que faz teste para ajudar, pode gastar 1 PE para aumentar
+o bônus concedido em +2
+
+--- TEÓRICO DA CONSPIRAÇÃO ---
+Perícias: Investigação, Ocultismo
+Poder: EU JÁ SABIA - Não se abala com entidades ou anomalias. Recebe resistência a dano mental
+igual ao Intelecto
+
+--- T.I. ---
+Perícias: Investigação, Tecnologia
+Poder: MOTOR DE BUSCA - A critério do mestre, sempre que tiver acesso à internet, pode
+gastar 2 PE para substituir teste de perícia qualquer por teste de Tecnologia
+
+--- TRABALHADOR RURAL ---
+Perícias: Adestramento, Sobrevivência
+Poder: DESBRAVADOR - Quando faz teste de Adestramento ou Sobrevivência, pode gastar 2 PE
+para +5. Além disso, não sofre penalidade em deslocamento por terreno difícil
+
+--- TRAMBIQUEIRO ---
+Perícias: Crime, Enganação
+Poder: IMPOSTOR - 1 vez por cena, pode gastar 2 PE para substituir teste de perícia qualquer
+por teste de Enganação
+
+--- UNIVERSITÁRIO ---
+Perícias: Atualidades, Investigação
+Poder: DEDICAÇÃO - Recebe +1 PE, e +1 PE adicional a cada NEX ímpar (15%, 25%...).
+Além disso, seu limite de PE por turno aumenta em 1 (em NEX 5% = 2, NEX 10% = 3...)
+
+--- VÍTIMA ---
+Perícias: Reflexos, Vontade
+Poder: CICATRIZES PSICOLÓGICAS - Recebe +1 de Sanidade para cada 5% de NEX
+
+═══════════════════════════════════════════════════════════════
+                    TABELA DE ORIGENS (2D20)
+═══════════════════════════════════════════════════════════════
+
+2-8   | Acadêmico          | Ciências, Investigação         | Saber é Poder
+9-10  | Agente de Saúde    | Intuição, Medicina            | Técnica Medicinal
+11    | Amnésico           | 2 à escolha do mestre         | Vislumbres do Passado
+12-13 | Artista            | Artes, Enganação              | Magnum Opus
+14-15 | Atleta             | Acrobacia, Atletismo           | 110%
+16    | Chef               | Fortitude, Profissão(cozinheiro)| Ingrediente Secreto
+17    | Criminoso          | Crime, Furtividade            | O Crime Compensa
+18    | Cultista Arrependido| Ocultismo, Religião           | Traços do Outro Lado
+19    | Desgarrado         | Fortitude, Sobrevivência      | Calejado
+20    | Engenheiro         | Profissão, Tecnologia         | Ferramentas Favoritas
+21    | Executivo          | Diplomacia, Profissão         | Processo Otimizado
+22-23 | Investigador      | Investigação, Percepção       | Faro para Pistas
+24    | Lutador            | Luta, Reflexos                | Mão Pesada
+25    | Magnata            | Diplomacia, Pilotagem         | Patrocinador da Ordem
+26    | Mercenário         | Iniciativa, Intimidação       | Posição de Combate
+27    | Militar            | Pontaria, Tática              | Para Bellum
+28    | Operário           | Fortitude, Profissão          | Ferramenta de Trabalho
+29-30 | Policial           | Percepção, Pontaria           | Patrulha
+31    | Religioso          | Religião, Vontade             | Acalentar
+32    | Servidor Público   | Intuição, Vontade             | Espírito Cívico
+33    | Teórico da Consp.  | Investigação, Ocultismo       | Eu Já Sabia
+34    | T.I.               | Investigação, Tecnologia      | Motor de Busca
+35    | Trabalhador Rural  | Adestramento, Sobrevivência   | Desbravador
+36    | Trambiqueiro       | Crime, Enganação             | Impostor
+37-38 | Universitário      | Atualidades, Investigação   | Dedicação
+39-40 | Vítima             | Reflexos, Vontade            | Cicatrizes Psicológicas
+
+═══════════════════════════════════════════════════════════════

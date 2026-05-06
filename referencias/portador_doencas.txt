@@ -1,0 +1,149 @@
+══════════════════════════════════════════════════════════════
+     O PORTADOR DO MEDO - DOENÇAS PARANORMAIS
+══════════════════════════════════════════════════════════════
+
+Doenças paranormais são condições que afetam personagens através
+de exposição ao paranormal. Cada doença tem estágios progressivos.
+
+══════════════════════════════════════════════════════════════
+     DOENÇAS DE SANGUE
+══════════════════════════════════════════════════════════════
+
+--- SANGUESSUGA ---
+Contaminação: Ao entrar em Morrendo por mordida de ser infectado
+Fortitude DT 25
+
+Estágio I: +1d8 dano de Sangue em ataques corpo a corpo. Se exposto ao Sol, fica Cego.
+Estágio II: Ganha arma natural Mordida (1d8 Sangue). Pode gastar 3 PE para ataque livre/rodada. Luz solar causa 1d4 PV/rodada.
+Estágio III+: Reflexo não aparece em espelhos. Luz solar causa 2d10 PV. Ao morder, recupera metade do dano causado em PV.
+
+---
+
+--- SANGUE FRIO ---
+Contaminação: Por ferimento
+Fortitude DT 25
+
+Estágio I: Fica Alquebrado e Vulnerável. Corpo perde gordura.
+Estágio II: Sensibilidade a temperatura. Vulnerabilidade a Frio. -1 em Vigor.
+Estágio III+: Necessita de calor. Em temperaturas baixas, perde 1d6 PV/rodada.
+
+---
+
+--- CEGUEIRA SANGUÍNEA ---
+Contaminação: Contato com sangue infectado
+Fortitude DT 30
+
+Estágio I: -5 em testes de identificação.
+Estágio II: Não pode identificar seres. Não distingue animais, criaturas e pessoas.
+Estágio III+: Não compreende o que vê. Falha automaticamente em Intuição, Investigação, Percepção. 50% chance de atingir alvo errado.
+
+══════════════════════════════════════════════════════════════
+     DOENÇAS DE CONHECIMENTO
+══════════════════════════════════════════════════════════════
+
+--- CEGUEIRA CONCEITUAL ---
+Contaminação: Por contato
+Fortitude DT 30
+
+Estágio I: Você deixa de ver, mas continua enxergando. -5 em testes de Identificar.
+Estágio II: Não consegue utilizar efeitos para identificar seres. Não distingue animais, criaturas e pessoas.
+Estágio III+: Não compreende o que vê. Falha automaticamente em Intuição, Investigação, Percepção. 50% chance de atingir alvo errado.
+
+---
+
+--- INFECÇÃO ESPELHADA ---
+Contaminação: Ao se olhar para ser com Estágio III+
+Fortitude DT 20
+
+Estágio I: Corpo parcialmente espelhado. Sofre -2 em testes quando Desprevenido ou Surpreendido.
+Estágio II: Reflexos ficam lentos. -2 em testes de Reflexos.
+Estágio III+: Corpo completamente espelhado. Qualquer efeito visual não funciona.
+
+---
+
+--- MEMORITE ---
+Contaminação: Exposição a efeitos mentais
+Fortitude DT 30
+
+Estágio I: Dificuldade de lembrar. -2 em testes baseados em Intelecto.
+Estágio II: Perde memórias recentes. Não lembra das últimas 24h.
+Estágio III+: Demência. Não reconhece aliados, não lembra de habilidades.
+
+══════════════════════════════════════════════════════════════
+     DOENÇAS DE ENERGIA
+══════════════════════════════════════════════════════════════
+
+--- ELETROCUÇÃO CRÔNICA ---
+Contaminação: Exposição a eletricidade
+Fortitude DT 25
+
+Estágio I: Corpo instável. -2 em testes de Reflexos.
+Estágio II: Descargas espontâneas. Causa 1d4 elétrico a todos adjacentes no início de cada cena.
+Estágio III+: Campo eletromagnético forte. Equipamentos falham. Pode causar 2d6 a todos adjacentes.
+
+---
+
+--- FADIGA ENERGÉTICA ---
+Contaminação: Sobrecarga de energia
+Fortitude DT 30
+
+Estágio I: Cansaço. -2 em testes de Agilidade.
+Estágio II: Exaustão. -5 em deslocamento.
+Estágio III+: Colapso. Não pode usar PE. Apenas ações de movimento.
+
+══════════════════════════════════════════════════════════════
+     DOENÇAS DE MORTE
+══════════════════════════════════════════════════════════════
+
+--- PUTREFACÇÃO ---
+Contaminação: Contato com corpo em decomposição
+Fortitude DT 25
+
+Estágio I: Cheiro pestilento. -2 em testes sociais.
+Estágio II: Pele apodrece. -2 em Defesa.
+Estágio III+: Decomposição avançada. Perda de 1d8 PV/rodada. Imune a efeitos de Cura.
+
+---
+
+--- OSSIFICAÇÃO ---
+Contaminação: Exposição a essência de morte
+Fortitude DT 30
+
+Estágio I: Ossos doloridos. -2 em testes de Atletismo.
+Estágio II: Ossos endurecem. -5 em deslocamento.
+Estágio III+: Completamente ossificado. Imóvel, mas imune a dano físico.
+
+══════════════════════════════════════════════════════════════
+     DOENÇAS DE MEDO
+══════════════════════════════════════════════════════════════
+
+--- PARANOIA ---
+Contaminação: Exposição a efeito de medo
+Fortitude DT 25
+
+Estágio I: Desconfiança. -2 em testes de Diplomacia.
+Estágio II: Suspeita de aliados. Não aceita ajuda de aliados.
+Estágio III+: Paranóico total. Ataca qualquer um que se aproxime.
+
+--- INSÔNIA CRÔNICA ---
+Contaminação: Exposição a pesadelos
+Fortitude DT 20
+
+Estágio I: Dificuldade de dormir. -2 em testes baseados em Presença.
+Estágio II: Sem sono. Não recupera PV com descanso.
+Estágio III+: Alucinações. 50% chance de agir inesperadamente.
+
+══════════════════════════════════════════════════════════════
+     TRATAMENTO
+══════════════════════════════════════════════════════════════
+
+Para tratar doenças paranormais:
+-Medicina DT 30 para identificar tratamento
+-Rituais de Cura podem ajudar
+-Remédios especiais são necessários
+-Algumas doenças são incuráveis
+
+Progressão:
+-Escape da progressão requer sucesso em teste de Fortitude
+-Teste é feito a cada cena ou a cada dia
+-Falhas fazem a doença avançar um estágio

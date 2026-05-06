@@ -1,0 +1,126 @@
+══════════════════════════════════════════════════════════════
+     O PORTADOR DO MEDO - CRESCENTE DE CRIATURAS
+══════════════════════════════════════════════════════════════
+
+Sistema para criar criaturas que evoluem e se adaptam durante o jogo.
+
+══════════════════════════════════════════════════════════════
+     TAXA DE ADAPTAÇÃO
+══════════════════════════════════════════════════════════════
+
+Criaturas podem ter Taxa de Adaptação (0-100%):
+- 0%: Não evolui
+- 10-30%: Evolução lenta
+- 40-60%: Evolução normal
+- 70%+: Evolução rápida
+
+COMO EVOLUI:
+- A cada 10 de dano causado em um turno, +1% de Taxa
+- A cada 10 de dano mental causado, +1% de Taxa
+- A cada 10 de VD em perda de Sanidade, +1% de Taxa
+
+══════════════════════════════════════════════════════════════
+     ADAPTAÇÕES DE SANGUE
+══════════════════════════════════════════════════════════════
+
+SANGUE PRIMÁRIO:
+- +10% Taxa de Adaptação
+- Cura 10% do dano recebido por turno
+- Vulnerabilidade a Fogo
+
+SANGUE SECUNDÁRIO:
+- +15% Taxa de Adaptação
+- Podeugar objetos com sangue
+- Ganha arma natural de Garra
+
+SANGUE MESTRE:
+- +25% Taxa de Adaptação
+- Pode controlar sangue de outros
+- Regenera membros perdidos
+
+══════════════════════════════════════════════════════════════
+     ADAPTAÇÕES DE CONHECIMENTO
+══════════════════════════════════════════════════════════════
+
+CONHECIMENTO PRIMÁRIO:
+- +10% Taxa de Adaptação
+- +2 em testes de Vontade
+- Imune a efeitos de Confusão
+
+CONHECIMENTO SECUNDÁRIO:
+- +15% Taxa de Adaptação
+- Pode ver através de ilusões
+- Comunicação telepática
+
+CONHECIMENTO MESTRE:
+- +25% Taxa de Adaptação
+- Pode criar ilusões
+- pode controlar mentes
+
+══════════════════════════════════════════════════════════════
+     ADAPTAÇÕES DE ENERGIA
+══════════════════════════════════════════════════════════════
+
+ENERGIA PRIMÁRIA:
+- +10% Taxa de Adaptação
+- +2 em testes de Reflexos
+- Pode criar faíscas
+
+ENERGIA SECUNDÁRIA:
+- +15% Taxa de Adaptação
+- Pode voar brevemente
+- Resistência a eletricidade
+
+ENERGIA MESTRE:
+- +25% Taxa de Adaptação
+- Pode criarelementos
+- Pode manipular energia
+
+══════════════════════════════════════════════════════════════
+     ADAPTAÇÕES DE MORTE
+══════════════════════════════════════════════════════════════
+
+MORTE PRIMÁRIA:
+- +10% Taxa de Adaptação
+- Causa medo em vivos
+- Imune a dano de Sangue
+
+MORTE SECUNDÁRIA:
+- +15% Taxa de Adaptação
+- Pode passar por objetos
+- Drena vida com toque
+
+MORTE MESTRE:
+- +25% Taxa de Adaptação
+- Pode invocar mortos
+- Imortalidade parcial
+
+══════════════════════════════════════════════════════════════
+     CAPACIDADES ELEVADAS
+══════════════════════════════════════════════════════════════
+
+Escolha dois atributos para melhorar:
+
+AGILIDADE: +1 AGI, +2 Defesa (+5 se duas vezes)
+FORÇA: +1 FOR, +5 em dano
+INTELECTO: +1 INT, +5 em duas perícias, +5 em DT de habilidades
+PRESENÇA: +1 PRE, +2 DT de habilidades (+5 se duas vezes)
+VIGOR: +1 VIG, +25% PV
+
+HABILIDADES ESPECIAIS:
+
+ALCANÇAR OS CÉUS: Dobra alcance de ataques à distância
+BOTE: Pode combinar ataques em um alvo
+CAÇA EM MATILHA: +1 dano e +1 margem de ameaça por aliado
+DILACERAR: Ganha arma natural devastadora
+EVOLUÇÃO RADICAL: Pode mudar tipo completamente
+
+══════════════════════════════════════════════════════════════
+     USANDO OBJETOS
+══════════════════════════════════════════════════════════════
+
+Criaturas com Adaptação podem empunhar objetos:
+- Funcionam como se fossem personagens
+- Cada criatura conta como NEX 25% de seu VD
+
+Exemplo: Criatura VD 80 = NEX equivalente 20% para objetos
