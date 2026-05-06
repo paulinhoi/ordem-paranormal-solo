@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem Paranormal RPG - Solo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🕸️ ORDEM PARANORMAL - SOLO</h1>
+            <div class="header-buttons">
+                <button onclick="exportData()" class="btn">💾 Exportar</button>
+                <button onclick="document.getElementById('importFile').click()" class="btn">📂 Importar</button>
+                <input type="file" id="importFile" style="display:none" onchange="importData(this)">
+                <button onclick="newGame()" class="btn btn-danger">🔄 Novo Jogo</button>
+            </div>
+        </header>
+
+        <!-- Abas -->
+        <nav class="tabs">
+            <button class="tab active" onclick="showTab('chat')">💬 Chat</button>
+            <button class="tab" onclick="showTab('personagem')">👤 Personagem</button>
+            <button class="tab" onclick="showTab('dados')">🎲 Dados</button>
+            <button class="tab" onclick="showTab('missoes')">📜 Missões</button>
+            <button class="tab" onclick="showTab('config')">⚙️ Config</button>
+        </nav>
+
+        <!-- Tab: Chat -->
+        <div id="chat" class="tab-content active">
+            <div class="chat-container">
+                <div id="messages" class="messages">
+                    <div class="message system">
+                        <strong>Oráculo:</strong> Bem-vindo ao jogo! Eu sou seu Mestre. Me conta, você já tem um personagem criado ou quer criar um agora?
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="userMessage" placeholder="O que você faz?" onkeypress="handleKeyPress(event)">
+                    <button onclick="sendMessage()" class="btn-send">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Personagem -->
+        <div id="personagem" class="tab-content">
+            <div class="character-sheet">
+                <h2>Criar/Editar Personagem</h2>
+                
+                <button onclick="startCharacterCreation()" class="btn btn-send" style="margin-bottom: 15px;">🤖 Criar Personagem com IA</button>
+                
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input type="text" id="charName" placeholder="Nome do personagem">
+                </div>
+
+                <div class="form-group">
+                    <label>Origem:</label>
+                    <select id="charOrigin">
+                        <option value="">Selecione...</option>
+                        <option value="Acadêmico">Acadêmico</option>
+                        <option value="Agente de Saúde">Agente de Saúde</option>
+                        <option value="Atleta">Atleta</option>
+                        <option value="Combatente">Combatente</option>
+                        <option value="Criminal">Criminoso</option>
+                        <option value="Desgarrado">Desgarrado</option>
+                        <option value="Estudante">Estudante</option>
+                        <option value="Investigador">Investigador</option>
+                        <option value="Médico">Médico</option>
+                        <option value="Militar">Militar</option>
+                        <option value="Ocultista">Ocultista</option>
+                        <option value="Policial">Policial</option>
+                        <option value="Religioso">Religioso</option>
+                        <option value="Veterano">Veterano</option>
+                        <option value="另一">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Classe:</label>
+                    <select id="charClass">
+                        <option value="">Selecione...</option>
+                        <option value="Combatente">Combatente</option>
+                        <option value="Especialista">Especialista</option>
+                        <option value="Ocultista">Ocultista</option>
+                    </select>
+                </div>
+
+                <h3>Atributos</h3>
+                <div class="attributes">
+                    <div class="attr">
+                        <label>AGI:</label>
+                        <input type="number" id="attrAgi" min="0" max="5" value="1">
+                    </div>
+                    <div class="attr">
+                        <label>FOR:</label>
+                        <input type="number" id="attrFor" min="0" max="5" value="1">
+                    </div>
+                    <div class="attr">
+                        <label>INT:</label>
+                        <input type="number" id="attrInt" min="0" max="5" value="1">
+                    </div>
+                    <div class="attr">
+                        <label>PRE:</label>
+                        <input type="number" id="attrPre" min="0" max="5" value="1">
+                    </div>
+                    <div class="attr">
+                        <label>VIG:</label>
+                        <input type="number" id="attrVig" min="0" max="5" value="1">
+                    </div>
+                </div>
+
+                <h3>Estado</h3>
+                <div class="attributes">
+                    <div class="attr">
+                        <label>PV:</label>
+                        <input type="number" id="pvAtual" min="0" value="20">
+                        <span>/</span>
+                        <input type="number" id="pvMax" min="0" value="20">
+                    </div>
+                    <div class="attr">
+                        <label>PE:</label>
+                        <input type="number" id="peAtual" min="0" value="6">
+                        <span>/</span>
+                        <input type="number" id="peMax" min="0" value="6">
+                    </div>
+                    <div class="attr">
+                        <label>SAN:</label>
+                        <input type="number" id="sanAtual" min="0" value="20">
+                        <span>/</span>
+                        <input type="number" id="sanMax" min="0" value="20">
+                    </div>
+                    <div class="attr">
+                        <label>NEX:</label>
+                        <input type="number" id="nex" min="0" max="100" value="5">%
+                    </div>
+                </div>
+
+                <button onclick="saveCharacter()" class="btn">💾 Salvar Personagem</button>
+                
+                <div class="character-info">
+                    <h3>Perícias:</h3>
+                    <p>Selecione as perícias na conversa com o Oráculo!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Dados -->
+        <div id="dados" class="tab-content">
+            <div class="dice-section">
+                <h2>🎲 Rolar Dados</h2>
+                <p class="hint">Clique no dado para rolar. O resultado aparece no chat.</p>
+                
+                <div class="dice-buttons">
+                    <button onclick="rollDice(4)" class="dice-btn">d4</button>
+                    <button onclick="rollDice(6)" class="dice-btn">d6</button>
+                    <button onclick="rollDice(8)" class="dice-btn">d8</button>
+                    <button onclick="rollDice(10)" class="dice-btn">d10</button>
+                    <button onclick="rollDice(12)" class="dice-btn">d12</button>
+                    <button onclick="rollDice(20)" class="dice-btn">d20</button>
+                    <button onclick="rollDice(100)" class="dice-btn">d100</button>
+                </div>
+
+                <div class="test-section">
+                    <h3>Teste de Atributo</h3>
+                    <select id="testAttr">
+                        <option value="agi">Agilidade</option>
+                        <option value="for">Força</option>
+                        <option value="int">Intelecto</option>
+                        <option value="pre">Presença</option>
+                        <option value="vig">Vigor</option>
+                    </select>
+                    <input type="number" id="testDificulty" placeholder="DT" value="15">
+                    <button onclick="rollTest()" class="btn">Rolar Teste</button>
+                </div>
+
+                <div class="combat-section">
+                    <h3>Ataque</h3>
+                    <input type="text" id="weaponName" placeholder="Arma">
+                    <input type="number" id="weaponDamage" placeholder="Dano (ex: 2d6+3)">
+                    <button onclick="rollAttack()" class="btn">Rolar Ataque</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Missões -->
+        <div id="missoes" class="tab-content">
+            <div class="missions-section">
+                <h2>📜 Histórico de Missões</h2>
+                <button onclick="addMission()" class="btn">➕ Nova Missão</button>
+                <div id="missionsList"></div>
+            </div>
+        </div>
+
+        <!-- Tab: Config -->
+        <div id="config" class="tab-content">
+            <div class="config-section">
+                <h2>⚙️ Configurações</h2>
+                
+                <div class="form-group">
+                    <label>API Key (OpenRouter):</label>
+                    <input type="password" id="apiKey" placeholder="sk-or-...">
+                    <p class="hint">Sua chave da OpenRouter. Não compartilhe!</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Modelo de IA:</label>
+                    <select id="modelSelect">
+                        <option value="minimax/minimax-m2.5">MiniMax M2.5</option>
+                        <option value="anthropic/claude-3-haiku">Claude 3 Haiku</option>
+                        <option value="meta-llama/llama-3.1-8b-instruct">Llama 3.1</option>
+                    </select>
+                </div>
+
+                <button onclick="saveConfig()" class="btn">💾 Salvar Config</button>
+
+                <div class="form-group">
+                    <label>Salvar na Nuvem:</label>
+                    <button onclick="saveToCloud()" class="btn">☁️ Salvar (Nuvem)</button>
+                    <button onclick="loadFromCloud()" class="btn" style="margin-left:5px;">📥 Carregar (Nuvem)</button>
+                    <p class="hint">Salva online, acessível de qualquer dispositivo</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Google Drive (avançado):</label>
+                    <button onclick="initDrive()" class="btn">🔗 Conectar Google Drive</button>
+                    <button onclick="saveToDrive()" class="btn" style="margin-left:5px;">☁️ Salvar no Drive</button>
+                    <button onclick="loadFromDrive()" class="btn" style="margin-left:5px;">📥 Carregar do Drive</button>
+                    <p class="hint" id="driveStatus">Requer OAuth configurado</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>Sobre</h3>
+                    <p>Ordem Paranormal RPG - Solo Edition</p>
+                    <p>Versão 1.0</p>
+                    <p>Desenvolvido para jogar RPG solo com IA!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
