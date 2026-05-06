@@ -215,6 +215,21 @@
 
                 <button onclick="saveConfig()" class="btn">💾 Salvar Config</button>
 
+                <div class="form-group">
+                    <label>Salvar na Nuvem:</label>
+                    <button onclick="saveToCloud()" class="btn">☁️ Salvar (Nuvem)</button>
+                    <button onclick="loadFromCloud()" class="btn" style="margin-left:5px;">📥 Carregar (Nuvem)</button>
+                    <p class="hint">Salva online, acessível de qualquer dispositivo</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Google Drive (avançado):</label>
+                    <button onclick="initDrive()" class="btn">🔗 Conectar Google Drive</button>
+                    <button onclick="saveToDrive()" class="btn" style="margin-left:5px;">☁️ Salvar no Drive</button>
+                    <button onclick="loadFromDrive()" class="btn" style="margin-left:5px;">📥 Carregar do Drive</button>
+                    <p class="hint" id="driveStatus">Requer OAuth configurado</p>
+                </div>
+
                 <div class="info-section">
                     <h3>Sobre</h3>
                     <p>Ordem Paranormal RPG - Solo Edition</p>

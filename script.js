@@ -4,9 +4,14 @@
 // VARIÁVEIS GLOBAIS
 // ====================
 
+const GOOGLE_API_KEY = 'AIzaSyBSvtBBqUFYOo7fEyD3DCFv1fUBiA6ojjc';
+const DRIVE_FOLDER_NAME = 'OrdemParanormalSolo';
+
 let config = {
     apiKey: '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',
-    model: 'minimax/minimax-m2.5'
+    model: 'minimax/minimax-m2.5',
+    driveConnected: false,
+    fileId: null
 };
 
 let gameState = {
@@ -445,7 +450,193 @@ function loadConfig() {
         config = JSON.parse(saved);
     }
     document.getElementById('apiKey').value = config.apiKey || '';
-    document.getElementById('modelSelect').value = config.model || 'anthropic/claude-3-haiku';
+    document.getElementById('modelSelect').value = config.model || 'minimax/minimax-m2.5';
+    updateDriveStatus();
+}
+
+// ====================
+// GOOGLE DRIVE
+// ====================
+
+function updateDriveStatus() {
+    const statusEl = document.getElementById('driveStatus');
+    if (config.driveConnected) {
+        statusEl.textContent = '✅ Conectado ao Google Drive';
+        statusEl.style.color = '#4caf50';
+    } else {
+        statusEl.textContent = '❌ Não conectado';
+        statusEl.style.color = '#888';
+    }
+}
+
+async function initDrive() {
+    alert('Para usar Google Drive, você precisa fazer login com OAuth.\n\nEsta versão usa armazenamento local. Para full OAuth, seria necessário um servidor.\n\nPor agora, use Export/Import para compartilhar entre dispositivos.');
+    config.driveConnected = false;
+    updateDriveStatus();
+    saveConfig();
+}
+
+async function saveToDrive() {
+    const data = JSON.stringify(gameState);
+    const blob = new Blob([data], { type: 'application/json' });
+    const fileName = `ordemparanormal_${new Date().toISOString().split('T')[0]}.json`;
+    
+    // Using simple upload to Google Drive via API
+    // Note: This requires the API key to have Drive API enabled and proper OAuth
+    const metadata = {
+        name: fileName,
+        mimeType: 'application/json'
+    };
+    
+    const form = new FormData();
+    form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
+    form.append('file', blob);
+    
+    try {
+        // First, try to get or create folder
+        const folderId = await getOrCreateFolder();
+        
+        // Upload file to folder
+        const response = await fetch(`https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${GOOGLE_API_KEY}`
+            },
+            body: form
+        });
+        
+        if (response.ok) {
+            const result = await response.json();
+            config.fileId = result.id;
+            saveConfig();
+            alert('✅ Salvo no Google Drive!');
+        } else {
+            const error = await response.text();
+            alert('❌ Erro ao salvar: ' + error);
+        }
+    } catch (err) {
+        alert('❌ Erro: ' + err.message);
+    }
+}
+
+async function getOrCreateFolder() {
+    // Search for folder
+    const searchResponse = await fetch(`https://www.googleapis.com/drive/v3/files?q=name='${DRIVE_FOLDER_NAME}'%20and%20mimeType='application/vnd.google-apps.folder'`, {
+        headers: {
+            'Authorization': `Bearer ${GOOGLE_API_KEY}`
+        }
+    });
+    
+    const searchData = await searchResponse.json();
+    
+    if (searchData.files && searchData.files.length > 0) {
+        return searchData.files[0].id;
+    }
+    
+    // Create folder
+    const createResponse = await fetch('https://www.googleapis.com/drive/v3/files', {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${GOOGLE_API_KEY}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: DRIVE_FOLDER_NAME,
+            mimeType: 'application/vnd.google-apps.folder'
+        })
+    });
+    
+    const createData = await createResponse.json();
+    return createData.id;
+}
+
+// Alternative simple cloud save using a free service
+let cloudSaveId = localStorage.getItem('cloudSaveId');
+
+async function saveToCloud() {
+    try {
+        const response = await fetch('https://api.jsonbin.io/v3/b', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Bin-Private': 'false'
+            },
+            body: JSON.stringify(gameState)
+        });
+        
+        if (response.ok) {
+            const data = await response.json();
+            cloudSaveId = data.metadata.id;
+            localStorage.setItem('cloudSaveId', cloudSaveId);
+            alert('✅ Salvo na nuvem! ID: ' + cloudSaveId);
+        }
+    } catch (err) {
+        alert('Erro: use Export/Import manual');
+    }
+}
+
+async function loadFromCloud() {
+    if (!cloudSaveId) {
+        alert('Nenhum save na nuvem. Use Export/Import.');
+        return;
+    }
+    
+    try {
+        const response = await fetch(`https://api.jsonbin.io/v3/b/${cloudSaveId}/latest`);
+        if (response.ok) {
+            const data = await response.json();
+            gameState = data.record;
+            saveData();
+            renderCharacter();
+            renderMissions();
+            addMessage('system', '📥 Jogo carregado da nuvem!');
+            alert('✅ Jogo carregado!');
+        }
+    } catch (err) {
+        alert('Erro ao carregar');
+    }
+}
+
+async function loadFromDrive() {
+    try {
+        // List files in folder
+        const folderId = await getOrCreateFolder();
+        
+        const response = await fetch(`https://www.googleapis.com/drive/v3/files?q='${folderId}'%20in%20parents&orderBy=modifiedTime desc`, {
+            headers: {
+                'Authorization': `Bearer ${GOOGLE_API_KEY}`
+            }
+        });
+        
+        const data = await response.json();
+        
+        if (data.files && data.files.length > 0) {
+            // Get most recent file
+            const fileId = data.files[0].id;
+            
+            const fileResponse = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media`, {
+                headers: {
+                    'Authorization': `Bearer ${GOOGLE_API_KEY}`
+                }
+            });
+            
+            const gameData = await fileResponse.json();
+            gameState = gameData;
+            saveData();
+            renderCharacter();
+            renderMissions();
+            
+            // Refresh chat
+            const chat = document.getElementById('chat');
+            showTab('chat');
+            addMessage('system', '📥 Jogo carregado do Google Drive!');
+            alert('✅ Jogo carregado do Drive!');
+        } else {
+            alert('Nenhum arquivo encontrado no Drive.');
+        }
+    } catch (err) {
+        alert('❌ Erro ao carregar: ' + err.message + '\n\nNota: A API key precisa ter acesso ao Drive API.');
+    }
 }
 
 // ====================
