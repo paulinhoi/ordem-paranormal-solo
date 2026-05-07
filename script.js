@@ -535,7 +535,7 @@ async function saveToDrive() {
         const response = await fetch(`https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart`, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${GOOGLE_API_KEY}`
+                'Authorization': `Bearer ${oauthAccessToken}`
             },
             body: form
         });
@@ -558,7 +558,7 @@ async function getOrCreateFolder() {
     // Search for folder
     const searchResponse = await fetch(`https://www.googleapis.com/drive/v3/files?q=name='${DRIVE_FOLDER_NAME}'%20and%20mimeType='application/vnd.google-apps.folder'`, {
         headers: {
-            'Authorization': `Bearer ${GOOGLE_API_KEY}`
+            'Authorization': `Bearer ${oauthAccessToken}`
         }
     });
     
@@ -572,7 +572,7 @@ async function getOrCreateFolder() {
     const createResponse = await fetch('https://www.googleapis.com/drive/v3/files', {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${GOOGLE_API_KEY}`,
+            'Authorization': `Bearer ${oauthAccessToken}`,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -636,7 +636,7 @@ async function loadFromDrive() {
         
         const response = await fetch(`https://www.googleapis.com/drive/v3/files?q='${folderId}'%20in%20parents&orderBy=modifiedTime desc`, {
             headers: {
-                'Authorization': `Bearer ${GOOGLE_API_KEY}`
+                'Authorization': `Bearer ${oauthAccessToken}`
             }
         });
         
