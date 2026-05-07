@@ -42,6 +42,12 @@ window.onload = function() {
     loadConfig();
     renderCharacter();
     renderMissions();
+    // Restore OAuth token if exists
+    const savedToken = localStorage.getItem('oauthToken');
+    if (savedToken) {
+        oauthAccessToken = savedToken;
+        config.driveConnected = true;
+    }
 };
 
 // ====================
@@ -491,6 +497,7 @@ async function initDrive() {
         callback: (response) => {
             if (response.access_token) {
                 oauthAccessToken = response.access_token;
+                localStorage.setItem('oauthToken', oauthAccessToken);
                 config.driveConnected = true;
                 saveConfig();
                 updateDriveStatus();
@@ -682,6 +689,7 @@ async function loadFromDrive() {
         });
         
         const data = await response.json();
+        alert('Debug: arquivos encontrados: ' + JSON.stringify(data).substring(0, 200));
         
         if (data.files && data.files.length > 0) {
             // Get most recent file
