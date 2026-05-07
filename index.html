@@ -12,10 +12,11 @@
         <header class="header">
             <h1>🕸️ ORDEM PARANORMAL - SOLO</h1>
             <div class="header-buttons">
-                <button onclick="exportData()" class="btn">💾 Exportar</button>
+                <button onclick="copySave()" class="btn">📋 Copiar Jogo</button>
+                <button onclick="pasteSave()" class="btn">📋 Colar Jogo</button>
                 <button onclick="document.getElementById('importFile').click()" class="btn">📂 Importar</button>
                 <input type="file" id="importFile" style="display:none" onchange="importData(this)">
-                <button onclick="newGame()" class="btn btn-danger">🔄 Novo Jogo</button>
+                <button onclick="newGame()" class="btn btn-danger">🔄 Novo</button>
             </div>
         </header>
 
@@ -216,10 +217,10 @@
                 <button onclick="saveConfig()" class="btn">💾 Salvar Config</button>
 
                 <div class="form-group">
-                    <label>Salvar/Carregar Jogo:</label>
-                    <p style="color:#666;font-size:0.9em;margin-bottom:10px;">
-                        Use Export (PC) e Import (outro dispositivo) para continuar em outro lugar.
-                    </p>
+                    <label>Google Drive:</label>
+                    <button onclick="saveToDrive()" class="btn">☁️ Salvar no Drive</button>
+                    <button onclick="loadFromDrive()" class="btn" style="margin-left:5px;">📥 Carregar do Drive</button>
+                    <p class="hint">Requer configuração OAuth no Google Cloud</p>
                 </div>
 
                 <div class="info-section">

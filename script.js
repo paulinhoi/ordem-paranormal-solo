@@ -674,6 +674,31 @@ function importData(input) {
     reader.readAsText(file);
 }
 
+function copySave() {
+    const saveData = JSON.stringify(gameState);
+    navigator.clipboard.writeText(saveData).then(() => {
+        alert('✅ Jogo copiado!\n\nAgora cole (envie) pelo WhatsApp/Telegram para outro dispositivo.');
+    }).catch(() => {
+        alert('Erro ao copiar. Use Exportar para baixar o arquivo.');
+    });
+}
+
+function pasteSave() {
+    const saveStr = prompt('Cole aqui o código do jogo que você copiou:');
+    if (saveStr) {
+        try {
+            const data = JSON.parse(saveStr);
+            gameState = data;
+            saveData();
+            renderCharacter();
+            renderMissions();
+            alert('✅ Jogo carregado!');
+        } catch (err) {
+            alert('Código inválido. Tente usar Importar com arquivo.');
+        }
+    }
+}
+
 function newGame() {
     if (confirm('Tem certeza? Isso vai apagar todo o progresso!')) {
         gameState = {
