@@ -550,9 +550,6 @@ async function getOrCreateFolder() {
     return createData.id;
 }
 
-// Alternative simple cloud save using a free service
-let cloudSaveId = localStorage.getItem('cloudSaveId');
-
 // Cloud save using localStorage only (no external API)
 let cloudSaveId = localStorage.getItem('cloudSaveId');
 
