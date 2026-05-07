@@ -5,7 +5,9 @@
 // ====================
 
 const GOOGLE_API_KEY = 'AIzaSyBSvtBBqUFYOo7fEyD3DCFv1fUBiA6ojjc';
+const GOOGLE_CLIENT_ID = '522909916248-gj093l0ljk9p0mi378jnlgv9jnpkbhic.apps.googleusercontent.com';
 const DRIVE_FOLDER_NAME = 'OrdemParanormalSolo';
+let oauthAccessToken = null;
 
 let config = {
     apiKey: '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',
@@ -470,13 +472,69 @@ function updateDriveStatus() {
 }
 
 async function initDrive() {
-    alert('Para usar Google Drive, você precisa fazer login com OAuth.\n\nEsta versão usa armazenamento local. Para full OAuth, seria necessário um servidor.\n\nPor agora, use Export/Import para compartilhar entre dispositivos.');
-    config.driveConnected = false;
-    updateDriveStatus();
-    saveConfig();
+    // Check if Google Identity Services is loaded
+    if (typeof google === 'undefined') {
+        // Load the Google Identity Services library
+        const script = document.createElement('script');
+        script.src = 'https://accounts.google.com/gsi/client';
+        script.onload = () => initializeGoogleOAuth();
+        document.head.appendChild(script);
+    } else {
+        initializeGoogleOAuth();
+    }
+}
+
+function initializeGoogleOAuth() {
+    // Request access to Drive
+    const scope = 'https://www.googleapis.com/auth/drive.file';
+    const redirectUri = window.location.origin + '/';
+    
+    // Build OAuth URL
+    const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?` +
+        `client_id=${GOOGLE_CLIENT_ID}` +
+        `&redirect_uri=${encodeURIComponent(redirectUri)}` +
+        `&response_type=token` +
+        `&scope=${encodeURIComponent(scope)}` +
+        `&include_granted_scopes=true`;
+    
+    // Open OAuth in a popup
+    const width = 500;
+    const height = 600;
+    const left = (screen.width - width) / 2;
+    const top = (screen.height - height) / 2;
+    
+    const popup = window.open(authUrl, 'Google OAuth', 
+        `width=${width},height=${height},left=${left},top=${top}`);
+    
+    // Listen for the redirect with the token
+    const checkToken = setInterval(() => {
+        try {
+            if (popup.closed) {
+                clearInterval(checkToken);
+            }
+            const hash = popup.location.hash;
+            if (hash && hash.includes('access_token')) {
+                clearInterval(checkToken);
+                const params = new URLSearchParams(hash.substring(1));
+                oauthAccessToken = params.get('access_token');
+                popup.close();
+                config.driveConnected = true;
+                saveConfig();
+                alert('✅ Conectado ao Google Drive!');
+            }
+        } catch (e) {}
+    }, 1000);
 }
 
 async function saveToDrive() {
+    if (!oauthAccessToken) {
+        await initDrive();
+        if (!oauthAccessToken) {
+            alert('❌ Não conectado ao Google Drive');
+            return;
+        }
+    }
+    
     const data = JSON.stringify(gameState);
     const blob = new Blob([data], { type: 'application/json' });
     const fileName = `ordemparanormal_${new Date().toISOString().split('T')[0]}.json`;
@@ -587,6 +645,14 @@ function loadFromCloud() {
 }
 
 async function loadFromDrive() {
+    if (!oauthAccessToken) {
+        await initDrive();
+        if (!oauthAccessToken) {
+            alert('❌ Não conectado ao Google Drive');
+            return;
+        }
+    }
+    
     try {
         // List files in folder
         const folderId = await getOrCreateFolder();
@@ -605,7 +671,7 @@ async function loadFromDrive() {
             
             const fileResponse = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media`, {
                 headers: {
-                    'Authorization': `Bearer ${GOOGLE_API_KEY}`
+'Authorization': `Bearer ${oauthAccessToken}`
                 }
             });
             

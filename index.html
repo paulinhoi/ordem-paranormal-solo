@@ -218,9 +218,10 @@
 
                 <div class="form-group">
                     <label>Google Drive:</label>
+                    <button onclick="initDrive()" class="btn">🔗 Conectar Drive</button>
                     <button onclick="saveToDrive()" class="btn">☁️ Salvar no Drive</button>
                     <button onclick="loadFromDrive()" class="btn" style="margin-left:5px;">📥 Carregar do Drive</button>
-                    <p class="hint">Requer configuração OAuth no Google Cloud</p>
+                    <p class="hint" id="driveStatus">Clique em "Conectar Drive" para fazer login</p>
                 </div>
 
                 <div class="info-section">
