@@ -10,13 +10,10 @@
     <div class="app-container">
         <!-- Header -->
         <header class="header">
-            <h1>🕸️ ORDEM PARANORMAL - SOLO</h1>
+            <h1>🕸️ OP RPG</h1>
             <div class="header-buttons">
-                <button onclick="saveAllToDrive()" class="btn" style="background:#4caf50;">💾 Salvar Tudo</button>
-                <button onclick="loadAllFromDrive()" class="btn">📥 Carregar Tudo</button>
-                <button onclick="copySave()" class="btn">📋 Copiar</button>
-                <button onclick="document.getElementById('importFile').click()" class="btn">📂 Importar</button>
-                <input type="file" id="importFile" style="display:none" onchange="importData(this)">
+                <button onclick="saveAllToDrive()" class="btn" style="background:#4caf50;">💾 Salvar</button>
+                <button onclick="loadAllFromDrive()" class="btn">📥 Carregar</button>
                 <button onclick="newGame()" class="btn btn-danger">🔄 Novo</button>
             </div>
         </header>
@@ -215,21 +212,14 @@
                     </select>
                 </div>
 
-                <button onclick="saveConfig()" class="btn">💾 Salvar Config</button>
-
                 <div class="form-group">
-                    <label>Google Drive:</label>
+                    <label>Drive:</label>
+                    <p class="hint" id="driveStatus" style="margin-bottom:10px;">Drive desconectado</p>
                     <button onclick="initDrive()" class="btn">🔗 Conectar Drive</button>
-                    <button onclick="saveToDrive()" class="btn">☁️ Salvar no Drive</button>
-                    <button onclick="loadFromDrive()" class="btn" style="margin-left:5px;">📥 Carregar do Drive</button>
-                    <p class="hint" id="driveStatus">Clique em "Conectar Drive" para fazer login</p>
                 </div>
 
                 <div class="info-section">
-                    <h3>Sobre</h3>
-                    <p>Ordem Paranormal RPG - Solo Edition</p>
-                    <p>Versão 1.0</p>
-                    <p>Desenvolvido para jogar RPG solo com IA!</p>
+                    <p>Ordem Paranormal RPG - Solo</p>
                 </div>
             </div>
         </div>

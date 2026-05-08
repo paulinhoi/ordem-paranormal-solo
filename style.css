@@ -367,3 +367,82 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-red);
 }
+
+/* Mobile Responsivo */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .header-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .header-buttons .btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab {
+        flex: 1 1 30%;
+        padding: 10px 5px;
+        font-size: 0.8rem;
+    }
+    
+    .tab-content {
+        padding: 10px;
+    }
+    
+    .chat-container {
+        height: 60vh;
+    }
+    
+    .messages {
+        padding: 8px;
+    }
+    
+    .message {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .dice-buttons {
+        gap: 8px;
+    }
+    
+    .dice-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+    
+    .attributes {
+        flex-wrap: wrap;
+    }
+    
+    .attr {
+        min-width: 45%;
+    }
+    
+    .form-group input,
+    .form-group select {
+        font-size: 0.9rem;
+    }
+    
+    .character-sheet h2,
+    .character-sheet h3 {
+        font-size: 1rem;
+    }
+}
