@@ -523,11 +523,11 @@ label {
     text-align: left;
 }
 
-.pericias-table th:nth-child(1) { width: 40%; }
+.pericias-table th:nth-child(1) { width: 38%; }
 .pericias-table th:nth-child(2) { width: 12%; text-align: center; }
 .pericias-table th:nth-child(3) { width: 12%; text-align: center; }
-.pericias-table th:nth-child(4) { width: 10%; text-align: center; }
-.pericias-table th:nth-child(5) { width: 10%; text-align: center; }
+.pericias-table th:nth-child(4) { width: 8%; text-align: center; }
+.pericias-table th:nth-child(5) { width: 8%; text-align: center; }
 
 .pericias-table td {
     padding: 8px 10px;
@@ -577,11 +577,16 @@ label {
 
 .pericias-table input {
     width: 100%;
-    padding: 4px 2px;
+    padding: 4px 1px;
     text-align: center;
     background: var(--bg-card);
-    font-size: 12px;
+    font-size: 11px;
     border: 1px solid transparent;
+}
+
+.pericias-table td:nth-child(4) input,
+.pericias-table td:nth-child(5) input {
+    max-width: 40px;
 }
 
 .pericias-table input:focus {
