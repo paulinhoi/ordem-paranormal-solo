@@ -65,8 +65,18 @@ function showTab(tabId) {
     });
     // Mostra a aba clicada
     document.getElementById(tabId).classList.add('active');
-    // Marca o botão como active
-    event.target.classList.add('active');
+    // Marca o botão como active (se houver evento)
+    if (event && event.target) {
+        event.target.classList.add('active');
+    } else {
+        // Find the tab button for this tab and mark it
+        const tabButtons = document.querySelectorAll('.tab');
+        tabButtons.forEach(btn => {
+            if (btn.textContent.toLowerCase().includes(tabId.substring(0, 3))) {
+                btn.classList.add('active');
+            }
+        });
+    }
 }
 
 // ====================
