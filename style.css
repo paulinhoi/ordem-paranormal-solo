@@ -523,11 +523,11 @@ label {
     text-align: left;
 }
 
-.pericias-table th:nth-child(1) { width: 36%; }
-.pericias-table th:nth-child(2) { width: 12%; text-align: center; }
-.pericias-table th:nth-child(3) { width: 12%; text-align: center; }
-.pericias-table th:nth-child(4) { width: 12%; text-align: center; }
-.pericias-table th:nth-child(5) { width: 12%; text-align: center; }
+.pericias-table th:nth-child(1) { width: 34%; }
+.pericias-table th:nth-child(2) { width: 11%; text-align: center; }
+.pericias-table th:nth-child(3) { width: 11%; text-align: center; }
+.pericias-table th:nth-child(4) { width: 14%; text-align: center; }
+.pericias-table th:nth-child(5) { width: 14%; text-align: center; }
 
 .pericias-table td {
     padding: 8px 10px;
@@ -596,13 +596,22 @@ label {
     background: var(--bg-card);
     font-size: 12px;
     border: 1px solid #333;
-    color: var(--accent-gold);
     border-radius: 4px;
     cursor: pointer;
     appearance: auto;
     -webkit-appearance: auto;
     -moz-appearance: auto;
 }
+
+.pericias-table td:nth-child(4) select option {
+    color: var(--text-primary);
+    background: var(--bg-card);
+}
+
+.pericias-table td:nth-child(4) select option[value="0"] { color: var(--text-secondary); }
+.pericias-table td:nth-child(4) select option[value="5"] { color: var(--treinado); }
+.pericias-table td:nth-child(4) select option[value="10"] { color: #3498db; }
+.pericias-table td:nth-child(4) select option[value="15"] { color: var(--esforco); }
 
 .pericias-table td:nth-child(4) select:focus {
     border-color: var(--accent);
