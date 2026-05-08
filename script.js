@@ -47,8 +47,14 @@ window.onload = function() {
     if (savedToken) {
         oauthAccessToken = savedToken;
         config.driveConnected = true;
-        updateDriveStatus();
     }
+    // Update status after a small delay to ensure DOM is ready
+    setTimeout(() => {
+        updateDriveStatus();
+        if (oauthAccessToken) {
+            console.log('Drive conectado automaticamente!');
+        }
+    }, 100);
 };
 
 // ====================
@@ -489,6 +495,22 @@ function updateDriveStatus() {
 }
 
 async function initDrive() {
+    // Already connected?
+    if (oauthAccessToken && localStorage.getItem('oauthToken') === oauthAccessToken) {
+        console.log('Já está conectado!');
+        return;
+    }
+    
+    // Try to restore from localStorage
+    const savedToken = localStorage.getItem('oauthToken');
+    if (savedToken) {
+        oauthAccessToken = savedToken;
+        config.driveConnected = true;
+        updateDriveStatus();
+        alert('✅ Drive conectado automaticamente!');
+        return;
+    }
+    
     // Use Google's official OAuth client
     if (!window.google || !window.google.accounts) {
         await new Promise((resolve) => {
