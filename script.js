@@ -551,50 +551,7 @@ async function saveToDrive() {
             const error = await response.text();
             alert('❌ Erro ao salvar: ' + error);
         }
-    } catch (err) {
-        alert('❌ Erro: ' + err.message);
-    }
-}
-    }
-    
-    const data = JSON.stringify(gameState);
-    const blob = new Blob([data], { type: 'application/json' });
-    const fileName = `ordemparanormal_${new Date().toISOString().split('T')[0]}.json`;
-    
-    // Using simple upload to Google Drive via API
-    // Note: This requires the API key to have Drive API enabled and proper OAuth
-    const metadata = {
-        name: fileName,
-        mimeType: 'application/json'
-    };
-    
-    const form = new FormData();
-    form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
-    form.append('file', blob);
-    
-    try {
-        // First, try to get or create folder
-        const folderId = await getOrCreateFolder();
-        
-        // Upload file to folder
-        const response = await fetch(`https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${oauthAccessToken}`
-            },
-            body: form
-        });
-        
-        if (response.ok) {
-            const result = await response.json();
-            config.fileId = result.id;
-            saveConfig();
-            alert('✅ Salvo no Google Drive!');
-        } else {
-            const error = await response.text();
-            alert('❌ Erro ao salvar: ' + error);
-        }
-    } catch (err) {
+} catch (err) {
         alert('❌ Erro: ' + err.message);
     }
 }
