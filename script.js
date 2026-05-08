@@ -270,7 +270,12 @@ function renderSkills() {
                 <td><span class="${nameClass}">${icon} ${p.nome}</span><span class="pericia-suffix">${sufixo}</span></td>
                 <td class="pericia-attr">(${p.attr.toUpperCase()})</td>
                 <td class="pericia-bonus">(${total})</td>
-                <td><input type="text" inputmode="numeric" pattern="[0-5]*" value="${treino}" onchange="updateSkill(${i}, 'treino', this.value)"></td>
+                <td><select onchange="updateSkill(${i}, 'treino', this.value)">
+                    <option value="0" ${treino==0?'selected':''}>0</option>
+                    <option value="5" ${treino==5?'selected':''}>5</option>
+                    <option value="10" ${treino==10?'selected':''}>10</option>
+                    <option value="15" ${treino==15?'selected':''}>15</option>
+                </select></td>
                 <td><input type="text" inputmode="numeric" value="${outros}" onchange="updateSkill(${i}, 'outros', this.value)"></td>
             </tr>
         `;

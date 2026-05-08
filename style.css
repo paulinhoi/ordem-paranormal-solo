@@ -589,6 +589,23 @@ label {
     max-width: 40px;
 }
 
+.pericias-table td:nth-child(4) select {
+    width: 100%;
+    padding: 4px 2px;
+    text-align: center;
+    background: var(--bg-card);
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: var(--text-primary);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pericias-table td:nth-child(4) select:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
 .pericias-table input:focus {
     border-color: var(--accent);
 }
