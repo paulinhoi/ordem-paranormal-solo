@@ -47,6 +47,7 @@ window.onload = function() {
     if (savedToken) {
         oauthAccessToken = savedToken;
         config.driveConnected = true;
+        updateDriveStatus();
     }
 };
 
@@ -567,12 +568,16 @@ async function saveToDrive() {
 }
 
 async function saveAllToDrive() {
+    // Always ensure we have a valid token
     if (!oauthAccessToken) {
+        alert('⚠️ Preciso conectar ao Drive primeiro!');
         await initDrive();
-        if (!oauthAccessToken) {
-            alert('❌ Conecte ao Drive primeiro!');
-            return;
-        }
+        await new Promise(r => setTimeout(r, 2000)); // Wait for login
+    }
+    
+    if (!oauthAccessToken) {
+        alert('❌ Não consegui conectar ao Drive. Tente novamente.');
+        return;
     }
     
     // Save everything - character state + config
@@ -608,12 +613,16 @@ async function saveAllToDrive() {
 }
 
 async function loadAllFromDrive() {
+    // Always ensure we have a valid token
     if (!oauthAccessToken) {
+        alert('⚠️ Preciso conectar ao Drive primeiro!');
         await initDrive();
-        if (!oauthAccessToken) {
-            alert('❌ Conecte ao Drive primeiro!');
-            return;
-        }
+        await new Promise(r => setTimeout(r, 2000)); // Wait for login
+    }
+    
+    if (!oauthAccessToken) {
+        alert('❌ Não consegui conectar ao Drive. Tente novamente.');
+        return;
     }
     
     try {
