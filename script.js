@@ -123,7 +123,16 @@ document.addEventListener('input', function(e) {
     if (id === 'def-equip') gameState.estado.defesaEquip = parseInt(val) || 0;
     if (id === 'pe-turno') gameState.estado.peMax = parseInt(val) || 1;
     
+    // Recursos: PV, SAN, PE
+    if (id === 'pv-atual') gameState.estado.pv = parseInt(val) || 0;
+    if (id === 'pv-max') gameState.estado.pvMax = parseInt(val) || 1;
+    if (id === 'san-atual') gameState.estado.san = parseInt(val) || 0;
+    if (id === 'san-max') gameState.estado.sanMax = parseInt(val) || 1;
+    if (id === 'pe-atual') gameState.estado.pe = parseInt(val) || 0;
+    if (id === 'pe-max') gameState.estado.peMax = parseInt(val) || 1;
+    
     renderDefense();
+    renderResources();
     saveData();
 });
 
