@@ -556,6 +556,18 @@ label {
     color: var(--treinado);
 }
 
+.pericia-name.treino-5 {
+    color: var(--treinado);
+}
+
+.pericia-name.treino-10 {
+    color: #3498db;
+}
+
+.pericia-name.treino-15 {
+    color: var(--esforco);
+}
+
 .pericia-suffix {
     color: var(--text-muted);
     font-size: 10px;

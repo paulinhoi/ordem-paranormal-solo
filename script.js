@@ -262,7 +262,10 @@ function renderSkills() {
         if (p.treinado) sufixo += '*';
         
         const treinada = treino > 0;
-        const nameClass = treinada ? 'pericia-name treinada' : 'pericia-name';
+        let nameClass = 'pericia-name';
+        if (treino == 5) nameClass += ' treino-5';
+        else if (treino == 10) nameClass += ' treino-10';
+        else if (treino == 15) nameClass += ' treino-15';
         const icon = treinada ? '◈' : '⬡';
         
         return `
