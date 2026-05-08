@@ -22,7 +22,6 @@
         <nav class="tabs">
             <button class="tab active" onclick="showTab('chat')">💬 Chat</button>
             <button class="tab" onclick="showTab('personagem')">👤 Personagem</button>
-            <button class="tab" onclick="showTab('dados')">🎲 Dados</button>
             <button class="tab" onclick="showTab('missoes')">📜 Missões</button>
             <button class="tab" onclick="showTab('config')">⚙️ Config</button>
         </nav>
@@ -35,6 +34,17 @@
                         <strong>Oráculo:</strong> Bem-vindo ao jogo! Eu sou seu Mestre. Me conta, você já tem um personagem criado ou quer criar um agora?
                     </div>
                 </div>
+                
+                <!-- Dados rápidos no chat -->
+                <div class="quick-dice">
+                    <button onclick="rollDice(4)" class="dice-btn-small">d4</button>
+                    <button onclick="rollDice(6)" class="dice-btn-small">d6</button>
+                    <button onclick="rollDice(8)" class="dice-btn-small">d8</button>
+                    <button onclick="rollDice(10)" class="dice-btn-small">d10</button>
+                    <button onclick="rollDice(12)" class="dice-btn-small">d12</button>
+                    <button onclick="rollDice(20)" class="dice-btn-small">d20</button>
+                </div>
+                
                 <div class="chat-input-area">
                     <input type="text" id="userMessage" placeholder="O que você faz?" onkeypress="handleKeyPress(event)">
                     <button onclick="sendMessage()" class="btn-send">Enviar</button>
@@ -145,43 +155,7 @@
             </div>
         </div>
 
-        <!-- Tab: Dados -->
-        <div id="dados" class="tab-content">
-            <div class="dice-section">
-                <h2>🎲 Rolar Dados</h2>
-                <p class="hint">Clique no dado para rolar. O resultado aparece no chat.</p>
-                
-                <div class="dice-buttons">
-                    <button onclick="rollDice(4)" class="dice-btn">d4</button>
-                    <button onclick="rollDice(6)" class="dice-btn">d6</button>
-                    <button onclick="rollDice(8)" class="dice-btn">d8</button>
-                    <button onclick="rollDice(10)" class="dice-btn">d10</button>
-                    <button onclick="rollDice(12)" class="dice-btn">d12</button>
-                    <button onclick="rollDice(20)" class="dice-btn">d20</button>
-                    <button onclick="rollDice(100)" class="dice-btn">d100</button>
-                </div>
-
-                <div class="test-section">
-                    <h3>Teste de Atributo</h3>
-                    <select id="testAttr">
-                        <option value="agi">Agilidade</option>
-                        <option value="for">Força</option>
-                        <option value="int">Intelecto</option>
-                        <option value="pre">Presença</option>
-                        <option value="vig">Vigor</option>
-                    </select>
-                    <input type="number" id="testDificulty" placeholder="DT" value="15">
-                    <button onclick="rollTest()" class="btn">Rolar Teste</button>
-                </div>
-
-                <div class="combat-section">
-                    <h3>Ataque</h3>
-                    <input type="text" id="weaponName" placeholder="Arma">
-                    <input type="number" id="weaponDamage" placeholder="Dano (ex: 2d6+3)">
-                    <button onclick="rollAttack()" class="btn">Rolar Ataque</button>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Tab: Missões -->
         <div id="missoes" class="tab-content">
