@@ -46,9 +46,9 @@ body {
 /* LAYOUT */
 .main-layout {
     display: grid;
-    grid-template-columns: 300px 340px 1fr;
+    grid-template-columns: 280px 420px 1fr;
     gap: 0;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     min-height: calc(100vh - 56px);
 }
@@ -504,38 +504,35 @@ label {
 
 /* Perícias */
 .pericias-wrapper {
-    max-height: calc(100vh - 250px);
-    overflow-y: auto;
+    max-height: none;
+    overflow-y: visible;
 }
 
 .pericias-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .pericias-table th {
     background: var(--bg-card);
-    padding: 8px 6px;
+    padding: 8px 10px;
     font-size: 10px;
     color: var(--text-muted);
     text-transform: uppercase;
     text-align: left;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 
-.pericias-table th:nth-child(3),
-.pericias-table th:nth-child(4),
-.pericias-table th:nth-child(5) {
-    text-align: center;
-    width: 50px;
-}
+.pericias-table th:nth-child(1) { width: 40%; }
+.pericias-table th:nth-child(2) { width: 12%; text-align: center; }
+.pericias-table th:nth-child(3) { width: 12%; text-align: center; }
+.pericias-table th:nth-child(4) { width: 10%; text-align: center; }
+.pericias-table th:nth-child(5) { width: 10%; text-align: center; }
 
 .pericias-table td {
-    padding: 6px;
+    padding: 8px 10px;
     border-bottom: 1px solid var(--border);
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .pericias-table tr:nth-child(odd) {
@@ -552,6 +549,7 @@ label {
 
 .pericia-name {
     font-weight: 500;
+    font-size: 12px;
 }
 
 .pericia-name.treinada {
@@ -566,18 +564,20 @@ label {
 
 .pericia-attr {
     color: var(--text-muted);
-    font-size: 10px;
+    font-size: 11px;
+    text-align: center;
 }
 
 .pericia-bonus {
     text-align: center;
     color: var(--accent-gold);
     font-weight: 600;
+    font-size: 12px;
 }
 
 .pericias-table input {
-    width: 40px;
-    padding: 2px;
+    width: 100%;
+    padding: 4px 2px;
     text-align: center;
     background: var(--bg-card);
     font-size: 12px;
