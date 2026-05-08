@@ -668,10 +668,12 @@ async function loadFromDrive() {
             });
             
             const gameData = await fileResponse.json();
+            console.log('Carregado do Drive:', gameData);
             gameState = gameData;
             saveData();
             renderCharacter();
             renderMissions();
+            alert('✅ Carregado! Dados: ' + JSON.stringify(gameState).substring(0, 100));
             
             // Refresh chat
             const chat = document.getElementById('chat');
