@@ -12,8 +12,9 @@
         <header class="header">
             <h1>🕸️ ORDEM PARANORMAL - SOLO</h1>
             <div class="header-buttons">
-                <button onclick="copySave()" class="btn">📋 Copiar Jogo</button>
-                <button onclick="pasteSave()" class="btn">📋 Colar Jogo</button>
+                <button onclick="saveAllToDrive()" class="btn" style="background:#4caf50;">💾 Salvar Tudo</button>
+                <button onclick="loadAllFromDrive()" class="btn">📥 Carregar Tudo</button>
+                <button onclick="copySave()" class="btn">📋 Copiar</button>
                 <button onclick="document.getElementById('importFile').click()" class="btn">📂 Importar</button>
                 <input type="file" id="importFile" style="display:none" onchange="importData(this)">
                 <button onclick="newGame()" class="btn btn-danger">🔄 Novo</button>

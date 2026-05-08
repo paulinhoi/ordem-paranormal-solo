@@ -566,6 +566,91 @@ async function saveToDrive() {
     }
 }
 
+async function saveAllToDrive() {
+    if (!oauthAccessToken) {
+        await initDrive();
+        if (!oauthAccessToken) {
+            alert('❌ Conecte ao Drive primeiro!');
+            return;
+        }
+    }
+    
+    // Save everything - character state + config
+    const allData = {
+        gameState: gameState,
+        config: config,
+        timestamp: Date.now()
+    };
+    
+    const blob = new Blob([JSON.stringify(allData)], { type: 'application/json' });
+    const fileName = 'ordemparanormal_completo.json';
+    
+    const metadata = { name: fileName, mimeType: 'application/json' };
+    const form = new FormData();
+    form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
+    form.append('file', blob);
+    
+    try {
+        const response = await fetch(`https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart`, {
+            method: 'POST',
+            headers: { 'Authorization': `Bearer ${oauthAccessToken}` },
+            body: form
+        });
+        
+        if (response.ok) {
+            alert('✅ Tudo Salvo no Drive!');
+        } else {
+            alert('❌ Erro ao salvar');
+        }
+    } catch (err) {
+        alert('❌ Erro: ' + err.message);
+    }
+}
+
+async function loadAllFromDrive() {
+    if (!oauthAccessToken) {
+        await initDrive();
+        if (!oauthAccessToken) {
+            alert('❌ Conecte ao Drive primeiro!');
+            return;
+        }
+    }
+    
+    try {
+        const response = await fetch(`https://www.googleapis.com/drive/v3/files?q=name='ordemparanormal_completo.json'`, {
+            headers: { 'Authorization': `Bearer ${oauthAccessToken}` }
+        });
+        
+        const data = await response.json();
+        
+        if (data.files && data.files.length > 0) {
+            const fileId = data.files[0].id;
+            
+            const fileResponse = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media`, {
+                headers: { 'Authorization': `Bearer ${oauthAccessToken}` }
+            });
+            
+            const allData = await fileResponse.json();
+            
+            if (allData.gameState) {
+                gameState = allData.gameState;
+                saveData();
+                renderCharacter();
+                renderMissions();
+                alert('✅ Tudo Carregado do Drive!');
+                showTab('chat');
+                addMessage('system', '📥 Jogo completo carregado!');
+            } else {
+                alert('Arquivo incompleto');
+            }
+        } else {
+            alert('Nenhum save encontrado no Drive');
+        }
+    } catch (err) {
+        alert('❌ Erro: ' + err.message);
+    }
+}
+
 async function getOrCreateFolder() {
     try {
         // Search for folder
@@ -668,12 +753,13 @@ async function loadFromDrive() {
             });
             
             const gameData = await fileResponse.json();
-            console.log('Carregado do Drive:', gameData);
             gameState = gameData;
             saveData();
             renderCharacter();
             renderMissions();
-            alert('✅ Carregado! Dados: ' + JSON.stringify(gameState).substring(0, 100));
+            alert('✅ Jogo completo carregado do Drive!');
+            showTab('chat');
+            addMessage('system', '📥 Jogo carregado! Seja bem-vindo de volta!');
             
             // Refresh chat
             const chat = document.getElementById('chat');
