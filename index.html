@@ -5,198 +5,376 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordem Paranormal RPG - Solo</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
         <!-- Header -->
         <header class="header">
-            <h1>🕸️ OP RPG</h1>
-            <div class="header-buttons">
-                <button onclick="saveAllToDrive()" class="btn" style="background:#4caf50;">💾 Salvar</button>
-                <button onclick="loadAllFromDrive()" class="btn">📥 Carregar</button>
-                <button onclick="newGame()" class="btn btn-danger">🔄 Novo</button>
+            <div class="header-left">
+                <h1>🕸️ OP RPG</h1>
+            </div>
+            <div class="header-center">
+                <span class="campaign-name">Campanha Solo</span>
+            </div>
+            <div class="header-right">
+                <button onclick="saveAllToDrive()" class="btn-icon" title="Salvar">💾</button>
+                <button onclick="loadAllFromDrive()" class="btn-icon" title="Carregar">📥</button>
+                <button onclick="newGame()" class="btn-icon btn-danger" title="Novo Jogo">🔄</button>
             </div>
         </header>
 
-        <!-- Abas -->
-        <nav class="tabs">
-            <button class="tab active" onclick="showTab('chat')">💬 Chat</button>
-            <button class="tab" onclick="showTab('personagem')">👤 Personagem</button>
-            <button class="tab" onclick="showTab('missoes')">📜 Missões</button>
-            <button class="tab" onclick="showTab('config')">⚙️ Config</button>
+        <!-- Mobile: Bottom Navigation -->
+        <nav class="mobile-nav">
+            <button class="mobile-nav-btn active" data-view="personagem" onclick="switchMobileView('personagem')">👤</button>
+            <button class="mobile-nav-btn" data-view="pericias" onclick="switchMobileView('pericias')">📋</button>
+            <button class="mobile-nav-btn" data-view="chat" onclick="switchMobileView('chat')">💬</button>
+            <button class="mobile-nav-btn" data-view="combate" onclick="switchMobileView('combate')">⚔️</button>
+            <button class="mobile-nav-btn" data-view="inventario" onclick="switchMobileView('inventario')">🎒</button>
         </nav>
 
-        <!-- Tab: Chat -->
-        <div id="chat" class="tab-content active">
-            <div class="chat-container">
-                <div id="messages" class="messages">
-                    <div class="message system">
-                        <strong>Oráculo:</strong> Bem-vindo ao jogo! Eu sou seu Mestre. Me conta, você já tem um personagem criado ou quer criar um agora?
-                    </div>
-                </div>
-                
-                <!-- Dados rápidos no chat -->
-                <div class="quick-dice">
-                    <button onclick="rollDice(4)" class="dice-btn-small">d4</button>
-                    <button onclick="rollDice(6)" class="dice-btn-small">d6</button>
-                    <button onclick="rollDice(8)" class="dice-btn-small">d8</button>
-                    <button onclick="rollDice(10)" class="dice-btn-small">d10</button>
-                    <button onclick="rollDice(12)" class="dice-btn-small">d12</button>
-                    <button onclick="rollDice(20)" class="dice-btn-small">d20</button>
-                </div>
-                
-                <div class="chat-input-area">
-                    <input type="text" id="userMessage" placeholder="O que você faz?" onkeypress="handleKeyPress(event)">
-                    <button onclick="sendMessage()" class="btn-send">Enviar</button>
-                </div>
+        <!-- Resource Bars (Mobile) -->
+        <div class="mobile-resources">
+            <div class="resource-bar">
+                <span class="resource-label">PV</span>
+                <button onclick="changeResource('pv', -1)">-</button>
+                <span class="resource-value" id="mobile-pv">20/20</span>
+                <button onclick="changeResource('pv', 1)">+</button>
+            </div>
+            <div class="resource-bar">
+                <span class="resource-label">SAN</span>
+                <button onclick="changeResource('san', -1)">-</button>
+                <span class="resource-value" id="mobile-san">20/20</span>
+                <button onclick="changeResource('san', 1)">+</button>
+            </div>
+            <div class="resource-bar">
+                <span class="resource-label">PE</span>
+                <button onclick="changeResource('pe', -1)">-</button>
+                <span class="resource-value" id="mobile-pe">6/6</span>
+                <button onclick="changeResource('pe', 1)">+</button>
             </div>
         </div>
 
-        <!-- Tab: Personagem -->
-        <div id="personagem" class="tab-content">
-            <div class="character-sheet">
-                <h2>Criar/Editar Personagem</h2>
-                
-                <button onclick="startCharacterCreation()" class="btn btn-send" style="margin-bottom: 15px;">🤖 Criar Personagem com IA</button>
-                
-                <div class="form-group">
-                    <label>Nome:</label>
-                    <input type="text" id="charName" placeholder="Nome do personagem">
-                </div>
-
-                <div class="form-group">
-                    <label>Origem:</label>
-                    <select id="charOrigin">
-                        <option value="">Selecione...</option>
-                        <option value="Acadêmico">Acadêmico</option>
-                        <option value="Agente de Saúde">Agente de Saúde</option>
-                        <option value="Atleta">Atleta</option>
-                        <option value="Combatente">Combatente</option>
-                        <option value="Criminal">Criminoso</option>
-                        <option value="Desgarrado">Desgarrado</option>
-                        <option value="Estudante">Estudante</option>
-                        <option value="Investigador">Investigador</option>
-                        <option value="Médico">Médico</option>
-                        <option value="Militar">Militar</option>
-                        <option value="Ocultista">Ocultista</option>
-                        <option value="Policial">Policial</option>
-                        <option value="Religioso">Religioso</option>
-                        <option value="Veterano">Veterano</option>
-                        <option value="另一">Outro</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Classe:</label>
-                    <select id="charClass">
-                        <option value="">Selecione...</option>
-                        <option value="Combatente">Combatente</option>
-                        <option value="Especialista">Especialista</option>
-                        <option value="Ocultista">Ocultista</option>
-                    </select>
-                </div>
-
-                <h3>Atributos</h3>
-                <div class="attributes">
-                    <div class="attr">
-                        <label>AGI:</label>
-                        <input type="number" id="attrAgi" min="0" max="5" value="1">
+        <!-- Main Layout: 3 Columns -->
+        <main class="main-layout">
+            <!-- COLUNA ESQUERDA: Identidade & Atributos -->
+            <aside class="coluna-esquerda">
+                <!-- Identidade -->
+                <section class="card">
+                    <h2 class="card-title">IDENTIDADE</h2>
+                    <div class="identity-grid">
+                        <div class="form-group">
+                            <label>PERSONAGEM</label>
+                            <input type="text" id="charName" class="input-edit" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <label>ORIGEM</label>
+                            <input type="text" id="charOrigin" class="input-edit" placeholder="Origem">
+                        </div>
+                        <div class="form-group">
+                            <label>CLASSE</label>
+                            <input type="text" id="charClass" class="input-edit" placeholder="Classe">
+                        </div>
                     </div>
-                    <div class="attr">
-                        <label>FOR:</label>
-                        <input type="number" id="attrFor" min="0" max="5" value="1">
+                </section>
+
+                <!-- Atributos (Diagrama Radial) -->
+                <section class="card">
+                    <h2 class="card-title">ATRIBUTOS</h2>
+                    <div class="atributos-diagrama">
+                        <div class="attr-center">
+                            <span>ATRIBUTOS</span>
+                        </div>
+                        <div class="attr-bolha" data-attr="for" onclick="editAttr('for')">
+                            <span class="attr-valor" id="attr-for">1</span>
+                            <span class="attr-nome">FOR</span>
+                        </div>
+                        <div class="attr-bolha" data-attr="agi" onclick="editAttr('agi')">
+                            <span class="attr-valor" id="attr-agi">1</span>
+                            <span class="attr-nome">AGI</span>
+                        </div>
+                        <div class="attr-bolha" data-attr="int" onclick="editAttr('int')">
+                            <span class="attr-valor" id="attr-int">1</span>
+                            <span class="attr-nome">INT</span>
+                        </div>
+                        <div class="attr-bolha" data-attr="pre" onclick="editAttr('pre')">
+                            <span class="attr-valor" id="attr-pre">1</span>
+                            <span class="attr-nome">PRE</span>
+                        </div>
+                        <div class="attr-bolha" data-attr="vig" onclick="editAttr('vig')">
+                            <span class="attr-valor" id="attr-vig">1</span>
+                            <span class="attr-nome">VIG</span>
+                        </div>
                     </div>
-                    <div class="attr">
-                        <label>INT:</label>
-                        <input type="number" id="attrInt" min="0" max="5" value="1">
+                </section>
+
+                <!-- NEX e Deslocamento -->
+                <section class="card">
+                    <div class="nex-deslocamento">
+                        <div class="form-group">
+                            <label>NEX</label>
+                            <div class="nex-input">
+                                <input type="number" id="nex" value="5" min="0" max="100">
+                                <span class="nex-porcento">%</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>PE/TURNO</label>
+                            <input type="number" id="peMax" value="6" min="0">
+                        </div>
                     </div>
-                    <div class="attr">
-                        <label>PRE:</label>
-                        <input type="number" id="attrPre" min="0" max="5" value="1">
+                </section>
+
+                <!-- Barras de Recursos -->
+                <section class="card">
+                    <div class="recursos">
+                        <!-- PV -->
+                        <div class="recurso">
+                            <span class="recurso-label">VIDA</span>
+                            <div class="recurso-barra">
+                                <div class="recurso-botoes">
+                                    <button onclick="changeResource('pv', -5)">«</button>
+                                    <button onclick="changeResource('pv', -1)">‹</button>
+                                </div>
+                                <div class="recurso-valor">
+                                    <input type="number" id="pvAtual" value="20" min="0">
+                                    <span>/</span>
+                                    <input type="number" id="pvMax" value="20" min="1">
+                                </div>
+                                <div class="recurso-botoes">
+                                    <button onclick="changeResource('pv', 1)">›</button>
+                                    <button onclick="changeResource('pv', 5)">»</button>
+                                </div>
+                                <div class="barra-fill pv" id="pv-barra" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <!-- SAN -->
+                        <div class="recurso">
+                            <span class="recurso-label">SANIDADE</span>
+                            <div class="recurso-barra">
+                                <div class="recurso-botoes">
+                                    <button onclick="changeResource('san', -5)">«</button>
+                                    <button onclick="changeResource('san', -1)">‹</button>
+                                </div>
+                                <div class="recurso-valor">
+                                    <input type="number" id="sanAtual" value="20" min="0">
+                                    <span>/</span>
+                                    <input type="number" id="sanMax" value="20" min="1">
+                                </div>
+                                <div class="recurso-botoes">
+                                    <button onclick="changeResource('san', 1)">›</button>
+                                    <button onclick="changeResource('san', 5)">»</button>
+                                </div>
+                                <div class="barra-fill san" id="san-barra" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <!-- PE -->
+                        <div class="recurso">
+                            <span class="recurso-label">ESFORÇO</span>
+                            <div class="recurso-barra">
+                                <div class="recurso-botoes">
+                                    <button onclick="changeResource('pe', -1)">‹</button>
+                                </div>
+                                <div class="recurso-valor">
+                                    <input type="number" id="peAtual" value="6" min="0">
+                                    <span>/</span>
+                                    <input type="number" id="peMax2" value="6" min="1">
+                                </div>
+                                <div class="recurso-botoes">
+                                    <button onclick="changeResource('pe', 1)">›</button>
+                                </div>
+                                <div class="barra-fill pe" id="pe-barra" style="width: 100%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="attr">
-                        <label>VIG:</label>
-                        <input type="number" id="attrVig" min="0" max="5" value="1">
+                </section>
+
+                <!-- Defesa -->
+                <section class="card">
+                    <h2 class="card-title">DEFESA</h2>
+                    <div class="defesa-grid">
+                        <div class="defesa-item">
+                            <span class="defesa-icon">🛡️</span>
+                            <span class="defesa-valor" id="defesa-total">10</span>
+                            <span class="defesa-label">DEFESA</span>
+                        </div>
+                        <div class="defesa-item">
+                            <span class="defesa-valor" id="bloqueio">0</span>
+                            <span class="defesa-label">BLOQUEIO</span>
+                        </div>
+                        <div class="defesa-item">
+                            <span class="defesa-valor" id="esquiva">10</span>
+                            <span class="defesa-label">ESQUIVA</span>
+                        </div>
+                    </div>
+                    <div class="defesa-formula">
+                        = 10 + AGI(<span id="def-agi">1</span>) + Equip.(<input type="number" id="defesa-equip" value="0" min="0">)
+                    </div>
+                </section>
+
+                <!-- Proficiências -->
+                <section class="card">
+                    <div class="form-group">
+                        <label>PROFICIÊNCIAS</label>
+                        <textarea id="proficiencias" placeholder="Armas simples, táticas, proteções leves..."></textarea>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- COLUNA CENTRAL: Perícias -->
+            <section class="coluna-central">
+                <div class="card">
+                    <h2 class="card-title">PERÍCIAS</h2>
+                    <table class="pericias-tabela">
+                        <thead>
+                            <tr>
+                                <th>PERÍCIA</th>
+                                <th>ATR</th>
+                                <th>TOTAL</th>
+                                <th>T</th>
+                                <th>OUT</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pericias-body">
+                            <!-- Perícias geradas via JS -->
+                        </tbody>
+                    </table>
+                    <div class="pericias-legenda">
+                        + Penalidade de carga | * Somente treinada
                     </div>
                 </div>
 
-                <h3>Estado</h3>
-                <div class="attributes">
-                    <div class="attr">
-                        <label>PV:</label>
-                        <input type="number" id="pvAtual" min="0" value="20">
-                        <span>/</span>
-                        <input type="number" id="pvMax" min="0" value="20">
+                <!-- Chat (abaixo das perícias) -->
+                <section class="card chat-section">
+                    <h2 class="card-title">CHAT</h2>
+                    <div id="messages" class="messages">
+                        <div class="message system">
+                            <strong>Oráculo:</strong> Bem-vindo ao jogo! Me conta, você já tem um personagem criado?
+                        </div>
                     </div>
-                    <div class="attr">
-                        <label>PE:</label>
-                        <input type="number" id="peAtual" min="0" value="6">
-                        <span>/</span>
-                        <input type="number" id="peMax" min="0" value="6">
+                    <!-- Dados rápidos no chat -->
+                    <div class="quick-dice">
+                        <button onclick="rollDice(4)" class="dice-btn-small">d4</button>
+                        <button onclick="rollDice(6)" class="dice-btn-small">d6</button>
+                        <button onclick="rollDice(8)" class="dice-btn-small">d8</button>
+                        <button onclick="rollDice(10)" class="dice-btn-small">d10</button>
+                        <button onclick="rollDice(12)" class="dice-btn-small">d12</button>
+                        <button onclick="rollDice(20)" class="dice-btn-small">d20</button>
+                        <button onclick="rollTest()" class="dice-btn-small" title="Teste rápido">🎯</button>
                     </div>
-                    <div class="attr">
-                        <label>SAN:</label>
-                        <input type="number" id="sanAtual" min="0" value="20">
-                        <span>/</span>
-                        <input type="number" id="sanMax" min="0" value="20">
+                    <div class="chat-input-area">
+                        <input type="text" id="userMessage" placeholder="O que você faz?" onkeypress="handleKeyPress(event)">
+                        <button onclick="sendMessage()" class="btn-send">Enviar</button>
                     </div>
-                    <div class="attr">
-                        <label>NEX:</label>
-                        <input type="number" id="nex" min="0" max="100" value="5">%
+                </section>
+            </section>
+
+            <!-- COLUNA DIREITA: Abas -->
+            <aside class="coluna-direita">
+                <!-- Abas -->
+                <div class="tabs-right">
+                    <button class="tab-right active" data-tab="combate" onclick="showRightTab('combate')">COMBATE</button>
+                    <button class="tab-right" data-tab="habilidades" onclick="showRightTab('habilidades')">HABILIDADES</button>
+                    <button class="tab-right" data-tab="rituais" onclick="showRightTab('rituais')">RITUAIS</button>
+                    <button class="tab-right" data-tab="inventario" onclick="showRightTab('inventario')">INVENTÁRIO</button>
+                    <button class="tab-right" data-tab="descricao" onclick="showRightTab('descricao')">DESCRIÇÃO</button>
+                </div>
+
+                <!-- Conteúdo das abas -->
+                <div class="tab-content-right active" id="tab-combate">
+                    <div class="card">
+                        <h2 class="card-title">ATAQUES</h2>
+                        <div class="combate-busca">
+                            <input type="text" id="busca-ataque" placeholder="Filtrar ataques..." onkeyup="filtrarAtaques()">
+                            <button class="btn-add" onclick="addAtaque()">+ Novo</button>
+                        </div>
+                        <div id="ataques-lista">
+                            <!-- Ataques inseridos via JS -->
+                        </div>
                     </div>
                 </div>
 
-                <button onclick="saveCharacter()" class="btn">💾 Salvar Personagem</button>
-                
-                <div class="character-info">
-                    <h3>Perícias:</h3>
-                    <p>Selecione as perícias na conversa com o Oráculo!</p>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <!-- Tab: Missões -->
-        <div id="missoes" class="tab-content">
-            <div class="missions-section">
-                <h2>📜 Histórico de Missões</h2>
-                <button onclick="addMission()" class="btn">➕ Nova Missão</button>
-                <div id="missionsList"></div>
-            </div>
-        </div>
-
-        <!-- Tab: Config -->
-        <div id="config" class="tab-content">
-            <div class="config-section">
-                <h2>⚙️ Configurações</h2>
-                
-                <div class="form-group">
-                    <label>API Key (OpenRouter):</label>
-                    <input type="password" id="apiKey" placeholder="sk-or-...">
-                    <p class="hint">Sua chave da OpenRouter. Não compartilhe!</p>
+                <div class="tab-content-right" id="tab-habilidades">
+                    <div class="card">
+                        <h2 class="card-title">HABILIDADES</h2>
+                        <p class="hint">As habilidades aparecem conforme sua classe.</p>
+                        <div id="habilidades-lista">
+                            <div class="habilidade-item">
+                                <span class="habilidade-nome">Escolha uma classe</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label>Modelo de IA:</label>
-                    <select id="modelSelect">
-                        <option value="minimax/minimax-m2.5">MiniMax M2.5</option>
-                        <option value="anthropic/claude-3-haiku">Claude 3 Haiku</option>
-                        <option value="meta-llama/llama-3.1-8b-instruct">Llama 3.1</option>
-                    </select>
+                <div class="tab-content-right" id="tab-rituais">
+                    <div class="card">
+                        <h2 class="card-title">RITUAIS</h2>
+                        <p class="hint">Rituais aprendidos pelo personagem.</p>
+                        <button class="btn-add" onclick="addRitual()">+ Novo Ritual</button>
+                        <div id="rituais-lista"></div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label>Drive:</label>
-                    <p class="hint" id="driveStatus" style="margin-bottom:10px;">Drive desconectado</p>
-                    <button onclick="initDrive()" class="btn">🔗 Conectar Drive</button>
+                <div class="tab-content-right" id="tab-inventario">
+                    <div class="card">
+                        <h2 class="card-title">INVENTÁRIO</h2>
+                        <div class="inventario-resumo">
+                            <span>Peso: <strong id="peso-total">0</strong> kg</span>
+                            <span>Capacidade: <strong id="capacidade">10</strong> kg</span>
+                        </div>
+                        <button class="btn-add" onclick="addItem()">+ Novo Item</button>
+                        <div id="inventario-lista"></div>
+                    </div>
                 </div>
 
-                <div class="info-section">
-                    <p>Ordem Paranormal RPG - Solo</p>
+                <div class="tab-content-right" id="tab-descricao">
+                    <div class="card">
+                        <h2 class="card-title">DESCRIÇÃO</h2>
+                        <div class="form-group">
+                            <label>APARÊNCIA</label>
+                            <textarea id="descricao-aparencia" placeholder="Descreva a aparência do personagem..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>PERSONALIDADE</label>
+                            <textarea id="descricao-personalidade" placeholder="Traços de personalidade..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>HISTÓRIA</label>
+                            <textarea id="descricao-historia" placeholder="A história do personagem..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>ANOTAÇÕES</label>
+                            <textarea id="descricao-anotacoes" placeholder="Anotações diversas..."></textarea>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+
+                <!-- Missões -->
+                <div class="card">
+                    <h2 class="card-title">MISSÕES</h2>
+                    <button class="btn-add" onclick="addMission()">+ Nova</button>
+                    <div id="missions-list"></div>
+                </div>
+
+                <!-- Config -->
+                <div class="card">
+                    <h2 class="card-title">CONFIG</h2>
+                    <div class="config-item">
+                        <button onclick="initDrive()" class="btn-full">🔗 Conectar Drive</button>
+                        <p class="hint" id="driveStatus">Drive desconectado</p>
+                    </div>
+                    <div class="config-item">
+                        <label>Modelo IA</label>
+                        <select id="modelSelect">
+                            <option value="minimax/minimax-m2.5">MiniMax M2.5</option>
+                            <option value="anthropic/claude-3-haiku">Claude 3 Haiku</option>
+                        </select>
+                    </div>
+                </div>
+            </aside>
+        </main>
     </div>
 
     <script src="script.js"></script>

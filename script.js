@@ -1,19 +1,15 @@
-// JavaScript - Lógica do Site de RPG Solo
+// JavaScript - NOVO ESTILO C.R.I.S.
 
 // ====================
 // VARIÁVEIS GLOBAIS
 // ====================
 
-const GOOGLE_API_KEY = 'AIzaSyBSvtBBqUFYOo7fEyD3DCFv1fUBiA6ojjc';
 const GOOGLE_CLIENT_ID = '522909916248-gj093l0ljk9p0mi378jnlgv9jnpkbhic.apps.googleusercontent.com';
-const DRIVE_FOLDER_NAME = 'OrdemParanormalSolo';
 let oauthAccessToken = null;
 
 let config = {
     apiKey: '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',
-    model: 'minimax/minimax-m2.5',
-    driveConnected: false,
-    fileId: null
+    model: 'minimax/minimax-m2.5'
 };
 
 let gameState = {
@@ -21,17 +17,61 @@ let gameState = {
         nome: '',
         origem: '',
         classe: '',
-        atributos: { agi: 1, for: 1, int: 1, pre: 1, vig: 1 }
+        atributos: { agi: 1, for: 1, int: 1, pre: 1, vig: 1 },
+        proficiencias: ''
     },
     estado: {
         pv: 20, pvMax: 20,
         pe: 6, peMax: 6,
         san: 20, sanMax: 20,
-        nex: 5
+        nex: 5,
+        defesaEquip: 0
+    },
+    attacks: [],
+    habilidades: [],
+    rituais: [],
+    inventario: [],
+    descricao: {
+        aparencia: '',
+        personalidade: '',
+        historia: '',
+        anotacoes: ''
     },
     missoes: [],
-    historico: [] // mensagens da conversa
+    historico: []
 };
+
+// Perícias do sistema
+const pericias = [
+    { nome: 'Acrobacia', attr: 'agi', carga: true },
+    { nome: 'Adestramento', attr: 'pre', treinado: true },
+    { nome: 'Artes', attr: 'pre', treinado: true },
+    { nome: 'Atletismo', attr: 'for' },
+    { nome: 'Atualidades', attr: 'int' },
+    { nome: 'Ciências', attr: 'int', treinado: true },
+    { nome: 'Crime', attr: 'agi', carga: true, treinado: true },
+    { nome: 'Diplomacia', attr: 'pre' },
+    { nome: 'Enganação', attr: 'pre' },
+    { nome: 'Fortitude', attr: 'vig' },
+    { nome: 'Furtividade', attr: 'agi', carga: true },
+    { nome: 'Iniciativa', attr: 'agi' },
+    { nome: 'Intimidação', attr: 'pre' },
+    { nome: 'Intuição', attr: 'pre' },
+    { nome: 'Investigação', attr: 'int' },
+    { nome: 'Luta', attr: 'for' },
+    { nome: 'Medicina', attr: 'int' },
+    { nome: 'Ocultismo', attr: 'int', treinado: true },
+    { nome: 'Percepção', attr: 'pre' },
+    { nome: 'Pilotagem', attr: 'agi', treinado: true },
+    { nome: 'Pontaria', attr: 'agi' },
+    { nome: 'Profissão', attr: 'int', treinado: true },
+    { nome: 'Reflexos', attr: 'agi' },
+    { nome: 'Religião', attr: 'int', treinado: true },
+    { nome: 'Sobrevivência', attr: 'vig' },
+    { nome: 'Tática', attr: 'int', treinado: true },
+    { nome: 'Tecnologia', attr: 'int', treinado: true },
+    { nome: 'Vontade', attr: 'vig' }
+];
 
 // ====================
 // INICIALIZAÇÃO
@@ -40,341 +80,429 @@ let gameState = {
 window.onload = function() {
     loadData();
     loadConfig();
-    renderCharacter();
-    renderMissions();
-    // Restore OAuth token if exists
+    renderAll();
+    
+    // OAuth token persistence
     const savedToken = localStorage.getItem('oauthToken');
     if (savedToken) {
         oauthAccessToken = savedToken;
-        config.driveConnected = true;
-    }
-    // Update status after a small delay to ensure DOM is ready
-    setTimeout(() => {
         updateDriveStatus();
-        if (oauthAccessToken) {
-            console.log('Drive conectado automaticamente!');
-        }
-    }, 100);
+    }
 };
 
 // ====================
-// NAVEGAÇÃO (TABS)
+// RENDERIZAÇÃO COMPLETA
 // ====================
 
-function showTab(tabId) {
-    // Esconde todas as abas
-    document.querySelectorAll('.tab-content').forEach(tab => {
-        tab.classList.remove('active');
-    });
-    // Remove active de todos os botões
-    document.querySelectorAll('.tab').forEach(btn => {
-        btn.classList.remove('active');
-    });
-    // Mostra a aba clicada
-    document.getElementById(tabId).classList.add('active');
-    // Marca o botão como active (se houver evento)
-    if (event && event.target) {
-        event.target.classList.add('active');
-    } else {
-        // Find the tab button for this tab and mark it
-        const tabButtons = document.querySelectorAll('.tab');
-        tabButtons.forEach(btn => {
-            if (btn.textContent.toLowerCase().includes(tabId.substring(0, 3))) {
-                btn.classList.add('active');
-            }
-        });
-    }
+function renderAll() {
+    renderCharacter();
+    renderAttributes();
+    renderResources();
+    renderDefense();
+    renderSkills();
+    renderAttacks();
+    renderMissions();
+    renderInventory();
 }
 
 // ====================
 // PERSONAGEM
 // ====================
 
-function saveCharacter() {
-    gameState.personagem = {
-        nome: document.getElementById('charName').value,
-        origem: document.getElementById('charOrigin').value,
-        classe: document.getElementById('charClass').value,
-        atributos: {
-            agi: parseInt(document.getElementById('attrAgi').value),
-            for: parseInt(document.getElementById('attrFor').value),
-            int: parseInt(document.getElementById('attrInt').value),
-            pre: parseInt(document.getElementById('attrPre').value),
-            vig: parseInt(document.getElementById('attrVig').value)
-        }
-    };
-    
-    gameState.estado = {
-        pv: parseInt(document.getElementById('pvAtual').value),
-        pvMax: parseInt(document.getElementById('pvMax').value),
-        pe: parseInt(document.getElementById('peAtual').value),
-        peMax: parseInt(document.getElementById('peMax').value),
-        san: parseInt(document.getElementById('sanAtual').value),
-        sanMax: parseInt(document.getElementById('sanMax').value),
-        nex: parseInt(document.getElementById('nex').value)
-    };
-    
-    saveData();
-    alert('Personagem salvo!');
-}
-
 function renderCharacter() {
     document.getElementById('charName').value = gameState.personagem.nome || '';
     document.getElementById('charOrigin').value = gameState.personagem.origem || '';
     document.getElementById('charClass').value = gameState.personagem.classe || '';
-    document.getElementById('attrAgi').value = gameState.personagem.atributos.agi || 1;
-    document.getElementById('attrFor').value = gameState.personagem.atributos.for || 1;
-    document.getElementById('attrInt').value = gameState.personagem.atributos.int || 1;
-    document.getElementById('attrPre').value = gameState.personagem.atributos.pre || 1;
-    document.getElementById('attrVig').value = gameState.personagem.atributos.vig || 1;
-    document.getElementById('pvAtual').value = gameState.estado.pv || 20;
-    document.getElementById('pvMax').value = gameState.estado.pvMax || 20;
-    document.getElementById('peAtual').value = gameState.estado.pe || 6;
-    document.getElementById('peMax').value = gameState.estado.peMax || 6;
-    document.getElementById('sanAtual').value = gameState.estado.san || 20;
-    document.getElementById('sanMax').value = gameState.estado.sanMax || 20;
-    document.getElementById('nex').value = gameState.estado.nex || 5;
+    document.getElementById('proficiencias').value = gameState.personagem.proficiencias || '';
+    
+    // Descrição
+    document.getElementById('descricao-aparencia').value = gameState.descricao.aparencia || '';
+    document.getElementById('descricao-personalidade').value = gameState.descricao.personalidade || '';
+    document.getElementById('descricao-historia').value = gameState.descricao.historia || '';
+    document.getElementById('descricao-anotacoes').value = gameState.descricao.anotacoes || '';
 }
 
-// ====================
-// DADOS (ROLL)
-// ====================
-
-function rollDice(sides) {
-    const result = Math.floor(Math.random() * sides) + 1;
-    let message = '';
+function saveCharacter() {
+    gameState.personagem.nome = document.getElementById('charName').value;
+    gameState.personagem.origem = document.getElementById('charOrigin').value;
+    gameState.personagem.classe = document.getElementById('charClass').value;
+    gameState.personagem.proficiencias = document.getElementById('proficiencias').value;
     
-    // Descrição do resultado
-    if (result === 1) {
-        message = '❌ FALHA CRÍTICA!';
-    } else if (result === sides) {
-        message = '⭐ SUCESSO CRÍTICO!';
-    } else if (sides === 20 && result >= 18) {
-        message = '🔥 Excelente!';
-    } else if (sides === 20 && result >= 10) {
-        message = '✓ Sucesso';
-    } else if (sides === 20 && result < 10) {
-        message = '✗ Falha';
-    } else {
-        message = `Resultado: ${result}`;
-    }
+    gameState.descricao.aparencia = document.getElementById('descricao-aparencia').value;
+    gameState.descricao.personalidade = document.getElementById('descricao-personalidade').value;
+    gameState.descricao.historia = document.getElementById('descricao-historia').value;
+    gameState.descricao.anotacoes = document.getElementById('descricao-anotacoes').value;
     
-    const diceMessage = `🎲 d${sides}: ${result} - ${message}`;
-    addMessage('dice', diceMessage);
     saveData();
 }
 
-function rollTest() {
-    const attr = document.getElementById('testAttr').value;
-    const difficulty = parseInt(document.getElementById('testDificulty').value) || 15;
-    const attrValue = gameState.personagem.atributos[attr];
-    const roll = Math.floor(Math.random() * 20) + 1;
-    const total = roll + attrValue;
+// ====================
+// ATRIBUTOS
+// ====================
+
+function renderAttributes() {
+    const attrs = gameState.personagem.atributos;
+    document.getElementById('attr-for').textContent = attrs.for;
+    document.getElementById('attr-agi').textContent = attrs.agi;
+    document.getElementById('attr-int').textContent = attrs.int;
+    document.getElementById('attr-pre').textContent = attrs.pre;
+    document.getElementById('attr-vig').textContent = attrs.vig;
     
-    let result;
-    if (roll === 20) result = '⭐ CRÍTICO - SUCESSO!';
-    else if (roll === 1) result = '❌ CRÍTICO - FALHA!';
-    else if (total >= difficulty) result = '✓ SUCESSO!';
-    else result = '✗ FALHA!';
-    
-    const attrName = {
-        agi: 'Agilidade',
-        for: 'Força',
-        int: 'Intelecto',
-        pre: 'Presença',
-        vig: 'Vigor'
-    };
-    
-    const message = `🎯 Teste de ${attrName[attr]} (${attrValue}): d20(${roll}) + ${attrValue} = ${total} vs DT ${difficulty} - ${result}`;
-    addMessage('dice', message);
-    saveData();
+    renderDefense();
 }
 
-function rollAttack() {
-    const weapon = document.getElementById('weaponName').value || 'Arma';
-    const damage = document.getElementById('weaponDamage').value || '1d6';
-    
-    // Simula rolar o dano
-    let diceMatch = damage.match(/(\d+)d(\d+)([+-]\d+)?/);
-    let totalDamage = 0;
-    let rolls = [];
-    
-    if (diceMatch) {
-        const numDice = parseInt(diceMatch[1]);
-        const numSides = parseInt(diceMatch[2]);
-        const modifier = diceMatch[3] ? parseInt(diceMatch[3]) : 0;
-        
-        for (let i = 0; i < numDice; i++) {
-            let roll = Math.floor(Math.random() * numSides) + 1;
-            rolls.push(roll);
-            totalDamage += roll;
+function editAttr(attr) {
+    const current = gameState.personagem.atributos[attr];
+    const newVal = prompt(`Valor de ${attr.toUpperCase()} (1-5):`, current);
+    if (newVal !== null) {
+        const val = parseInt(newVal);
+        if (val >= 1 && val <= 5) {
+            gameState.personagem.atributos[attr] = val;
+            renderAttributes();
+            renderSkills();
+            saveData();
         }
-        totalDamage += modifier;
-    } else {
-        totalDamage = damage;
+    }
+}
+
+// ====================
+// RECURSOS
+// ====================
+
+function renderResources() {
+    const e = gameState.estado;
+    
+    document.getElementById('pvAtual').value = e.pv;
+    document.getElementById('pvMax').value = e.pvMax;
+    document.getElementById('sanAtual').value = e.san;
+    document.getElementById('sanMax').value = e.sanMax;
+    document.getElementById('peAtual').value = e.pe;
+    document.getElementById('peMax').value = e.peMax;
+    document.getElementById('peMax2').value = e.peMax;
+    document.getElementById('nex').value = e.nex;
+    
+    // Barras
+    const pvPct = (e.pv / e.pvMax) * 100;
+    const sanPct = (e.san / e.sanMax) * 100;
+    const pePct = (e.pe / e.peMax) * 100;
+    
+    document.getElementById('pv-barra').style.width = pvPct + '%';
+    document.getElementById('san-barra').style.width = sanPct + '%';
+    document.getElementById('pe-barra').style.width = pePct + '%';
+    
+    // Mobile
+    document.getElementById('mobile-pv').textContent = `${e.pv}/${e.pvMax}`;
+    document.getElementById('mobile-san').textContent = `${e.san}/${e.sanMax}`;
+    document.getElementById('mobile-pe').textContent = `${e.pe}/${e.peMax}`;
+}
+
+function changeResource(type, amount) {
+    const e = gameState.estado;
+    const maxKey = type + 'Max';
+    
+    if (type === 'pv') {
+        e.pv = Math.max(0, Math.min(e.pv + amount, e.pvMax));
+    } else if (type === 'san') {
+        e.san = Math.max(0, Math.min(e.san + amount, e.sanMax));
+    } else if (type === 'pe') {
+        e.pe = Math.max(0, Math.min(e.pe + amount, e.peMax));
     }
     
-    const hitRoll = Math.floor(Math.random() * 20) + 1;
-    const attack = hitRoll + gameState.personagem.atributos.for;
-    
-    let result;
-    if (hitRoll === 20) result = '⭐ CRÍTICO! Dano dobrado!';
-    else if (hitRoll === 1) result = '❌ FALHA CRÍTICA!';
-    else if (attack >= 15) result = '✓ ACERTO!';
-    else result = '✗ ERROU!';
-    
-    const message = `⚔️ ${weapon}: Ataque d20(${hitRoll}) + ${gameState.personagem.atributos.for} = ${attack} - ${result}\nDano: ${damage} = ${totalDamage}`;
-    addMessage('dice', message);
+    renderResources();
     saveData();
 }
 
 // ====================
-// CRIAÇÃO DE PERSONAGEM
+// DEFESA
 // ====================
 
-function startCharacterCreation() {
-    showTab('chat');
-    const creationPrompt = `Você é um Mestre de RPG de Ordem Paranormal. Ajude o jogador a criar um personagem. Faça PERGUNTAS uma de cada vez para descobrir:
-1. Qual o nome do personagem?
-2. Qual a origem? (Acadêmico, Agente de Saúde, Atleta, Combatente, Criminal, Desgarrado, Estudante, Investigador, Médico, Militar, Ocultista, Policial, Religioso, Veterano)
-3. Qual a classe? (Combatente, Especialista, Ocultista)
-4. Quais são os atributos? (Distribua 15 pontos entre AGI, FOR, INT, PRE, VIG - começando com 1 em cada)
-5. Quais são as perícias?
-6. Quais são os equipamentos iniciais?
-7. Qual a história do personagem?
+function renderDefense() {
+    const attrs = gameState.personagem.atributos;
+    const equip = gameState.estado.defesaEquip;
+    
+    const defesa = 10 + attrs.agi + equip;
+    const esquiva = 10 + attrs.agi;
+    
+    document.getElementById('defesa-total').textContent = defesa;
+    document.getElementById('defesa-equip').value = equip;
+    document.getElementById('def-agi').textContent = attrs.agi;
+    document.getElementById('esquiva').textContent = esquiva;
+    document.getElementById('bloqueio').textContent = '0';
+}
 
-Espere a resposta do jogador antes de fazer a próxima pergunta. Seja entusiasmado e criativo!`;
+document.getElementById('defesa-equip').addEventListener('change', function() {
+    gameState.estado.defesaEquip = parseInt(this.value) || 0;
+    renderDefense();
+    saveData();
+});
+
+// ====================
+// PERÍCIAS
+// ====================
+
+function renderSkills() {
+    const tbody = document.getElementById('pericias-body');
+    const attrs = gameState.personagem.atributos;
     
-    addMessage('system', '🤖 Vamos criar seu personagem! Responda às perguntas do Oráculo.');
+    tbody.innerHTML = pericias.map(p => {
+        const attrValue = attrs[p.attr];
+        const treino = p.treino || 0;
+        const outros = p.outros || 0;
+        const total = attrValue + treino + outros;
+        
+        let sufixo = '';
+        if (p.carga) sufixo = '+';
+        if (p.treinado) sufixo += '*';
+        
+        const isTreinada = treino > 0;
+        const rowClass = isTreinada ? 'pericia-treinada' : '';
+        
+        return `
+            <tr class="${rowClass}">
+                <td>${p.nome} <small style="color: var(--text-muted)">${sufixo}</small></td>
+                <td>(${p.attr.toUpperCase()})</td>
+                <td>(${total})</td>
+                <td><input type="number" min="0" max="5" value="${treino}" onchange="updateSkill('${p.nome}', 'treino', this.value)"></td>
+                <td><input type="number" min="0" value="${outros}" onchange="updateSkill('${p.nome}', 'outros', this.value)"></td>
+            </tr>
+        `;
+    }).join('');
+}
+
+function updateSkill(periciaNome, tipo, valor) {
+    const pericia = pericias.find(p => p.nome === periciaNome);
+    if (pericia) {
+        pericia[tipo] = parseInt(valor) || 0;
+        renderSkills();
+        saveData();
+    }
+}
+
+// ====================
+// ATAQUES
+// ====================
+
+function renderAttacks() {
+    const container = document.getElementById('ataques-lista');
     
-    // Envia o prompt de criação
-    if (!config.apiKey) {
-        addMessage('system', '⚠️ Configure sua API Key na aba Config primeiro!');
+    if (gameState.attacks.length === 0) {
+        container.innerHTML = '<p style="color: var(--text-muted); text-align: center;">Nenhum ataque cadastrado</p>';
         return;
     }
     
-    const loadingMsg = addMessage('system', '🤔 O Oráculo está preparando as perguntas...');
+    container.innerHTML = gameState.attacks.map((a, i) => `
+        <div class="ataque-card">
+            <div class="ataque-header" onclick="toggleAtaque(${i})">
+                <span class="ataque-nome">${a.nome}</span>
+                <span class="ataque-dano">Dano: ${a.dano} | Crítico: ${a.critico}</span>
+            </div>
+            <div class="ataque-detalhes" id="ataque-${i}">
+                <p><strong>Bônus de Ataque:</strong> ${a.bonus}</p>
+                <p><strong>Tipo:</strong> ${a.tipo}</p>
+                <p><strong>Alcance:</strong> ${a.alcance}</p>
+                <p><strong>Propriedades:</strong> ${a.propriedades || 'Nenhuma'}</p>
+                <button onclick="rollAttack('${a.nome}', '${a.dano}', ${a.bonus})" class="btn-add">🎲 Rolar Ataque</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+function toggleAtaque(index) {
+    const el = document.getElementById(`ataque-${index}`);
+    el.classList.toggle('show');
+}
+
+function addAtaque() {
+    const nome = prompt('Nome do ataque:');
+    if (!nome) return;
     
-    fetch('https://openrouter.ai/api/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${config.apiKey}`,
-            'HTTP-Referer': 'https://ordemparanormal-solo.netlify.app',
-            'X-Title': 'Ordem Paranormal Solo'
-        },
-        body: JSON.stringify({
-            model: config.model,
-            messages: [
-                { role: 'system', content: creationPrompt },
-                { role: 'user', content: 'Quero criar um personagem!' }
-            ],
-            max_tokens: 800,
-            temperature: 0.8
-        })
-    })
-    .then(res => res.json())
-    .then(data => {
-        loadingMsg.remove();
-        if (data.error) {
-            addMessage('system', '❌ Erro: ' + data.error.message);
-        } else {
-            addMessage('system', data.choices[0].message.content);
-        }
-    })
-    .catch(err => {
-        loadingMsg.remove();
-        addMessage('system', '❌ Erro: ' + err.message);
+    const dano = prompt('Dano (ex: 2d6):', '1d6') || '1d6';
+    const critico = prompt('Crítico (ex: x2):', 'x2') || 'x2';
+    const bonus = parseInt(prompt('Bônus de Ataque:', '0')) || 0;
+    const tipo = prompt('Tipo de dano:', 'Corte') || 'Corte';
+    const alcance = prompt('Alcance:', 'Contato') || 'Contato';
+    const propriedades = prompt('Propriedades:', '') || '';
+    
+    gameState.attacks.push({
+        nome, dano, critico, bonus, tipo, alcance, propriedades
     });
+    
+    renderAttacks();
+    saveData();
+}
+
+function rollAttack(nome, dano, bonus) {
+    const roll = Math.floor(Math.random() * 20) + 1;
+    const total = roll + bonus;
+    
+    // Parse dano
+    const dadoMatch = dano.match(/(\d+)d(\d+)([+-]\d+)?/);
+    let danoTotal = 0;
+    if (dadoMatch) {
+        const num = parseInt(dadoMatch[1]);
+        const faces = parseInt(dadoMatch[2]);
+        const mod = dadoMatch[3] ? parseInt(dadoMatch[3]) : 0;
+        for (let i = 0; i < num; i++) {
+            danoTotal += Math.floor(Math.random() * faces) + 1;
+        }
+        danoTotal += mod;
+    }
+    
+    let resultado = '';
+    if (roll === 20) {
+        resultado = `⭐ CRÍTICO! Dano dobrado!`;
+        danoTotal *= 2;
+    } else if (roll === 1) {
+        resultado = '❌ FALHA CRÍTICA!';
+    } else if (total >= 15) {
+        resultado = '✓ ACERTO!';
+    } else {
+        resultado = '✗ ERROU';
+    }
+    
+    const msg = `⚔️ ${nome}: d20(${roll}) + ${bonus} = ${total} | Dano: ${dano} = ${danoTotal} | ${resultado}`;
+    addMessage('dice', msg);
+    saveData();
 }
 
 // ====================
 // MISSÕES
 // ====================
 
+function renderMissions() {
+    const container = document.getElementById('missions-list');
+    if (gameState.missoes.length === 0) {
+        container.innerHTML = '<p style="color: var(--text-muted); font-size: 0.8rem;">Nenhuma missão</p>';
+        return;
+    }
+    
+    container.innerHTML = gameState.missoes.map(m => `
+        <div class="missao-item">
+            <div class="missao-nome">${m.nome}</div>
+            <div class="missao-status">${m.resumo}</div>
+        </div>
+    `).join('');
+}
+
 function addMission() {
     const nome = prompt('Nome da missão:');
     if (nome) {
         gameState.missoes.push({
             nome: nome,
-            resumo: 'Em andamento...',
-            data: new Date().toLocaleDateString()
+            resumo: 'Em andamento...'
         });
         renderMissions();
         saveData();
     }
 }
 
-function renderMissions() {
-    const container = document.getElementById('missionsList');
-    if (gameState.missoes.length === 0) {
-        container.innerHTML = '<p style="color: #888;">Nenhuma missão ainda. Clique em "Nova Missão" para começar!</p>';
-    } else {
-        container.innerHTML = gameState.missoes.map((m, i) => `
-            <div class="mission-item">
-                <h4>${i + 1}. ${m.nome}</h4>
-                <p>${m.resumo}</p>
-                <small style="color: #666;">${m.data}</small>
-            </div>
-        `).join('');
+// ====================
+// INVENTÁRIO
+// ====================
+
+function renderInventory() {
+    const container = document.getElementById('inventario-lista');
+    const pesoTotal = gameState.inventario.reduce((acc, item) => acc + (item.peso * item.qtd), 0);
+    const capacidade = gameState.personagem.atributos.for * 5;
+    
+    document.getElementById('peso-total').textContent = pesoTotal;
+    document.getElementById('capacidade').textContent = capacidade;
+    
+    if (gameState.inventario.length === 0) {
+        container.innerHTML = '<p style="color: var(--text-muted); text-align: center;">Inventário vazio</p>';
+        return;
     }
+    
+    container.innerHTML = gameState.inventario.map((item, i) => `
+        <div class="item-inventario">
+            <span class="item-nome">${item.nome}</span>
+            <input type="number" class="item-qtd" value="${item.qtd}" min="0" onchange="updateItem(${i}, 'qtd', this.value)">
+            <span class="item-peso">${(item.peso * item.qtd).toFixed(1)} kg</span>
+        </div>
+    `).join('');
+}
+
+function addItem() {
+    const nome = prompt('Nome do item:');
+    if (!nome) return;
+    
+    const peso = parseFloat(prompt('Peso unitário (kg):', '0.5')) || 0;
+    const qtd = parseInt(prompt('Quantidade:', '1')) || 1;
+    
+    gameState.inventario.push({ nome, peso, qtd });
+    renderInventory();
+    saveData();
+}
+
+function updateItem(index, campo, valor) {
+    if (campo === 'qtd') {
+        gameState.inventario[index].qtd = parseInt(valor) || 0;
+        if (gameState.inventario[index].qtd === 0) {
+            gameState.inventario.splice(index, 1);
+        }
+    }
+    renderInventory();
+    saveData();
 }
 
 // ====================
-// CHAT COM IA
+// NAVEGAÇÃO
+// ====================
+
+function showRightTab(tabId) {
+    document.querySelectorAll('.tab-right').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content-right').forEach(t => t.classList.remove('active'));
+    
+    document.querySelector(`.tab-right[data-tab="${tabId}"]`).classList.add('active');
+    document.getElementById(`tab-${tabId}`).classList.add('active');
+}
+
+function switchMobileView(view) {
+    // Em mobile, mostra apenas a view selecionada
+    document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.mobile-nav-btn[data-view="${view}"]`).classList.add('active');
+    
+    // Aqui você pode implementar a lógica de mostrar/esconder colunas
+    alert(`Navegando para: ${view}`);
+}
+
+// ====================
+// CHAT
 // ====================
 
 function handleKeyPress(event) {
-    if (event.key === 'Enter') {
-        sendMessage();
-    }
+    if (event.key === 'Enter') sendMessage();
 }
 
 async function sendMessage() {
     const input = document.getElementById('userMessage');
-    const message = input.value.trim();
-    if (!message) return;
+    const msg = input.value.trim();
+    if (!msg) return;
     
-    // Adiciona mensagem do usuário
-    addMessage('user', message);
+    addMessage('user', msg);
     input.value = '';
     
-    // Verifica se tem API key
     if (!config.apiKey) {
-        addMessage('system', '⚠️ Configure sua API Key na aba Config primeiro!');
+        addMessage('system', '⚠️ Configure a API Key!');
         return;
     }
     
-    // Adiciona mensagem de "escrevendo..."
-    const loadingMsg = addMessage('system', '🤔 O Oráculo está pensando...');
+    const loading = addMessage('system', '🤔 Pensando...');
     
     try {
-        // Prepara o contexto para a IA
-        const context = buildContext();
-        
-        // Envia para a API
-        const response = await sendToAI(context, message);
-        
-        // Remove mensagem de loading
-        loadingMsg.remove();
-        
-        // Adiciona resposta da IA
+        const response = await sendToAI(buildContext(), msg);
+        loading.remove();
         addMessage('system', response);
         
-        // Atualiza contexto
-        gameState.historico.push({ role: 'user', content: message });
+        gameState.historico.push({ role: 'user', content: msg });
         gameState.historico.push({ role: 'assistant', content: response });
         
-        // Mantém apenas últimas 20 mensagens
-        if (gameState.historico.length > 40) {
-            gameState.historico = gameState.historico.slice(-40);
-        }
+        if (gameState.historico.length > 40) gameState.historico = gameState.historico.slice(-40);
         
         saveData();
-        
-    } catch (error) {
-        loadingMsg.remove();
-        addMessage('system', '❌ Erro ao comunicar com o Oráculo: ' + error.message);
+    } catch (err) {
+        loading.remove();
+        addMessage('system', '❌ Erro: ' + err.message);
     }
 }
 
@@ -382,101 +510,87 @@ function buildContext() {
     const p = gameState.personagem;
     const e = gameState.estado;
     
-    let context = `Você é o Oráculo, o Mestre de RPG de Ordem Paranormal. Você narrará histórias, interpretará personagens e controlará criaturas.\n\n`;
-    
-    context += `=== PERSONAGEM ===\n`;
-    context += `Nome: ${p.nome || 'Não criado'}\n`;
-    context += `Origem: ${p.origem || 'Não definida'}\n`;
-    context += `Classe: ${p.classe || 'Não definida'}\n`;
-    context += `Atributos: AGI ${p.atributos.agi}, FOR ${p.atributos.for}, INT ${p.atributos.int}, PRE ${p.atributos.pre}, VIG ${p.atributos.vig}\n\n`;
-    
-    context += `=== ESTADO ===\n`;
-    context += `PV: ${e.pv}/${e.pvMax} | PE: ${e.pe}/${e.peMax} | SAN: ${e.san}/${e.sanMax} | NEX: ${e.nex}%\n\n`;
-    
-    if (gameState.missoes.length > 0) {
-        context += `=== MISSÕES ===\n`;
-        gameState.missoes.forEach(m => {
-            context += `- ${m.nome}: ${m.resumo}\n`;
-        });
-        context += '\n';
-    }
-    
-    context += `=== ÚLTIMAS CONVERSAS ===\n`;
-    // Pegar últimas 10 mensagens do histórico
-    const recentMessages = gameState.historico.slice(-10);
-    recentMessages.forEach(msg => {
-        const prefix = msg.role === 'user' ? 'Jogador' : 'Oráculo';
-        context += `${prefix}: ${msg.content.substring(0, 200)}\n`;
-    });
-    
-    context += '\nAgora responda ao jogador em português, sendo imersivo e mantendo o clima de horror!\n';
-    
-    return context;
+    return `Você é o Oráculo, Mestre de RPG de Ordem Paranormal. Responda em português, com clima de horror!
+
+=== PERSONAGEM ===
+Nome: ${p.nome || 'Não criado'}
+Origem: ${p.origem || 'Não definida'}
+Classe: ${p.classe || 'Não definida'}
+Atributos: FOR ${p.atributos.for}, AGI ${p.atributos.agi}, INT ${p.atributos.int}, PRE ${p.atributos.pre}, VIG ${p.atributos.vig}
+
+=== ESTADO ===
+PV: ${e.pv}/${e.pvMax} | SAN: ${e.san}/${e.sanMax} | PE: ${e.pe}/${e.peMax} | NEX: ${e.nex}%
+
+Responda ao jogador agora!`;
 }
 
-async function sendToAI(context, userMessage) {
-    const url = 'https://openrouter.ai/api/v1/chat/completions';
-    
-    const messages = [
-        { role: 'system', content: context },
-        { role: 'user', content: userMessage }
-    ];
-    
-    const response = await fetch(url, {
+async function sendToAI(context, msg) {
+    const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${config.apiKey}`,
-            'HTTP-Referer': 'https://ordemparanormal-solo.netlify.app',
-            'X-Title': 'Ordem Paranormal Solo'
+            'Authorization': `Bearer ${config.apiKey}`
         },
         body: JSON.stringify({
             model: config.model,
-            messages: messages,
-            max_tokens: 1000,
-            temperature: 0.8
+            messages: [
+                { role: 'system', content: context },
+                { role: 'user', content: msg }
+            ],
+            max_tokens: 1000
         })
     });
     
-    if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.error?.message || 'Erro na API');
-    }
-    
-    const data = await response.json();
+    const data = await res.json();
     return data.choices[0].message.content;
 }
 
 function addMessage(type, content) {
-    const messagesDiv = document.getElementById('messages');
-    const msgDiv = document.createElement('div');
-    msgDiv.className = `message ${type}`;
-    msgDiv.innerHTML = content;
-    messagesDiv.appendChild(msgDiv);
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-    return msgDiv;
+    const div = document.getElementById('messages');
+    const msg = document.createElement('div');
+    msg.className = `message ${type}`;
+    msg.innerHTML = content;
+    div.appendChild(msg);
+    div.scrollTop = div.scrollHeight;
+    return msg;
 }
 
 // ====================
-// CONFIG
+// DADOS
 // ====================
 
-function saveConfig() {
-    config.apiKey = document.getElementById('apiKey').value;
-    config.model = document.getElementById('modelSelect').value;
+function rollDice(sides) {
+    const result = Math.floor(Math.random() * sides) + 1;
+    let msg = '';
     
-    localStorage.setItem('op_rpg_config', JSON.stringify(config));
-    alert('Configurações salvas!');
+    if (result === 1) msg = '❌ FALHA CRÍTICA!';
+    else if (result === sides) msg = '⭐ SUCESSO CRÍTICO!';
+    else if (sides === 20 && result >= 18) msg = '🔥 Excelente!';
+    else if (sides === 20 && result >= 10) msg = '✓ Sucesso';
+    else if (sides === 20) msg = '✗ Falha';
+    else msg = `Resultado: ${result}`;
+    
+    addMessage('dice', `🎲 d${sides}: ${result} - ${msg}`);
+    saveData();
 }
 
-function loadConfig() {
-    const saved = localStorage.getItem('op_rpg_config');
-    if (saved) {
-        config = JSON.parse(saved);
-    }
-    document.getElementById('apiKey').value = config.apiKey || '';
-    document.getElementById('modelSelect').value = config.model || 'minimax/minimax-m2.5';
-    updateDriveStatus();
+function rollTest() {
+    const attr = prompt('Qual atributo? (for, agi, int, pre, vig)', 'for').toLowerCase();
+    const attrs = gameState.personagem.atributos;
+    const attrVal = attrs[attr] || 1;
+    const roll = Math.floor(Math.random() * 20) + 1;
+    const total = roll + attrVal;
+    
+    const nomes = { for: 'Força', agi: 'Agilidade', int: 'Intelecto', pre: 'Presença', vig: 'Vigor' };
+    
+    let result = '';
+    if (roll === 20) result = '⭐ CRÍTICO - SUCESSO!';
+    else if (roll === 1) result = '❌ CRÍTICO - FALHA!';
+    else if (total >= 15) result = '✓ SUCESSO!';
+    else result = '✗ FALHA!';
+    
+    addMessage('dice', `🎯 Teste de ${nomes[attr]}: d20(${roll}) + ${attrVal} = ${total} | ${result}`);
+    saveData();
 }
 
 // ====================
@@ -484,330 +598,146 @@ function loadConfig() {
 // ====================
 
 function updateDriveStatus() {
-    const statusEl = document.getElementById('driveStatus');
-    if (config.driveConnected) {
-        statusEl.textContent = '✅ Conectado ao Google Drive';
-        statusEl.style.color = '#4caf50';
+    const el = document.getElementById('driveStatus');
+    if (oauthAccessToken) {
+        el.textContent = '✅ Conectado';
+        el.style.color = 'var(--accent-green)';
     } else {
-        statusEl.textContent = '❌ Não conectado';
-        statusEl.style.color = '#888';
+        el.textContent = 'Drive desconectado';
+        el.style.color = 'var(--text-muted)';
     }
 }
 
 async function initDrive() {
-    // Already connected?
-    if (oauthAccessToken && localStorage.getItem('oauthToken') === oauthAccessToken) {
-        console.log('Já está conectado!');
-        return;
-    }
-    
-    // Try to restore from localStorage
-    const savedToken = localStorage.getItem('oauthToken');
-    if (savedToken) {
-        oauthAccessToken = savedToken;
-        config.driveConnected = true;
+    const saved = localStorage.getItem('oauthToken');
+    if (saved) {
+        oauthAccessToken = saved;
         updateDriveStatus();
-        alert('✅ Drive conectado automaticamente!');
+        alert('✅ Já conectado!');
         return;
     }
     
-    // Use Google's official OAuth client
     if (!window.google || !window.google.accounts) {
-        await new Promise((resolve) => {
-            const script = document.createElement('script');
-            script.src = 'https://accounts.google.com/gsi/client';
-            script.onload = resolve;
-            document.head.appendChild(script);
+        await new Promise(r => {
+            const s = document.createElement('script');
+            s.src = 'https://accounts.google.com/gsi/client';
+            s.onload = r;
+            document.head.appendChild(s);
         });
     }
-    
-    // Configure and initiate OAuth
-    const redirectUri = window.location.origin + '/';
     
     window.google.accounts.oauth2.initTokenClient({
         client_id: GOOGLE_CLIENT_ID,
         scope: 'https://www.googleapis.com/auth/drive.file',
-        callback: (response) => {
-            if (response.access_token) {
-                oauthAccessToken = response.access_token;
+        callback: (resp) => {
+            if (resp.access_token) {
+                oauthAccessToken = resp.access_token;
                 localStorage.setItem('oauthToken', oauthAccessToken);
-                config.driveConnected = true;
-                saveConfig();
                 updateDriveStatus();
                 alert('✅ Conectado ao Google Drive!');
             }
-        },
-        error_callback: (error) => {
-            alert('Erro ao conectar: ' + error.message);
         }
     }).requestAccessToken({ prompt: 'consent' });
 }
 
-async function saveToDrive() {
-    if (!oauthAccessToken) {
-        await initDrive();
-        if (!oauthAccessToken) {
-            alert('❌ Não conectado ao Google Drive');
-            return;
-        }
-    }
-    
-    const data = JSON.stringify(gameState);
-    const blob = new Blob([data], { type: 'application/json' });
-    const fileName = `ordemparanormal_${new Date().toISOString().split('T')[0]}.json`;
-    
-    // Upload to root of Drive (simpler)
-    const metadata = {
-        name: fileName,
-        mimeType: 'application/json'
-    };
-    
-    const form = new FormData();
-    form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
-    form.append('file', blob);
-    
-    try {
-        const response = await fetch(`https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${oauthAccessToken}`
-            },
-            body: form
-        });
-        
-        if (response.ok) {
-            const result = await response.json();
-            config.fileId = result.id;
-            saveConfig();
-            alert('✅ Salvo no Google Drive! (ID: ' + result.id + ')');
-        } else {
-            const error = await response.text();
-            alert('❌ Erro ao salvar: ' + error);
-        }
-} catch (err) {
-        alert('❌ Erro: ' + err.message);
-    }
-}
-
 async function saveAllToDrive() {
-    // Always ensure we have a valid token
     if (!oauthAccessToken) {
-        alert('⚠️ Preciso conectar ao Drive primeiro!');
         await initDrive();
-        await new Promise(r => setTimeout(r, 2000)); // Wait for login
+        await new Promise(r => setTimeout(r, 2000));
     }
     
     if (!oauthAccessToken) {
-        alert('❌ Não consegui conectar ao Drive. Tente novamente.');
+        alert('❌ Não conectado!');
         return;
     }
     
-    // Save everything - character state + config
-    const allData = {
+    const data = {
         gameState: gameState,
-        config: config,
         timestamp: Date.now()
     };
     
-    const blob = new Blob([JSON.stringify(allData)], { type: 'application/json' });
-    const fileName = 'ordemparanormal_completo.json';
-    
-    const metadata = { name: fileName, mimeType: 'application/json' };
+    const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
     const form = new FormData();
-    form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
+    form.append('metadata', new Blob([JSON.stringify({ name: 'ordemparanormal.json', mimeType: 'application/json' })], { type: 'application/json' }));
     form.append('file', blob);
     
     try {
-        const response = await fetch(`https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart`, {
+        const res = await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart', {
             method: 'POST',
-            headers: { 'Authorization': `Bearer ${oauthAccessToken}` },
+            headers: { Authorization: `Bearer ${oauthAccessToken}` },
             body: form
         });
         
-        if (response.ok) {
-            alert('✅ Tudo Salvo no Drive!');
-        } else {
-            alert('❌ Erro ao salvar');
-        }
-    } catch (err) {
-        alert('❌ Erro: ' + err.message);
+        if (res.ok) alert('✅ Salvo no Drive!');
+        else alert('❌ Erro ao salvar');
+    } catch (e) {
+        alert('❌ Erro: ' + e.message);
     }
 }
 
 async function loadAllFromDrive() {
-    // Always ensure we have a valid token
     if (!oauthAccessToken) {
-        alert('⚠️ Preciso conectar ao Drive primeiro!');
         await initDrive();
-        await new Promise(r => setTimeout(r, 2000)); // Wait for login
+        await new Promise(r => setTimeout(r, 2000));
     }
     
     if (!oauthAccessToken) {
-        alert('❌ Não consegui conectar ao Drive. Tente novamente.');
+        alert('❌ Não conectado!');
         return;
     }
     
     try {
-        const response = await fetch(`https://www.googleapis.com/drive/v3/files?q=name='ordemparanormal_completo.json'`, {
-            headers: { 'Authorization': `Bearer ${oauthAccessToken}` }
+        const res = await fetch('https://www.googleapis.com/drive/v3/files?q=name="ordemparanormal.json"', {
+            headers: { Authorization: `Bearer ${oauthAccessToken}` }
         });
         
-        const data = await response.json();
+        const data = await res.json();
         
         if (data.files && data.files.length > 0) {
-            const fileId = data.files[0].id;
-            
-            const fileResponse = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media`, {
-                headers: { 'Authorization': `Bearer ${oauthAccessToken}` }
+            const fileRes = await fetch(`https://www.googleapis.com/drive/v3/files/${data.files[0].id}?alt=media`, {
+                headers: { Authorization: `Bearer ${oauthAccessToken}` }
             });
             
-            const allData = await fileResponse.json();
-            
-            if (allData.gameState) {
-                gameState = allData.gameState;
+            const loaded = await fileRes.json();
+            if (loaded.gameState) {
+                gameState = loaded.gameState;
                 saveData();
-                renderCharacter();
-                renderMissions();
-                alert('✅ Tudo Carregado do Drive!');
-                showTab('chat');
-                addMessage('system', '📥 Jogo completo carregado!');
-            } else {
-                alert('Arquivo incompleto');
+                renderAll();
+                alert('✅ Jogo carregado!');
             }
         } else {
-            alert('Nenhum save encontrado no Drive');
+            alert('Nenhum save encontrado');
         }
-    } catch (err) {
-        alert('❌ Erro: ' + err.message);
+    } catch (e) {
+        alert('❌ Erro: ' + e.message);
     }
 }
 
-async function getOrCreateFolder() {
-    try {
-        // Search for folder
-        const searchResponse = await fetch(`https://www.googleapis.com/drive/v3/files?q=name='${DRIVE_FOLDER_NAME}'%20and%20mimeType='application/vnd.google-apps.folder'`, {
-            headers: {
-                'Authorization': `Bearer ${oauthAccessToken}`
-            }
+function newGame() {
+    if (confirm('Novo jogo? Todo progresso será perdido!')) {
+        gameState = {
+            personagem: { nome: '', origem: '', classe: '', atributos: { agi: 1, for: 1, int: 1, pre: 1, vig: 1 }, proficiencias: '' },
+            estado: { pv: 20, pvMax: 20, pe: 6, peMax: 6, san: 20, sanMax: 20, nex: 5, defesaEquip: 0 },
+            attacks: [],
+            habilidades: [],
+            rituais: [],
+            inventario: [],
+            descricao: { aparencia: '', personalidade: '', historia: '', anotacoes: '' },
+            missoes: [],
+            historico: []
+        };
+        
+        // Reset pericias
+        pericias.forEach(p => {
+            p.treino = 0;
+            p.outros = 0;
         });
         
-        const searchData = await searchResponse.json();
-        
-        if (searchData.files && searchData.files.length > 0) {
-            return searchData.files[0].id;
-        }
-        
-        // Create folder
-        const createResponse = await fetch('https://www.googleapis.com/drive/v3/files', {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${oauthAccessToken}`,
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name: DRIVE_FOLDER_NAME,
-                mimeType: 'application/vnd.google-apps.folder'
-            })
-        });
-        
-        const createData = await createResponse.json();
-        return createData.id;
-    } catch (err) {
-        console.log('Folder error:', err);
-        return null;
+        renderAll();
+        document.getElementById('messages').innerHTML = '<div class="message system"><strong>Oráculo:</strong> Um novo jogo começa! Me conta, você já tem um personagem criado?</div>';
+        saveData();
     }
 }
-
-// Cloud save using localStorage only (no external API)
-let cloudSaveId = localStorage.getItem('cloudSaveId');
-
-function saveToCloud() {
-    const saveData = {
-        game: gameState,
-        timestamp: Date.now()
-    };
-    
-    const saveString = btoa(JSON.stringify(saveData));
-    cloudSaveId = 'op_' + Date.now();
-    localStorage.setItem('cloudSaveId', cloudSaveId);
-    localStorage.setItem('cloudSaveData', saveString);
-    
-    alert('✅ Salvo!\n\nEste save fica neste navegador.\nPara jogar em outro dispositivo, use Export/Import.');
-}
-
-function loadFromCloud() {
-    const savedData = localStorage.getItem('cloudSaveData');
-    if (savedData) {
-        try {
-            const decoded = JSON.parse(atob(savedData));
-            gameState = decoded.game;
-            saveData();
-            renderCharacter();
-            renderMissions();
-            addMessage('system', '📥 Jogo carregado!');
-            alert('✅ Jogo carregado!');
-        } catch (e) {
-            alert('Erro ao carregar. Use Importar.');
-        }
-    } else {
-        alert('Nenhum save encontrado. Use Importar.');
-    }
-}
-
-async function loadFromDrive() {
-    if (!oauthAccessToken) {
-        await initDrive();
-        if (!oauthAccessToken) {
-            alert('❌ Não conectado ao Google Drive');
-            return;
-        }
-    }
-    
-    try {
-        // Search for ordemparanormal files in root
-        const response = await fetch(`https://www.googleapis.com/drive/v3/files?q=name%20contains%20'ordemparanormal'%20and%20mimeType%20=%20'application/json'%20and%20trashed%20=%20false&orderBy=modifiedTime desc`, {
-            headers: {
-                'Authorization': `Bearer ${oauthAccessToken}`
-            }
-        });
-        
-        const data = await response.json();
-        
-        if (data.files && data.files.length > 0) {
-            // Get most recent file
-            const fileId = data.files[0].id;
-            
-            const fileResponse = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media`, {
-                headers: {
-'Authorization': `Bearer ${oauthAccessToken}`
-                }
-            });
-            
-            const gameData = await fileResponse.json();
-            gameState = gameData;
-            saveData();
-            renderCharacter();
-            renderMissions();
-            alert('✅ Jogo completo carregado do Drive!');
-            showTab('chat');
-            addMessage('system', '📥 Jogo carregado! Seja bem-vindo de volta!');
-            
-            // Refresh chat
-            const chat = document.getElementById('chat');
-            showTab('chat');
-            addMessage('system', '📥 Jogo carregado do Google Drive!');
-            alert('✅ Jogo carregado do Drive!');
-        } else {
-            alert('Nenhum arquivo encontrado no Drive.');
-        }
-    } catch (err) {
-        alert('❌ Erro ao carregar: ' + err.message + '\n\nNota: A API key precisa ter acesso ao Drive API.');
-    }
-}
-
-// ====================
-// SALVAR/CARREGAR
-// ====================
 
 function saveData() {
     localStorage.setItem('op_rpg_game', JSON.stringify(gameState));
@@ -820,77 +750,10 @@ function loadData() {
     }
 }
 
-function exportData() {
-    const dataStr = JSON.stringify(gameState, null, 2);
-    const blob = new Blob([dataStr], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `ordemparanormal_${new Date().toISOString().split('T')[0]}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-}
-
-function importData(input) {
-    const file = input.files[0];
-    if (!file) return;
-    
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        try {
-            const data = JSON.parse(e.target.result);
-            gameState = data;
-            saveData();
-            renderCharacter();
-            renderMissions();
-            alert('Jogo importado com sucesso!');
-        } catch (err) {
-            alert('Erro ao importar arquivo!');
-        }
-    };
-    reader.readAsText(file);
-}
-
-function copySave() {
-    const saveData = JSON.stringify(gameState);
-    navigator.clipboard.writeText(saveData).then(() => {
-        alert('✅ Jogo copiado!\n\nAgora cole (envie) pelo WhatsApp/Telegram para outro dispositivo.');
-    }).catch(() => {
-        alert('Erro ao copiar. Use Exportar para baixar o arquivo.');
-    });
-}
-
-function pasteSave() {
-    const saveStr = prompt('Cole aqui o código do jogo que você copiou:');
-    if (saveStr) {
-        try {
-            const data = JSON.parse(saveStr);
-            gameState = data;
-            saveData();
-            renderCharacter();
-            renderMissions();
-            alert('✅ Jogo carregado!');
-        } catch (err) {
-            alert('Código inválido. Tente usar Importar com arquivo.');
-        }
+function loadConfig() {
+    const saved = localStorage.getItem('op_rpg_config');
+    if (saved) {
+        config = JSON.parse(saved);
     }
-}
-
-function newGame() {
-    if (confirm('Tem certeza? Isso vai apagar todo o progresso!')) {
-        gameState = {
-            personagem: { nome: '', origem: '', classe: '', atributos: { agi: 1, for: 1, int: 1, pre: 1, vig: 1 } },
-            estado: { pv: 20, pvMax: 20, pe: 6, peMax: 6, san: 20, sanMax: 20, nex: 5 },
-            missoes: [],
-            historico: []
-        };
-        document.getElementById('messages').innerHTML = `
-            <div class="message system">
-                <strong>Oráculo:</strong> Um novo jogo começa! Me conta, você já tem um personagem criado ou quer criar um agora?
-            </div>
-        `;
-        saveData();
-        renderCharacter();
-        renderMissions();
-    }
+    document.getElementById('modelSelect').value = config.model || 'minimax/minimax-m2.5';
 }
