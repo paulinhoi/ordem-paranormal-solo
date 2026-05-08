@@ -646,7 +646,6 @@ async function loadFromDrive() {
         });
         
         const data = await response.json();
-        alert('Debug: arquivos encontrados: ' + JSON.stringify(data).substring(0, 200));
         
         if (data.files && data.files.length > 0) {
             // Get most recent file
