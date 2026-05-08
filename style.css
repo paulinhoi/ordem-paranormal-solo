@@ -1,32 +1,32 @@
-/* CSS - ESTILO C.R.I.S. EXATAMENTE COMO REFERÊNCIA */
+/* CSS - ESTILO C.R.I.S. - ORDEM PARANORMAL SOLO */
 
-/* ===== VARIÁVEIS ===== */
 :root {
-    --bg-main: #0d0d0d;
-    --bg-card: #161616;
-    --bg-input: #1a1a1a;
-    --bg-hover: #1e1e1e;
+    --bg-primary: #0d0d0d;
+    --bg-secondary: #161616;
+    --bg-card: #1a1a1a;
+    --bg-hover: #222;
     
-    --accent-purple: #A347FF;
-    --accent-purple-dim: #7d3c98;
-    --accent-gold: #f0a500;
-    --accent-red: #c0392b;
-    --accent-red-bright: #e74c3c;
-    --accent-purple-soft: #7d3c98;
-    --accent-orange: #ca6f1e;
-    --accent-green: #4caf50;
-    --accent-green-bright: #00e676;
+    --accent: #A347FF;
+    --accent-dim: #7b2fd4;
+    --accent-gold: #f0c040;
+    --vida: #c0392b;
+    --sanidade: #7d3c98;
+    --esforco: #ca6f1e;
+    --treinado: #4caf50;
+    --critico: #f0c040;
+    --falha: #e74c3c;
     
     --text-primary: #e0e0e0;
-    --text-secondary: #888;
+    --text-secondary: #999;
     --text-muted: #555;
-    --text-dim: #444;
     
-    --border-color: #222;
-    --border-light: #333;
+    --border: #222;
+    --border-active: #A347FF;
+    
+    --radius: 6px;
+    --font: 'Inter', 'Roboto', sans-serif;
 }
 
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -34,8 +34,8 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: var(--bg-main);
+    font-family: var(--font);
+    background: var(--bg-primary);
     color: var(--text-primary);
     font-size: 13px;
     line-height: 1.4;
@@ -43,17 +43,17 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== LAYOUT PRINCIPAL ===== */
+/* LAYOUT */
 .main-layout {
     display: grid;
-    grid-template-columns: 280px 340px 1fr;
+    grid-template-columns: 300px 340px 1fr;
     gap: 0;
     max-width: 1600px;
     margin: 0 auto;
     min-height: calc(100vh - 56px);
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ body {
     height: 56px;
     padding: 0 20px;
     background: #111;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -70,7 +70,7 @@ body {
 .header-logo {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--accent-purple);
+    color: var(--accent);
 }
 
 .header-center {
@@ -91,9 +91,9 @@ body {
 .btn-icon {
     width: 36px;
     height: 36px;
-    background: var(--bg-input);
-    border: 1px solid var(--border-light);
-    border-radius: 6px;
+    background: var(--bg-card);
+    border: 1px solid #333;
+    border-radius: var(--radius);
     color: var(--text-primary);
     cursor: pointer;
     font-size: 1rem;
@@ -101,18 +101,18 @@ body {
 }
 
 .btn-icon:hover {
-    background: var(--accent-purple);
-    border-color: var(--accent-purple);
+    background: var(--accent);
+    border-color: var(--accent);
 }
 
 .btn-icon.btn-danger:hover {
-    background: var(--accent-red);
+    background: var(--vida);
 }
 
-/* ===== CARDS ===== */
+/* CARDS */
 .card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 12px;
     margin-bottom: 12px;
@@ -121,18 +121,18 @@ body {
 .card-header {
     padding-bottom: 8px;
     margin-bottom: 10px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border);
 }
 
 .card-title {
     font-size: 10px;
     font-weight: 600;
-    color: var(--accent-purple);
+    color: var(--accent);
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
-/* ===== INPUTS ===== */
+/* INPUTS */
 input, textarea, select {
     background: transparent;
     border: 1px solid transparent;
@@ -145,20 +145,13 @@ input, textarea, select {
 }
 
 input:hover, textarea:hover, select:hover {
-    background: var(--bg-input);
+    background: var(--bg-card);
 }
 
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: var(--accent-purple);
-    background: var(--bg-input);
-}
-
-input[type="number"] {
-    width: 50px;
-    text-align: center;
-    font-weight: 600;
-    color: var(--accent-gold);
+    border-color: var(--accent);
+    background: var(--bg-card);
 }
 
 label {
@@ -170,11 +163,12 @@ label {
     margin-bottom: 4px;
 }
 
-/* ===== COLUNA ESQUERDA ===== */
+/* COLUNA ESQUERDA */
 .col-left {
     padding: 12px;
-    border-right: 1px solid var(--border-color);
-    background: var(--bg-main);
+    border-right: 1px solid var(--border);
+    background: var(--bg-primary);
+    overflow-y: auto;
 }
 
 /* Identity */
@@ -187,8 +181,8 @@ label {
 .avatar {
     width: 60px;
     height: 60px;
-    background: var(--bg-input);
-    border: 2px solid var(--border-light);
+    background: var(--bg-card);
+    border: 2px solid #333;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -207,13 +201,13 @@ label {
 .input-name {
     font-size: 16px;
     font-weight: 600;
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid #333;
 }
 
 .input-origin {
     font-size: 12px;
     color: var(--text-secondary);
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid #333;
 }
 
 .identity-fields {
@@ -231,7 +225,7 @@ label {
 /* Atributos - Diagrama em Teia */
 .atributos-web {
     position: relative;
-    height: 180px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,22 +235,22 @@ label {
     position: absolute;
     width: 100%;
     height: 100%;
-    stroke: var(--border-light);
+    stroke: #333;
     stroke-width: 1;
     fill: none;
 }
 
 .attr-center {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    background: var(--bg-input);
-    border: 2px solid var(--border-light);
+    width: 50px;
+    height: 50px;
+    background: var(--bg-card);
+    border: 2px solid #333;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9px;
+    font-size: 8px;
     color: var(--text-muted);
     text-transform: uppercase;
     z-index: 1;
@@ -264,10 +258,10 @@ label {
 
 .attr-bolha {
     position: absolute;
-    width: 64px;
-    height: 64px;
-    background: var(--bg-input);
-    border: 2px solid var(--border-light);
+    width: 56px;
+    height: 56px;
+    background: var(--bg-card);
+    border: 2px solid #333;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -279,53 +273,86 @@ label {
 }
 
 .attr-bolha:hover {
-    border-color: var(--accent-purple);
-    transform: scale(1.05);
+    border-color: var(--accent);
+    transform: scale(1.08);
 }
 
 .attr-val {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--text-primary);
 }
 
 .attr-name {
-    font-size: 9px;
+    font-size: 8px;
     color: var(--text-muted);
     text-transform: uppercase;
 }
 
-.attr-for { top: 10px; left: 50%; transform: translateX(-50%); }
-.attr-agi { top: 45px; right: 10px; }
-.attr-int { bottom: 45px; right: 15px; }
-.attr-pre { bottom: 20px; left: 35px; }
-.attr-vig { bottom: 10px; left: 50%; transform: translateX(-50%); }
+/* Posições corretas dos atributos */
+.attr-agi { top: 0; left: 50%; transform: translateX(-50%); }
+.attr-for { top: 35%; left: 10%; }
+.attr-int { top: 35%; right: 10%; }
+.attr-pre { top: 70%; left: 20%; }
+.attr-vig { top: 70%; right: 20%; }
 
-/* NEX */
+/* NEX e PE - Estilo melhorado */
 .nex-deslocamento {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.nex-input {
+.nex-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nex-row label {
+    min-width: 80px;
+    margin-bottom: 0;
+}
+
+.input-block {
+    background: var(--bg-card);
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 4px 8px;
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-.nex-input span {
+.input-block input {
+    background: transparent;
+    border: none;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--accent-gold);
+}
+
+.input-block input:focus {
+    background: transparent;
+    border: none;
+}
+
+.input-block .unit {
     color: var(--text-secondary);
+    font-size: 12px;
 }
 
 .desloc-value {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-secondary);
+    font-weight: 600;
 }
 
 /* Barras de Recursos */
 .resource-block {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .resource-label {
@@ -341,7 +368,7 @@ label {
 .resource-bar-container {
     position: relative;
     height: 38px;
-    background: var(--bg-input);
+    background: var(--bg-card);
     border-radius: 4px;
     overflow: hidden;
 }
@@ -350,15 +377,23 @@ label {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.4;
+    height: 100%;
+    opacity: 0.5;
     transition: width 0.3s;
 }
 
-.resource-bar-fill.pv { background: var(--accent-red); }
-.resource-bar-fill.san { background: var(--accent-purple-soft); }
-.resource-bar-fill.pe { background: var(--accent-orange); }
+.resource-bar-fill.pv { background: var(--vida); }
+.resource-bar-fill.san { background: var(--sanidade); }
+.resource-bar-fill.pe { background: var(--esforco); }
+
+.resource-bar-fill.critical {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+}
 
 .resource-controls {
     position: absolute;
@@ -375,16 +410,17 @@ label {
 .resource-controls button {
     width: 28px;
     height: 28px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     border: none;
     border-radius: 4px;
     color: var(--text-primary);
     cursor: pointer;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .resource-controls button:hover {
-    background: rgba(255,255,255,0.1);
+    background: var(--accent);
 }
 
 .resource-values {
@@ -393,6 +429,9 @@ label {
     gap: 2px;
     font-weight: 600;
     color: var(--text-primary);
+    background: rgba(0,0,0,0.3);
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 
 .resource-values input {
@@ -400,6 +439,8 @@ label {
     background: transparent;
     border: none;
     font-weight: 600;
+    color: var(--text-primary);
+    padding: 0;
 }
 
 /* Defesa */
@@ -413,7 +454,7 @@ label {
 .defesa-item {
     text-align: center;
     padding: 8px;
-    background: var(--bg-input);
+    background: var(--bg-card);
     border-radius: 6px;
 }
 
@@ -424,7 +465,7 @@ label {
 }
 
 .defesa-val {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--accent-gold);
 }
@@ -440,7 +481,7 @@ label {
     color: var(--text-muted);
     text-align: center;
     padding: 8px;
-    background: var(--bg-input);
+    background: var(--bg-card);
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -452,19 +493,18 @@ label {
     font-size: 11px;
 }
 
-/* ===== COLUNA CENTRAL ===== */
+/* COLUNA CENTRAL */
 .col-center {
     padding: 12px;
-    border-right: 1px solid var(--border-color);
-    background: var(--bg-main);
+    border-right: 1px solid var(--border);
+    background: var(--bg-primary);
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
 /* Perícias */
 .pericias-wrapper {
-    max-height: 250px;
+    max-height: calc(100vh - 250px);
     overflow-y: auto;
 }
 
@@ -474,7 +514,7 @@ label {
 }
 
 .pericias-table th {
-    background: var(--bg-input);
+    background: var(--bg-card);
     padding: 8px 6px;
     font-size: 10px;
     color: var(--text-muted);
@@ -482,22 +522,24 @@ label {
     text-align: left;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .pericias-table th:nth-child(3),
 .pericias-table th:nth-child(4),
 .pericias-table th:nth-child(5) {
     text-align: center;
+    width: 50px;
 }
 
 .pericias-table td {
     padding: 6px;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 13px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
 }
 
 .pericias-table tr:nth-child(odd) {
-    background: var(--bg-main);
+    background: var(--bg-primary);
 }
 
 .pericias-table tr:nth-child(even) {
@@ -505,7 +547,7 @@ label {
 }
 
 .pericias-table tr:hover {
-    background: var(--bg-input);
+    background: var(--bg-card);
 }
 
 .pericia-name {
@@ -513,17 +555,18 @@ label {
 }
 
 .pericia-name.treinada {
-    color: var(--accent-green-bright);
+    color: var(--treinado);
 }
 
 .pericia-suffix {
-    color: var(--text-dim);
-    font-size: 11px;
+    color: var(--text-muted);
+    font-size: 10px;
+    margin-left: 4px;
 }
 
 .pericia-attr {
     color: var(--text-muted);
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .pericia-bonus {
@@ -532,42 +575,97 @@ label {
     font-weight: 600;
 }
 
-.pericia-treinada .pericia-bonus {
-    color: var(--accent-green-bright);
-}
-
 .pericias-table input {
-    width: 32px;
+    width: 40px;
     padding: 2px;
     text-align: center;
-    background: transparent;
+    background: var(--bg-card);
     font-size: 12px;
+    border: 1px solid transparent;
+}
+
+.pericias-table input:focus {
+    border-color: var(--accent);
 }
 
 .pericias-footer {
     font-size: 10px;
-    color: var(--text-dim);
+    color: var(--text-muted);
     font-style: italic;
     text-align: center;
     margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
 }
 
-/* Chat */
-.chat-card {
-    flex: 1;
+/* COLUNA DIREITA */
+.col-right {
+    padding: 12px;
+    background: var(--bg-primary);
     display: flex;
     flex-direction: column;
-    min-height: 250px;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+/* Tabs */
+.tabs-container {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    background: var(--bg-secondary);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 4px;
+}
+
+.tab-btn {
+    flex: 1;
+    min-width: 60px;
+    padding: 10px 8px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+    background: var(--bg-card);
+}
+
+.tab-btn.active {
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+    border-bottom: 2px solid var(--accent);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Chat na aba */
+.tab-content .chat-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
 }
 
 .messages {
     flex: 1;
     overflow-y: auto;
-    background: var(--bg-input);
+    background: var(--bg-card);
     border-radius: 6px;
     padding: 10px;
     margin-bottom: 8px;
-    max-height: 180px;
+    max-height: 250px;
 }
 
 .message {
@@ -579,8 +677,8 @@ label {
 }
 
 .message.system {
-    background: var(--accent-purple-dim);
-    border-left: 3px solid var(--accent-purple);
+    background: var(--accent-dim);
+    border-left: 3px solid var(--accent);
 }
 
 .message.user {
@@ -604,7 +702,7 @@ label {
 .quick-dice button {
     width: 36px;
     height: 32px;
-    background: var(--bg-input);
+    background: var(--bg-card);
     border: 1px solid var(--accent-gold);
     border-radius: 4px;
     color: var(--accent-gold);
@@ -615,12 +713,12 @@ label {
 
 .quick-dice button:hover {
     background: var(--accent-gold);
-    color: var(--bg-main);
+    color: var(--bg-primary);
 }
 
 .quick-dice button.dice-main {
-    border-color: var(--accent-purple);
-    color: var(--accent-purple);
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 .chat-input {
@@ -634,7 +732,7 @@ label {
 
 .btn-send {
     padding: 8px 16px;
-    background: var(--accent-purple);
+    background: var(--accent);
     border: none;
     border-radius: 6px;
     color: white;
@@ -643,59 +741,63 @@ label {
 }
 
 .btn-send:hover {
-    background: var(--accent-purple-dim);
+    background: var(--accent-dim);
 }
 
-/* ===== COLUNA DIREITA ===== */
-.col-right {
-    padding: 12px;
-    background: var(--bg-main);
+/* Dice Modal */
+.dice-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.85);
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.2s;
 }
 
-/* Tabs */
-.tabs-container {
-    display: flex;
-    gap: 2px;
-    flex-wrap: wrap;
-    background: var(--bg-card);
-    border-radius: 6px 6px 0 0;
-    padding: 4px;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.tab-btn {
-    flex: 1;
-    min-width: 60px;
-    padding: 10px 8px;
-    background: transparent;
-    border: none;
+.dice-modal-content {
+    background: var(--bg-secondary);
+    border: 3px solid var(--accent);
+    border-radius: 16px;
+    padding: 40px 60px;
+    text-align: center;
+    animation: popIn 0.3s;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+.dice-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.dice-sides {
+    font-size: 14px;
     color: var(--text-muted);
-    font-size: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.2s;
+    margin-bottom: 10px;
 }
 
-.tab-btn:hover {
-    color: var(--text-primary);
-    background: var(--bg-input);
+.dice-result {
+    font-size: 64px;
+    font-weight: 700;
 }
 
-.tab-btn.active {
-    color: var(--text-primary);
-    background: var(--bg-card);
-    border-bottom: 2px solid var(--accent-purple);
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
+.dice-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 /* Combate */
@@ -711,7 +813,7 @@ label {
 
 .btn-add {
     padding: 8px 14px;
-    background: var(--accent-purple);
+    background: var(--accent);
     border: none;
     border-radius: 4px;
     color: white;
@@ -721,16 +823,21 @@ label {
 }
 
 .btn-add:hover {
-    background: var(--accent-purple-dim);
+    background: var(--accent-dim);
 }
 
 .ataque-card {
-    background: var(--bg-input);
-    border: 1px solid var(--border-color);
-    border-left: 3px solid var(--accent-purple);
-    border-radius: 6px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
     margin-bottom: 8px;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.ataque-card:hover {
+    background: var(--bg-hover);
 }
 
 .ataque-header {
@@ -738,25 +845,28 @@ label {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    cursor: pointer;
-}
-
-.ataque-header:hover {
-    background: var(--bg-hover);
 }
 
 .ataque-nome {
     font-weight: 600;
     color: var(--text-primary);
+    font-size: 14px;
 }
 
 .ataque-dano {
     font-size: 12px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .ataque-dano span {
-    color: var(--accent-purple);
+    color: var(--accent);
+}
+
+.ataque-bonus {
+    padding: 6px 10px;
+    background: #111;
+    font-size: 11px;
+    color: var(--text-secondary);
 }
 
 /* Inventário */
@@ -764,7 +874,7 @@ label {
     display: flex;
     justify-content: space-between;
     padding: 8px;
-    background: var(--bg-input);
+    background: var(--bg-card);
     border-radius: 4px;
     margin-bottom: 10px;
     font-size: 12px;
@@ -779,7 +889,7 @@ label {
     align-items: center;
     gap: 8px;
     padding: 6px;
-    background: var(--bg-input);
+    background: var(--bg-card);
     border-radius: 4px;
     margin-bottom: 4px;
 }
@@ -811,14 +921,22 @@ label {
 
 /* Missões */
 .missao-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 8px;
-    background: var(--bg-input);
-    border-left: 3px solid var(--accent-purple);
+    background: var(--bg-card);
+    border-left: 3px solid var(--accent);
     border-radius: 0 4px 4px 0;
     margin-bottom: 6px;
 }
 
+.missao-item input[type="checkbox"] {
+    width: auto;
+}
+
 .missao-nome {
+    flex: 1;
     font-weight: 600;
     color: var(--accent-gold);
 }
@@ -832,8 +950,8 @@ label {
 .btn-full {
     width: 100%;
     padding: 12px;
-    background: var(--bg-input);
-    border: 1px solid var(--border-light);
+    background: var(--bg-card);
+    border: 1px solid #333;
     border-radius: 6px;
     color: var(--text-primary);
     font-size: 13px;
@@ -841,8 +959,8 @@ label {
 }
 
 .btn-full:hover {
-    background: var(--accent-purple);
-    border-color: var(--accent-purple);
+    background: var(--accent);
+    border-color: var(--accent);
 }
 
 .hint {
@@ -852,14 +970,22 @@ label {
     text-align: center;
 }
 
-/* ===== MOBILE ===== */
+.hint.connected {
+    color: var(--treinado);
+}
+
+.hint.disconnected {
+    color: var(--falha);
+}
+
+/* MOBILE */
 .mobile-resources {
     display: none;
     position: sticky;
     top: 56px;
-    background: var(--bg-card);
+    background: var(--bg-secondary);
     padding: 6px 12px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border);
     z-index: 99;
     justify-content: space-around;
 }
@@ -889,8 +1015,8 @@ label {
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--bg-card);
-    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
     padding: 8px;
     z-index: 100;
     justify-content: space-around;
@@ -899,8 +1025,8 @@ label {
 .mobile-nav-btn {
     width: 50px;
     height: 50px;
-    background: var(--bg-input);
-    border: 1px solid var(--border-light);
+    background: var(--bg-card);
+    border: 1px solid #333;
     border-radius: 12px;
     color: var(--text-secondary);
     font-size: 1.2rem;
@@ -908,9 +1034,9 @@ label {
 }
 
 .mobile-nav-btn.active {
-    background: var(--accent-purple);
+    background: var(--accent);
     color: white;
-    border-color: var(--accent-purple);
+    border-color: var(--accent);
 }
 
 @media (max-width: 1024px) {
@@ -947,12 +1073,12 @@ label {
     width: 6px;
 }
 ::-webkit-scrollbar-track {
-    background: var(--bg-main);
+    background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--border-light);
+    background: #333;
     border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-purple);
+    background: var(--accent);
 }

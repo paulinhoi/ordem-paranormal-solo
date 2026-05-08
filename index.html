@@ -78,33 +78,39 @@
                 </div>
                 <div class="atributos-web">
                     <svg class="atributos-linhas" viewBox="0 0 200 200">
-                        <line x1="100" y1="60" x2="50" y2="90" />
-                        <line x1="50" y1="90" x2="50" y2="140" />
-                        <line x1="50" y1="140" x2="100" y2="170" />
-                        <line x1="100" y1="170" x2="150" y2="140" />
-                        <line x1="150" y1="140" x2="150" y2="90" />
-                        <line x1="150" y1="90" x2="100" y2="60" />
-                        <line x1="100" y1="60" x2="100" y2="170" />
-                        <line x1="50" y1="90" x2="150" y2="140" />
-                        <line x1="50" y1="140" x2="150" y2="90" />
+                        <!-- Linhas de conexão -->
+                        <line x1="100" y1="30" x2="40" y2="70" />
+                        <line x1="40" y1="70" x2="40" y2="130" />
+                        <line x1="40" y1="130" x2="100" y2="170" />
+                        <line x1="100" y1="170" x2="160" y2="130" />
+                        <line x1="160" y1="130" x2="160" y2="70" />
+                        <line x1="160" y1="70" x2="100" y2="30" />
+                        <line x1="100" y1="30" x2="100" y2="170" />
+                        <line x1="40" y1="70" x2="160" y2="130" />
+                        <line x1="40" y1="130" x2="160" y2="70" />
                     </svg>
                     <div class="attr-center">ATRIBUTOS</div>
-                    <div class="attr-bolha attr-for" onclick="editAttr('for')">
-                        <span class="attr-val" id="attr-for">1</span>
-                        <span class="attr-name">FOR</span>
-                    </div>
+                    <!-- AGI no topo -->
                     <div class="attr-bolha attr-agi" onclick="editAttr('agi')">
                         <span class="attr-val" id="attr-agi">1</span>
                         <span class="attr-name">AGI</span>
                     </div>
+                    <!-- FOR esquerda -->
+                    <div class="attr-bolha attr-for" onclick="editAttr('for')">
+                        <span class="attr-val" id="attr-for">1</span>
+                        <span class="attr-name">FOR</span>
+                    </div>
+                    <!-- INT direita -->
                     <div class="attr-bolha attr-int" onclick="editAttr('int')">
                         <span class="attr-val" id="attr-int">1</span>
                         <span class="attr-name">INT</span>
                     </div>
+                    <!-- PRE baixo esquerda -->
                     <div class="attr-bolha attr-pre" onclick="editAttr('pre')">
                         <span class="attr-val" id="attr-pre">1</span>
                         <span class="attr-name">PRE</span>
                     </div>
+                    <!-- VIG baixo direita -->
                     <div class="attr-bolha attr-vig" onclick="editAttr('vig')">
                         <span class="attr-val" id="attr-vig">1</span>
                         <span class="attr-name">VIG</span>
@@ -112,23 +118,29 @@
                 </div>
             </section>
 
-            <!-- NEX e Deslocamento -->
+            <!-- NEX, PE e Deslocamento -->
             <section class="card">
+                <div class="card-header">
+                    <span class="card-title">NEX & MOVIMENTO</span>
+                </div>
                 <div class="nex-deslocamento">
-                    <div class="field-row">
+                    <div class="nex-row">
                         <label>NEX</label>
-                        <div class="nex-input">
+                        <div class="input-block">
                             <input type="number" id="nex" value="5" min="0" max="100">
-                            <span>%</span>
+                            <span class="unit">%</span>
                         </div>
                     </div>
-                    <div class="field-row">
+                    <div class="nex-row">
                         <label>PE/TURNO</label>
-                        <input type="number" id="pe-turno" value="6">
+                        <div class="input-block">
+                            <input type="number" id="pe-turno" value="6">
+                            <span class="unit">PE</span>
+                        </div>
                     </div>
-                    <div class="field-row">
+                    <div class="nex-row">
                         <label>DESLOC</label>
-                        <span class="desloc-value">9m / 6q</span>
+                        <span class="desloc-value" id="deslocamento">9m / 6q</span>
                     </div>
                 </div>
             </section>
@@ -143,7 +155,10 @@
                         <div class="resource-controls">
                             <button onclick="changeResource('pv', -5)">«</button>
                             <button onclick="changeResource('pv', -1)">‹</button>
-                            <span class="resource-values"><input type="number" id="pv-atual" value="20"> / <input type="number" id="pv-max" value="20"></span>
+                            <div class="resource-values">
+                                <input type="number" id="pv-atual" value="20"> / 
+                                <input type="number" id="pv-max" value="20">
+                            </div>
                             <button onclick="changeResource('pv', 1)">›</button>
                             <button onclick="changeResource('pv', 5)">»</button>
                         </div>
@@ -158,7 +173,10 @@
                         <div class="resource-controls">
                             <button onclick="changeResource('san', -5)">«</button>
                             <button onclick="changeResource('san', -1)">‹</button>
-                            <span class="resource-values"><input type="number" id="san-atual" value="20"> / <input type="number" id="san-max" value="20"></span>
+                            <div class="resource-values">
+                                <input type="number" id="san-atual" value="20"> / 
+                                <input type="number" id="san-max" value="20">
+                            </div>
                             <button onclick="changeResource('san', 1)">›</button>
                             <button onclick="changeResource('san', 5)">»</button>
                         </div>
@@ -172,7 +190,10 @@
                         <div class="resource-bar-fill pe" id="pe-fill" style="width: 100%"></div>
                         <div class="resource-controls">
                             <button onclick="changeResource('pe', -1)">‹</button>
-                            <span class="resource-values"><input type="number" id="pe-atual" value="6"> / <input type="number" id="pe-max" value="6"></span>
+                            <div class="resource-values">
+                                <input type="number" id="pe-atual" value="6"> / 
+                                <input type="number" id="pe-max" value="6">
+                            </div>
                             <button onclick="changeResource('pe', 1)">›</button>
                         </div>
                     </div>
@@ -234,32 +255,7 @@
                     </table>
                 </div>
                 <div class="pericias-footer">
-                    + Penalidade de carga. * Somente treinada.
-                </div>
-            </section>
-
-            <!-- Chat -->
-            <section class="card chat-card">
-                <div class="card-header">
-                    <span class="card-title">CHAT</span>
-                </div>
-                <div class="messages" id="messages">
-                    <div class="message system">
-                        <strong>Oráculo:</strong> Bem-vindo ao jogo! Me conta, você já tem um personagem criado?
-                    </div>
-                </div>
-                <div class="quick-dice">
-                    <button onclick="rollDice(4)">d4</button>
-                    <button onclick="rollDice(6)">d6</button>
-                    <button onclick="rollDice(8)">d8</button>
-                    <button onclick="rollDice(10)">d10</button>
-                    <button onclick="rollDice(12)">d12</button>
-                    <button onclick="rollDice(20)" class="dice-main">d20</button>
-                    <button onclick="rollTest()" title="Teste rápido">🎯</button>
-                </div>
-                <div class="chat-input">
-                    <input type="text" id="userMessage" placeholder="O que você faz?" onkeypress="if(event.key==='Enter')sendMessage()">
-                    <button class="btn-send" onclick="sendMessage()">Enviar</button>
+                    + Penalidade de carga | * Somente treinada
                 </div>
             </section>
         </section>
@@ -273,6 +269,7 @@
                 <button class="tab-btn" data-tab="rituais" onclick="switchTab('rituais')">RITUAIS</button>
                 <button class="tab-btn" data-tab="inventario" onclick="switchTab('inventario')">INVENTÁRIO</button>
                 <button class="tab-btn" data-tab="descricao" onclick="switchTab('descricao')">DESCRIÇÃO</button>
+                <button class="tab-btn" data-tab="chat" onclick="switchTab('chat')">CHAT</button>
             </div>
 
             <!-- Tab: COMBATE -->
@@ -337,6 +334,30 @@
                 </section>
             </div>
 
+            <!-- Tab: CHAT -->
+            <div class="tab-content" id="tab-chat">
+                <section class="card chat-card">
+                    <div class="messages" id="messages">
+                        <div class="message system">
+                            <strong>Oráculo:</strong> Bem-vindo ao jogo! Me conta, você já tem um personagem criado?
+                        </div>
+                    </div>
+                    <div class="quick-dice">
+                        <button onclick="rollDice(4)">d4</button>
+                        <button onclick="rollDice(6)">d6</button>
+                        <button onclick="rollDice(8)">d8</button>
+                        <button onclick="rollDice(10)">d10</button>
+                        <button onclick="rollDice(12)">d12</button>
+                        <button onclick="rollDice(20)" class="dice-main">d20</button>
+                        <button onclick="rollTest()" title="Teste rápido">🎯</button>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="userMessage" placeholder="O que você faz?" onkeypress="if(event.key==='Enter')sendMessage()">
+                        <button class="btn-send" onclick="sendMessage()">Enviar</button>
+                    </div>
+                </section>
+            </div>
+
             <!-- Missões -->
             <section class="card">
                 <div class="card-header">
@@ -352,7 +373,7 @@
                     <span class="card-title">CONEXÃO</span>
                 </div>
                 <button class="btn-full" onclick="initDrive()">🔗 Conectar Google Drive</button>
-                <p class="hint" id="drive-status">Drive desconectado</p>
+                <p class="hint disconnected" id="drive-status">Drive desconectado</p>
             </section>
         </aside>
     </main>

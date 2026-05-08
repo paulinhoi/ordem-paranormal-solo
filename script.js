@@ -1,8 +1,4 @@
-// JavaScript - ESTILO C.R.I.S.
-
-// ====================
-// VARIÁVEIS GLOBAIS
-// ====================
+// JavaScript - ORDEM PARANORMAL SOLO - CORRIGIDO
 
 const GOOGLE_CLIENT_ID = '522909916248-gj093l0ljk9p0mi378jnlgv9jnpkbhic.apps.googleusercontent.com';
 let oauthAccessToken = null;
@@ -28,9 +24,8 @@ let gameState = {
     historico: []
 };
 
-// Perícias
 const pericias = [
-    { nome: 'Acrobacia', attr: 'agi', carga: true, treino: 0, outros: 0 },
+    { nome: 'Acrobacia', attr: 'agi', carga: true, treinado: false, treino: 0, outros: 0 },
     { nome: 'Adestramento', attr: 'pre', treinado: true, treino: 0, outros: 0 },
     { nome: 'Artes', attr: 'pre', treinado: true, treino: 0, outros: 0 },
     { nome: 'Atletismo', attr: 'for', treino: 0, outros: 0 },
@@ -60,10 +55,6 @@ const pericias = [
     { nome: 'Vontade', attr: 'vig', treino: 0, outros: 0 }
 ];
 
-// ====================
-// INICIALIZAÇÃO
-// ====================
-
 window.onload = function() {
     loadData();
     loadConfig();
@@ -75,10 +66,6 @@ window.onload = function() {
         updateDriveStatus();
     }
 };
-
-// ====================
-// RENDERIZAÇÃO COMPLETA
-// ====================
 
 function renderAll() {
     renderCharacter();
@@ -92,10 +79,6 @@ function renderAll() {
     renderDescricao();
 }
 
-// ====================
-// NAVEGAÇÃO
-// ====================
-
 function switchTab(tabId) {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
@@ -107,12 +90,7 @@ function switchTab(tabId) {
 function switchView(view) {
     document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
     event.target.classList.add('active');
-    // Mobile view switching - can be expanded
 }
-
-// ====================
-// PERSONAGEM
-// ====================
 
 function renderCharacter() {
     document.getElementById('charName').value = gameState.personagem.nome || '';
@@ -122,46 +100,56 @@ function renderCharacter() {
 }
 
 function renderDescricao() {
-    document.getElementById('desc-aparencia').value = gameState.descricao.aparencia || '';
-    document.getElementById('desc-personalidade').value = gameState.descricao.personalidade || '';
-    document.getElementById('desc-historia').value = gameState.descricao.historia || '';
-    document.getElementById('desc-anotacoes').value = gameState.descricao.anotacoes || '';
+    const d = gameState.descricao;
+    document.getElementById('desc-aparencia').value = d.aparencia || '';
+    document.getElementById('desc-personalidade').value = d.personalidade || '';
+    document.getElementById('desc-historia').value = d.historia || '';
+    document.getElementById('desc-anotacoes').value = d.anotacoes || '';
 }
 
-// Auto-save on input change
 document.addEventListener('input', function(e) {
-    if (e.target.id === 'charName') gameState.personagem.nome = e.target.value;
-    if (e.target.id === 'charOrigin') gameState.personagem.origem = e.target.value;
-    if (e.target.id === 'charClass') gameState.personagem.classe = e.target.value;
-    if (e.target.id === 'proficiencias') gameState.personagem.proficiencias = e.target.value;
-    if (e.target.id === 'desc-aparencia') gameState.descricao.aparencia = e.target.value;
-    if (e.target.id === 'desc-personalidade') gameState.descricao.personalidade = e.target.value;
-    if (e.target.id === 'desc-historia') gameState.descricao.historia = e.target.value;
-    if (e.target.id === 'desc-anotacoes') gameState.descricao.anotacoes = e.target.value;
-    if (e.target.id === 'nex') gameState.estado.nex = parseInt(e.target.value) || 0;
-    if (e.target.id === 'def-equip') gameState.estado.defesaEquip = parseInt(e.target.value) || 0;
+    const id = e.target.id;
+    const val = e.target.value;
+    
+    if (id === 'charName') gameState.personagem.nome = val;
+    if (id === 'charOrigin') gameState.personagem.origem = val;
+    if (id === 'charClass') gameState.personagem.classe = val;
+    if (id === 'proficiencias') gameState.personagem.proficiencias = val;
+    if (id === 'desc-aparencia') gameState.descricao.aparencia = val;
+    if (id === 'desc-personalidade') gameState.descricao.personalidade = val;
+    if (id === 'desc-historia') gameState.descricao.historia = val;
+    if (id === 'desc-anotacoes') gameState.descricao.anotacoes = val;
+    if (id === 'nex') gameState.estado.nex = parseInt(val) || 0;
+    if (id === 'def-equip') gameState.estado.defesaEquip = parseInt(val) || 0;
+    if (id === 'pe-turno') gameState.estado.peMax = parseInt(val) || 1;
     
     renderDefense();
     saveData();
 });
 
-// ====================
-// ATRIBUTOS
-// ====================
-
 function renderAttributes() {
     const a = gameState.personagem.atributos;
-    document.getElementById('attr-for').textContent = a.for;
-    document.getElementById('attr-agi').textContent = a.agi;
-    document.getElementById('attr-int').textContent = a.int;
-    document.getElementById('attr-pre').textContent = a.pre;
-    document.getElementById('attr-vig').textContent = a.vig;
+    const agiVal = parseInt(a.agi) || 0;
+    const forVal = parseInt(a.for) || 0;
+    const intVal = parseInt(a.int) || 0;
+    const preVal = parseInt(a.pre) || 0;
+    const vigVal = parseInt(a.vig) || 0;
+    
+    document.getElementById('attr-for').textContent = forVal;
+    document.getElementById('attr-agi').textContent = agiVal;
+    document.getElementById('attr-int').textContent = intVal;
+    document.getElementById('attr-pre').textContent = preVal;
+    document.getElementById('attr-vig').textContent = vigVal;
+    
+    document.getElementById('deslocamento').textContent = agiVal + 9 + 'm / ' + (agiVal + 6) + 'q';
+    
     renderDefense();
     renderSkills();
+    saveData();
 }
 
 function editAttr(attr) {
-    const current = gameState.personagem.atributos[attr];
+    const current = gameState.personagem.atributos[attr] || 1;
     const newVal = prompt(`Valor de ${attr.toUpperCase()} (1-5):`, current);
     if (newVal !== null) {
         const val = parseInt(newVal);
@@ -173,107 +161,91 @@ function editAttr(attr) {
     }
 }
 
-// ====================
-// RECURSOS
-// ====================
-
 function renderResources() {
     const e = gameState.estado;
     
-    // Inputs
-    document.getElementById('pv-atual').value = e.pv;
-    document.getElementById('pv-max').value = e.pvMax;
-    document.getElementById('san-atual').value = e.san;
-    document.getElementById('san-max').value = e.sanMax;
-    document.getElementById('pe-atual').value = e.pe;
-    document.getElementById('pe-max').value = e.peMax;
-    document.getElementById('pe-turno').value = e.peMax;
+    const pv = parseInt(e.pv) || 0;
+    const pvMax = Math.max(1, parseInt(e.pvMax) || 20);
+    const san = parseInt(e.san) || 0;
+    const sanMax = Math.max(1, parseInt(e.sanMax) || 20);
+    const pe = parseInt(e.pe) || 0;
+    const peMax = Math.max(1, parseInt(e.peMax) || 6);
     
-    // Barras
-    document.getElementById('pv-fill').style.width = (e.pv / e.pvMax * 100) + '%';
-    document.getElementById('san-fill').style.width = (e.san / e.sanMax * 100) + '%';
-    document.getElementById('pe-fill').style.width = (e.pe / e.peMax * 100) + '%';
+    document.getElementById('pv-atual').value = pv;
+    document.getElementById('pv-max').value = pvMax;
+    document.getElementById('san-atual').value = san;
+    document.getElementById('san-max').value = sanMax;
+    document.getElementById('pe-atual').value = pe;
+    document.getElementById('pe-max').value = peMax;
+    document.getElementById('pe-turno').value = peMax;
+    document.getElementById('nex').value = parseInt(e.nex) || 5;
     
-    // Mobile
-    document.getElementById('mobile-pv').textContent = `${e.pv}/${e.pvMax}`;
-    document.getElementById('mobile-san').textContent = `${e.san}/${e.sanMax}`;
-    document.getElementById('mobile-pe').textContent = `${e.pe}/${e.peMax}`;
+    const pvPct = (pv / pvMax) * 100;
+    const sanPct = (san / sanMax) * 100;
+    const pePct = (pe / peMax) * 100;
+    
+    const pvFill = document.getElementById('pv-fill');
+    const sanFill = document.getElementById('san-fill');
+    const peFill = document.getElementById('pe-fill');
+    
+    pvFill.style.width = pvPct + '%';
+    sanFill.style.width = sanPct + '%';
+    peFill.style.width = pePct + '%';
+    
+    if (pvPct < 30) pvFill.classList.add('critical');
+    else pvFill.classList.remove('critical');
+    
+    document.getElementById('mobile-pv').textContent = `${pv}/${pvMax}`;
+    document.getElementById('mobile-san').textContent = `${san}/${sanMax}`;
+    document.getElementById('mobile-pe').textContent = `${pe}/${peMax}`;
+    
+    saveData();
 }
 
 function changeResource(type, amount) {
     const e = gameState.estado;
-    const maxKey = type + 'Max';
     
-    if (type === 'pv') e.pv = Math.max(0, Math.min(e.pv + amount, e.pvMax));
-    if (type === 'san') e.san = Math.max(0, Math.min(e.san + amount, e.sanMax));
-    if (type === 'pe') e.pe = Math.max(0, Math.min(e.pe + amount, e.peMax));
+    if (type === 'pv') {
+        const pvMax = Math.max(1, parseInt(e.pvMax) || 20);
+        const newVal = (parseInt(e.pv) || 0) + amount;
+        e.pv = Math.max(0, Math.min(newVal, pvMax));
+    } else if (type === 'san') {
+        const sanMax = Math.max(1, parseInt(e.sanMax) || 20);
+        const newVal = (parseInt(e.san) || 0) + amount;
+        e.san = Math.max(0, Math.min(newVal, sanMax));
+    } else if (type === 'pe') {
+        const peMax = Math.max(1, parseInt(e.peMax) || 6);
+        const newVal = (parseInt(e.pe) || 0) + amount;
+        e.pe = Math.max(0, Math.min(newVal, peMax));
+    }
     
     renderResources();
     saveData();
 }
-
-// Resource input changes
-document.getElementById('pv-atual').addEventListener('change', function() {
-    gameState.estado.pv = parseInt(this.value) || 0;
-    renderResources();
-    saveData();
-});
-document.getElementById('pv-max').addEventListener('change', function() {
-    gameState.estado.pvMax = parseInt(this.value) || 1;
-    renderResources();
-    saveData();
-});
-document.getElementById('san-atual').addEventListener('change', function() {
-    gameState.estado.san = parseInt(this.value) || 0;
-    renderResources();
-    saveData();
-});
-document.getElementById('san-max').addEventListener('change', function() {
-    gameState.estado.sanMax = parseInt(this.value) || 1;
-    renderResources();
-    saveData();
-});
-document.getElementById('pe-atual').addEventListener('change', function() {
-    gameState.estado.pe = parseInt(this.value) || 0;
-    renderResources();
-    saveData();
-});
-document.getElementById('pe-max').addEventListener('change', function() {
-    gameState.estado.peMax = parseInt(this.value) || 1;
-    document.getElementById('pe-turno').value = gameState.estado.peMax;
-    renderResources();
-    saveData();
-});
-
-// ====================
-// DEFESA
-// ====================
 
 function renderDefense() {
     const a = gameState.personagem.atributos;
-    const eq = gameState.estado.defesaEquip;
+    const eq = parseInt(gameState.estado.defesaEquip) || 0;
     
-    const defesa = 10 + a.agi + eq;
-    const esquiva = 10 + a.agi;
+    const agi = parseInt(a.agi) || 0;
+    const defesa = 10 + agi + eq;
+    const esquiva = 10 + agi;
     
     document.getElementById('defesa-total').textContent = defesa;
-    document.getElementById('def-agi-val').textContent = a.agi;
+    document.getElementById('def-agi-val').textContent = agi;
     document.getElementById('def-equip').value = eq;
     document.getElementById('esquiva').textContent = esquiva;
+    document.getElementById('bloqueio').textContent = '0';
 }
-
-// ====================
-// PERÍCIAS
-// ====================
 
 function renderSkills() {
     const tbody = document.getElementById('pericias-body');
     const a = gameState.personagem.atributos;
     
-    tbody.innerHTML = pericias.map(p => {
-        const attrVal = a[p.attr];
-        const treino = p.treino || 0;
-        const outros = p.outros || 0;
+    tbody.innerHTML = pericias.map((p, i) => {
+        const attrVal = parseInt(a[p.attr]) || 0;
+        const treino = parseInt(p.treino) || 0;
+        const outros = parseInt(p.outros) || 0;
         const total = attrVal + treino + outros;
         
         let sufixo = '';
@@ -281,16 +253,16 @@ function renderSkills() {
         if (p.treinado) sufixo += '*';
         
         const treinada = treino > 0;
-        const rowClass = treinada ? 'style="color: var(--accent-green-bright)"' : '';
-        const bonusClass = treinada ? 'class="pericia-bonus"' : '';
+        const nameClass = treinada ? 'pericia-name treinada' : 'pericia-name';
+        const icon = treinada ? '◈' : '⬡';
         
         return `
-            <tr ${rowClass}>
-                <td><span class="pericia-name ${treinada ? 'treinada' : ''}">${p.nome}</span><span class="pericia-suffix">${sufixo}</span></td>
+            <tr>
+                <td><span class="${nameClass}">${icon} ${p.nome}</span><span class="pericia-suffix">${sufixo}</span></td>
                 <td class="pericia-attr">(${p.attr.toUpperCase()})</td>
-                <td ${bonusClass}>(${total})</td>
-                <td><input type="number" min="0" max="5" value="${treino}" onchange="updateSkill(${pericias.indexOf(p)}, 'treino', this.value)"></td>
-                <td><input type="number" min="0" value="${outros}" onchange="updateSkill(${pericias.indexOf(p)}, 'outros', this.value)"></td>
+                <td class="pericia-bonus">(${total})</td>
+                <td><input type="number" min="0" max="5" value="${treino}" onchange="updateSkill(${i}, 'treino', this.value)"></td>
+                <td><input type="number" min="0" value="${outros}" onchange="updateSkill(${i}, 'outros', this.value)"></td>
             </tr>
         `;
     }).join('');
@@ -302,10 +274,6 @@ function updateSkill(index, tipo, valor) {
     saveData();
 }
 
-// ====================
-// ATAQUES
-// ====================
-
 function renderAttacks() {
     const container = document.getElementById('ataques-lista');
     
@@ -315,18 +283,29 @@ function renderAttacks() {
     }
     
     container.innerHTML = gameState.attacks.map((a, i) => `
-        <div class="ataque-card">
-            <div class="ataque-header" onclick="toggleAtaque(${i})">
-                <span class="ataque-nome">${a.nome}</span>
+        <div class="ataque-card" onclick="toggleAtaque(${i})">
+            <div class="ataque-header">
+                <span class="ataque-nome">▼ ${a.nome}</span>
                 <span class="ataque-dano">Dano: <span>${a.dano}</span> | Crítico: <span>${a.critico}</span></span>
             </div>
+            <div class="ataque-bonus">🎲 Bônus: ${a.bonus}</div>
         </div>
     `).join('');
 }
 
 function toggleAtaque(index) {
-    // Simple toggle - could expand to show details
-    alert(`${gameState.attacks[index].nome}: Bônus ${gameState.attacks[index].bonus}`);
+    const ataque = gameState.attacks[index];
+    const roll = Math.floor(Math.random() * 20) + 1;
+    const total = roll + ataque.bonus;
+    
+    let result = '';
+    if (roll === 20) result = '⭐ CRÍTICO!';
+    else if (roll === 1) result = '❌ FALHA!';
+    else if (total >= 15) result = '✓ SUCESSO';
+    else result = '✗ FALHA';
+    
+    addMessage('dice', `⚔️ ${ataque.nome}: d20(${roll}) + ${ataque.bonus} = ${total} | ${result}`);
+    saveData();
 }
 
 function addAtaque() {
@@ -344,8 +323,10 @@ function addAtaque() {
 
 function rollDice(sides) {
     const result = Math.floor(Math.random() * sides) + 1;
-    let msg = '';
     
+    showDiceModal(sides, result);
+    
+    let msg = '';
     if (result === 1) msg = '❌ FALHA CRÍTICA!';
     else if (result === sides) msg = '⭐ SUCESSO CRÍTICO!';
     else if (sides === 20 && result >= 18) msg = '🔥 Excelente!';
@@ -357,10 +338,42 @@ function rollDice(sides) {
     saveData();
 }
 
+function showDiceModal(sides, result) {
+    const modal = document.createElement('div');
+    modal.className = 'dice-modal';
+    
+    let borderColor = '#A347FF';
+    let resultText = '';
+    
+    if (sides === 20) {
+        if (result === 20) {
+            borderColor = '#f0c040';
+            resultText = 'CRÍTICO!';
+        } else if (result === 1) {
+            borderColor = '#e74c3c';
+            resultText = 'FALHA CRÍTICA!';
+        }
+    }
+    
+    modal.innerHTML = `
+        <div class="dice-modal-content" style="border-color: ${borderColor}">
+            <div class="dice-icon">🎲</div>
+            <div class="dice-sides">d${sides}</div>
+            <div class="dice-result" style="color: ${borderColor}">${result}</div>
+            ${resultText ? `<div class="dice-text">${resultText}</div>` : ''}
+        </div>
+    `;
+    
+    modal.onclick = () => modal.remove();
+    document.body.appendChild(modal);
+    
+    setTimeout(() => modal.remove(), 3000);
+}
+
 function rollTest() {
     const attr = prompt('Atributo (for/agi/int/pre/vig):', 'for').toLowerCase();
     const attrs = gameState.personagem.atributos;
-    const val = attrs[attr] || 1;
+    const val = parseInt(attrs[attr]) || 0;
     const roll = Math.floor(Math.random() * 20) + 1;
     const total = roll + val;
     
@@ -372,13 +385,9 @@ function rollTest() {
     
     const nomes = { for: 'Força', agi: 'Agilidade', int: 'Intelecto', pre: 'Presença', vig: 'Vigor' };
     
-    addMessage('dice', `🎯 ${nomes[attr]}: d20(${roll}) + ${val} = ${total} | ${result}`);
+    addMessage('dice', `🎯 ${nomes[attr] || attr}: d20(${roll}) + ${val} = ${total} | ${result}`);
     saveData();
 }
-
-// ====================
-// MISSÕES
-// ====================
 
 function renderMissions() {
     const container = document.getElementById('missao-lista');
@@ -388,29 +397,33 @@ function renderMissions() {
     }
     container.innerHTML = gameState.missoes.map(m => `
         <div class="missao-item">
-            <div class="missao-nome">${m.nome}</div>
-            <div class="missao-status">${m.resumo}</div>
+            <input type="checkbox" onchange="toggleMission(${gameState.missoes.indexOf(m)}, this.checked)">
+            <span class="missao-nome">${m.nome}</span>
+            <span class="missao-status">${m.resumo}</span>
         </div>
     `).join('');
+}
+
+function toggleMission(index, checked) {
+    gameState.missoes[index].resumo = checked ? 'Concluída' : 'Em andamento';
+    renderMissions();
+    saveData();
 }
 
 function addMission() {
     const nome = prompt('Nome da missão:');
     if (nome) {
-        gameState.missoes.push({ nome, resumo: 'Em andamento...' });
+        gameState.missoes.push({ nome, resumo: 'Em andamento' });
         renderMissions();
         saveData();
     }
 }
 
-// ====================
-// INVENTÁRIO
-// ====================
-
 function renderInventory() {
     const container = document.getElementById('inventario-lista');
-    const peso = gameState.inventario.reduce((acc, item) => acc + (item.peso * item.qtd), 0);
-    const capacidade = gameState.personagem.atributos.for * 5;
+    const peso = gameState.inventario.reduce((acc, item) => acc + ((parseFloat(item.peso) || 0) * (parseInt(item.qtd) || 0)), 0);
+    const forca = parseInt(gameState.personagem.atributos.for) || 1;
+    const capacidade = forca * 5;
     
     document.getElementById('peso-total').textContent = peso.toFixed(1);
     document.getElementById('capacidade').textContent = capacidade;
@@ -424,7 +437,7 @@ function renderInventory() {
         <div class="item-row">
             <span class="item-nome">${item.nome}</span>
             <input type="number" class="item-qtd" value="${item.qtd}" min="0" onchange="updateItem(${i}, this.value)">
-            <span class="item-peso">${(item.peso * item.qtd).toFixed(1)} kg</span>
+            <span class="item-peso">${((parseFloat(item.peso) || 0) * (parseInt(item.qtd) || 0)).toFixed(1)} kg</span>
         </div>
     `).join('');
 }
@@ -453,10 +466,6 @@ function updateItem(index, qtd) {
 function addRitual() {
     alert('Funcionalidade de rituais em desenvolvimento');
 }
-
-// ====================
-// CHAT
-// ====================
 
 function sendMessage() {
     const input = document.getElementById('userMessage');
@@ -497,10 +506,10 @@ function buildContext() {
 Nome: ${p.nome || 'Não criado'}
 Origem: ${p.origem || 'Não definida'}
 Classe: ${p.classe || 'Não definida'}
-Atributos: FOR ${p.atributos.for}, AGI ${p.atributos.agi}, INT ${p.atributos.int}, PRE ${p.atributos.pre}, VIG ${p.atributos.vig}
+Atributos: FOR ${parseInt(p.atributos.for)||0}, AGI ${parseInt(p.atributos.agi)||0}, INT ${parseInt(p.atributos.int)||0}, PRE ${parseInt(p.atributos.pre)||0}, VIG ${parseInt(p.atributos.vig)||0}
 
 === ESTADO ===
-PV: ${e.pv}/${e.pvMax} | SAN: ${e.san}/${e.sanMax} | PE: ${e.pe}/${e.peMax} | NEX: ${e.nex}%
+PV: ${parseInt(e.pv)||0}/${parseInt(e.pvMax)||20} | SAN: ${parseInt(e.san)||0}/${parseInt(e.sanMax)||20} | PE: ${parseInt(e.pe)||0}/${parseInt(e.peMax)||6} | NEX: ${parseInt(e.nex)||0}%
 
 Responda ao jogador agora!`;
 }
@@ -535,18 +544,14 @@ function addMessage(type, content) {
     return msg;
 }
 
-// ====================
-// GOOGLE DRIVE
-// ====================
-
 function updateDriveStatus() {
     const el = document.getElementById('drive-status');
     if (oauthAccessToken) {
         el.textContent = '✅ Conectado';
-        el.style.color = 'var(--accent-green)';
+        el.className = 'hint connected';
     } else {
         el.textContent = 'Drive desconectado';
-        el.style.color = 'var(--text-muted)';
+        el.className = 'hint disconnected';
     }
 }
 
@@ -647,10 +652,6 @@ function newGame() {
     }
 }
 
-// ====================
-// SAVE/LOAD
-// ====================
-
 function saveData() {
     localStorage.setItem('op_rpg_game', JSON.stringify(gameState));
     localStorage.setItem('op_pericias', JSON.stringify(pericias));
@@ -658,7 +659,12 @@ function saveData() {
 
 function loadData() {
     const saved = localStorage.getItem('op_rpg_game');
-    if (saved) gameState = JSON.parse(saved);
+    if (saved) {
+        gameState = JSON.parse(saved);
+        if (!gameState.estado) gameState.estado = { pv: 20, pvMax: 20, pe: 6, peMax: 6, san: 20, sanMax: 20, nex: 5, defesaEquip: 0 };
+        if (!gameState.personagem) gameState.personagem = { nome: '', origem: '', classe: '', atributos: { agi: 1, for: 1, int: 1, pre: 1, vig: 1 }, proficiencias: '' };
+        if (!gameState.personagem.atributos) gameState.personagem.atributos = { agi: 1, for: 1, int: 1, pre: 1, vig: 1 };
+    }
     
     const savedPericias = localStorage.getItem('op_pericias');
     if (savedPericias) {
