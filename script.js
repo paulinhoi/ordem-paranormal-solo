@@ -532,23 +532,36 @@ Responda ao jogador agora!`;
 }
 
 async function sendToAI(context, msg) {
-    const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${config.apiKey}`
-        },
-        body: JSON.stringify({
-            model: config.model,
-            messages: [
-                { role: 'system', content: context },
-                { role: 'user', content: msg }
-            ],
-            max_tokens: 1000
-        })
-    });
-    const data = await res.json();
-    return data.choices[0].message.content;
+    try {
+        const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${config.apiKey}`
+            },
+            body: JSON.stringify({
+                model: 'minimax/minimax-m2.5',
+                messages: [
+                    { role: 'system', content: context },
+                    { role: 'user', content: msg }
+                ],
+                max_tokens: 1000
+            })
+        });
+        
+        if (!res.ok) {
+            const errorData = await res.json();
+            throw new Error(errorData.error?.message || `HTTP ${res.status}`);
+        }
+        
+        const data = await res.json();
+        if (!data.choices || !data.choices[0]) {
+            throw new Error('Resposta inválida da API');
+        }
+        return data.choices[0].message.content;
+    } catch (err) {
+        throw new Error('Erro: ' + err.message);
+    }
 }
 
 function addMessage(type, content) {
@@ -699,3 +712,191 @@ function loadConfig() {
     const saved = localStorage.getItem('op_rpg_config');
     if (saved) config = JSON.parse(saved);
 }
+
+// ====================
+// DADOS DO JOGO
+// ====================
+
+const origens = [
+    { nome: 'Acadêmico', desc: 'Formação em universidade. Bônus: Ciências +5, Investigação +5, Ocultismo +5. Você sabe investigar o paranormal academicamente.' },
+    { nome: 'Agente de Saúde', desc: 'Médico, enfermeiro ou paramédico. Bônus: Medicina +5, Diplomacia +5. Você trata tanto o corpo quanto a mente.' },
+    { nome: 'Artista', desc: 'Ator, músico ou artista plástico. Bônus: Artes +5, Enganação +5, Intuição +5. Você interpreta e entende emoções.' },
+    { nome: 'Atleta', desc: 'Atleta profissional ou amador dedicado. Bônus: Atletismo +5, Luta +5, Iniciativa +5. Seu corpo é sua arma.' },
+    { nome: 'Criminoso', desc: 'Passado no mundo do crime. Bônus: Crime +5, Furtividade +5, Intimidação +5. Você sabe como trabalhar nas sombras.' },
+    { nome: 'Detetive', desc: 'Investigador particular ou policial. Bônus: Investigação +5, Percepção +5, Intuição +5. Você encontra o que outros perdem.' },
+    { nome: 'Engenheiro', desc: 'Formação técnica ou arquitetura. Bônus: Tecnologia +5, Profissão +5. Você conserta e cria soluções.' },
+    { nome: 'Executive', desc: 'Executivo, advogado ou político. Bônus: Diplomacia +5, Crime +5, Persuasão +5. Você comanda e influencia.' },
+    { nome: 'Faz-tudo', desc: 'Mão de obra geral, mecânico. Bônus: Profissão +5, Crime +5, Tática +5. Você resolve qualquer problema prático.' },
+    { nome: 'Gambiarra', desc: 'Faz tudo com improvisos criativos. Bônus: Tecnologia +5, Profissão +5, Crime +5. Soluções engenhosas para qualquer problema.' },
+    { nome: 'Investigador', desc: 'Jornalista ou blogger. Bônus: Investigação +5, Atualidades +5, Intuição +5. Você pesquisa e descobre verdades.' },
+    { nome: 'Lenda Urbana', desc: 'Acredita em conspirações e monstros. Bônus: Ocultismo +5, Intuição +5, Sobrevivência +5. Você já viu coisas que não deveria.' },
+    { nome: 'Médium', desc: 'Sensitivo ou canalizador. Bônus: Ocultismo +5, Religião +5, Intuição +10. Você percebe o que outros não veem.' },
+    { nome: 'Militar', desc: 'Ex-membro das Forças Armadas. Bônus: Tática +5, Pontaria +5, Atletismo +5. Treinado para combate e disciplina.' },
+    { nome: 'Motorista', desc: 'Motorista profissional ou piloto. Bônus: Pilotagem +5, Crime +5, Atletismo +5. Você vive nas estradas.' },
+    { nome: 'Religioso', desc: 'Padre, padre, monge ou devoto. Bônus: Religião +10, Ocultismo +5, Vontade +5. Sua fé é sua proteção.' },
+    { nome: 'Reporter', desc: 'Jornalista investigativo. Bônus: Investigação +5, Atualidades +5, Crime +5. Você conta a verdade ao mundo.' },
+    { nome: 'Tiete', desc: 'Fã obsessivo de algo específico. Bônus: Profissão +5, Crime +5, Atualidades +5. Conhecimento profundo de um tema.' },
+    { nome: 'Triz', desc: 'Gêmeo com conexão especial. Bônus: Intuição +5, Ocultismo +5. Sabe quando o outro está em perigo.' },
+    { nome: 'Uuid', desc: 'Sobrevivente de incidente inexplicável. Bônus: Vontade +5, Sanidade +5. "Eu estava lá quando tudo começou."' }
+];
+
+const classes = [
+    { nome: 'Combatente', desc: 'Especialista em combate e combate. PV: +8 por nível. Perícias treinadas: Luta, Atletismo, Pontaria, Intimidação, Fortitude. Armaduras médias e pesadas. Armas de fogo e brancas.' },
+    { nome: 'Escriba', desc: 'Especialista em conhecimento oculto. Sanidade +4 por nível. Perícias treinadas: Ocultismo, Religião, Investigação, Ciências, Intuição. Não usa armaduras. Rituais.' },
+    { nome: 'Instrumentista', desc: 'Músico que canaliza energia. PE +2 por nível. Perícias treinadas: Artes, Ocultismo, Percepção, Diplomacia, Vontade. Não usa armaduras. Magias musicais.' },
+    { nome: 'Ocultista', desc: 'Praticante de artes ocultas. Sanidade +6, PE +2 por nível. Perícias treinadas: Ocultismo, Religião, Crime, Enganação, Vontade. Armaduras leves. Rituais.' },
+    { nome: 'Profissional', desc: 'Especialista em sua área. NEX +2% por nível. Perícias treinadas: Profissão (especialidade), Crime, Diplomacia, Investigação, Tática. Armaduras leves.' }
+];
+
+const rituais = [
+    { nome: 'Abraçar a Escuridão', nivel: 1, tipo: 'Defesa', desc: 'Reduz dano de ataques de criaturas das Trevas.' },
+    { nome: 'Acalentar a Mente', nivel: 1, tipo: 'Sanidade', desc: 'Recupera 1d6 de SAN do alvo.' },
+    { nome: 'Ajudante do Hog', nivel: 2, tipo: 'Proteção', desc: 'Invoca ajuda invisível por uma cena.' },
+    { nome: 'Amaldiçoar', nivel: 1, tipo: 'Ataque', desc: 'Causa -1d6 em testes do alvo por uma cena.' },
+    { nome: 'Ancoragem', nivel: 2, tipo: 'Resistência', desc: '+2 em testes de Vontade por uma cena.' },
+    { nome: 'Augúrio', nivel: 1, tipo: 'Informação', desc: 'Recebe uma visão do futuro próximo.' },
+    { nome: 'Benção', nivel: 1, tipo: 'Defesa', desc: '+1d6 em testes de defesa contra criaturas das Trevas.' },
+    { nome: 'Campo de Força', nivel: 3, tipo: 'Defesa', desc: 'Absorve 2d6 pontos de dano por uma cena.' },
+    { nome: 'Canalizar Energia', nivel: 1, tipo: 'Ataque', desc: 'Causa 2d6 de dano em criatura das Trevas.' },
+    { nome: 'Carga', nivel: 3, tipo: 'Força', desc: 'Ganha +2 em FOR por uma cena.' },
+    { nome: 'Comunhão', nivel: 3, tipo: 'Informação', desc: 'Pode fazer 3 perguntas a uma entidade.' },
+    { nome: 'Comunicar', nivel: 1, tipo: 'Informação', desc: 'Comunica-se com espíritos ou fantasmas.' },
+    { nome: 'Consagrar', nivel: 2, tipo: 'Proteção', desc: 'Área se torna impura para criaturas das Trevas.' },
+    { nome: 'Curar Ferimentos', nivel: 1, tipo: 'Cura', desc: 'Cura 2d6 de PV de um aliado.' },
+    { nome: 'Curar Trauma', nivel: 2, tipo: 'Sanidade', desc: 'Recupera 2d6 de SAN do alvo.' },
+    { nome: 'Detectar Amença', nivel: 1, tipo: 'Informação', desc: 'Percebe presençasHostis em 20m.' },
+    { nome: 'Enfeitiçar', nivel: 2, tipo: 'Controle', desc: 'Controla ações de um humano por uma cena.' },
+    { nome: 'Escudo', nivel: 1, tipo: 'Defesa', desc: '+2 na Defesa por uma cena.' },
+    { nome: 'Escudo de Fé', nivel: 2, tipo: 'Defesa', desc: '+4 na Defesa contra criaturas das Trevas.' },
+    { nome: 'Força do Urso', nivel: 2, tipo: 'Força', desc: '+1d6 em testes de FOR e Luta por uma cena.' },
+    { nome: 'Fortuna', nivel: 2, tipo: 'Sorte', desc: 'Rola novamente um teste falho.' },
+    { nome: 'Ira', nivel: 2, tipo: 'Ataque', desc: 'Causa 3d6 de dano em criaturas das Trevas.' },
+    { nome: 'Intoxicação', nivel: 3, tipo: 'Ataque', desc: 'Envenena o alvo com dano progressivo.' },
+    { nome: 'Inversão', nivel: 3, tipo: 'Controle', desc: 'Inverte a situação: ferido causa dano.' },
+    { nome: 'Julgar', nivel: 2, tipo: 'Ataque', desc: 'Causa 1d6 de SAN em criatura das Trevas.' },
+    { nome: 'Lamento', nivel: 2, tipo: 'Ataque', desc: 'Causa 1d6 de SAN em todos na área.' },
+    { nome: 'Luz', nivel: 1, tipo: 'Proteção', desc: 'Cria fonte de luz que afasta criaturas das Trevas.' },
+    { nome: 'Maré', nivel: 2, tipo: 'Resistência', desc: '+2d6 em testes de Vontade contra medo.' },
+    { nome: 'Medida Cautelar', nivel: 3, tipo: 'Defesa', desc: 'Pode evitar um ataque automaticamente.' },
+    { nome: 'Muralha', nivel: 3, tipo: 'Defesa', desc: 'Cria barreira física 360 pontos.' },
+    { nome: 'Palavra da Vida', nivel: 2, tipo: 'Cura', desc: 'Cura 4d6 de PV e remove Envenenado.' },
+    { nome: 'Palavra de Cura', nivel: 1, tipo: 'Cura', desc: 'Cura 2d6+PE de PV de um aliado.' },
+    { nome: 'Palavra Sagrada', nivel: 2, tipo: 'Ataque', desc: 'Causa 2d6 de SAN em criatura das Trevas.' },
+    { nome: 'Possessão', nivel: 3, tipo: 'Controle', desc: 'Possui um humano por uma cena.' },
+    { nome: 'Presença', nivel: 2, tipo: 'Controle', desc: 'Inspiração em aliados: +2d6 em testes por uma cena.' },
+    { nome: 'Profecia', nivel: 3, tipo: 'Informação', desc: 'Visão clara do futuro em uma cena específica.' },
+    { nome: 'Purificação', nivel: 1, tipo: 'Cura', desc: 'Remove condição Envenenado ou Doente.' },
+    { nome: 'Raio', nivel: 2, tipo: 'Ataque', desc: 'Causa 2d6 de dano em alvo a distância.' },
+    { nome: 'Ritual da Alma', nivel: 3, tipo: 'Especial', desc: 'Muda a SAN máxima permanentemente.' },
+    { nome: 'Sangue', nivel: 3, tipo: 'Força', desc: 'Troca PV por bônus em testes de Luta.' },
+    { nome: 'Santo', nivel: 2, tipo: 'Proteção', desc: 'Imune a efeitos de medo por uma cena.' },
+    { nome: 'Sentidos', nivel: 1, tipo: 'Informação', desc: 'Percebe presença de entidades.' },
+    { nome: 'Símbolo da Dor', nivel: 1, tipo: 'Ataque', desc: 'Causa 1d6 de SAN em todos na área.' },
+    { nome: 'Terceira Visão', nivel: 1, tipo: 'Informação', desc: 'Revela passado oculto de objeto ou pessoa.' },
+    { nome: 'Toque Feérico', nivel: 2, tipo: 'Cura', desc: 'Cura 2d6 de PV e 1d6 de SAN.' },
+    { nome: 'Vela', nivel: 1, tipo: 'Proteção', desc: 'Cria área segura contra criaturas das Trevas.' },
+    { nome: 'Visão do Destino', nivel: 3, tipo: 'Informação', desc: 'Vê destino do alvo.' }
+];
+
+// ====================
+// AJUDA DE CRIAÇÃO
+// ====================
+
+function showCharCreationHelp(tipo) {
+    let html = '';
+    if (tipo === 'origens') {
+        html = '<strong>ESCOLHA SUA ORIGEM</strong><br><small>Clique em uma origem para selecioná-la</small><br><br>';
+        origens.forEach(o => {
+            html += `<div class="help-item" onclick="selectOrigem('${o.nome}')">
+                <strong>${o.nome}</strong><br>
+                <small>${o.desc}</small>
+            </div>`;
+        });
+    } else if (tipo === 'classes') {
+        html = '<strong>ESCOLHA SUA CLASSE</strong><br><small>Clique em uma classe para selecioná-la</small><br><br>';
+        classes.forEach(c => {
+            html += `<div class="help-item" onclick="selectClasse('${c.nome}')">
+                <strong>${c.nome}</strong><br>
+                <small>${c.desc}</small>
+            </div>`;
+        });
+    } else if (tipo === 'rituais') {
+        html = '<strong>RITUAIS DISPONÍVEIS</strong><br><small>Escolha rituais conforme seu nível de Ocultismo</small><br><br>';
+        rituais.forEach(r => {
+            html += `<div class="help-item">
+                <strong>${r.nome}</strong> <small>(Nível ${r.nivel}, ${r.tipo})</small><br>
+                <small>${r.desc}</small>
+            </div>`;
+        });
+    }
+    
+    const modal = document.createElement('div');
+    modal.className = 'help-modal';
+    modal.innerHTML = `<div class="help-content">${html}<button class="btn-add" onclick="this.closest('.help-modal').remove()">Fechar</button></div>`;
+    modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+    document.body.appendChild(modal);
+}
+
+function selectOrigem(nome) {
+    document.getElementById('charOrigin').value = nome;
+    const origem = origens.find(o => o.nome === nome);
+    if (origem) {
+        addMessage('system', `✅ <strong>Origem escolhida: ${nome}</strong><br>${origem.desc}`);
+    }
+    document.querySelector('.help-modal')?.remove();
+}
+
+function selectClasse(nome) {
+    document.getElementById('charClass').value = nome;
+    const classe = classes.find(c => c.nome === nome);
+    if (classe) {
+        addMessage('system', `✅ <strong>Classe escolhida: ${nome}</strong><br>${classe.desc}`);
+    }
+    document.querySelector('.help-modal')?.remove();
+}
+
+// Adicionar estilos para o modal de ajuda
+const helpStyles = document.createElement('style');
+helpStyles.textContent = `
+.help-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+}
+.help-content {
+    background: #161616;
+    border: 1px solid #A347FF;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 100%;
+}
+.help-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #1a1a1a;
+    border-left: 3px solid #A347FF;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #e0e0e0;
+}
+.help-item:hover {
+    background: #222;
+    border-left-color: #f0c040;
+}
+.help-item strong {
+    color: #f0c040;
+}
+.help-item small {
+    color: #888;
+}
+`;
+document.head.appendChild(helpStyles);

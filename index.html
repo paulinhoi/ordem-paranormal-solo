@@ -56,7 +56,10 @@
                     <div class="avatar" onclick="alert('Trocar avatar')">👤</div>
                     <div class="identity-info">
                         <input type="text" id="charName" class="input-name" placeholder="Nome do personagem" value="">
-                        <input type="text" id="charOrigin" class="input-origin" placeholder="Origem" value="">
+                        <div class="input-with-btn">
+                            <input type="text" id="charOrigin" class="input-origin" placeholder="Origem" value="">
+                            <button class="btn-help" onclick="showCharCreationHelp('origens')" title="Ver origens">?</button>
+                        </div>
                     </div>
                 </div>
                 <div class="identity-fields">
@@ -66,7 +69,10 @@
                     </div>
                     <div class="field-row">
                         <label>CLASSE</label>
-                        <input type="text" id="charClass" placeholder="Combatente" value="">
+                        <div class="input-with-btn">
+                            <input type="text" id="charClass" placeholder="Combatente" value="">
+                            <button class="btn-help" onclick="showCharCreationHelp('classes')" title="Ver classes">?</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -295,8 +301,10 @@
             <!-- Tab: RITUAIS -->
             <div class="tab-content" id="tab-rituais">
                 <section class="card">
-                    <button class="btn-add" onclick="addRitual()">+ Novo Ritual</button>
-                    <div id="rituais-lista"></div>
+                    <button class="btn-add" onclick="showCharCreationHelp('rituais')">📜 Ver Todos os Rituais</button>
+                    <div id="rituais-lista">
+                        <p class="hint">Escolha rituais conforme seu nível de Ocultismo.<br>Use o botão acima para ver todos os rituais disponíveis.</p>
+                    </div>
                 </section>
             </div>
 
