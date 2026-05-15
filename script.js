@@ -718,26 +718,37 @@ function loadConfig() {
 // ====================
 
 const origens = [
-    { nome: 'Acadêmico', desc: 'Formação em universidade. Bônus: Ciências +5, Investigação +5, Ocultismo +5. Você sabe investigar o paranormal academicamente.' },
-    { nome: 'Agente de Saúde', desc: 'Médico, enfermeiro ou paramédico. Bônus: Medicina +5, Diplomacia +5. Você trata tanto o corpo quanto a mente.' },
+    { nome: 'Acadêmico', desc: 'Formação universitária. Bônus: Ciências +5, Investigação +5, Ocultismo +5. Você investiga o paranormal academicamente.' },
+    { nome: 'Agente de Saúde', desc: 'Médico, enfermeiro ou paramédico. Bônus: Medicina +5, Diplomacia +5. Trata tanto o corpo quanto a mente.' },
     { nome: 'Artista', desc: 'Ator, músico ou artista plástico. Bônus: Artes +5, Enganação +5, Intuição +5. Você interpreta e entende emoções.' },
     { nome: 'Atleta', desc: 'Atleta profissional ou amador dedicado. Bônus: Atletismo +5, Luta +5, Iniciativa +5. Seu corpo é sua arma.' },
-    { nome: 'Criminoso', desc: 'Passado no mundo do crime. Bônus: Crime +5, Furtividade +5, Intimidação +5. Você sabe como trabalhar nas sombras.' },
+    { nome: 'Chef', desc: 'Cozinheiro profissional. Bônus: Profissão +5, Investigação +5, Crime +5. Conhece os segredos dos ingredientes.' },
+    { nome: 'Criminoso', desc: 'Passado no mundo do crime. Bônus: Crime +5, Furtividade +5, Intimidação +5. Você trabalha nas sombras.' },
+    { nome: 'Desgarrado', desc: 'Morador de rua ou excluído social. Bônus: Crime +5, Furtividade +5, Vontade +5. Sobrevive onde outros morrem.' },
     { nome: 'Detetive', desc: 'Investigador particular ou policial. Bônus: Investigação +5, Percepção +5, Intuição +5. Você encontra o que outros perdem.' },
     { nome: 'Engenheiro', desc: 'Formação técnica ou arquitetura. Bônus: Tecnologia +5, Profissão +5. Você conserta e cria soluções.' },
-    { nome: 'Executive', desc: 'Executivo, advogado ou político. Bônus: Diplomacia +5, Crime +5, Persuasão +5. Você comanda e influencia.' },
+    { nome: 'Espião', desc: 'Agente secreto ou infiltrado. Bônus: Crime +5, Enganação +5, Furtividade +5. Você é invisível quando quer.' },
+    { nome: 'Executive', desc: 'Executivo, advogado ou político. Bônus: Diplomacia +5, Crime +5, Investigação +5. Você comanda e influencia.' },
     { nome: 'Faz-tudo', desc: 'Mão de obra geral, mecânico. Bônus: Profissão +5, Crime +5, Tática +5. Você resolve qualquer problema prático.' },
-    { nome: 'Gambiarra', desc: 'Faz tudo com improvisos criativos. Bônus: Tecnologia +5, Profissão +5, Crime +5. Soluções engenhosas para qualquer problema.' },
     { nome: 'Investigador', desc: 'Jornalista ou blogger. Bônus: Investigação +5, Atualidades +5, Intuição +5. Você pesquisa e descobre verdades.' },
     { nome: 'Lenda Urbana', desc: 'Acredita em conspirações e monstros. Bônus: Ocultismo +5, Intuição +5, Sobrevivência +5. Você já viu coisas que não deveria.' },
+    { nome: 'Médico', desc: 'Doutor ou cirurgião. Bônus: Medicina +10, Ciências +5. Você salva vidas e conhece o corpo humano.' },
     { nome: 'Médium', desc: 'Sensitivo ou canalizador. Bônus: Ocultismo +5, Religião +5, Intuição +10. Você percebe o que outros não veem.' },
     { nome: 'Militar', desc: 'Ex-membro das Forças Armadas. Bônus: Tática +5, Pontaria +5, Atletismo +5. Treinado para combate e disciplina.' },
     { nome: 'Motorista', desc: 'Motorista profissional ou piloto. Bônus: Pilotagem +5, Crime +5, Atletismo +5. Você vive nas estradas.' },
-    { nome: 'Religioso', desc: 'Padre, padre, monge ou devoto. Bônus: Religião +10, Ocultismo +5, Vontade +5. Sua fé é sua proteção.' },
+    { nome: 'Operador', desc: 'Telefonista, teleoperador ou DJ. Bônus: Crime +5, Atualidades +5, Enganação +5. Sua voz é sua ferramenta.' },
+    { nome: 'Padre', desc: 'Sacerdote ou líder religioso. Bônus: Religião +10, Ocultismo +5, Vontade +5. Sua fé é sua proteção.' },
+    { nome: 'Policial', desc: 'Polícia Militar ou Federal. Bônus: Crime +5, Tática +5, Pontaria +5. A lei é sua arma.' },
+    { nome: 'Professor', desc: 'Educador ou mestre. Bônus: Profissão +5, Investigação +5, Ciências +5. Você transmite conhecimento.' },
     { nome: 'Reporter', desc: 'Jornalista investigativo. Bônus: Investigação +5, Atualidades +5, Crime +5. Você conta a verdade ao mundo.' },
+    { nome: 'Técnico de TI', desc: 'Profissional de informática. Bônus: Tecnologia +10, Ciências +5. Você hackera e entende sistemas.' },
+    { nome: 'Teólogo', desc: 'Estudioso de religiões. Bônus: Religião +5, Ocultismo +5, Investigação +5. Você conhece os segredos da fé.' },
     { nome: 'Tiete', desc: 'Fã obsessivo de algo específico. Bônus: Profissão +5, Crime +5, Atualidades +5. Conhecimento profundo de um tema.' },
-    { nome: 'Triz', desc: 'Gêmeo com conexão especial. Bônus: Intuição +5, Ocultismo +5. Sabe quando o outro está em perigo.' },
-    { nome: 'Uuid', desc: 'Sobrevivente de incidente inexplicável. Bônus: Vontade +5, Sanidade +5. "Eu estava lá quando tudo começou."' }
+    { nome: 'Tratador', desc: 'Trabalha com animais ou plantas. Bônus: Sobrevivência +5, Veterinária +5, Atletismo +5. Você se adapta à natureza.' },
+    { nome: 'Ubíquo', desc: 'Sobrevivente de incidente inexplicável. Bônus: Vontade +5, Sanidade +5. "Eu estava lá quando tudo começou."' },
+    { nome: 'Veterano', desc: 'Ex-combatente de conflitos. Bônus: Tática +5, Intimidação +5, Pontaria +5. Você já viu horrores de guerra.' },
+    { nome: 'Videomaker', desc: 'Produtor de vídeos ou streams. Bônus: Artes +5, Atualidades +5, Investigação +5. Sua câmera registra tudo.' },
+    { nome: 'Youtuber', desc: 'Criador de conteúdo digital. Bônus: Artes +5, Atualidades +5, Enganação +5. Você viraliza informações.' }
 ];
 
 const classes = [
