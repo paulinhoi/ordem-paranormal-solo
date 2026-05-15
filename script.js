@@ -718,37 +718,58 @@ function loadConfig() {
 // ====================
 
 const origens = [
-    { nome: 'Acadêmico', desc: 'Formação universitária. Bônus: Ciências +5, Investigação +5, Ocultismo +5. Você investiga o paranormal academicamente.' },
-    { nome: 'Agente de Saúde', desc: 'Médico, enfermeiro ou paramédico. Bônus: Medicina +5, Diplomacia +5. Trata tanto o corpo quanto a mente.' },
-    { nome: 'Artista', desc: 'Ator, músico ou artista plástico. Bônus: Artes +5, Enganação +5, Intuição +5. Você interpreta e entende emoções.' },
-    { nome: 'Atleta', desc: 'Atleta profissional ou amador dedicado. Bônus: Atletismo +5, Luta +5, Iniciativa +5. Seu corpo é sua arma.' },
-    { nome: 'Chef', desc: 'Cozinheiro profissional. Bônus: Profissão +5, Investigação +5, Crime +5. Conhece os segredos dos ingredientes.' },
-    { nome: 'Criminoso', desc: 'Passado no mundo do crime. Bônus: Crime +5, Furtividade +5, Intimidação +5. Você trabalha nas sombras.' },
-    { nome: 'Desgarrado', desc: 'Morador de rua ou excluído social. Bônus: Crime +5, Furtividade +5, Vontade +5. Sobrevive onde outros morrem.' },
-    { nome: 'Detetive', desc: 'Investigador particular ou policial. Bônus: Investigação +5, Percepção +5, Intuição +5. Você encontra o que outros perdem.' },
-    { nome: 'Engenheiro', desc: 'Formação técnica ou arquitetura. Bônus: Tecnologia +5, Profissão +5. Você conserta e cria soluções.' },
-    { nome: 'Espião', desc: 'Agente secreto ou infiltrado. Bônus: Crime +5, Enganação +5, Furtividade +5. Você é invisível quando quer.' },
-    { nome: 'Executive', desc: 'Executivo, advogado ou político. Bônus: Diplomacia +5, Crime +5, Investigação +5. Você comanda e influencia.' },
-    { nome: 'Faz-tudo', desc: 'Mão de obra geral, mecânico. Bônus: Profissão +5, Crime +5, Tática +5. Você resolve qualquer problema prático.' },
-    { nome: 'Investigador', desc: 'Jornalista ou blogger. Bônus: Investigação +5, Atualidades +5, Intuição +5. Você pesquisa e descobre verdades.' },
-    { nome: 'Lenda Urbana', desc: 'Acredita em conspirações e monstros. Bônus: Ocultismo +5, Intuição +5, Sobrevivência +5. Você já viu coisas que não deveria.' },
-    { nome: 'Médico', desc: 'Doutor ou cirurgião. Bônus: Medicina +10, Ciências +5. Você salva vidas e conhece o corpo humano.' },
-    { nome: 'Médium', desc: 'Sensitivo ou canalizador. Bônus: Ocultismo +5, Religião +5, Intuição +10. Você percebe o que outros não veem.' },
-    { nome: 'Militar', desc: 'Ex-membro das Forças Armadas. Bônus: Tática +5, Pontaria +5, Atletismo +5. Treinado para combate e disciplina.' },
-    { nome: 'Motorista', desc: 'Motorista profissional ou piloto. Bônus: Pilotagem +5, Crime +5, Atletismo +5. Você vive nas estradas.' },
-    { nome: 'Operador', desc: 'Telefonista, teleoperador ou DJ. Bônus: Crime +5, Atualidades +5, Enganação +5. Sua voz é sua ferramenta.' },
-    { nome: 'Padre', desc: 'Sacerdote ou líder religioso. Bônus: Religião +10, Ocultismo +5, Vontade +5. Sua fé é sua proteção.' },
-    { nome: 'Policial', desc: 'Polícia Militar ou Federal. Bônus: Crime +5, Tática +5, Pontaria +5. A lei é sua arma.' },
-    { nome: 'Professor', desc: 'Educador ou mestre. Bônus: Profissão +5, Investigação +5, Ciências +5. Você transmite conhecimento.' },
-    { nome: 'Reporter', desc: 'Jornalista investigativo. Bônus: Investigação +5, Atualidades +5, Crime +5. Você conta a verdade ao mundo.' },
-    { nome: 'Técnico de TI', desc: 'Profissional de informática. Bônus: Tecnologia +10, Ciências +5. Você hackera e entende sistemas.' },
-    { nome: 'Teólogo', desc: 'Estudioso de religiões. Bônus: Religião +5, Ocultismo +5, Investigação +5. Você conhece os segredos da fé.' },
-    { nome: 'Tiete', desc: 'Fã obsessivo de algo específico. Bônus: Profissão +5, Crime +5, Atualidades +5. Conhecimento profundo de um tema.' },
-    { nome: 'Tratador', desc: 'Trabalha com animais ou plantas. Bônus: Sobrevivência +5, Veterinária +5, Atletismo +5. Você se adapta à natureza.' },
-    { nome: 'Ubíquo', desc: 'Sobrevivente de incidente inexplicável. Bônus: Vontade +5, Sanidade +5. "Eu estava lá quando tudo começou."' },
-    { nome: 'Veterano', desc: 'Ex-combatente de conflitos. Bônus: Tática +5, Intimidação +5, Pontaria +5. Você já viu horrores de guerra.' },
-    { nome: 'Videomaker', desc: 'Produtor de vídeos ou streams. Bônus: Artes +5, Atualidades +5, Investigação +5. Sua câmera registra tudo.' },
-    { nome: 'Youtuber', desc: 'Criador de conteúdo digital. Bônus: Artes +5, Atualidades +5, Enganação +5. Você viraliza informações.' }
+    { nome: 'Acadêmico', pericias: ['Ciências +5', 'Investigação +5'], poder: 'Saber é Poder: Pode gastar 2 PE para +5 em testes de Intelecto' },
+    { nome: 'Agente de Saúde', pericias: ['Medicina +5', 'Diplomacia +5'], poder: 'Técnica Medicinal: Quando cura, soma Intelecto no total de PV curados' },
+    { nome: 'Amigo dos Animais', pericias: ['Adestramento +5', 'Sobrevivência +5'], poder: 'Amigo dos Bichos: Pode se comunicar com animais' },
+    { nome: 'Artista', pericias: ['Artes +5', 'Enganação +5'], poder: 'Magnum Opus: 1x por missão, pode ser reconhecido por um personagem' },
+    { nome: 'Atleta', pericias: ['Acrobacia +5', 'Atletismo +5'], poder: '110%: Pode gastar 2 PE para +5 em testes de FOR ou AGI' },
+    { nome: 'Chef', pericias: ['Fortitude +5', 'Profissão +5'], poder: 'Ingrediente Secreto: Pode criar pratos que concedem bônus' },
+    { nome: 'Cientista Forense', pericias: ['Investigação +5', 'Medicina +5'], poder: 'Reconstrução: Pode analisar cenas com testes de Investigação' },
+    { nome: 'Colegial', pericias: ['Atualidades +5', 'Investigação +5'], poder: 'Bolsa de Estudos: Pode usar Investigação para lembrar informações' },
+    { nome: 'Criminoso', pericias: ['Crime +5', 'Furtividade +5'], poder: 'O Crime Compensa: Ao final da missão, escolhe um item extra' },
+    { nome: 'Cultista Arrependido', pericias: ['Ocultismo +5', 'Religião +5'], poder: 'Fé Abrandada: Pode usar Ocultismo com +1d20' },
+    { nome: 'Desgarrado', pericias: ['Sobrevivência +5', 'Furtividade +5'], poder: 'Vivendo da Terra: Pode recolher alimentos e água' },
+    { nome: 'Detetive', pericias: ['Investigação +5', 'Percepção +5'], poder: 'Investigação: Pode fazer testes para encontrar pistas' },
+    { nome: 'Diplomata', pericias: ['Diplomacia +5', 'Intuição +5'], poder: 'Carisma: Pode usar Diplomacia para influenciar pessoas' },
+    { nome: 'Engenheiro', pericias: ['Tecnologia +5', 'Profissão +5'], poder: 'Conhecimento Técnico: Pode reparar e criar itens' },
+    { nome: 'Escritor', pericias: ['Artes +5', 'Investigação +5'], poder: 'Contos: Pode criar histórias que afetam a realidade' },
+    { nome: 'Espião', pericias: ['Enganação +5', 'Furtividade +5'], poder: 'Rastreador Tático: Pode espionar discretamente' },
+    { nome: 'Executive', pericias: ['Diplomacia +5', 'Intuição +5'], poder: 'Contatos: Pode usar Diplomacia para obter informações' },
+    { nome: 'Explorador', pericias: ['Sobrevivência +5', 'Percepção +5'], poder: 'Navegação: Pode usar Sobrevivência para se orientar' },
+    { nome: 'Fotógrafo', pericias: ['Artes +5', 'Investigação +5'], poder: 'Capturando Momentos: Pode usar fotografia para investigar' },
+    { nome: 'Ginasta', pericias: ['Acrobacia +5', 'Reflexos +5'], poder: 'Corpo Leve: Pode usar Acrobacia para pular mais alto' },
+    { nome: 'Investigador', pericias: ['Investigação +5', 'Percepção +5'], poder: 'Investigação: Pode fazer testes para encontrar pistas' },
+    { nome: 'Jovem Místico', pericias: ['Ocultismo +5', 'Intuição +5'], poder: 'Sinal: Percebe o paranormal mais facilmente' },
+    { nome: 'Jornalista', pericias: ['Atualidades +5', 'Investigação +5'], poder: 'Contatos: Pode usar Atualidades para obter informações' },
+    { nome: 'Legista', pericias: ['Investigação +5', 'Percepção +5'], poder: 'Análise Post-Mortem: Pode analisar corpos' },
+    { nome: 'Lutador', pericias: ['Luta +5', 'Atletismo +5'], poder: 'Lutador: Ataques desarmados com +1d20' },
+    { nome: 'Magnata', pericias: ['Diplomacia +5', 'Intuição +5'], poder: 'Patrocínio: Pode gastar dinheiro para obter vantagens' },
+    { nome: 'Mateiro', pericias: ['Sobrevivência +5', 'Atletismo +5'], poder: 'Herbalismo: Pode criar itens com plantas' },
+    { nome: 'Médico', pericias: ['Medicina +10', 'Ciências +5'], poder: 'Médico: Conhece o corpo humano e salva vidas' },
+    { nome: 'Médium', pericias: ['Ocultismo +5', 'Religião +5'], poder: 'Canalização: Pode perceber o que outros não veem' },
+    { nome: 'Mercenário', pericias: ['Pontaria +5', 'Crime +5'], poder: 'Tática Militar: Pode usar Pontaria ou Crime com +1d20' },
+    { nome: 'Militar', pericias: ['Pontaria +5', 'Vontade +5'], poder: 'Treino Rígido: Pode usar Pontaria ou Vontade com +1d20' },
+    { nome: 'Motorista', pericias: ['Pilotagem +5', 'Reflexos +5'], poder: 'Corrida: Pode usar Pilotagem para corrida' },
+    { nome: 'Nerd Entusiasta', pericias: ['Tecnologia +5', 'Investigação +5'], poder: 'Gamer: Pode usar Tecnologia para jogos e相关信息' },
+    { nome: 'Ocultista', pericias: ['Ocultismo +5', 'Vontade +5'], poder: 'Praticante: Conhece rituais e segredos paranormais' },
+    { nome: 'Operário', pericias: ['Atletismo +5', 'Fortitude +5'], poder: 'Força de Trabalho: Pode usar Atletismo para trabalho físico' },
+    { nome: 'Padre', pericias: ['Religião +10', 'Vontade +5'], poder: 'Fé: Pode usar Religião para resistir a efeitos' },
+    { nome: 'Personal Trainer', pericias: ['Atletismo +5', 'Medicina +5'], poder: 'Treino: Pode usar Atletismo para treinar outros' },
+    { nome: 'Pesquisador Paranormal', pericias: ['Ciências +5', 'Ocultismo +5'], poder: 'Experimentos: Pode fazer experimentos paranormais' },
+    { nome: 'Policial', pericias: ['Crime +5', 'Percepção +5'], poder: 'Autoridade: Pode usar Crime para intimidar' },
+    { nome: 'Professor', pericias: ['Profissão +5', 'Diplomacia +5'], poder: 'Ensino: Pode usar Conhecimento para ensinar' },
+    { nome: 'Profeta', pericias: ['Ocultismo +5', 'Intuição +5'], poder: 'Profecia: Pode ter visões do futuro' },
+    { nome: 'Psicólogo', pericias: ['Intuição +5', 'Medicina +5'], poder: 'Psy: Pode usar Intuição para ajudar outros' },
+    { nome: 'Rapaz-Obediente', pericias: ['Adestramento +5', 'Crime +5'], poder: 'Obediente: Pode seguir ordens com precisão' },
+    { nome: 'Religioso', pericias: ['Religião +10', 'Vontade +5'], poder: 'Fé: Pode usar Religião para resistir a efeitos' },
+    { nome: 'Reporter', pericias: ['Atualidades +5', 'Investigação +5'], poder: 'Entrevista: Pode usar Atualidades para obter informações' },
+    { nome: 'Sobrevivente', pericias: ['Sobrevivência +5', 'Fortitude +5'], poder: 'Sobreviver: Sabe como se manter vivo em situações extremas' },
+    { nome: 'T.I.', pericias: ['Tecnologia +10', 'Investigação +5'], poder: 'Hacker: Pode usar Tecnologia para hackear' },
+    { nome: 'Teólogo', pericias: ['Religião +5', 'Ocultismo +5'], poder: 'Teologia: Conhece os segredos das religiões' },
+    { nome: 'Ubíquo', pericias: ['Vontade +5', 'Fortitude +5'], poder: 'Sobrevivente: Estava lá quando tudo começou' },
+    { nome: 'Universitário', pericias: ['Investigação +5', 'Atualidades +5'], poder: 'Conhecimento: Pode usar perícias com +1d20' },
+    { nome: 'Vigiante', pericias: ['Iniciativa +5', 'Percepção +5'], poder: 'Vigília: Pode perceber ameaças antes' },
+    { nome: 'Vitimado', pericias: ['Vontade +5', 'Intuição +5'], poder: 'Marco: Momento de lucidez em situações extremas' }
 ];
 
 const classes = [
@@ -820,7 +841,8 @@ function showCharCreationHelp(tipo) {
         origens.forEach(o => {
             html += `<div class="help-item" onclick="selectOrigem('${o.nome}')">
                 <strong>${o.nome}</strong><br>
-                <small>${o.desc}</small>
+                <small><strong>Perícias:</strong> ${o.pericias.join(' | ')}</small><br>
+                <small><strong>Poder:</strong> ${o.poder}</small>
             </div>`;
         });
     } else if (tipo === 'classes') {
@@ -854,25 +876,22 @@ function selectOrigem(nome) {
     const origem = origens.find(o => o.nome === nome);
     
     if (origem) {
-        addMessage('system', `✅ <strong>Origem escolhida: ${nome}</strong><br>${origem.desc}`);
+        addMessage('system', `✅ <strong>Origem: ${nome}</strong><br><br><strong>Perícias:</strong> ${origem.pericias.join(' | ')}<br><br><strong>Poder:</strong> ${origem.poder}`);
         
-        // Aplicar bônus da origem
-        const match = origem.desc.match(/([A-Za-z\u00C0-\u024F]+(?:\s[A-Za-z\u00C0-\u024F]+)*)\s*\+\s*(\d+)/g);
-        if (match) {
-            match.forEach(bonus => {
-                const parts = bonus.match(/([A-Za-z\u00C0-\u024F\s]+)\+\s*(\d+)/);
-                if (parts) {
-                    const skillName = parts[1].trim();
-                    const value = parseInt(parts[2]);
-                    const skill = pericias.find(p => p.nome.toLowerCase() === skillName.toLowerCase());
-                    if (skill) {
-                        skill.treino = value;
-                    }
+        // Aplicar bônus das perícias da origem
+        origem.pericias.forEach(pericia => {
+            const match = pericia.match(/([A-Za-z\u00C0-\u024F\s]+)\s*\+\s*(\d+)/);
+            if (match) {
+                const skillName = match[1].trim();
+                const value = parseInt(match[2]);
+                const skill = pericias.find(p => p.nome.toLowerCase() === skillName.toLowerCase());
+                if (skill) {
+                    skill.treino = Math.max(skill.treino, value);
                 }
-            });
-            renderSkills();
-            addMessage('system', `🎯 Bônus aplicados às perícias!`);
-        }
+            }
+        });
+        renderSkills();
+        addMessage('system', `🎯 Bônus de perícias aplicados!`);
     }
     saveData();
     document.querySelector('.help-modal')?.remove();
@@ -884,7 +903,7 @@ function selectClasse(nome) {
     const classe = classes.find(c => c.nome === nome);
     
     if (classe) {
-        addMessage('system', `✅ <strong>Classe escolhida: ${nome}</strong><br>${classe.desc}`);
+        addMessage('system', `✅ <strong>Classe: ${nome}</strong><br>${classe.desc}`);
         
         // Aplicar perícias treinadas da classe
         const treinadasMatch = classe.desc.match(/Perícias treinadas:\s*([^.]+)/i);
