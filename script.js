@@ -850,19 +850,57 @@ function showCharCreationHelp(tipo) {
 
 function selectOrigem(nome) {
     document.getElementById('charOrigin').value = nome;
+    gameState.personagem.origem = nome;
     const origem = origens.find(o => o.nome === nome);
+    
     if (origem) {
         addMessage('system', `✅ <strong>Origem escolhida: ${nome}</strong><br>${origem.desc}`);
+        
+        // Aplicar bônus da origem
+        const match = origem.desc.match(/([A-Za-z\u00C0-\u024F]+(?:\s[A-Za-z\u00C0-\u024F]+)*)\s*\+\s*(\d+)/g);
+        if (match) {
+            match.forEach(bonus => {
+                const parts = bonus.match(/([A-Za-z\u00C0-\u024F\s]+)\+\s*(\d+)/);
+                if (parts) {
+                    const skillName = parts[1].trim();
+                    const value = parseInt(parts[2]);
+                    const skill = pericias.find(p => p.nome.toLowerCase() === skillName.toLowerCase());
+                    if (skill) {
+                        skill.treino = value;
+                    }
+                }
+            });
+            renderSkills();
+            addMessage('system', `🎯 Bônus aplicados às perícias!`);
+        }
     }
+    saveData();
     document.querySelector('.help-modal')?.remove();
 }
 
 function selectClasse(nome) {
     document.getElementById('charClass').value = nome;
+    gameState.personagem.classe = nome;
     const classe = classes.find(c => c.nome === nome);
+    
     if (classe) {
         addMessage('system', `✅ <strong>Classe escolhida: ${nome}</strong><br>${classe.desc}`);
+        
+        // Aplicar perícias treinadas da classe
+        const treinadasMatch = classe.desc.match(/Perícias treinadas:\s*([^.]+)/i);
+        if (treinadasMatch) {
+            const treinadasList = treinadasMatch[1].split(',').map(s => s.trim());
+            treinadasList.forEach(skillName => {
+                const skill = pericias.find(p => p.nome.toLowerCase().includes(skillName.toLowerCase()));
+                if (skill && skill.treino === 0) {
+                    skill.treino = 5;
+                }
+            });
+            renderSkills();
+            addMessage('system', `🎯 Perícias treinadas da classe aplicadas!`);
+        }
     }
+    saveData();
     document.querySelector('.help-modal')?.remove();
 }
 
