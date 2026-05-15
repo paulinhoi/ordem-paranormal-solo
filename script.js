@@ -775,83 +775,394 @@ const origens = [
 const classes = [
     { 
         nome: 'Combatente', 
-        desc: 'O Combatente é um especialista em combate físico, dominando armas brancas, firearms e combate corpo a corpo.',
+        desc: `<strong>O Combatente</strong> é um guerreiro treinado para combate, especializado em armas brancas, firearms e combate corpo a corpo. Sua principal força é o alto PV e versatilidade em combate.
+        
+<strong>🔹 Características:</strong>
+• <strong>PV:</strong> 28 + 8 por nível (maior PV base)
+• <strong>SAN:</strong> 20 (base)
+• <strong>PE:</strong> 6 (base)
+• <strong>Perícias Treinadas:</strong> Luta, Atletismo, Pontaria, Intimidação, Fortitude
+• <strong>Armaduras:</strong> Leves, Médias e Pesadas
+• <strong>Armas:</strong> Todas exceto Exóticas
+
+<strong>🔹 Estilos de Combate:</strong>
+• <strong>Estilo de Faca:</strong> +1d20 em ataques desarmados
+• <strong>Estilo com Duas Armas:</strong> Pode usar 2 armas leves
+• <strong>Estilo de Arma de Uma Mão:</strong> +2 em ataques
+• <strong>Estilo de Arma de Duas Mãos:</strong> +1d20 em dano
+• <strong>Estilo de Arma à Distância:</strong> +1d20 em ataques à distância
+
+<strong>🔹 Habilidades por Nível:</strong>
+• <strong>Nível 1:</strong> Perícias treinadas, Estilos de Combate, Ataque Opportunista
+• <strong>Nível 2:</strong> Ataque Poderoso (+1d6), +1 Luta
+• <strong>Nível 3:</strong> Ataque Poderoso (+2d6), RD +2
+• <strong>Nível 4:</strong> Ataque Devastador (ignora RD 5)
+• <strong>Nível 5:</strong> Mestre das Armas (+2 todas armas), Críticos em 19-20
+
+<strong>🔹 Subclasses (Arsenal):</strong>
+• <strong>Bruto:</strong> +2d6 dano, -2 defesa
+• <strong>Escudeiro:</strong> +2 defesa, pode bloquear
+• <strong>Esgrimista:</strong> +2d20 em espadas, +2 initiates
+• <strong>Lanceiro:</strong> +2 ataque com armas longas, +1,5m alcance
+• <strong>Lutador:</strong> Ataques desarmados letais, +2 derrubar
+• <strong>Berserker:</strong> +4 FOR temporário, -2 defesa
+• <strong>Atirador:</strong> +2d20 armas de fogo, mira como ação livre`,
         pvNivel: '+8 PV por nível',
         pericias: 'Luta, Atletismo, Pontaria, Intimidação, Fortitude',
-        armaduras: 'Armaduras médias e pesadas',
-        armas: 'Armas de fogo e brancas',
+        armaduras: 'Leves, Médias e Pesadas',
+        armas: 'Todas exceto Exóticas',
         evolucao: [
-            'Nível 1: +8 PV, perícias treinadas, pode usar 2 armas',
-            'Nível 2: +8 PV, +1 em testes de Luta, pode fazer Ataque Poderoso',
-            'Nível 3: +8 PV, Ataque Poderoso com +2d6, RD +2',
-            'Nível 4: +8 PV, Ataque Devastador, ignora RD 5',
-            'Nível 5: +8 PV, Mestre das Armas, +2 em todas as armas'
+            'Nível 1: +8 PV, perícias treinadas, Estilos de Combate, Ataque Oportunista',
+            'Nível 2: +8 PV, Ataque Poderoso (+1d6), +1 em Luta',
+            'Nível 3: +8 PV, Ataque Poderoso (+2d6), RD +2',
+            'Nível 4: +8 PV, Ataque Devastador (ignora RD 5), +2 em ataques',
+            'Nível 5: +8 PV, Mestre das Armas (+2 todas), críticos em 19-20'
         ]
     },
     { 
         nome: 'Escriba', 
-        desc: 'O Escriba é um estudioso do conhecimento oculto, especializado em investigar e compreender o paranormal.',
-        pvNivel: '+4 SAN por nível',
+        desc: `<strong>O Escriba</strong> é um estudioso do conhecimento oculto, especializado em investigar, compreender e documentar o paranormal. Usa rituais de conhecimento e proteção.
+        
+<strong>🔹 Características:</strong>
+• <strong>PV:</strong> 20 (base)
+• <strong>SAN:</strong> 24 + 4 por nível (maior SAN base)
+• <strong>PE:</strong> 6 (base)
+• <strong>Perícias Treinadas:</strong> Ocultismo, Religião, Investigação, Ciências, Intuição
+• <strong>Armaduras:</strong> Nenhuma
+• <strong>Armas:</strong> Apenas Simples
+
+<strong>🔹 Rituais:</strong>
+O Escriba pode aprender rituais de todos os círculos:
+• <strong>1° Círculo:</strong> Cura, proteção básica, detecção
+• <strong>2° Círculo:</strong> Controle, magia intermediária
+• <strong>3° Círculo:</strong> Magias poderosas, proteção avançada
+
+<strong>🔹 Custo do Paranormal:</strong>
+Rituais custam SAN além de PE. Quanto maior o círculo, maior o custo.
+
+<strong>🔹 Habilidades por Nível:</strong>
+• <strong>Nível 1:</strong> Perícias treinadas, rituais 1° círculo, +1d20 Investigação
+• <strong>Nível 2:</strong> Rituais 2° círculo, pode identificar criaturas
+• <strong>Nível 3:</strong> Rituais 3° círculo, +2 em Ocultismo
+• <strong>Nível 4:</strong> Segredos Ancestrais (-1 PE rituais)
+• <strong>Nível 5:</strong> Arquivo Vivo (conhece todos rituais)
+
+<strong>🔹 Subclasses (Arsenal):</strong>
+• <strong>Conjurador:</strong> Pode invocar entidades menores
+• <strong>Guardião:</strong> Rituais de proteção aprimorados
+• <strong>Ritualista:</strong> -2 PE em todos rituais
+• <strong>Medium:</strong> Pode comunicar com espíritos
+• <strong>Necromante:</strong> Rituais envolvendo morte`,
+        pvNivel: '+0 PV por nível',
         pericias: 'Ocultismo, Religião, Investigação, Ciências, Intuição',
-        armaduras: 'Não usa armaduras',
-        armas: 'Armas simples apenas',
+        armaduras: 'Nenhuma',
+        armas: 'Apenas Simples',
         evolucao: [
-            'Nível 1: +4 SAN, rituais de 1° círculo, +1d20 em Investigação',
-            'Nível 2: +4 SAN, rituais de 2° círculo, pode identificar criaturas',
-            'Nível 3: +4 SAN, rituais de 3° círculo, +2 em testes de Ocultismo',
-            'Nível 4: +4 SAN, Segredos Ancestrais, -1 PE em rituais',
-            'Nível 5: +4 SAN, Arquivo Vivo, conhece todos os rituais'
+            'Nível 1: +4 SAN, rituais 1° círculo, +1d20 Investigação',
+            'Nível 2: +4 SAN, rituais 2° círculo, identificar criaturas',
+            'Nível 3: +4 SAN, rituais 3° círculo, +2 Ocultismo',
+            'Nível 4: +4 SAN, Segredos Ancestrais (-1 PE)',
+            'Nível 5: +4 SAN, Arquivo Vivo (todos rituais)'
         ]
     },
     { 
         nome: 'Instrumentista', 
-        desc: 'O Instrumentista canaliza energia através da música, usando melodias para curar, proteger ou atacar.',
-        pvNivel: '+2 PE por nível',
+        desc: `<strong>O Instrumentista</strong> canaliza energia paranormal através da música. Pode curar aliados, proteger o grupo ou causar dano usando melodias power.
+        
+<strong>🔹 Características:</strong>
+• <strong>PV:</strong> 20 (base)
+• <strong>SAN:</strong> 20 (base)
+• <strong>PE:</strong> 8 + 2 por nível (maior PE base)
+• <strong>Perícias Treinadas:</strong> Artes, Ocultismo, Percepção, Diplomacia, Vontade
+• <strong>Armaduras:</strong> Nenhuma
+• <strong>Armas:</strong> Instrumentos musicais
+
+<strong>🔹 Magias Musicais:</strong>
+O Instrumentista usa música em vez de rituais tradicionais:
+• <strong>Ações:</strong> Tocar (ação de interlúdio)
+• <strong>Alcance:</strong> 9m + 3m por nível
+• <strong>Efeito:</strong> Baseado na melodia escolha
+• <strong>PE:</strong> Custo varia por melodia
+
+<strong>🔹 Melodias por Círculo:</strong>
+• <strong>1° Círculo:</strong> Melodia Calmante, Melodia de Força
+• <strong>2° Círculo:</strong> Melodia Curativa, Melodia de Proteção
+• <strong>3° Círculo:</strong> Melodia de Fúria, Melodia Divina
+
+<strong>🔹 Habilidades por Nível:</strong>
+• <strong>Nível 1:</strong> Perícias treinadas, Magias Musicais, pode tocar para aliados
+• <strong>Nível 2:</strong> Melodia Curativa (1d6 com música)
+• <strong>Nível 3:</strong> Harmonia (+1d6 aliados próximos)
+• <strong>Nível 4:</strong> Crescendo (efeito +1 rodada por nível)
+• <strong>Nível 5:</strong> Obra-Prima (magia sem custo PE)
+
+<strong>🔹 Subclasses (Arsenal):</strong>
+• <strong>Canalizador:</strong> Foco em canalizar energia
+• <strong>Bardo:</strong> Melodias de controle e persuasão
+• <strong>Compositor:</strong> Pode criar novas melodias`,
+        pvNivel: '+0 PV por nível',
         pericias: 'Artes, Ocultismo, Percepção, Diplomacia, Vontade',
-        armaduras: 'Não usa armaduras',
-        armas: 'Qualquer instrumento musical',
+        armaduras: 'Nenhuma',
+        armas: 'Instrumentos musicais',
         evolucao: [
-            'Nível 1: +2 PE, Magias Musicais, pode tocar para aliados',
-            'Nível 2: +2 PE, Melodia Curativa, cura 1d6 com música',
-            'Nível 3: +2 PE, Harmonia, +1d6 em todos os testes de aliados próximos',
-            'Nível 4: +2 PE, Crescendo, efeito dura +1 rodada por nível',
-            'Nível 5: +2 PE, Obra-Prima, pode usar magia sem gastar PE'
+            'Nível 1: +2 PE, Magias Musicais, tocar para aliados',
+            'Nível 2: +2 PE, Melodia Curativa (1d6)',
+            'Nível 3: +2 PE, Harmonia (+1d6 aliados)',
+            'Nível 4: +2 PE, Crescendo (+1 rodada/ nível)',
+            'Nível 5: +2 PE, Obra-Prima (sem custo PE)'
         ]
     },
     { 
         nome: 'Ocultista', 
-        desc: 'O Ocultista pratica artes ocultas proibidas, balanceando conhecimento e sanidade.',
-        pvNivel: '+6 SAN, +2 PE por nível',
+        desc: `<strong>O Ocultista</strong> pratica artes ocultas proibidas, balanceando conhecimento com o custo de sua sanidade. Pode usar rituais ofensivos e de controle.
+        
+<strong>🔹 Características:</strong>
+• <strong>PV:</strong> 20 (base)
+• <strong>SAN:</strong> 26 + 6 por nível (maior SAN)
+• <strong>PE:</strong> 8 + 2 por nível (maior PE)
+• <strong>Perícias Treinadas:</strong> Ocultismo, Religião, Crime, Enganação, Vontade
+• <strong>Armaduras:</strong> Apenas Leves
+• <strong>Armas:</strong> Simples e Táticas
+
+<strong>🔹 Custo do Paranormal:</strong>
+O Ocultista usa SAN para magia. Cada ritual cust:
+• 1° Círculo: 1 SAN + 2 PE
+• 2° Círculo: 2 SAN + 3 PE
+• 3° Círculo: 3 SAN + 4 PE
+
+<strong>🔹 Trilhas (Arsenal):</strong>
+• <strong>Invocador:</strong> Pode invocar espíritos protetores
+• <strong>Exorcista:</strong> Rituais de combate contra entidades
+• <strong>Místico:</strong> Pode selar poderes e criaturas
+• <strong>Teóforo:</strong> Canaliza poder divino
+
+<strong>🔹 Habilidades por Nível:</strong>
+• <strong>Nível 1:</strong> +6 SAN, +2 PE, rituais 1° círculo, usa SAN para magia
+• <strong>Nível 2:</strong> Rituais 2° círculo, pode canalizar SAN em dano
+• <strong>Nível 3:</strong> Rituais 3° círculo, +2 em Ocultismo
+• <strong>Nível 4:</strong> Pacto Sombrio (ignora resistências)
+• <strong>Nível 5:</strong> Mestre das Trevas (-2 PE rituais)
+
+<strong>🔹 Subclasses (Arsenal):</strong>
+• <strong>Conjurador:</strong> Invoca entidades menores
+• <strong>Guardião:</strong> Foco em proteção
+• <strong>Ritualista:</strong> Rituais mais baratos
+• <strong>Medium:</strong> Comunicação com espíritos
+• <strong>Necromante:</strong> Foco em morte e mortos-vivos
+• <strong>Possuído:</strong> Pode ser possuído por entidades
+• <strong>Selado:</strong> Usa poderes selados
+• <strong>Teóforo:</strong> Canaliza fé divina`,
+        pvNivel: '+0 PV por nível',
         pericias: 'Ocultismo, Religião, Crime, Enganação, Vontade',
-        armaduras: 'Armaduras leves apenas',
-        armas: 'Armas simples e táticas',
+        armaduras: 'Apenas Leves',
+        armas: 'Simples e Táticas',
         evolucao: [
-            'Nível 1: +6 SAN, +2 PE, rituais de 1° círculo, usa SAN para magia',
-            'Nível 2: +6 SAN, +2 PE, rituais de 2° círculo, pode canalizar SAN em dano',
-            'Nível 3: +6 SAN, +2 PE, rituais de 3° círculo, +2 em Ocultismo',
-            'Nível 4: +6 SAN, +2 PE, Pacto Sombrio, pode ignorar resistências',
-            'Nível 5: +6 SAN, +2 PE, Mestre das Trevas, rituais custam -2 PE'
+            'Nível 1: +6 SAN, +2 PE, rituais 1° círculo',
+            'Nível 2: +6 SAN, +2 PE, rituais 2° círculo, canalizar SAN em dano',
+            'Nível 3: +6 SAN, +2 PE, rituais 3° círculo, +2 Ocultismo',
+            'Nível 4: +6 SAN, +2 PE, Pacto Sombrio (ignora resistências)',
+            'Nível 5: +6 SAN, +2 PE, Mestre das Trevas (-2 PE)'
         ]
     },
     { 
         nome: 'Profissional', 
-        desc: 'O Profissional é um especialista em sua área, gaining expertise que improves com experiência.',
-        pvNivel: '+2% NEX por nível',
+        desc: `<strong>O Profissional</strong> é um especialista em sua área de expertise. Ganha NEX mais rapidamente e tem uma rede de contatos que pode ajudar em missões.
+        
+<strong>🔹 Características:</strong>
+• <strong>PV:</strong> 20 (base)
+• <strong>SAN:</strong> 20 (base)
+• <strong>PE:</strong> 6 (base)
+• <strong>NEX:</strong> +2% por nível (maior NEX)
+• <strong>Perícias Treinadas:</strong> Profissão (especialidade), Crime, Diplomacia, Investigação, Tática
+• <strong>Armaduras:</strong> Apenas Leves
+• <strong>Armas:</strong> Simples e Táticas
+
+<strong>🔹 Especialidades:</strong>
+Cada Profissional escolhe uma especialidade:
+• <strong>Advogado:</strong> +5 Diplomacia, Crime, pode usar leis
+• <strong>Médico:</strong> +5 Medicina, Ciências, pode tratar condições especiais
+• <strong>Mecânico:</strong> +5 Profissão, Tecnologia, pode consertar/fabricar
+• <strong>Investigador:</strong> +5 Investigação, Percepção, +2 iniciativa
+• <strong>Hacker:</strong> +5 Tecnologia, Crime, pode hackear sistemas
+
+<strong>🔹 Rede de Contatos:</strong>
+• Nível 2+: Pode pedir informações a contatos
+• Nível 3+: Contatos podem ajudar fisicamente
+• Nível 4+: Contatos国际上 podem ajudar
+
+<strong>🔹 Habilidades por Nível:</strong>
+• <strong>Nível 1:</strong> +2% NEX, perícia especializada +1d20
+• <strong>Nível 2:</strong> Rede de Contatos básica, +1 Diplomacia
+• <strong>Nível 3:</strong> Informações rápidas, pode negociar melhor
+• <strong>Nível 4:</strong> Especialista (+2 especialidade)
+• <strong>Nível 5:</strong> Profissional de Elite (ações duplas)
+
+<strong>🔹 Subclasses (Arsenal):</strong>
+• <strong>Detetive:</strong> Investigação especializada
+• <strong>Executor:</strong> Eliminações eficientes
+• <strong>Hacker:</strong> Tecnologia avançada
+• <strong>Negociador:</strong> Diplomacia especializada`,
+        pvNivel: '+0 PV por nível',
         pericias: 'Profissão (especialidade), Crime, Diplomacia, Investigação, Tática',
-        armaduras: 'Armaduras leves apenas',
-        armas: 'Armas simples e táticas',
+        armaduras: 'Apenas Leves',
+        armas: 'Simples e Táticas',
         evolucao: [
-            'Nível 1: +2% NEX, perícia especializada +1d20',
-            'Nível 2: +2% NEX, pode ensinar especialidades, +1 em Diplomacia',
-            'Nível 3: +2% NEX, Rede de Contatos, pode obter informações rapidamente',
-            'Nível 4: +2% NEX, Especialista, +2 em sua especialidade',
-            'Nível 5: +2% NEX, Profissional de Elite, pode fazer ações duplas'
+            'Nível 1: +2% NEX, especialidade +1d20',
+            'Nível 2: +2% NEX, Rede de Contatos, +1 Diplomacia',
+            'Nível 3: +2% NEX, informações rápidas',
+            'Nível 4: +2% NEX, Especialista (+2 especialidade)',
+            'Nível 5: +2% NEX, Profissional de Elite (ações duplas)'
         ]
     }
 ];
 
 const ajudaJogo = {
-    combatRules: `
+    classesDetalhadas: `
+<strong>⚡ GUIA COMPLETO DE CLASSES</strong>
+
+<strong>═══════════════════════════════════════</strong>
+<strong>🗡️ COMBATENTE</strong>
+<strong>═══════════════════════════════════════</strong>
+
+<strong>Descrição:</strong> O Combatente é a classe mais focada em combate físico. Com alto PV e múltiplos estilos de luta, é ideal para quem quer enfrentar ameaças de frente.
+
+<strong>Pontos Fortes:</strong>
+• Maior PV do jogo (28 base + 8/nível)
+• Múltiplos estilos de combate
+• Pode usar qualquer arma e armadura
+• Ataques devastadores no nível alto
+• Críticos em 19-20 no nível máximo
+
+<strong>Pontos Fracos:</strong>
+• Não tem magia native
+• SAN e PE normais
+• Não pode fazer coisas não-violentas
+
+<strong>Melhor para:</strong>
+• Jogadores que querem lutar
+• Tanks do grupo
+• Quem quer proteção física
+
+<strong>Combina bem com:</strong>
+• Ocultista (magia defensiva)
+• Profissional (tática eCrime)
+
+<strong>═══════════════════════════════════════</strong>
+<strong>📚 ESCRIBA</strong>
+<strong>═══════════════════════════════════════</strong>
+
+<strong>Descrição:</strong> O Escriba é o cérebro do grupo. Especialista em investigar, documentar e entender o paranormal. Tem a maior SAN.
+
+<strong>Pontos Fortes:</strong>
+• Maior SAN do jogo (24 + 4/nível)
+• Pode usar TODOS os rituais
+• Excelente em investigação
+• Pode identificar criaturas
+• Conhece segredos ocultos
+
+<strong>Pontos Fracos:</strong>
+• PV baixo (20 base)
+• Não pode usar armaduras
+• Magia cust SAN além de PE
+• Fraco em combate direto
+
+<strong>Melhor para:</strong>
+• Jogadores que querem investigar
+• Mestres de informação
+• Quem quer entender o paranormal
+
+<strong>Combina bem com:</strong>
+• Combatente (proteção)
+• Instrumentista (magia sem custo SAN)
+
+<strong>═══════════════════════════════════════</strong>
+<strong>🎵 INSTRUMENTISTA</strong>
+<strong>═══════════════════════════════════════</strong>
+
+<strong>Descrição:</strong> O Instrumentista canaliza poder através da música. Pode curar, proteger e ajudar aliados com melodias.
+
+<strong>Pontos Fortes:</strong>
+• Maior PE do jogo (8 + 2/nível)
+• Pode curar com música
+• Suporte excelente ao grupo
+• Efeitos em área (aliados próximos)
+• Não cust SAN para magia
+
+<strong>Pontos Fracos:</strong>
+• PV baixo (20 base)
+• Não pode usar armaduras
+• Precisa de instrumento
+• Não tem magia de dano forte
+
+<strong>Melhor para:</strong>
+• Suporte do grupo
+• Curadores
+• Quem quer ajudar sem magia negra
+
+<strong>Combina bem com:</strong>
+• Combatente (proteção física)
+• Ocultista (magia completa)
+
+<strong>═══════════════════════════════════════</strong>
+<strong>🔮 OCULTISTA</strong>
+<strong>═══════════════════════════════════════</strong>
+
+<strong>Descrição:</strong> O Ocultista pratica magia proibida. Tem acesso a rituais ofensivos e de controle, mas paga com sua sanidade.
+
+<strong>Pontos Fortes:</strong>
+• Alta SAN (26 + 6/nível)
+• PE bom (8 + 2/nível)
+• Rituais de dano
+• Rituais de controle
+• Pode invocar entidades
+• Trilhas especializadas
+
+<strong>Pontos Fracos:</strong>
+• Magia cust SAN
+• Não pode usar armaduras pesadas
+• Risk de perder SAN em missões
+• Pode chamar atenção de entidades
+
+<strong>Melhor para:</strong>
+• Jogadores que querem magia
+• Controle de situações
+• Dano mágico
+
+<strong>Combina bem com:</strong>
+• Combatente (proteção)
+• Escriba (mais rituais)
+
+<strong>═══════════════════════════════════════</strong>
+<strong>💼 PROFISSIONAL</strong>
+<strong>═══════════════════════════════════════</strong>
+
+<strong>Descrição:</strong> O Profissional é um especialista em sua área. Ganha NEX mais rápido e tem uma rede de contatos úteis.
+
+<strong>Pontos Fortes:</strong>
+• Maior NEX (+2%/nível)
+• Especialização profunda
+• Rede de contatos
+• Pode pedir informações
+• Ações duplas no nível alto
+• Flexibilidade de armas
+
+<strong>Pontos Fracos:</strong>
+• PV e SAN normais
+• Não tem magia native
+• Depende muito da especialidade
+• Menos combate que Combatente
+
+<strong>Melhor para:</strong>
+• Investigadores
+• Especialistas em qualquer área
+• Jogadores táticos
+• Quem quer progredir rápido
+
+<strong>Combina bem com:</strong>
+• Combatente (mais combate)
+• Escriba (investigação)
+`
+};
 <strong>⚔️ REGRAS DE COMBATE</strong>
 
 <strong>Ações por Turno:</strong>
@@ -974,7 +1285,7 @@ const ajudaJogo = {
 function showCharCreationHelp(tipo) {
     let html = '';
     if (tipo === 'origens') {
-        html = '<strong>ESCOLHA SUA ORIGEM</strong><br><small>Clique em uma origem para selecioná-la</small><br><br>';
+        html = '<strong>📋 ESCOLHA SUA ORIGEM</strong><br><small>Clique em uma origem para selecioná-la e ver detalhes</small><br><br>';
         origens.forEach(o => {
             html += `<div class="help-item" onclick="selectOrigem('${o.nome}')">
                 <strong>${o.nome}</strong><br>
@@ -983,43 +1294,39 @@ function showCharCreationHelp(tipo) {
             </div>`;
         });
     } else if (tipo === 'classes') {
-        html = '<strong>ESCOLHA SUA CLASSE</strong><br><small>Clique em uma classe para selecioná-la</small><br><br>';
+        html = '<strong>⚡ GUIA COMPLETO DE CLASSES</strong><br><small>Clique em uma classe para selecioná-la</small><br><br>';
         classes.forEach(c => {
-            html += `<div class="help-item" onclick="selectClasse('${c.nome}')">
+            html += `<div class="help-item help-class-item" onclick="selectClasse('${c.nome}')">
                 <strong>${c.nome}</strong><br>
                 <small>${c.desc}</small>
             </div>`;
         });
+        html += `<br><br><strong>📖 GUIA DETALHADO</strong><br><small>${ajudaJogo.classesDetalhadas}</small>`;
     } else if (tipo === 'rituais') {
-        html = '<strong>RITUAIS DISPONÍVEIS</strong><br><small>Escolha rituais conforme seu nível de Ocultismo</small><br><br>';
+        html = '<strong>📜 RITUAIS DISPONÍVEIS</strong><br><small>Escolha rituais conforme seu nível de Ocultismo</small><br><br>';
+        html += '<div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap;">';
+        html += '<button class="btn-help-small active" onclick="filterRituais(0)">Todos</button>';
+        html += '<button class="btn-help-small" onclick="filterRituais(1)">1° Círculo</button>';
+        html += '<button class="btn-help-small" onclick="filterRituais(2)">2° Círculo</button>';
+        html += '<button class="btn-help-small" onclick="filterRituais(3)">3° Círculo</button>';
+        html += '</div>';
+        html += '<div id="rituais-container">';
         rituais.forEach(r => {
-            html += `<div class="help-item">
+            html += `<div class="help-item ritual-item" data-nivel="${r.nivel}">
                 <strong>${r.nome}</strong> <small>(Nível ${r.nivel}, ${r.tipo})</small><br>
                 <small>${r.desc}</small>
             </div>`;
         });
+        html += '</div>';
+    } else if (tipo === 'combate') {
+        html = ajudaJogo.combatRules || ajudaJogo.combatRules;
     } else if (tipo === 'regras') {
         html = '<strong>📚 REGRAS DO JOGO</strong><br><br>';
-        html += `<div class="help-section" onclick="toggleSection('combate')">
-            <strong>⚔️ Regras de Combate</strong>
-            <div id="section-combate" class="help-detail">${ajudaJogo.combatRules}</div>
-        </div>`;
-        html += `<div class="help-section" onclick="toggleSection('pontos')">
-            <strong>🎯 Sistema de Pontos</strong>
-            <div id="section-pontos" class="help-detail">${ajudaJogo.sistemaPontos}</div>
-        </div>`;
-        html += `<div class="help-section" onclick="toggleSection('origens')">
-            <strong>📋 Sobre Origens</strong>
-            <div id="section-origens" class="help-detail">${ajudaJogo.origensInfo}</div>
-        </div>`;
-        html += `<div class="help-section" onclick="toggleSection('classes')">
-            <strong>⚡ Sobre Classes</strong>
-            <div id="section-classes" class="help-detail">${ajudaJogo.classesInfo}</div>
-        </div>`;
-        html += `<div class="help-section" onclick="toggleSection('evolucao')">
-            <strong>📈 Evolução do Personagem</strong>
-            <div id="section-evolucao" class="help-detail">${ajudaJogo.evolucaoInfo}</div>
-        </div>`;
+        html += `<div class="help-section" onclick="toggleSection('combate')">⚔️ Regras de Combate</div><div id="section-combate" class="help-detail">${ajudaJogo.combatRules || ''}</div>`;
+        html += `<div class="help-section" onclick="toggleSection('pontos')">🎯 Sistema de Pontos</div><div id="section-pontos" class="help-detail">${ajudaJogo.sistemaPontos || ''}</div>`;
+        html += `<div class="help-section" onclick="toggleSection('origens')">📋 Sobre Origens</div><div id="section-origens" class="help-detail">${ajudaJogo.origensInfo || ''}</div>`;
+        html += `<div class="help-section" onclick="toggleSection('classes')">⚡ Sobre Classes</div><div id="section-classes" class="help-detail">${ajudaJogo.classesInfo || ''}</div>`;
+        html += `<div class="help-section" onclick="toggleSection('evolucao')">📈 Evolução</div><div id="section-evolucao" class="help-detail">${ajudaJogo.evolucaoInfo || ''}</div>`;
     }
     
     const modal = document.createElement('div');
@@ -1027,6 +1334,18 @@ function showCharCreationHelp(tipo) {
     modal.innerHTML = `<div class="help-content help-large">${html}<button class="btn-add" onclick="this.closest('.help-modal').remove()">Fechar</button></div>`;
     modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
     document.body.appendChild(modal);
+}
+
+function filterRituais(nivel) {
+    document.querySelectorAll('.ritual-item').forEach(el => {
+        if (nivel === 0 || parseInt(el.dataset.nivel) === nivel) {
+            el.style.display = 'block';
+        } else {
+            el.style.display = 'none';
+        }
+    });
+    document.querySelectorAll('.btn-help-small').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
 }
 
 function toggleSection(id) {
@@ -1253,6 +1572,28 @@ helpStyles.textContent = `
 .help-detail br {
     display: block;
     margin-bottom: 6px;
+}
+.help-class-item {
+    padding: 15px;
+    min-height: 100px;
+}
+.help-class-item:hover {
+    border-left-width: 5px;
+}
+.btn-help-small {
+    padding: 6px 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #888;
+    font-size: 11px;
+    cursor: pointer;
+}
+.btn-help-small.active,
+.btn-help-small:hover {
+    background: #A347FF;
+    border-color: #A347FF;
+    color: white;
 }
 `;
 document.head.appendChild(helpStyles);
