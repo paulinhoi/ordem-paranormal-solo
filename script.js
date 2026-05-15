@@ -773,12 +773,268 @@ const origens = [
 ];
 
 const classes = [
-    { nome: 'Combatente', desc: 'Especialista em combate e combate. PV: +8 por nível. Perícias treinadas: Luta, Atletismo, Pontaria, Intimidação, Fortitude. Armaduras médias e pesadas. Armas de fogo e brancas.' },
-    { nome: 'Escriba', desc: 'Especialista em conhecimento oculto. Sanidade +4 por nível. Perícias treinadas: Ocultismo, Religião, Investigação, Ciências, Intuição. Não usa armaduras. Rituais.' },
-    { nome: 'Instrumentista', desc: 'Músico que canaliza energia. PE +2 por nível. Perícias treinadas: Artes, Ocultismo, Percepção, Diplomacia, Vontade. Não usa armaduras. Magias musicais.' },
-    { nome: 'Ocultista', desc: 'Praticante de artes ocultas. Sanidade +6, PE +2 por nível. Perícias treinadas: Ocultismo, Religião, Crime, Enganação, Vontade. Armaduras leves. Rituais.' },
-    { nome: 'Profissional', desc: 'Especialista em sua área. NEX +2% por nível. Perícias treinadas: Profissão (especialidade), Crime, Diplomacia, Investigação, Tática. Armaduras leves.' }
+    { 
+        nome: 'Combatente', 
+        desc: 'O Combatente é um especialista em combate físico, dominando armas brancas, firearms e combate corpo a corpo.',
+        pvNivel: '+8 PV por nível',
+        pericias: 'Luta, Atletismo, Pontaria, Intimidação, Fortitude',
+        armaduras: 'Armaduras médias e pesadas',
+        armas: 'Armas de fogo e brancas',
+        evolucao: [
+            'Nível 1: +8 PV, perícias treinadas, pode usar 2 armas',
+            'Nível 2: +8 PV, +1 em testes de Luta, pode fazer Ataque Poderoso',
+            'Nível 3: +8 PV, Ataque Poderoso com +2d6, RD +2',
+            'Nível 4: +8 PV, Ataque Devastador, ignora RD 5',
+            'Nível 5: +8 PV, Mestre das Armas, +2 em todas as armas'
+        ]
+    },
+    { 
+        nome: 'Escriba', 
+        desc: 'O Escriba é um estudioso do conhecimento oculto, especializado em investigar e compreender o paranormal.',
+        pvNivel: '+4 SAN por nível',
+        pericias: 'Ocultismo, Religião, Investigação, Ciências, Intuição',
+        armaduras: 'Não usa armaduras',
+        armas: 'Armas simples apenas',
+        evolucao: [
+            'Nível 1: +4 SAN, rituais de 1° círculo, +1d20 em Investigação',
+            'Nível 2: +4 SAN, rituais de 2° círculo, pode identificar criaturas',
+            'Nível 3: +4 SAN, rituais de 3° círculo, +2 em testes de Ocultismo',
+            'Nível 4: +4 SAN, Segredos Ancestrais, -1 PE em rituais',
+            'Nível 5: +4 SAN, Arquivo Vivo, conhece todos os rituais'
+        ]
+    },
+    { 
+        nome: 'Instrumentista', 
+        desc: 'O Instrumentista canaliza energia através da música, usando melodias para curar, proteger ou atacar.',
+        pvNivel: '+2 PE por nível',
+        pericias: 'Artes, Ocultismo, Percepção, Diplomacia, Vontade',
+        armaduras: 'Não usa armaduras',
+        armas: 'Qualquer instrumento musical',
+        evolucao: [
+            'Nível 1: +2 PE, Magias Musicais, pode tocar para aliados',
+            'Nível 2: +2 PE, Melodia Curativa, cura 1d6 com música',
+            'Nível 3: +2 PE, Harmonia, +1d6 em todos os testes de aliados próximos',
+            'Nível 4: +2 PE, Crescendo, efeito dura +1 rodada por nível',
+            'Nível 5: +2 PE, Obra-Prima, pode usar magia sem gastar PE'
+        ]
+    },
+    { 
+        nome: 'Ocultista', 
+        desc: 'O Ocultista pratica artes ocultas proibidas, balanceando conhecimento e sanidade.',
+        pvNivel: '+6 SAN, +2 PE por nível',
+        pericias: 'Ocultismo, Religião, Crime, Enganação, Vontade',
+        armaduras: 'Armaduras leves apenas',
+        armas: 'Armas simples e táticas',
+        evolucao: [
+            'Nível 1: +6 SAN, +2 PE, rituais de 1° círculo, usa SAN para magia',
+            'Nível 2: +6 SAN, +2 PE, rituais de 2° círculo, pode canalizar SAN em dano',
+            'Nível 3: +6 SAN, +2 PE, rituais de 3° círculo, +2 em Ocultismo',
+            'Nível 4: +6 SAN, +2 PE, Pacto Sombrio, pode ignorar resistências',
+            'Nível 5: +6 SAN, +2 PE, Mestre das Trevas, rituais custam -2 PE'
+        ]
+    },
+    { 
+        nome: 'Profissional', 
+        desc: 'O Profissional é um especialista em sua área, gaining expertise que improves com experiência.',
+        pvNivel: '+2% NEX por nível',
+        pericias: 'Profissão (especialidade), Crime, Diplomacia, Investigação, Tática',
+        armaduras: 'Armaduras leves apenas',
+        armas: 'Armas simples e táticas',
+        evolucao: [
+            'Nível 1: +2% NEX, perícia especializada +1d20',
+            'Nível 2: +2% NEX, pode ensinar especialidades, +1 em Diplomacia',
+            'Nível 3: +2% NEX, Rede de Contatos, pode obter informações rapidamente',
+            'Nível 4: +2% NEX, Especialista, +2 em sua especialidade',
+            'Nível 5: +2% NEX, Profissional de Elite, pode fazer ações duplas'
+        ]
+    }
 ];
+
+const ajudaJogo = {
+    combatRules: `
+<strong>⚔️ REGRAS DE COMBATE</strong>
+
+<strong>Ações por Turno:</strong>
+• Ação de Movimento: Mover até 9m
+• Ação de Ataque: Atacar com arma
+• Ação de Interlúdio: Curar, usar habilidade, conversar
+• Ação Livre: Soltar arma, soltar objeto, falar 1 frase
+
+<strong>Tipos de Ataque:</strong>
+• Ataque Corpo a Corpo: Alcance 1,5m, usa FOR ou AGI
+• Ataque à Distância: Usa AGI, -1 por 3m, -1 por dificuldade
+
+<strong>Defesa e Esquiva:</strong>
+• Defesa = 10 + AGI + Armadura + Escudo
+• Esquiva = 10 + AGI (ativa apenas se não usar armadura pesada)
+
+<strong>Dano:</strong>
+• Arma Corpo a Corpo: dado da arma + FOR
+• Arma à Distância: dado da arma + AGI
+• Crítico (20 natural): Dano x2 ou x3
+
+<strong>Condições:</strong>
+• Sangrando: -1d6 PV por turno
+• Envenenado: -1 PV por turno
+• Apavorado: Não pode atacar
+• Atordoado: Perde próximo turno
+• Morrendo: 0 PV, rola d20 a cada turno
+    `,
+    sistemaPontos: `
+<strong>🎯 SISTEMA DE PONTOS</strong>
+
+<strong>PV (Pontos de Vida):</strong>
+• Base: 20 (todos os personagens)
+• Bônus por VIG: VIG × 4 + 8
+• Combatente: +8 por nível
+• Morte ocorre em 0 PV (Morrendo)
+
+<strong>SAN (Sanidade):</strong>
+• Base: 20
+• Reduz ao ver horrores, usar magia, falhas críticas
+• 0 SAN = Perturbado (condição mental grave)
+• Sanidade muito baixa causa falhas em testes
+
+<strong>PE (Pontos de Esforço):</strong>
+• Base: 6
+• Usados para habilidades especiais
+• Reabastece com Descanso ou Relaxar
+• Esgotar PE = exaustão, -2 em todos os testes
+
+<strong>NEX (Nova Era Xperience):</strong>
+• Ganho ao completar missões, superar desafios
+• 0% = Novato | 25% = Experiente | 50% = Veterano | 75% = Especialista
+• Maior NEX = mais pontos de distribuição, habilidades avançadas
+    `,
+    origensInfo: `
+<strong>📋 SOBRE AS ORIGENS</strong>
+
+<strong>O que é uma Origem?</strong>
+• Sua formação antes de ser Agente
+• Determina bônus em perícias específicas
+• Concede um Poder Único
+
+<strong>Escolhendo sua Origem:</strong>
+• Analise suas perícias - algumas origens se complementam
+• Considere seu estilo: combate, investigação, suporte
+• Seu poder pode ser crucial em missões específicas
+
+<strong>Exemplos:</strong>
+• <strong>Detetive:</strong> Para quem quer investigar crimes
+• <strong>Militar:</strong> Para combate e tática
+• <strong>Médium:</strong> Para perceber o paranormal
+• <strong>Engenheiro:</strong> Para criar e consertar
+• <strong>Criminoso:</strong> Para trabalhar nas sombras
+    `,
+    classesInfo: `
+<strong>⚡ SOBRE AS CLASSES</strong>
+
+<strong>Combatente:</strong> Para quem quer lutar de perto ou à distância
+• Forte em combate, usa armaduras pesadas
+• PV alto, pouco dependente de magia
+
+<strong>Escriba:</strong> Para quem quer investigar e entender o paranormal
+• Rituais de conhecimento e proteção
+• SAN aumenta, não usa armaduras
+
+<strong>Instrumentista:</strong> Para quem quer curar e ajudar o grupo
+• Magia através de música
+• PE aumenta, suporte ao grupo
+
+<strong>Ocultista:</strong> Para quem quer usar magia proibida
+• Rituais ofensivos e de controle
+• Balanceia SAN e PE, usa Custo do Paranormal
+
+<strong>Profissional:</strong> Para quem quer ser especialista em algo
+• NEX aumenta mais rápido
+• Perícias especializadas, rede de contatos
+    `,
+    evolucaoInfo: `
+<strong>📈 EVOLUÇÃO DO PERSONAGEM</strong>
+
+<strong>Ganhar NEX:</strong>
+• Completing missões principais
+• Superar encontros difíceis
+• Descobrir segredos importantes
+• Cada 15% NEX = 1 nível
+
+<strong>Ao Subir de Nível:</strong>
+• Aumenta seus recursos (PV, SAN, PE)
+• Ganha novas habilidades da classe
+• Pode melhorar perícias com pontos
+
+<strong>Melhorar Perícias:</strong>
+• Com NEX alto, pode passar de Treinado para Veterano
+• Treino 0 → 5 (Treinado)
+• Treino 5 → 10 (Parcialmente Veterano)
+• Treino 10 → 15 (Veterano)
+    `
+};
+
+function showCharCreationHelp(tipo) {
+    let html = '';
+    if (tipo === 'origens') {
+        html = '<strong>ESCOLHA SUA ORIGEM</strong><br><small>Clique em uma origem para selecioná-la</small><br><br>';
+        origens.forEach(o => {
+            html += `<div class="help-item" onclick="selectOrigem('${o.nome}')">
+                <strong>${o.nome}</strong><br>
+                <small><strong>Perícias:</strong> ${o.pericias.join(' | ')}</small><br>
+                <small><strong>Poder:</strong> ${o.poder}</small>
+            </div>`;
+        });
+    } else if (tipo === 'classes') {
+        html = '<strong>ESCOLHA SUA CLASSE</strong><br><small>Clique em uma classe para selecioná-la</small><br><br>';
+        classes.forEach(c => {
+            html += `<div class="help-item" onclick="selectClasse('${c.nome}')">
+                <strong>${c.nome}</strong><br>
+                <small>${c.desc}</small>
+            </div>`;
+        });
+    } else if (tipo === 'rituais') {
+        html = '<strong>RITUAIS DISPONÍVEIS</strong><br><small>Escolha rituais conforme seu nível de Ocultismo</small><br><br>';
+        rituais.forEach(r => {
+            html += `<div class="help-item">
+                <strong>${r.nome}</strong> <small>(Nível ${r.nivel}, ${r.tipo})</small><br>
+                <small>${r.desc}</small>
+            </div>`;
+        });
+    } else if (tipo === 'regras') {
+        html = '<strong>📚 REGRAS DO JOGO</strong><br><br>';
+        html += `<div class="help-section" onclick="toggleSection('combate')">
+            <strong>⚔️ Regras de Combate</strong>
+            <div id="section-combate" class="help-detail">${ajudaJogo.combatRules}</div>
+        </div>`;
+        html += `<div class="help-section" onclick="toggleSection('pontos')">
+            <strong>🎯 Sistema de Pontos</strong>
+            <div id="section-pontos" class="help-detail">${ajudaJogo.sistemaPontos}</div>
+        </div>`;
+        html += `<div class="help-section" onclick="toggleSection('origens')">
+            <strong>📋 Sobre Origens</strong>
+            <div id="section-origens" class="help-detail">${ajudaJogo.origensInfo}</div>
+        </div>`;
+        html += `<div class="help-section" onclick="toggleSection('classes')">
+            <strong>⚡ Sobre Classes</strong>
+            <div id="section-classes" class="help-detail">${ajudaJogo.classesInfo}</div>
+        </div>`;
+        html += `<div class="help-section" onclick="toggleSection('evolucao')">
+            <strong>📈 Evolução do Personagem</strong>
+            <div id="section-evolucao" class="help-detail">${ajudaJogo.evolucaoInfo}</div>
+        </div>`;
+    }
+    
+    const modal = document.createElement('div');
+    modal.className = 'help-modal';
+    modal.innerHTML = `<div class="help-content help-large">${html}<button class="btn-add" onclick="this.closest('.help-modal').remove()">Fechar</button></div>`;
+    modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+    document.body.appendChild(modal);
+}
+
+function toggleSection(id) {
+    const el = document.getElementById('section-' + id);
+    if (el) {
+        el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+}
 
 const rituais = [
     { nome: 'Abraçar a Escuridão', nivel: 1, tipo: 'Defesa', desc: 'Reduz dano de ataques de criaturas das Trevas.' },
@@ -942,10 +1198,13 @@ helpStyles.textContent = `
     border: 1px solid #A347FF;
     border-radius: 8px;
     padding: 20px;
-    max-width: 600px;
-    max-height: 80vh;
+    max-width: 700px;
+    max-height: 85vh;
     overflow-y: auto;
     width: 100%;
+}
+.help-large {
+    max-width: 800px;
 }
 .help-item {
     padding: 10px;
@@ -965,6 +1224,35 @@ helpStyles.textContent = `
 }
 .help-item small {
     color: #888;
+}
+.help-section {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #1a1a1a;
+    border-left: 3px solid #A347FF;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #f0c040;
+}
+.help-section:hover {
+    background: #222;
+}
+.help-detail {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0d0d0d;
+    border-radius: 4px;
+    color: #e0e0e0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+.help-detail strong {
+    color: #f0c040;
+}
+.help-detail br {
+    display: block;
+    margin-bottom: 6px;
 }
 `;
 document.head.appendChild(helpStyles);

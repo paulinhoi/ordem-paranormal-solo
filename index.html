@@ -15,6 +15,7 @@
             <span class="campaign-name">Campanha: Solo</span>
         </div>
         <div class="header-actions">
+            <button class="btn-icon" onclick="showCharCreationHelp('regras')" title="Regras">📖</button>
             <button class="btn-icon" onclick="saveAllToDrive()" title="Salvar">💾</button>
             <button class="btn-icon" onclick="loadAllFromDrive()" title="Carregar">📥</button>
             <button class="btn-icon btn-danger" onclick="newGame()" title="Novo Jogo">🔄</button>
@@ -373,6 +374,19 @@
                 </div>
                 <button class="btn-add" onclick="addMission()">+ Nova</button>
                 <div id="missao-lista"></div>
+            </section>
+
+            <!-- Ajuda -->
+            <section class="card">
+                <div class="card-header">
+                    <span class="card-title">AJUDA</span>
+                </div>
+                <div class="ajuda-botoes">
+                    <button class="btn-help-full" onclick="showCharCreationHelp('origens')">📋 Origens</button>
+                    <button class="btn-help-full" onclick="showCharCreationHelp('classes')">⚡ Classes</button>
+                    <button class="btn-help-full" onclick="showCharCreationHelp('rituais')">📜 Rituais</button>
+                    <button class="btn-help-full" onclick="showCharCreationHelp('regras')">📖 Regras</button>
+                </div>
             </section>
 
             <!-- Config -->
