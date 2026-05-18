@@ -1018,152 +1018,96 @@ Cada Profissional escolhe uma especialidade:
 
 const ajudaJogo = {
     classesDetalhadas: `
-<strong>⚡ GUIA COMPLETO DE CLASSES</strong>
-
 <strong>═══════════════════════════════════════</strong>
 <strong>🗡️ COMBATENTE</strong>
 <strong>═══════════════════════════════════════</strong>
-
-<strong>Descrição:</strong> O Combatente é a classe mais focada em combate físico. Com alto PV e múltiplos estilos de luta, é ideal para quem quer enfrentar ameaças de frente.
+<strong>PV:</strong> 28 base + 8/nível | <strong>SAN:</strong> 20 | <strong>PE:</strong> 6
 
 <strong>Pontos Fortes:</strong>
-• Maior PV do jogo (28 base + 8/nível)
+• Maior PV do jogo
 • Múltiplos estilos de combate
-• Pode usar qualquer arma e armadura
-• Ataques devastadores no nível alto
-• Críticos em 19-20 no nível máximo
+• Qualquer arma e armadura
+• Ataques devastadores
 
 <strong>Pontos Fracos:</strong>
-• Não tem magia native
+• Não tem magia
 • SAN e PE normais
-• Não pode fazer coisas não-violentas
 
-<strong>Melhor para:</strong>
-• Jogadores que querem lutar
-• Tanks do grupo
-• Quem quer proteção física
-
-<strong>Combina bem com:</strong>
-• Ocultista (magia defensiva)
-• Profissional (tática eCrime)
+<strong>Subclasses:</strong> Bruto, Escudeiro, Esgrimista, Lanceiro, Lutador, Berserker, Atirador
 
 <strong>═══════════════════════════════════════</strong>
 <strong>📚 ESCRIBA</strong>
 <strong>═══════════════════════════════════════</strong>
-
-<strong>Descrição:</strong> O Escriba é o cérebro do grupo. Especialista em investigar, documentar e entender o paranormal. Tem a maior SAN.
+<strong>PV:</strong> 20 | <strong>SAN:</strong> 24 + 4/nível | <strong>PE:</strong> 6
 
 <strong>Pontos Fortes:</strong>
-• Maior SAN do jogo (24 + 4/nível)
+• Maior SAN do jogo
 • Pode usar TODOS os rituais
-• Excelente em investigação
-• Pode identificar criaturas
+• Excelente investigação
 • Conhece segredos ocultos
 
 <strong>Pontos Fracos:</strong>
-• PV baixo (20 base)
-• Não pode usar armaduras
-• Magia cust SAN além de PE
-• Fraco em combate direto
+• PV baixo
+• Não usa armaduras
+• Magia cust SAN
 
-<strong>Melhor para:</strong>
-• Jogadores que querem investigar
-• Mestres de informação
-• Quem quer entender o paranormal
-
-<strong>Combina bem com:</strong>
-• Combatente (proteção)
-• Instrumentista (magia sem custo SAN)
+<strong>Subclasses:</strong> Conjurador, Guardião, Ritualista, Medium, Necromante
 
 <strong>═══════════════════════════════════════</strong>
 <strong>🎵 INSTRUMENTISTA</strong>
 <strong>═══════════════════════════════════════</strong>
-
-<strong>Descrição:</strong> O Instrumentista canaliza poder através da música. Pode curar, proteger e ajudar aliados com melodias.
+<strong>PV:</strong> 20 | <strong>SAN:</strong> 20 | <strong>PE:</strong> 8 + 2/nível
 
 <strong>Pontos Fortes:</strong>
-• Maior PE do jogo (8 + 2/nível)
+• Maior PE do jogo
 • Pode curar com música
-• Suporte excelente ao grupo
-• Efeitos em área (aliados próximos)
-• Não cust SAN para magia
+• Suporte ao grupo
+• Não cust SAN
 
 <strong>Pontos Fracos:</strong>
-• PV baixo (20 base)
-• Não pode usar armaduras
+• PV baixo
+• Não usa armaduras
 • Precisa de instrumento
-• Não tem magia de dano forte
 
-<strong>Melhor para:</strong>
-• Suporte do grupo
-• Curadores
-• Quem quer ajudar sem magia negra
-
-<strong>Combina bem com:</strong>
-• Combatente (proteção física)
-• Ocultista (magia completa)
+<strong>Subclasses:</strong> Canalizador, Bardo, Compositor
 
 <strong>═══════════════════════════════════════</strong>
 <strong>🔮 OCULTISTA</strong>
 <strong>═══════════════════════════════════════</strong>
-
-<strong>Descrição:</strong> O Ocultista pratica magia proibida. Tem acesso a rituais ofensivos e de controle, mas paga com sua sanidade.
+<strong>PV:</strong> 20 | <strong>SAN:</strong> 26 + 6/nível | <strong>PE:</strong> 8 + 2/nível
 
 <strong>Pontos Fortes:</strong>
-• Alta SAN (26 + 6/nível)
-• PE bom (8 + 2/nível)
-• Rituais de dano
-• Rituais de controle
+• Alta SAN e PE
+• Rituais de dano e controle
 • Pode invocar entidades
 • Trilhas especializadas
 
 <strong>Pontos Fracos:</strong>
 • Magia cust SAN
-• Não pode usar armaduras pesadas
-• Risk de perder SAN em missões
-• Pode chamar atenção de entidades
+• Não usa armaduras pesadas
+• Risk de perder SAN
 
-<strong>Melhor para:</strong>
-• Jogadores que querem magia
-• Controle de situações
-• Dano mágico
-
-<strong>Combina bem com:</strong>
-• Combatente (proteção)
-• Escriba (mais rituais)
+<strong>Trilhas:</strong> Invocador, Exorcista, Místico, Teóforo
 
 <strong>═══════════════════════════════════════</strong>
 <strong>💼 PROFISSIONAL</strong>
 <strong>═══════════════════════════════════════</strong>
-
-<strong>Descrição:</strong> O Profissional é um especialista em sua área. Ganha NEX mais rápido e tem uma rede de contatos úteis.
+<strong>PV:</strong> 20 | <strong>SAN:</strong> 20 | <strong>PE:</strong> 6 | <strong>NEX:</strong> +2%/nível
 
 <strong>Pontos Fortes:</strong>
-• Maior NEX (+2%/nível)
+• Maior NEX
 • Especialização profunda
 • Rede de contatos
-• Pode pedir informações
-• Ações duplas no nível alto
-• Flexibilidade de armas
+• Ações duplas no nível 5
 
 <strong>Pontos Fracos:</strong>
 • PV e SAN normais
-• Não tem magia native
-• Depende muito da especialidade
-• Menos combate que Combatente
+• Não tem magia
+• Depende da especialidade
 
-<strong>Melhor para:</strong>
-• Investigadores
-• Especialistas em qualquer área
-• Jogadores táticos
-• Quem quer progredir rápido
-
-<strong>Combina bem com:</strong>
-• Combatente (mais combate)
-• Escriba (investigação)
-`
-};
-<strong>⚔️ REGRAS DE COMBATE</strong>
+<strong>Subclasses:</strong> Detetive, Executor, Hacker, Negociador
+`,
+    combatRules: `
 
 <strong>Ações por Turno:</strong>
 • Ação de Movimento: Mover até 9m
@@ -1301,7 +1245,7 @@ function showCharCreationHelp(tipo) {
                 <small>${c.desc}</small>
             </div>`;
         });
-        html += `<br><br><strong>📖 GUIA DETALHADO</strong><br><small>${ajudaJogo.classesDetalhadas}</small>`;
+        html += `<br><br><div class="help-detail-guide">${ajudaJogo.classesDetalhadas}</div>`;
     } else if (tipo === 'rituais') {
         html = '<strong>📜 RITUAIS DISPONÍVEIS</strong><br><small>Escolha rituais conforme seu nível de Ocultismo</small><br><br>';
         html += '<div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap;">';
@@ -1331,9 +1275,16 @@ function showCharCreationHelp(tipo) {
     
     const modal = document.createElement('div');
     modal.className = 'help-modal';
-    modal.innerHTML = `<div class="help-content help-large">${html}<button class="btn-add" onclick="this.closest('.help-modal').remove()">Fechar</button></div>`;
+    modal.innerHTML = `<div class="help-content help-large" onclick="event.stopPropagation()">${html}<button class="btn-add" onclick="this.closest('.help-modal').remove()">Fechar</button></div>`;
     modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
     document.body.appendChild(modal);
+    
+    // Force click handlers to work
+    setTimeout(() => {
+        document.querySelectorAll('.help-modal .help-item').forEach(item => {
+            item.addEventListener('click', item.onclick);
+        });
+    }, 100);
 }
 
 function filterRituais(nivel) {
@@ -1409,42 +1360,6 @@ const rituais = [
 // AJUDA DE CRIAÇÃO
 // ====================
 
-function showCharCreationHelp(tipo) {
-    let html = '';
-    if (tipo === 'origens') {
-        html = '<strong>ESCOLHA SUA ORIGEM</strong><br><small>Clique em uma origem para selecioná-la</small><br><br>';
-        origens.forEach(o => {
-            html += `<div class="help-item" onclick="selectOrigem('${o.nome}')">
-                <strong>${o.nome}</strong><br>
-                <small><strong>Perícias:</strong> ${o.pericias.join(' | ')}</small><br>
-                <small><strong>Poder:</strong> ${o.poder}</small>
-            </div>`;
-        });
-    } else if (tipo === 'classes') {
-        html = '<strong>ESCOLHA SUA CLASSE</strong><br><small>Clique em uma classe para selecioná-la</small><br><br>';
-        classes.forEach(c => {
-            html += `<div class="help-item" onclick="selectClasse('${c.nome}')">
-                <strong>${c.nome}</strong><br>
-                <small>${c.desc}</small>
-            </div>`;
-        });
-    } else if (tipo === 'rituais') {
-        html = '<strong>RITUAIS DISPONÍVEIS</strong><br><small>Escolha rituais conforme seu nível de Ocultismo</small><br><br>';
-        rituais.forEach(r => {
-            html += `<div class="help-item">
-                <strong>${r.nome}</strong> <small>(Nível ${r.nivel}, ${r.tipo})</small><br>
-                <small>${r.desc}</small>
-            </div>`;
-        });
-    }
-    
-    const modal = document.createElement('div');
-    modal.className = 'help-modal';
-    modal.innerHTML = `<div class="help-content">${html}<button class="btn-add" onclick="this.closest('.help-modal').remove()">Fechar</button></div>`;
-    modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
-    document.body.appendChild(modal);
-}
-
 function selectOrigem(nome) {
     document.getElementById('charOrigin').value = nome;
     gameState.personagem.origem = nome;
@@ -1480,12 +1395,11 @@ function selectClasse(nome) {
     if (classe) {
         addMessage('system', `✅ <strong>Classe: ${nome}</strong><br>${classe.desc}`);
         
-        // Aplicar perícias treinadas da classe
-        const treinadasMatch = classe.desc.match(/Perícias treinadas:\s*([^.]+)/i);
-        if (treinadasMatch) {
-            const treinadasList = treinadasMatch[1].split(',').map(s => s.trim());
+        // Aplicar perícias treinadas da classe usando a propriedade pericias
+        if (classe.pericias) {
+            const treinadasList = classe.pericias.split(',').map(s => s.trim());
             treinadasList.forEach(skillName => {
-                const skill = pericias.find(p => p.nome.toLowerCase().includes(skillName.toLowerCase()));
+                const skill = pericias.find(p => p.nome.toLowerCase() === skillName.toLowerCase());
                 if (skill && skill.treino === 0) {
                     skill.treino = 5;
                 }
@@ -1594,6 +1508,19 @@ helpStyles.textContent = `
     background: #A347FF;
     border-color: #A347FF;
     color: white;
+}
+.help-detail-guide {
+    background: #0d0d0d;
+    border-radius: 6px;
+    padding: 15px;
+    color: #e0e0e0;
+    font-size: 12px;
+    line-height: 1.8;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.help-detail-guide strong {
+    color: #f0c040;
 }
 `;
 document.head.appendChild(helpStyles);
